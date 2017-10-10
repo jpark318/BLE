@@ -366,15 +366,16 @@ namespace BLE.Client.ViewModels
             var data = characteristicUpdatedEventArgs.Characteristic.Value;
             for (int i = 0; i < 5; i++)
             {
-                ;
+                Debug.WriteLine("data:                            " + data.Length);
                 red = (UInt16)((data[2 * i + 1]) | data[2 * i] << 8);
                 ir = (UInt16)((data[2 * i + 11]) | data[2 * i + 10] << 8);
 
-                Messages.RemoveAt(0);
-                Messages.RemoveAt(0);
-                
-                Messages.Insert(0, $"red: {red}");
-                Messages.Insert(0, $"ir: {ir}");
+                //Messages.RemoveAt(0);
+                //Messages.RemoveAt(0);
+                Debug.WriteLine("red:                             " + red);
+                Debug.WriteLine("ir:                              " + ir);
+                //Messages.Insert(0, $"red: {red}");
+                //Messages.Insert(0, $"ir: {ir}");
 
             }
             //RaisePropertyChanged(() => CharacteristicValue);

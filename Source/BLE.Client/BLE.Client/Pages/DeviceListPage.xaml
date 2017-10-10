@@ -7,37 +7,37 @@
              x:Name="DevicePage">
   <pages:BaseTabbedPage.Resources>
     <ResourceDictionary>
-     <DataTemplate x:Key="DeviceItemTemplate">
-              <ViewCell>
-                <ViewCell.ContextActions>
-                  <MenuItem Command="{Binding Path=BindingContext.DisconnectCommand, Source={x:Reference DevicePage}}"
-                            CommandParameter="{Binding .}" IsDestructive="True"
-                            Text="Disconnect"/>
-                </ViewCell.ContextActions>
-                <Grid>
-                  <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition Width="Auto"></ColumnDefinition>
-                  </Grid.ColumnDefinitions>
-                  <Grid.Triggers>
-                    <DataTrigger TargetType="Grid"
-                                 Binding="{Binding IsConnected}"
-                                 Value="true">
-                      <Setter Property="BackgroundColor" Value="#1A00FF00"></Setter>
-                    </DataTrigger>
-                  </Grid.Triggers>
-                  <StackLayout Orientation="Vertical" VerticalOptions="Center">
-                    <Label Text="{Binding Name}" FontSize="Large" />
-                    <Label Text="{Binding Id, StringFormat='{0}'}" TextColor="Gray" FontSize="Small"/>
-                  </StackLayout>
-                  <Label Grid.Column="1"
-                         Margin="10"
-                         Text="{Binding Rssi}"
-                         VerticalTextAlignment="Center"></Label>
-                </Grid>
-              </ViewCell>
-            </DataTemplate>
-      </ResourceDictionary>
+      <DataTemplate x:Key="DeviceItemTemplate">
+        <ViewCell>
+          <ViewCell.ContextActions>
+            <MenuItem Command="{Binding Path=BindingContext.DisconnectCommand, Source={x:Reference DevicePage}}"
+                      CommandParameter="{Binding .}" IsDestructive="True"
+                      Text="Disconnect"/>
+          </ViewCell.ContextActions>
+          <Grid>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition></ColumnDefinition>
+              <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.Triggers>
+              <DataTrigger TargetType="Grid"
+                           Binding="{Binding IsConnected}"
+                           Value="true">
+                <Setter Property="BackgroundColor" Value="#1A00FF00"></Setter>
+              </DataTrigger>
+            </Grid.Triggers>
+            <StackLayout Orientation="Vertical" VerticalOptions="Center">
+              <Label Text="{Binding Name}" FontSize="Large" />
+              <Label Text="{Binding Id, StringFormat='{0}'}" TextColor="Gray" FontSize="Small"/>
+            </StackLayout>
+            <Label Grid.Column="1"
+                   Margin="10"
+                   Text="{Binding Rssi}"
+                   VerticalTextAlignment="Center"></Label>
+          </Grid>
+        </ViewCell>
+      </DataTemplate>
+    </ResourceDictionary>
   </pages:BaseTabbedPage.Resources>
   <pages:BaseTabbedPage.Children>
     <pages:BasePage Title="Scan for devices">
@@ -59,8 +59,8 @@
                  RowHeight="80"
                  ItemTemplate="{StaticResource DeviceItemTemplate}">
         </ListView>
-        
-        <ListView Grid.Row="2" ItemsSource="{Binding Messages}" CachingStrategy="RecycleElement">
+
+        <!--<ListView Grid.Row="2" ItemsSource="{Binding Messages}" CachingStrategy="RecycleElement">
           <ListView.ItemTemplate>
             <DataTemplate>
               <ViewCell Height="50">
@@ -68,8 +68,8 @@
               </ViewCell>
             </DataTemplate>
           </ListView.ItemTemplate>
-        </ListView>
-        
+        </ListView>-->
+
         <StackLayout Grid.Row="4" Orientation="Horizontal">
           <Button Text="Refresh" Command="{Binding RefreshCommand}" HorizontalOptions="FillAndExpand"/>
           <Button Text="Connect to previous" Command="{Binding ConnectToPreviousCommand}" HorizontalOptions="FillAndExpand"/>
@@ -83,9 +83,9 @@
       </Grid>
     </pages:BasePage>
     <pages:BasePage Title="System devices">
-       <ListView ItemsSource="{Binding SystemDevices}" SelectedItem="{Binding SelectedDevice, Mode=TwoWay}"
-                 RowHeight="80"
-                 ItemTemplate="{StaticResource DeviceItemTemplate}"/>
+      <ListView ItemsSource="{Binding SystemDevices}" SelectedItem="{Binding SelectedDevice, Mode=TwoWay}"
+                RowHeight="80"
+                ItemTemplate="{StaticResource DeviceItemTemplate}"/>
     </pages:BasePage>
   </pages:BaseTabbedPage.Children>
 </pages:BaseTabbedPage>
