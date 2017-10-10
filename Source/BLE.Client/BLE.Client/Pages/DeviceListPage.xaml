@@ -52,7 +52,6 @@
         <StackLayout BackgroundColor="#FF6969" Padding="10" IsVisible="{Binding IsStateOn, Converter={StaticResource InverseBoolean}}">
           <Label Text="{Binding StateText}" FontSize="18" HorizontalTextAlignment="Center"></Label>
         </StackLayout>
-
         <ListView Grid.Row="1" ItemsSource="{Binding Devices}" SelectedItem="{Binding SelectedDevice, Mode=TwoWay}"
                  IsPullToRefreshEnabled="True"
                  RefreshCommand="{Binding RefreshCommand}"
@@ -60,16 +59,17 @@
                  RowHeight="80"
                  ItemTemplate="{StaticResource DeviceItemTemplate}">
         </ListView>
-
-
-        <Label Grid.Row="2" Text="{Binding PreviousGuid, StringFormat='GUID {0}'}" FontSize="Small" TextColor="Gray" VerticalTextAlignment="End"/>
-        <StackLayout Grid.Row="3" Orientation="Horizontal" HorizontalOptions="Fill">
-            <StackLayout.IsVisible>
-                <OnPlatform x:TypeArguments="x:Boolean" iOS="false" Android="true" />
-            </StackLayout.IsVisible>
-            <Label Text="Use Android AutoConnect" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
-            <Switch IsToggled="{Binding UseAutoConnect}" HorizontalOptions="End"></Switch>
-        </StackLayout>
+        
+        <ListView Grid.Row="2" ItemsSource="{Binding Messages}" CachingStrategy="RecycleElement">
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ViewCell Height="50">
+                <Label Text="{Binding .}" VerticalTextAlignment="Center" FontSize="Small"></Label>
+              </ViewCell>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+        
         <StackLayout Grid.Row="4" Orientation="Horizontal">
           <Button Text="Refresh" Command="{Binding RefreshCommand}" HorizontalOptions="FillAndExpand"/>
           <Button Text="Connect to previous" Command="{Binding ConnectToPreviousCommand}" HorizontalOptions="FillAndExpand"/>
@@ -86,17 +86,6 @@
        <ListView ItemsSource="{Binding SystemDevices}" SelectedItem="{Binding SelectedDevice, Mode=TwoWay}"
                  RowHeight="80"
                  ItemTemplate="{StaticResource DeviceItemTemplate}"/>
-      <ListView Grid.Column="2" ItemsSource="{Binding Messages}" CachingStrategy="RecycleElement">
-        <ListView.ItemTemplate>
-          <DataTemplate>
-            <ViewCell Height="50">
-              <Label Text="{Binding .}" VerticalTextAlignment="Center" FontSize="Small"></Label>
-            </ViewCell>
-          </DataTemplate>
-        </ListView.ItemTemplate>
-      </ListView>
     </pages:BasePage>
-    
   </pages:BaseTabbedPage.Children>
-
 </pages:BaseTabbedPage>

@@ -343,8 +343,10 @@ namespace BLE.Client.ViewModels
                         var Characteristic = await Service.GetCharacteristicAsync(Guid.Parse("00002a37-0000-1000-8000-00805f9b34fb"));
                         //Debug.WriteLine("Canupdate to string                       " + Characteristic.CanUpdate.ToString());
                         await Characteristic.StartUpdatesAsync();
+                        Messages.Insert(0, "");
+                        Messages.Insert(0, "");
                         Characteristic.ValueUpdated += CharacteristicOnValueUpdated;
-                        // Debug.WriteLine("valueofChar                       " + Characteristic.Value);
+                        //Debug.WriteLine("valueofChar                       " + Characteristic.Value);
 
                         //ShowViewModel<ServiceListViewModel>(new MvxBundle(new Dictionary<string, string> { { DeviceIdKey, device.Device.Id.ToString() } }));
                     }
@@ -354,7 +356,7 @@ namespace BLE.Client.ViewModels
             }
 
             config.Add("Copy GUID", () => CopyGuidCommand.Execute(device));
-            config.Cancel = new ActionSheetOption("Cancel");
+            config.Cancel = new ActionSheetOption("Cancel");    
             config.SetTitle("Device Options");
             _userDialogs.ActionSheet(config);
         }
@@ -364,10 +366,15 @@ namespace BLE.Client.ViewModels
             var data = characteristicUpdatedEventArgs.Characteristic.Value;
             for (int i = 0; i < 5; i++)
             {
+                ;
                 red = (UInt16)((data[2 * i + 1]) | data[2 * i] << 8);
                 ir = (UInt16)((data[2 * i + 11]) | data[2 * i + 10] << 8);
+
+                Messages.RemoveAt(0);
+                Messages.RemoveAt(0);
+                
                 Messages.Insert(0, $"red: {red}");
-                Messages.Insert(1, $"ir: {ir}");
+                Messages.Insert(0, $"ir: {ir}");
 
             }
             //RaisePropertyChanged(() => CharacteristicValue);
