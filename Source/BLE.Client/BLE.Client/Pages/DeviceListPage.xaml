@@ -60,7 +60,7 @@
                  ItemTemplate="{StaticResource DeviceItemTemplate}">
         </ListView>
 
-        <!--<ListView Grid.Row="2" ItemsSource="{Binding Messages}" CachingStrategy="RecycleElement">
+        <ListView Grid.Row="2" ItemsSource="{Binding Messages}" CachingStrategy="RecycleElement">
           <ListView.ItemTemplate>
             <DataTemplate>
               <ViewCell Height="50">
@@ -68,7 +68,7 @@
               </ViewCell>
             </DataTemplate>
           </ListView.ItemTemplate>
-        </ListView>-->
+        </ListView>
 
         <StackLayout Grid.Row="4" Orientation="Horizontal">
           <Button Text="Refresh" Command="{Binding RefreshCommand}" HorizontalOptions="FillAndExpand"/>

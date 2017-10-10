@@ -343,11 +343,11 @@ namespace BLE.Client.ViewModels
                         var Characteristic = await Service.GetCharacteristicAsync(Guid.Parse("00002a37-0000-1000-8000-00805f9b34fb"));
                         //Debug.WriteLine("Canupdate to string                       " + Characteristic.CanUpdate.ToString());
                         await Characteristic.StartUpdatesAsync();
-                        Messages.Insert(0, "");
-                        Messages.Insert(0, "");
                         Characteristic.ValueUpdated += CharacteristicOnValueUpdated;
                         //Debug.WriteLine("valueofChar                       " + Characteristic.Value);
 
+                        Messages.Insert(0, "");
+                        Messages.Insert(0, "");
                         //ShowViewModel<ServiceListViewModel>(new MvxBundle(new Dictionary<string, string> { { DeviceIdKey, device.Device.Id.ToString() } }));
                     }
                 });
@@ -356,27 +356,40 @@ namespace BLE.Client.ViewModels
             }
 
             config.Add("Copy GUID", () => CopyGuidCommand.Execute(device));
-            config.Cancel = new ActionSheetOption("Cancel");    
+            config.Cancel = new ActionSheetOption("Cancel");
             config.SetTitle("Device Options");
             _userDialogs.ActionSheet(config);
         }
 
         private void CharacteristicOnValueUpdated(object sender, CharacteristicUpdatedEventArgs characteristicUpdatedEventArgs)
         {
+            
             var data = characteristicUpdatedEventArgs.Characteristic.Value;
-            for (int i = 0; i < 5; i++)
-            {
-                Debug.WriteLine("data:                            " + data.Length);
-                red = (UInt16)((data[2 * i + 1]) | data[2 * i] << 8);
-                ir = (UInt16)((data[2 * i + 11]) | data[2 * i + 10] << 8);
-
-                //Messages.RemoveAt(0);
-                //Messages.RemoveAt(0);
-                Debug.WriteLine("red:                             " + red);
-                Debug.WriteLine("ir:                              " + ir);
-                //Messages.Insert(0, $"red: {red}");
-                //Messages.Insert(0, $"ir: {ir}");
-
+            //Debug.WriteLine("                           " + data[0]);
+            //Debug.WriteLine("                           " + data[1]);
+            Debug.WriteLine("                           " + data.Length);
+            //if ((UInt16)data[0] == 17 && (UInt16)data[1] == 0)
+            //    if (data.Length == 5)
+            //    {
+            //    Debug.WriteLine("temperature detected                               5 byte data");
+            //    var num = (UInt16)data[3] + (UInt16)data[4] * 0.0625;
+            //    var tempnum = (int)(num * 10);
+            //    var temp = tempnum * .1;
+            //    Messages.RemoveAt(0);
+            //    Messages.Insert(0, $"temp: {temp}");
+            //}
+            //else {
+            if(data.Length == 20) {
+                for (int i = 0; i < 5; i++)
+                {
+                    Debug.WriteLine("data:                            " + data.Length);
+                    red = (UInt16)((data[2 * i + 1]) | data[2 * i] << 8);
+                    ir = (UInt16)((data[2 * i + 11]) | data[2 * i + 10] << 8);
+                    Debug.WriteLine("red:                             " + red);
+                    Debug.WriteLine("ir:                              " + ir);
+                    Messages[0] = $"red: {red}";
+                    Messages[1] = $"ir: {ir}";
+                }
             }
             //RaisePropertyChanged(() => CharacteristicValue);
         }
