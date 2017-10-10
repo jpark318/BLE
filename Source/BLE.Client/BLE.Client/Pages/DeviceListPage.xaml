@@ -47,7 +47,6 @@
           <RowDefinition Height="*"></RowDefinition>
           <RowDefinition Height="Auto"></RowDefinition>
           <RowDefinition Height="Auto"></RowDefinition>
-          <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
         <StackLayout BackgroundColor="#FF6969" Padding="10" IsVisible="{Binding IsStateOn, Converter={StaticResource InverseBoolean}}">
           <Label Text="{Binding StateText}" FontSize="18" HorizontalTextAlignment="Center"></Label>
@@ -57,10 +56,13 @@
                  RefreshCommand="{Binding RefreshCommand}"
                  IsRefreshing="{Binding IsRefreshing, Mode=OneWay}"
                  RowHeight="80"
-                 ItemTemplate="{StaticResource DeviceItemTemplate}">
+                 ItemTemplate="{StaticResource DeviceItemTemplate}"
+                 >
         </ListView>
-
-        <ListView Grid.Row="2" ItemsSource="{Binding Messages}" CachingStrategy="RecycleElement">
+        
+        <Label BackgroundColor="#000000" Grid.Row="2"></Label>
+        
+        <!--<ListView Grid.Row="3" ItemsSource="{Binding Messages}" CachingStrategy="RecycleElement">
           <ListView.ItemTemplate>
             <DataTemplate>
               <ViewCell Height="50">
@@ -68,11 +70,11 @@
               </ViewCell>
             </DataTemplate>
           </ListView.ItemTemplate>
-        </ListView>
+        </ListView>-->
 
         <StackLayout Grid.Row="4" Orientation="Horizontal">
           <Button Text="Refresh" Command="{Binding RefreshCommand}" HorizontalOptions="FillAndExpand"/>
-          <Button Text="Connect to previous" Command="{Binding ConnectToPreviousCommand}" HorizontalOptions="FillAndExpand"/>
+          <!--<Button Text="Connect to previous" Command="{Binding ConnectToPreviousCommand}" HorizontalOptions="FillAndExpand"/>-->
           <Button Text="Stop Scan" Command="{Binding StopScanCommand}" HorizontalOptions="End"/>
           <ActivityIndicator IsRunning="{Binding IsRefreshing}"
                              HeightRequest="24"
