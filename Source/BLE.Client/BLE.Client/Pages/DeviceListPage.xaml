@@ -2,6 +2,7 @@
 <pages:BaseTabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:pages="clr-namespace:BLE.Client.Pages;assembly=BLE.Client"
+             xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
              x:Class="BLE.Client.Pages.DeviceListPage"
              Title="Discover devices"
              x:Name="DevicePage">
@@ -47,6 +48,9 @@
           <RowDefinition Height="*"></RowDefinition>
           <RowDefinition Height="Auto"></RowDefinition>
           <RowDefinition Height="Auto"></RowDefinition>
+          <RowDefinition Height="Auto"></RowDefinition>
+          <RowDefinition Height="Auto"></RowDefinition>
+          <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
         <StackLayout BackgroundColor="#FF6969" Padding="10" IsVisible="{Binding IsStateOn, Converter={StaticResource InverseBoolean}}">
           <Label Text="{Binding StateText}" FontSize="18" HorizontalTextAlignment="Center"></Label>
@@ -59,10 +63,20 @@
                  ItemTemplate="{StaticResource DeviceItemTemplate}"
                  >
         </ListView>
+
+        <!--<chart:redChart>
+          <chart:redChart.PrimaryAxis>
+            <chart:CategoryAxis>
+              <chart:CategoryAxis.LabelStyle>
+                <chart:ChartAxisLabelStyle TextColor="Red" LabelFormat ="ms"/>
+              </chart:CategoryAxis.LabelStyle>
+            </chart:CategoryAxis>
+          </chart:redChart.PrimaryAxis>
+          <chart:redChart.DateTimeAxis AutoScrollingDelta="120" AutoScrollingDeltaType="Milliseconds">
+          </chart:redChart.DateTimeAxis>
+        </chart:redChart>-->
         
-        <Label BackgroundColor="#000000" Grid.Row="2"></Label>
-        
-        <!--<ListView Grid.Row="3" ItemsSource="{Binding Messages}" CachingStrategy="RecycleElement">
+        <ListView Grid.Row="3" ItemsSource="{Binding Messages}" CachingStrategy="RecycleElement">
           <ListView.ItemTemplate>
             <DataTemplate>
               <ViewCell Height="50">
@@ -70,9 +84,9 @@
               </ViewCell>
             </DataTemplate>
           </ListView.ItemTemplate>
-        </ListView>-->
+        </ListView>
 
-        <StackLayout Grid.Row="4" Orientation="Horizontal">
+        <StackLayout Grid.Row="7" Orientation="Horizontal">
           <Button Text="Refresh" Command="{Binding RefreshCommand}" HorizontalOptions="FillAndExpand"/>
           <!--<Button Text="Connect to previous" Command="{Binding ConnectToPreviousCommand}" HorizontalOptions="FillAndExpand"/>-->
           <Button Text="Stop Scan" Command="{Binding StopScanCommand}" HorizontalOptions="End"/>

@@ -15,9 +15,22 @@ using Plugin.BLE.Abstractions.EventArgs;
 using Plugin.BLE.Abstractions.Extensions;
 using Plugin.Permissions.Abstractions;
 using Plugin.Settings.Abstractions;
+using Syncfusion.SfChart.XForms;
 
 namespace BLE.Client.ViewModels
 {
+    public class Model
+    {
+        public DateTime Time { get; set; }
+        public double Value { get; set; }
+
+        public Model(DateTime dateTime, double value)
+        {
+            Time = dateTime;
+            Value = value;
+        }
+    }
+
     public class DeviceListViewModel : BaseViewModel
     {
         private readonly IBluetoothLE _bluetoothLe;
@@ -29,6 +42,12 @@ namespace BLE.Client.ViewModels
         private UInt16 red;
         private UInt16 ir;
         public ObservableCollection<string> Messages { get; } = new ObservableCollection<string>();
+
+        public ObservableCollection<Model> DataIr { get; } = new ObservableCollection<Model>();
+        public ObservableCollection<Model> DataRed { get; } = new ObservableCollection<Model>();
+        SfChart chart = new SfChart();
+        DateTime dateTime;
+        
 
         public Guid PreviousGuid
         {
@@ -346,8 +365,15 @@ namespace BLE.Client.ViewModels
                         Characteristic.ValueUpdated += CharacteristicOnValueUpdated;
                         //Debug.WriteLine("valueofChar                       " + Characteristic.Value);
 
+                        var fiftycount = 0;
                         Messages.Insert(0, "");
                         Messages.Insert(0, "");
+                        //while (fiftycount < 50)
+                        //{
+                        //    DataIr.Add(new Model() { Value = ir });
+                        //    DataRed.Add(new Model() { Value = red });
+                        //    fiftycount++;
+                        //}
                         //ShowViewModel<ServiceListViewModel>(new MvxBundle(new Dictionary<string, string> { { DeviceIdKey, device.Device.Id.ToString() } }));
                     }
                 });
@@ -363,7 +389,7 @@ namespace BLE.Client.ViewModels
 
         private void CharacteristicOnValueUpdated(object sender, CharacteristicUpdatedEventArgs characteristicUpdatedEventArgs)
         {
-            
+
             var data = characteristicUpdatedEventArgs.Characteristic.Value;
             //Debug.WriteLine("                           " + data[0]);
             //Debug.WriteLine("                           " + data[1]);
@@ -379,14 +405,20 @@ namespace BLE.Client.ViewModels
             //    Messages.Insert(0, $"temp: {temp}");
             //}
             //else {
-            if(data.Length == 20) {
+
+
+            if (data.Length == 20)
+            {
                 for (int i = 0; i < 5; i++)
                 {
-                    Debug.WriteLine("data:                            " + data.Length);
+
                     red = (UInt16)((data[2 * i + 1]) | data[2 * i] << 8);
                     ir = (UInt16)((data[2 * i + 11]) | data[2 * i + 10] << 8);
+                    Debug.WriteLine("data:                            " + data.Length);
                     Debug.WriteLine("red:                             " + red);
                     Debug.WriteLine("ir:                              " + ir);
+                    DataIr.Add(new Model(dateTime, ir));
+                    DataRed.Add(new Model(dateTime, red));
                     Messages[0] = $"red: {red}";
                     Messages[1] = $"ir: {ir}";
                 }
