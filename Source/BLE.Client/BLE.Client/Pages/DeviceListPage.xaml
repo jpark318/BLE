@@ -41,13 +41,11 @@
     </ResourceDictionary>
   </pages:BaseTabbedPage.Resources>
   <pages:BaseTabbedPage.Children>
-    <pages:BasePage Title="Scan for devices">
+    <pages:BasePage Title="Device Management">
       <Grid>
         <Grid.RowDefinitions>
           <RowDefinition Height="Auto"></RowDefinition>
           <RowDefinition Height="*"></RowDefinition>
-          <RowDefinition Height="Auto"></RowDefinition>
-          <RowDefinition Height="Auto"></RowDefinition>
           <RowDefinition Height="Auto"></RowDefinition>
           <RowDefinition Height="Auto"></RowDefinition>
           <RowDefinition Height="Auto"></RowDefinition>
@@ -60,9 +58,26 @@
                  RefreshCommand="{Binding RefreshCommand}"
                  IsRefreshing="{Binding IsRefreshing, Mode=OneWay}"
                  RowHeight="80"
-                 ItemTemplate="{StaticResource DeviceItemTemplate}"
-                 >
+                 ItemTemplate="{StaticResource DeviceItemTemplate}">
         </ListView>
+        <StackLayout Grid.Row="4" Orientation="Horizontal">
+          <Button Text="Refresh" Command="{Binding RefreshCommand}" HorizontalOptions="FillAndExpand"/>
+          <!--<Button Text="Connect to previous" Command="{Binding ConnectToPreviousCommand}" HorizontalOptions="FillAndExpand"/>-->
+          <Button Text="Stop Scan" Command="{Binding StopScanCommand}" HorizontalOptions="End"/>
+          <ActivityIndicator IsRunning="{Binding IsRefreshing}"
+                             HeightRequest="24"
+                             WidthRequest="24"
+                             VerticalOptions="Center"
+                             HorizontalOptions="End"/>
+        </StackLayout>
+      </Grid>
+    </pages:BasePage>
+    <pages:BasePage Title="Graph">
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"></RowDefinition>
+          <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
 
         <!--<chart:redChart>
           <chart:redChart.PrimaryAxis>
@@ -75,8 +90,7 @@
           <chart:redChart.DateTimeAxis AutoScrollingDelta="120" AutoScrollingDeltaType="Milliseconds">
           </chart:redChart.DateTimeAxis>
         </chart:redChart>-->
-        
-        <ListView Grid.Row="3" ItemsSource="{Binding Messages}" CachingStrategy="RecycleElement">
+        <ListView Grid.Row="1" ItemsSource="{Binding Messages}" CachingStrategy="RecycleElement">
           <ListView.ItemTemplate>
             <DataTemplate>
               <ViewCell Height="50">
@@ -85,23 +99,7 @@
             </DataTemplate>
           </ListView.ItemTemplate>
         </ListView>
-
-        <StackLayout Grid.Row="7" Orientation="Horizontal">
-          <Button Text="Refresh" Command="{Binding RefreshCommand}" HorizontalOptions="FillAndExpand"/>
-          <!--<Button Text="Connect to previous" Command="{Binding ConnectToPreviousCommand}" HorizontalOptions="FillAndExpand"/>-->
-          <Button Text="Stop Scan" Command="{Binding StopScanCommand}" HorizontalOptions="End"/>
-          <ActivityIndicator IsRunning="{Binding IsRefreshing}"
-                             HeightRequest="24"
-                             WidthRequest="24"
-                             VerticalOptions="Center"
-                             HorizontalOptions="End"/>
-        </StackLayout>
       </Grid>
-    </pages:BasePage>
-    <pages:BasePage Title="System devices">
-      <ListView ItemsSource="{Binding SystemDevices}" SelectedItem="{Binding SelectedDevice, Mode=TwoWay}"
-                RowHeight="80"
-                ItemTemplate="{StaticResource DeviceItemTemplate}"/>
     </pages:BasePage>
   </pages:BaseTabbedPage.Children>
 </pages:BaseTabbedPage>
