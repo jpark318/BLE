@@ -96,7 +96,7 @@
               <!--<chartRed:DateTimeAxis AutoScrollingDelta="5"
                                    AutoScrollingDeltaType="Months"
                                    IntervalType="Months">-->
-              <chartRed:DateTimeAxis.Minimum>
+              <!--<chartRed:DateTimeAxis.Minimum>
                 <sys:DateTime x:FactoryMethod="Parse">
                   <x:Arguments>
                     <x:String>Oct 21 2017</x:String>
@@ -109,7 +109,7 @@
                     <x:String>Oct 22 2017</x:String>
                   </x:Arguments>
                 </sys:DateTime>
-              </chartRed:DateTimeAxis.Maximum>
+              </chartRed:DateTimeAxis.Maximum>-->
 
               <chartRed:DateTimeAxis.Title>
                 <chartRed:ChartAxisTitle Text="Time"></chartRed:ChartAxisTitle>
