@@ -7,7 +7,8 @@
              x:Class="BLE.Client.Pages.DeviceListPage"
              xmlns:local="clr-namespace:BLE.Client.ViewModels"
              Title="Discover devices"
-             x:Name="DevicePage">
+             x:Name="DevicePage"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib">
   <pages:BaseTabbedPage.Resources>
     <ResourceDictionary>
       <DataTemplate x:Key="DeviceItemTemplate">
@@ -87,11 +88,33 @@
         <chartRed:SfChart>
           <chartRed:SfChart.PrimaryAxis>
             <chartRed:DateTimeAxis AutoScrollingDelta="5"
-                                   AutoScrollingDeltaType="Years"
-                                   IntervalType="Years">Q
+                                   AutoScrollingDeltaType="Milliseconds"
+                                   IntervalType="Milliseconds">
+              <!--<chartRed:DateTimeAxis.Interval>
+                <sys:Double>5</sys:Double>
+              </chartRed:DateTimeAxis.Interval>-->
+              <!--<chartRed:DateTimeAxis AutoScrollingDelta="5"
+                                   AutoScrollingDeltaType="Months"
+                                   IntervalType="Months">-->
+              <chartRed:DateTimeAxis.Minimum>
+                <sys:DateTime x:FactoryMethod="Parse">
+                  <x:Arguments>
+                    <x:String>Oct 21 2017</x:String>
+                  </x:Arguments>
+                </sys:DateTime>
+              </chartRed:DateTimeAxis.Minimum>
+              <chartRed:DateTimeAxis.Maximum>
+                <sys:DateTime x:FactoryMethod="Parse">
+                  <x:Arguments>
+                    <x:String>Oct 22 2017</x:String>
+                  </x:Arguments>
+                </sys:DateTime>
+              </chartRed:DateTimeAxis.Maximum>
+
               <chartRed:DateTimeAxis.Title>
                 <chartRed:ChartAxisTitle Text="Time"></chartRed:ChartAxisTitle>
               </chartRed:DateTimeAxis.Title>
+
             </chartRed:DateTimeAxis>
           </chartRed:SfChart.PrimaryAxis>
           <chartRed:SfChart.SecondaryAxis>

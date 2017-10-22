@@ -47,8 +47,8 @@ namespace BLE.Client.ViewModels {
         private UInt16 red;
         private UInt16 ir;
         public ObservableCollection<string> Messages { get; } = new ObservableCollection<string>();
-        public ObservableCollection<BleDataModel> dataRed { get; set; }
-        public ObservableCollection<BleDataModel> dataIr { get; set; }
+        public ObservableCollection<BleDataModel> DataRed { get; set; }
+        public ObservableCollection<BleDataModel> DataIr { get; set; }
         public Guid PreviousGuid {
             get { return _previousGuid; }
             set {
@@ -317,13 +317,13 @@ namespace BLE.Client.ViewModels {
                         Messages.Insert(0, "");
                         Messages.Insert(0, "");
 
-                        dataRed = new ObservableCollection<BleDataModel>();
-                        dataIr = new ObservableCollection<BleDataModel>();
+                        DataRed = new ObservableCollection<BleDataModel>();
+                        DataIr = new ObservableCollection<BleDataModel>();
                         DateTime dateTime = DateTime.Now;
                         Debug.WriteLine("dateTime input into dateRed");
                         for (int j = 0; j < 120; j++) {
-                            dataRed.Add(new BleDataModel(dateTime, 0));
-                            dataIr.Add(new BleDataModel(dateTime, 0));
+                            DataRed.Add(new BleDataModel(dateTime, 0));
+                            DataIr.Add(new BleDataModel(dateTime, 0));
                             dateTime = dateTime.AddMilliseconds(5);
                             Debug.WriteLine("dateTime input into dateRed");
                         }
@@ -368,10 +368,10 @@ namespace BLE.Client.ViewModels {
                         Debug.WriteLine("ir:                              " + ir);
                         Messages[0] = $"red: {red}";
                         Messages[1] = $"ir: {ir}";
-                        dataRed.RemoveAt(0);
-                        dataRed.Add(new BleDataModel(DateTime.Now, 0.5));
-                        dataIr.RemoveAt(0);
-                        dataIr.Add(new BleDataModel(DateTime.Now, 0.5));
+                        DataRed.RemoveAt(0);
+                        DataRed.Add(new BleDataModel(DateTime.Now, 0.5));
+                        DataIr.RemoveAt(0);
+                        DataIr.Add(new BleDataModel(DateTime.Now, 0.5));
                         //        dataRed = new ObservableCollection<BleDataModel>();
                         //        dataIr = new ObservableCollection<BleDataModel>();
                     }
@@ -487,8 +487,6 @@ namespace BLE.Client.ViewModels {
             } finally {
                 _userDialogs.HideLoading();
             }
-
-
         }
 
         private void OnDeviceDisconnected(object sender, DeviceEventArgs e) {
