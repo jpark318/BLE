@@ -80,66 +80,67 @@
     </pages:BasePage>
     <pages:BasePage Title="Graph">
       <Grid>
-        <chartRed:SfChart HeightRequest="300">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"></RowDefinition>
+          <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <chartRed:SfChart HeightRequest="250">
           <chartRed:SfChart.PrimaryAxis>
-            <chartRed:DateTimeAxis AutoScrollingDelta="20"
-                                   AutoScrollingDeltaType="Seconds"
-                                   Interval="1"
-                                   IntervalType="Seconds"
-                                   Minimum="{Binding minimum}"
-                                   Maximum="{Binding maximum}"
-                                   ShowMajorGridLines="false">
-              <chartRed:DateTimeAxis.LabelStyle>
-                <chartRed:ChartAxisLabelStyle LabelFormat="hh:mm:ss:SSS"/>
-              </chartRed:DateTimeAxis.LabelStyle>
-              <!--<chartRed:DateTimeAxis.Title>
-                <chartRed:ChartAxisTitle Text="Time"></chartRed:ChartAxisTitle>
-              </chartRed:DateTimeAxis.Title>-->
-            </chartRed:DateTimeAxis>
-          </chartRed:SfChart.PrimaryAxis>
-          <chartRed:SfChart.SecondaryAxis>
-            <chartRed:NumericalAxis Interval="10000"
-                                    Minimum="0"
-                                    Maximum="60000"
-                                    ShowMinorGridLines="false">
-              <!--<chartRed:NumericalAxis.Title>  
-                <chartRed:ChartAxisTitle Text="Value"></chartRed:ChartAxisTitle>
+            <chartRed:NumericalAxis Minimum="0"
+                                    Maximum="1000"
+                                    ShowMajorGridLines="false">
+              <chartRed:NumericalAxis.LabelStyle>
+                <chartRed:ChartAxisLabelStyle Font="0.01"/>
+              </chartRed:NumericalAxis.LabelStyle>
+              <!--<chartRed:NumericalAxis.Title>
+                <chartRed:ChartAxisTitle Text="Index"></chartRed:ChartAxisTitle>
               </chartRed:NumericalAxis.Title>-->
             </chartRed:NumericalAxis>
-          </chartRed:SfChart.SecondaryAxis>
-            <chartRed:LineSeries ItemsSource="{Binding DataRed}" XBindingPath="ReceiveTime" YBindingPath="Value"/>
-        </chartRed:SfChart>
-
-        <chartRed:SfChart HeightRequest="300">
-          <chartRed:SfChart.PrimaryAxis>
-            <chartRed:DateTimeAxis AutoScrollingDelta="20"
-                                   AutoScrollingDeltaType="Seconds"
-                                   Interval="1"
-                                   IntervalType="Seconds"
-                                   Minimum="{Binding minimum}"
-                                   Maximum="{Binding maximum}"
-                                   ShowMajorGridLines="false">
-              <chartRed:DateTimeAxis.LabelStyle>
-                <chartRed:ChartAxisLabelStyle LabelFormat="hh:mm:ss:SSS"/>
-              </chartRed:DateTimeAxis.LabelStyle>
-              <!--<chartRed:DateTimeAxis.Title>
-                <chartRed:ChartAxisTitle Text="Time"></chartRed:ChartAxisTitle>
-              </chartRed:DateTimeAxis.Title>-->
-            </chartRed:DateTimeAxis>
           </chartRed:SfChart.PrimaryAxis>
           <chartRed:SfChart.SecondaryAxis>
-            <chartRed:NumericalAxis Interval="10000"
+            <chartRed:NumericalAxis Interval="5000"
                                     Minimum="0"
-                                    Maximum="60000"
-                                    ShowMinorGridLines="false">
-              <!--<chartRed:NumericalAxis.Title>  
-                <chartRed:ChartAxisTitle Text="Value"></chartRed:ChartAxisTitle>
-              </chartRed:NumericalAxis.Title>-->
+                                    Maximum="45000"
+                                    ShowMajorGridLines="false">
+              <chartRed:NumericalAxis.LabelStyle>
+                <chartRed:ChartAxisLabelStyle Font="0.01"/>
+              </chartRed:NumericalAxis.LabelStyle>
+              <chartRed:NumericalAxis.Title>
+                <chartRed:ChartAxisTitle Text="Red"></chartRed:ChartAxisTitle>
+              </chartRed:NumericalAxis.Title>
             </chartRed:NumericalAxis>
           </chartRed:SfChart.SecondaryAxis>
-          <chartRed:LineSeries ItemsSource="{Binding DataRed}" XBindingPath="ReceiveTime" YBindingPath="Value"/>
+          <chartRed:FastLineSeries ItemsSource="{Binding DataRed}" XBindingPath="IndexValue" YBindingPath="Value"/>
         </chartRed:SfChart>
 
+        <chartIr:SfChart TranslationY="250" HeightRequest="250">
+          <chartIr:SfChart.PrimaryAxis>
+            <chartIr:NumericalAxis Minimum="0"
+                                    Maximum="1000"
+                                    ShowMajorGridLines="false">
+              <chartIr:NumericalAxis.LabelStyle>
+                <chartIr:ChartAxisLabelStyle Font="0.01"/>
+              </chartIr:NumericalAxis.LabelStyle>
+              <!--<chartIr:NumericalAxis.Title>
+                <chartIr:ChartAxisTitle Text="Index"></chartIr:ChartAxisTitle>
+              </chartIr:NumericalAxis.Title>-->
+            </chartIr:NumericalAxis>
+          </chartIr:SfChart.PrimaryAxis>
+          <chartIr:SfChart.SecondaryAxis>
+            <chartIr:NumericalAxis Interval="5000"
+                                    Minimum="0"
+                                    Maximum="45000"
+                                    ShowMajorGridLines="false">
+              <chartIr:NumericalAxis.LabelStyle>
+                <chartIr:ChartAxisLabelStyle Font="0.01"/>
+              </chartIr:NumericalAxis.LabelStyle>
+              <chartIr:NumericalAxis.Title>
+                <chartIr:ChartAxisTitle Text="Ir"></chartIr:ChartAxisTitle>
+              </chartIr:NumericalAxis.Title>
+            </chartIr:NumericalAxis>
+          </chartIr:SfChart.SecondaryAxis>
+          <chartIr:FastLineSeries ItemsSource="{Binding DataIr}" XBindingPath="IndexValue" YBindingPath="Value"/>
+        </chartIr:SfChart>
       </Grid>
     </pages:BasePage>
     <pages:BasePage Title="Data">
@@ -161,4 +162,3 @@
     </pages:BasePage>
   </pages:BaseTabbedPage.Children>
 </pages:BaseTabbedPage>
-

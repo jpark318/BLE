@@ -16,14 +16,15 @@ using Plugin.BLE.Abstractions.Extensions;
 using Plugin.Permissions.Abstractions;
 using Plugin.Settings.Abstractions;
 using Syncfusion.SfChart.XForms;
+using Xamarin.Forms;
 
 namespace BLE.Client.ViewModels {
     public class BleDataModel {
-        public DateTime ReceiveTime { get; set; }
+        public string IndexValue { get; set; }
         public double Value { get; set; }
 
-        public BleDataModel(DateTime dateTime, double value) {
-            ReceiveTime = dateTime;
+        public BleDataModel(string indexValue, double value) {
+            IndexValue = indexValue;
             Value = value;
         }
     }
@@ -49,9 +50,12 @@ namespace BLE.Client.ViewModels {
         public ObservableCollection<string> Messages { get; } = new ObservableCollection<string>();
         public ObservableCollection<BleDataModel> DataRed { get; set; }
         public ObservableCollection<BleDataModel> DataIr { get; set; }
-        public DateTime minimum { get; set; } = DateTime.Now.AddSeconds(-10);
-        public DateTime maximum { get; set; } = DateTime.Now.AddSeconds(10);
-        
+        public ObservableCollection<BleDataModel> DataTemp { get; set; }
+        public double maxRed { get; set; } = 60000;
+        public double minRed { get; set; } = 60000;
+        public double maxIr { get; set; } = 0;
+        public double minIr { get; set; } = 0;
+
         public Guid PreviousGuid {
             get { return _previousGuid; }
             set {
@@ -117,6 +121,9 @@ namespace BLE.Client.ViewModels {
             Adapter.DeviceDisconnected += OnDeviceDisconnected;
             Adapter.DeviceConnectionLost += OnDeviceConnectionLost;
             //Adapter.DeviceConnected += (sender, e) => Adapter.DisconnectDeviceAsync(e.Device);
+
+            DataRed = new ObservableCollection<BleDataModel>();
+            DataIr = new ObservableCollection<BleDataModel>();
         }
 
         private Task GetPreviousGuidAsync() {
@@ -310,35 +317,9 @@ namespace BLE.Client.ViewModels {
                         await Characteristic.StartUpdatesAsync();
                         Characteristic.ValueUpdated += CharacteristicOnValueUpdated;
                         //Debug.WriteLine("valueofChar                       " + Characteristic.Value);
-
-                        DateTimeAxis xAxis = new DateTimeAxis();
-                        xAxis.AutoScrollingDelta = 120;
-                        xAxis.AutoScrollingDeltaType = DateTimeDeltaType.Seconds;
-                        xAxis.LabelStyle.LabelFormat = "mm:ss";
-
                         Messages.Insert(0, "");
                         Messages.Insert(0, "");
                         Messages.Insert(0, "");
-
-                        DataRed = new ObservableCollection<BleDataModel>();
-                        DataIr = new ObservableCollection<BleDataModel>();
-                        DateTime dateTime = DateTime.Now;
-                        minimum = DateTime.Now;
-                        maximum = DateTime.Now.AddSeconds(1);
-                        Debug.WriteLine("dateTime input into dateRed");
-                        for (int j = 0; j < 120; j++) {
-                            DataRed.Add(new BleDataModel(dateTime, 0));
-                            DataIr.Add(new BleDataModel(dateTime, 0));
-                            dateTime = dateTime.AddMilliseconds(5);
-                            Debug.WriteLine("dateTime input into dateRed");
-                        }
-                        //while (fiftycount < 50)
-                        //{
-                        //    DataIr.Add(new Model() { Value = ir });
-                        //    DataRed.Add(new Model() { Value = red });
-                        //    fiftycount++;
-                        //}
-                        //ShowViewModel<ServiceListViewModel>(new MvxBundle(new Dictionary<string, string> { { DeviceIdKey, device.Device.Id.ToString() } }));
                     }
                 });
 
@@ -368,17 +349,32 @@ namespace BLE.Client.ViewModels {
                     for (int i = 0; i < 5; i++) {
                         red = (UInt16)((data[2 * i + 1]) | data[2 * i] << 8);
                         ir = (UInt16)((data[2 * i + 11]) | data[2 * i + 10] << 8);
-                        Debug.WriteLine("data:                            " + data.Length);
-                        Debug.WriteLine("red:                             " + red);
-                        Debug.WriteLine("ir:                              " + ir);
+                        //Debug.WriteLine("data:                            " + data.Length);
+                        //Debug.WriteLine("red:                             " + red);
+                        //Debug.WriteLine("ir:                              " + ir);
                         Messages[0] = $"red: {red}";
                         Messages[1] = $"ir: {ir}";
-                        DataRed.RemoveAt(0);
-                        DataRed.Add(new BleDataModel(DateTime.Now, 0.5));
-                        DataIr.RemoveAt(0);
-                        DataIr.Add(new BleDataModel(DateTime.Now, 0.5));
-                        minimum = minimum.AddMilliseconds(5);
-                        maximum = maximum.AddMilliseconds(5);
+                        if (!(DataRed.Count < 1000)) {
+                            Device.BeginInvokeOnMainThread(() => {
+                                DataRed.RemoveAt(0);
+                            });
+                        }
+                        BleDataModel redDataReceived = new BleDataModel(DataRed.Count.ToString(), red);
+                        Device.BeginInvokeOnMainThread(() => {
+                            DataRed.Insert(DataRed.Count, redDataReceived);
+                        });
+                        //double sumRed = DataRed.Sum(redData => redData.Value);
+                        //minIr = sumRed / DataRed.Count;
+                        //for data received as IR
+                        if (!(DataIr.Count < 1000)) {
+                            Device.BeginInvokeOnMainThread(() => {
+                                DataIr.RemoveAt(0);
+                            });
+                        }
+                        BleDataModel irDataReceived = new BleDataModel(DataIr.Count.ToString(), ir);
+                        Device.BeginInvokeOnMainThread(() => {
+                            DataIr.Insert(DataIr.Count, irDataReceived);
+                        });
                     }
                 }
                 //RaisePropertyChanged(() => CharacteristicValue);
