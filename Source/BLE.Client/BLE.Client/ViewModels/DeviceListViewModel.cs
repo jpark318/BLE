@@ -49,6 +49,9 @@ namespace BLE.Client.ViewModels {
         public ObservableCollection<string> Messages { get; } = new ObservableCollection<string>();
         public ObservableCollection<BleDataModel> DataRed { get; set; }
         public ObservableCollection<BleDataModel> DataIr { get; set; }
+        public DateTime minimum { get; set; } = DateTime.Now.AddSeconds(-10);
+        public DateTime maximum { get; set; } = DateTime.Now.AddSeconds(10);
+        
         public Guid PreviousGuid {
             get { return _previousGuid; }
             set {
@@ -320,6 +323,8 @@ namespace BLE.Client.ViewModels {
                         DataRed = new ObservableCollection<BleDataModel>();
                         DataIr = new ObservableCollection<BleDataModel>();
                         DateTime dateTime = DateTime.Now;
+                        minimum = DateTime.Now;
+                        maximum = DateTime.Now.AddSeconds(1);
                         Debug.WriteLine("dateTime input into dateRed");
                         for (int j = 0; j < 120; j++) {
                             DataRed.Add(new BleDataModel(dateTime, 0));
@@ -372,8 +377,8 @@ namespace BLE.Client.ViewModels {
                         DataRed.Add(new BleDataModel(DateTime.Now, 0.5));
                         DataIr.RemoveAt(0);
                         DataIr.Add(new BleDataModel(DateTime.Now, 0.5));
-                        //        dataRed = new ObservableCollection<BleDataModel>();
-                        //        dataIr = new ObservableCollection<BleDataModel>();
+                        minimum = minimum.AddMilliseconds(5);
+                        maximum = maximum.AddMilliseconds(5);
                     }
                 }
                 //RaisePropertyChanged(() => CharacteristicValue);

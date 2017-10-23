@@ -9,6 +9,9 @@
              Title="Discover devices"
              x:Name="DevicePage"
              xmlns:sys="clr-namespace:System;assembly=mscorlib">
+  <!--<pages:BaseTabbedPage.BindingContext>
+    <local:BleDataModel/>
+  </pages:BaseTabbedPage.BindingContext>-->
   <pages:BaseTabbedPage.Resources>
     <ResourceDictionary>
       <DataTemplate x:Key="DeviceItemTemplate">
@@ -77,74 +80,66 @@
     </pages:BasePage>
     <pages:BasePage Title="Graph">
       <Grid>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="Auto"></RowDefinition>
-          <RowDefinition Height="*"></RowDefinition>
-          <RowDefinition Height="*"></RowDefinition>
-        </Grid.RowDefinitions>
-        <!--<pages:BaseTabbedPage.BindingContext>
-          <local:BleDataModel></local:BleDataModel>
-        </pages:BaseTabbedPage.BindingContext>-->
-        <chartRed:SfChart>
+        <chartRed:SfChart HeightRequest="300">
           <chartRed:SfChart.PrimaryAxis>
-            <chartRed:DateTimeAxis AutoScrollingDelta="5"
-                                   AutoScrollingDeltaType="Milliseconds"
-                                   IntervalType="Milliseconds">
-              <!--<chartRed:DateTimeAxis.Interval>
-                <sys:Double>5</sys:Double>
-              </chartRed:DateTimeAxis.Interval>-->
-              <!--<chartRed:DateTimeAxis AutoScrollingDelta="5"
-                                   AutoScrollingDeltaType="Months"
-                                   IntervalType="Months">-->
-              <!--<chartRed:DateTimeAxis.Minimum>
-                <sys:DateTime x:FactoryMethod="Parse">
-                  <x:Arguments>
-                    <x:String>Oct 21 2017</x:String>
-                  </x:Arguments>
-                </sys:DateTime>
-              </chartRed:DateTimeAxis.Minimum>
-              <chartRed:DateTimeAxis.Maximum>
-                <sys:DateTime x:FactoryMethod="Parse">
-                  <x:Arguments>
-                    <x:String>Oct 22 2017</x:String>
-                  </x:Arguments>
-                </sys:DateTime>
-              </chartRed:DateTimeAxis.Maximum>-->
-
-              <chartRed:DateTimeAxis.Title>
+            <chartRed:DateTimeAxis AutoScrollingDelta="20"
+                                   AutoScrollingDeltaType="Seconds"
+                                   Interval="1"
+                                   IntervalType="Seconds"
+                                   Minimum="{Binding minimum}"
+                                   Maximum="{Binding maximum}"
+                                   ShowMajorGridLines="false">
+              <chartRed:DateTimeAxis.LabelStyle>
+                <chartRed:ChartAxisLabelStyle LabelFormat="hh:mm:ss:SSS"/>
+              </chartRed:DateTimeAxis.LabelStyle>
+              <!--<chartRed:DateTimeAxis.Title>
                 <chartRed:ChartAxisTitle Text="Time"></chartRed:ChartAxisTitle>
-              </chartRed:DateTimeAxis.Title>
-
+              </chartRed:DateTimeAxis.Title>-->
             </chartRed:DateTimeAxis>
           </chartRed:SfChart.PrimaryAxis>
           <chartRed:SfChart.SecondaryAxis>
-            <chartRed:NumericalAxis>
-              <chartRed:NumericalAxis.Title>
+            <chartRed:NumericalAxis Interval="10000"
+                                    Minimum="0"
+                                    Maximum="60000"
+                                    ShowMinorGridLines="false">
+              <!--<chartRed:NumericalAxis.Title>  
                 <chartRed:ChartAxisTitle Text="Value"></chartRed:ChartAxisTitle>
-              </chartRed:NumericalAxis.Title>
+              </chartRed:NumericalAxis.Title>-->
             </chartRed:NumericalAxis>
           </chartRed:SfChart.SecondaryAxis>
-          <chartRed:FastLineSeries ItemsSource="{Binding dataRed}"/>
+            <chartRed:LineSeries ItemsSource="{Binding DataRed}" XBindingPath="ReceiveTime" YBindingPath="Value"/>
         </chartRed:SfChart>
-        <!--<chartIr:SfChart>
-          <chartIr:SfChart.PrimaryAxis>
-            <chartIr:DateTimeAxis AutoScrollingDelta="5"
-                                   AutoScrollingDeltaType="Milliseconds"
-                                   IntervalType="Milliseconds">
-              <chartIr:DateTimeAxis.Title>
-                <chartIr:ChartAxisTitle Text="Time"></chartIr:ChartAxisTitle>
-              </chartIr:DateTimeAxis.Title>
-            </chartIr:DateTimeAxis>
-          </chartIr:SfChart.PrimaryAxis>
-          <chartIr:SfChart.SecondaryAxis>
-            <chartIr:NumericalAxis>
-              <chartIr:NumericalAxis.Title>
-                <chartIr:ChartAxisTitle Text="Value"></chartIr:ChartAxisTitle>
-              </chartIr:NumericalAxis.Title>
-            </chartIr:NumericalAxis>
-          </chartIr:SfChart.SecondaryAxis>
-          <chartIr:FastLineSeries ItemsSource ="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue"/>
-        </chartIr:SfChart>-->
+
+        <chartRed:SfChart HeightRequest="300">
+          <chartRed:SfChart.PrimaryAxis>
+            <chartRed:DateTimeAxis AutoScrollingDelta="20"
+                                   AutoScrollingDeltaType="Seconds"
+                                   Interval="1"
+                                   IntervalType="Seconds"
+                                   Minimum="{Binding minimum}"
+                                   Maximum="{Binding maximum}"
+                                   ShowMajorGridLines="false">
+              <chartRed:DateTimeAxis.LabelStyle>
+                <chartRed:ChartAxisLabelStyle LabelFormat="hh:mm:ss:SSS"/>
+              </chartRed:DateTimeAxis.LabelStyle>
+              <!--<chartRed:DateTimeAxis.Title>
+                <chartRed:ChartAxisTitle Text="Time"></chartRed:ChartAxisTitle>
+              </chartRed:DateTimeAxis.Title>-->
+            </chartRed:DateTimeAxis>
+          </chartRed:SfChart.PrimaryAxis>
+          <chartRed:SfChart.SecondaryAxis>
+            <chartRed:NumericalAxis Interval="10000"
+                                    Minimum="0"
+                                    Maximum="60000"
+                                    ShowMinorGridLines="false">
+              <!--<chartRed:NumericalAxis.Title>  
+                <chartRed:ChartAxisTitle Text="Value"></chartRed:ChartAxisTitle>
+              </chartRed:NumericalAxis.Title>-->
+            </chartRed:NumericalAxis>
+          </chartRed:SfChart.SecondaryAxis>
+          <chartRed:LineSeries ItemsSource="{Binding DataRed}" XBindingPath="ReceiveTime" YBindingPath="Value"/>
+        </chartRed:SfChart>
+
       </Grid>
     </pages:BasePage>
     <pages:BasePage Title="Data">
