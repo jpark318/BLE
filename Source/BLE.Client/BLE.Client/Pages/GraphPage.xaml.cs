@@ -1,8 +1,8 @@
 ﻿namespace BLE.Client.Pages
 {
-    public partial class GraphViewPage
+    public partial class GraphPage
     {
-        public GraphViewPage()
+        public GraphPage()
         {
             InitializeComponent();
         }
