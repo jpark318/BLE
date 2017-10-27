@@ -37,6 +37,7 @@ namespace BLE.Client.ViewModels {
         public MvxCommand RefreshCommand => new MvxCommand(() => TryStartScanning(true));
         public MvxCommand<DeviceListItemViewModel> DisconnectCommand => new MvxCommand<DeviceListItemViewModel>(DisconnectDevice);
         public MvxCommand<DeviceListItemViewModel> ConnectDisposeCommand => new MvxCommand<DeviceListItemViewModel>(ConnectAndDisposeDevice);
+        public MvxCommand ScanDevices => new MvxCommand(() => ScanDevicesPage());
         public ObservableCollection<DeviceListItemViewModel> Devices { get; set; } = new ObservableCollection<DeviceListItemViewModel>();
         private Guid _previousGuid;
         private CancellationTokenSource _cancellationTokenSource;
@@ -110,6 +111,11 @@ namespace BLE.Client.ViewModels {
                 PreviousGuid = !string.IsNullOrEmpty(guidString) ? Guid.Parse(guidString) : Guid.Empty;
             });
         }
+
+        private async void ScanDevicesPage() {
+            ShowViewModel<DeviceListViewModel>(new MvxBundle(new Dictionary<string, string> { }));
+        }
+
 
         private void OnDeviceConnectionLost(object sender, DeviceErrorEventArgs e) {
             Devices.FirstOrDefault(d => d.Id == e.Device.Id)?.Update();
