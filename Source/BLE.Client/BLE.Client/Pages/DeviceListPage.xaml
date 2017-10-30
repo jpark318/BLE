@@ -78,7 +78,7 @@
         </StackLayout>
       </Grid>
     </pages:BasePage>
-    <pages:BasePage Title="Graph">
+    <!--<pages:BasePage Title="Graph">
       <Grid>
         <Grid.RowDefinitions>
           <RowDefinition Height="Auto"></RowDefinition>
@@ -92,9 +92,9 @@
               <chartRed:NumericalAxis.LabelStyle>
                 <chartRed:ChartAxisLabelStyle Font="0.01"/>
               </chartRed:NumericalAxis.LabelStyle>
-              <!--<chartRed:NumericalAxis.Title>
+              <chartRed:NumericalAxis.Title>
                 <chartRed:ChartAxisTitle Text="Index"></chartRed:ChartAxisTitle>
-              </chartRed:NumericalAxis.Title>-->
+              </chartRed:NumericalAxis.Title>
             </chartRed:NumericalAxis>
           </chartRed:SfChart.PrimaryAxis>
           <chartRed:SfChart.SecondaryAxis>
@@ -121,9 +121,9 @@
               <chartIr:NumericalAxis.LabelStyle>
                 <chartIr:ChartAxisLabelStyle Font="0.01"/>
               </chartIr:NumericalAxis.LabelStyle>
-              <!--<chartIr:NumericalAxis.Title>
+              <chartIr:NumericalAxis.Title>
                 <chartIr:ChartAxisTitle Text="Index"></chartIr:ChartAxisTitle>
-              </chartIr:NumericalAxis.Title>-->
+              </chartIr:NumericalAxis.Title>
             </chartIr:NumericalAxis>
           </chartIr:SfChart.PrimaryAxis>
           <chartIr:SfChart.SecondaryAxis>
@@ -142,17 +142,17 @@
           <chartIr:FastLineSeries ItemsSource="{Binding DataIr}" XBindingPath="IndexValue" YBindingPath="Value"/>
         </chartIr:SfChart>
       </Grid>
-    </pages:BasePage>
+    </pages:BasePage>-->
     <pages:BasePage Title="Data">
       <Grid>
         <Grid.RowDefinitions>
           <RowDefinition Height="auto"></RowDefinition>
-          <RowDefinition Height="*"></RowDefinition>
+          <RowDefinition Height="*"></RowDefinition>      
         </Grid.RowDefinitions>
         <ListView Grid.Row="1" ItemsSource="{Binding Messages}" CachingStrategy="RecycleElement">
           <ListView.ItemTemplate>
             <DataTemplate>
-              <ViewCell Height="50">
+              <ViewCell Height="50">  
                 <Label Text="{Binding .}" VerticalTextAlignment="Center" FontSize="Small"></Label>
               </ViewCell>
             </DataTemplate>

@@ -23,6 +23,13 @@ namespace BLE.Client.ViewModels {
         private readonly IBluetoothLE _bluetoothLe;
         private readonly IUserDialogs _userDialogs;
         private readonly ISettings _settings;
+        readonly IPermissions _permissions;
+        private Guid _previousGuid;
+        private CancellationTokenSource _cancellationTokenSource;
+        private Byte[] CharacteristicValue = new Byte[20];
+        private UInt16 red;
+        private UInt16 ir;
+        bool _useAutoConnect;
         public double maxRed { get; set; } = 60000;
         public double minRed { get; set; } = 60000;
         public double maxIr { get; set; } = 0;
@@ -30,22 +37,16 @@ namespace BLE.Client.ViewModels {
         public bool IsRefreshing => Adapter.IsScanning;
         public bool IsStateOn => _bluetoothLe.IsOn;
         public string StateText => GetStateText();
+        public List<DeviceListItemViewModel> SystemDevices { get; private set; } = new List<DeviceListItemViewModel>();
         public ObservableCollection<string> Messages { get; } = new ObservableCollection<string>();
-        public ObservableCollection<BleDataModel> DataRed { get; set; }
-        public ObservableCollection<BleDataModel> DataIr { get; set; }
-        public ObservableCollection<BleDataModel> DataTemp { get; set; }
+        //public ObservableCollection<BleDataModel> DataRed { get; set; }
+        //public ObservableCollection<BleDataModel> DataIr { get; set; }
+        //public ObservableCollection<BleDataModel> DataTemp { get; set; }
+        public ObservableCollection<DeviceListItemViewModel> Devices { get; set; } = new ObservableCollection<DeviceListItemViewModel>();
         public MvxCommand RefreshCommand => new MvxCommand(() => TryStartScanning(true));
         public MvxCommand<DeviceListItemViewModel> DisconnectCommand => new MvxCommand<DeviceListItemViewModel>(DisconnectDevice);
         public MvxCommand<DeviceListItemViewModel> ConnectDisposeCommand => new MvxCommand<DeviceListItemViewModel>(ConnectAndDisposeDevice);
-        public ObservableCollection<DeviceListItemViewModel> Devices { get; set; } = new ObservableCollection<DeviceListItemViewModel>();
-        private Guid _previousGuid;
-        private CancellationTokenSource _cancellationTokenSource;
-        private Byte[] CharacteristicValue = new Byte[20];
-        private UInt16 red;
-        private UInt16 ir;
         public MvxCommand ConnectToPreviousCommand => new MvxCommand(ConnectToPreviousDeviceAsync, CanConnectToPrevious);
-        bool _useAutoConnect;
-        readonly IPermissions _permissions;
 
         public Guid PreviousGuid {
             get { return _previousGuid; }
@@ -87,6 +88,10 @@ namespace BLE.Client.ViewModels {
             RaisePropertyChanged(() => IsRefreshing);
         }, () => _cancellationTokenSource != null);
 
+        public MvxCommand<DeviceListItemViewModel> CopyGuidCommand => new MvxCommand<DeviceListItemViewModel>(device => {
+            PreviousGuid = device.Id;
+        });
+
         public DeviceListViewModel(IBluetoothLE bluetoothLe, IAdapter adapter, IUserDialogs userDialogs, ISettings settings, IPermissions permissions) : base(adapter) {
             _permissions = permissions;
             _bluetoothLe = bluetoothLe;
@@ -98,10 +103,10 @@ namespace BLE.Client.ViewModels {
             Adapter.ScanTimeoutElapsed += Adapter_ScanTimeoutElapsed;
             Adapter.DeviceDisconnected += OnDeviceDisconnected;
             Adapter.DeviceConnectionLost += OnDeviceConnectionLost;
+            Messages.Insert(0, "");
+            Messages.Insert(0, "");
+            Messages.Insert(0, "");
             //Adapter.DeviceConnected += (sender, e) => Adapter.DisconnectDeviceAsync(e.Device);
-
-            DataRed = new ObservableCollection<BleDataModel>();
-            DataIr = new ObservableCollection<BleDataModel>();
         }
 
         private Task GetPreviousGuidAsync() {
@@ -194,7 +199,6 @@ namespace BLE.Client.ViewModels {
             }
         }
 
-        public List<DeviceListItemViewModel> SystemDevices { get; private set; } = new List<DeviceListItemViewModel>();
 
         public override void Suspend() {
             base.Suspend();
@@ -292,13 +296,14 @@ namespace BLE.Client.ViewModels {
                     if (await ConnectDeviceAsync(device)) {
                         var Service = await device.Device.GetServiceAsync(Guid.Parse("0000180d-0000-1000-8000-00805f9b34fb"));
                         var Characteristic = await Service.GetCharacteristicAsync(Guid.Parse("00002a37-0000-1000-8000-00805f9b34fb"));
-                        //Debug.WriteLine("Canupdate to string                       " + Characteristic.CanUpdate.ToString());
+                        //Debug.WriteLine("jpark318Canupdate to string                       " + Characteristic.CanUpdate.ToString());
                         await Characteristic.StartUpdatesAsync();
                         Characteristic.ValueUpdated += CharacteristicOnValueUpdated;
-                        //Debug.WriteLine("valueofChar                       " + Characteristic.Value);
-                        Messages.Insert(0, "");
-                        Messages.Insert(0, "");
-                        Messages.Insert(0, "");
+
+                        //Debug.WriteLine("jpark318valueofChar           c            " + Characteristic.Value);
+                        //Characteristic.ValueUpdated += CharacteristicOnValueUpdated;
+                        //Debug.WriteLine("jpark318valueofChar       a                " + Characteristic.Value);
+                        //Debug.WriteLine("jpark318valueofChar         nb              " + Characteristic.Value);
                     }
                 });
 
@@ -312,13 +317,12 @@ namespace BLE.Client.ViewModels {
         }
 
         private void CharacteristicOnValueUpdated(object sender, CharacteristicUpdatedEventArgs characteristicUpdatedEventArgs) {
-
             var data = characteristicUpdatedEventArgs.Characteristic.Value;
-            //Debug.WriteLine("                           " + data[0]);
-            //Debug.WriteLine("                           " + data[1]);
+            //Debug.WriteLine("jpark318                           " + data[0]);
+            //Debug.WriteLine("jpark318                           " + data[1]);
             //if ((UInt16)data[0] == 17 && (UInt16)data[1] == 0)
             if (data.Length == 5) {
-                Debug.WriteLine("temperature detected                               5 byte data");
+                Debug.WriteLine("jpark318temperature detected                               5 byte data");
                 var num = (UInt16)data[3] + (UInt16)data[4] * 0.0625;
                 var tempnum = (int)(num * 10);
                 var temp = tempnum * .1;
@@ -328,39 +332,40 @@ namespace BLE.Client.ViewModels {
                     for (int i = 0; i < 5; i++) {
                         red = (UInt16)((data[2 * i + 1]) | data[2 * i] << 8);
                         ir = (UInt16)((data[2 * i + 11]) | data[2 * i + 10] << 8);
-                        //Debug.WriteLine("data:                            " + data.Length);
-                        //Debug.WriteLine("red:                             " + red);
-                        //Debug.WriteLine("ir:                              " + ir);
+                        //Debug.WriteLine("jpark318data:                            " + data.Length);
+                        //Debug.WriteLine("jpark318red:                             " + red);
+                        //Debug.WriteLine("jpark318ir:                              " + ir);
                         Messages[0] = $"red: {red}";
                         Messages[1] = $"ir: {ir}";
-                        if (!(DataRed.Count < 1000)) {
+                        if (!(GraphViewModel.DataRed.Count < 1000)) {
                             Device.BeginInvokeOnMainThread(() => {
-                                DataRed.RemoveAt(0);
+                                GraphViewModel.DataRed.RemoveAt(0);
                             });
                         }
-                        BleDataModel redDataReceived = new BleDataModel(DataRed.Count.ToString(), red);
+                        BleDataModel redDataReceived = new BleDataModel(GraphViewModel.DataRed.Count.ToString(), red);
                         Device.BeginInvokeOnMainThread(() => {
-                            DataRed.Insert(DataRed.Count, redDataReceived);
+                            GraphViewModel.DataRed.Insert(GraphViewModel.DataRed.Count, redDataReceived);
                         });
                         //if (DataRed.Count > 1) {
                         //    minRed = DataRed.Sum(redData => redData.Value) / DataRed.Count;
                         //    maxRed = DataRed.Max(redData => redData.Value);
                         //}
                         //for data received as IR
-                        if (!(DataIr.Count < 1000)) {
+                        if (!(GraphViewModel.DataIr.Count < 1000)) {
                             Device.BeginInvokeOnMainThread(() => {
-                                DataIr.RemoveAt(0);
+                                GraphViewModel.DataIr.RemoveAt(0);
                             });
                         }
-                        BleDataModel irDataReceived = new BleDataModel(DataIr.Count.ToString(), ir);
+                        BleDataModel irDataReceived = new BleDataModel(GraphViewModel.DataIr.Count.ToString(), ir);
                         Device.BeginInvokeOnMainThread(() => {
-                            DataIr.Insert(DataIr.Count, irDataReceived);
+                            GraphViewModel.DataIr.Insert(GraphViewModel.DataIr.Count, irDataReceived);
                         });
                     }
                 }
                 //RaisePropertyChanged(() => CharacteristicValue);
             }
         }
+
 
         private async Task<bool> ConnectDeviceAsync(DeviceListItemViewModel device, bool showPrompt = true) {
             if (showPrompt && !await _userDialogs.ConfirmAsync($"Connect to device '{device.Name}'?")) {
@@ -396,7 +401,7 @@ namespace BLE.Client.ViewModels {
                 device.Update();
             }
         }
-        
+
         private async void ConnectToPreviousDeviceAsync() {
             IDevice device;
             try {
@@ -474,8 +479,6 @@ namespace BLE.Client.ViewModels {
             _userDialogs.Toast($"Disconnected {e.Device.Name}");
         }
 
-        public MvxCommand<DeviceListItemViewModel> CopyGuidCommand => new MvxCommand<DeviceListItemViewModel>(device => {
-            PreviousGuid = device.Id;
-        });
+
     }
 }

@@ -7,7 +7,7 @@
              x:Class="BLE.Client.Pages.GraphPage"
              xmlns:local="clr-namespace:BLE.Client.ViewModels"
              Title="Graph"
-             x:Name="DevicePage"
+             x:Name="GraphPage"
              xmlns:sys="clr-namespace:System;assembly=mscorlib">
   <pages:BasePage.Resources>
     <ResourceDictionary>
@@ -75,7 +75,7 @@
           </chartRed:NumericalAxis.Title>
         </chartRed:NumericalAxis>
       </chartRed:SfChart.SecondaryAxis>
-      <chartRed:FastLineSeries ItemsSource="{Binding DataRed}" XBindingPath="IndexValue" YBindingPath="Value"/>
+      <chartRed:FastLineSeries ItemsSource="{Binding DataRedChart}" XBindingPath="IndexValue" YBindingPath="Value"/>
     </chartRed:SfChart>
     <chartIr:SfChart TranslationY="250" HeightRequest="250">
       <chartIr:SfChart.PrimaryAxis>
@@ -103,7 +103,7 @@
           </chartIr:NumericalAxis.Title>
         </chartIr:NumericalAxis>
       </chartIr:SfChart.SecondaryAxis>
-      <chartIr:FastLineSeries ItemsSource="{Binding DataIr}" XBindingPath="IndexValue" YBindingPath="Value"/>
+      <chartIr:FastLineSeries ItemsSource="{Binding DataIrChart}" XBindingPath="IndexValue" YBindingPath="Value"/>
     </chartIr:SfChart>
     <StackLayout Grid.Row="5" Orientation="Horizontal">
       <Button Text="Connect to devices" Command="{Binding ScanDevices}" HorizontalOptions="FillAndExpand"/>
