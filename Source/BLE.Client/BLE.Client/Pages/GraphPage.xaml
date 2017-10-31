@@ -45,11 +45,59 @@
   </pages:BasePage.Resources>
   <Grid>
     <Grid.RowDefinitions>
-      <RowDefinition Height="Auto"></RowDefinition>
-      <RowDefinition Height="Auto"></RowDefinition>
-      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="50"></RowDefinition>
+      <RowDefinition Height="50"></RowDefinition>
+      <RowDefinition Height="20*"></RowDefinition>
+      <RowDefinition Height="20*"></RowDefinition>
+      <RowDefinition Height="20*"></RowDefinition>
+      <RowDefinition Height="20*"></RowDefinition>
+      <RowDefinition Height="10*"></RowDefinition>
     </Grid.RowDefinitions>
-    <chartRed:SfChart HeightRequest="250">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="50*"></ColumnDefinition>
+      <ColumnDefinition Width="50*"></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+    
+    <ListView Grid.Row="0" Grid.Column="0" ItemsSource="{Binding viewIr}" CachingStrategy="RecycleElement" BackgroundColor="#ffffff">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <Label Text="{Binding .}" VerticalTextAlignment="Center" FontSize="Small"></Label>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+
+    <ListView Grid.Row="1" Grid.Column="0" ItemsSource="{Binding viewRed}" CachingStrategy="RecycleElement" BackgroundColor="#ffffff">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <Label Text="{Binding .}" VerticalTextAlignment="Center" FontSize="Small"></Label>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+
+    <ListView Grid.Row="0" Grid.Column="1" ItemsSource="{Binding viewTemp}" CachingStrategy="RecycleElement" BackgroundColor="#ffffff">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <Label Text="{Binding .}" VerticalTextAlignment="Center" FontSize="Small"></Label>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+    
+    <ListView Grid.Row="1" Grid.Column="1" ItemsSource="{Binding viewSpo2}" CachingStrategy="RecycleElement" BackgroundColor="#ffffff">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <Label Text="{Binding .}" VerticalTextAlignment="Center" FontSize="Small"></Label>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+    <chartRed:SfChart Grid.Row="2" Grid.ColumnSpan="2">
       <chartRed:SfChart.PrimaryAxis>
         <chartRed:NumericalAxis Minimum="0"
                                 Maximum="1000"
@@ -77,7 +125,63 @@
       </chartRed:SfChart.SecondaryAxis>
       <chartRed:FastLineSeries ItemsSource="{Binding DataRed}" XBindingPath="IndexValue" YBindingPath="Value"/>
     </chartRed:SfChart>
-    <chartIr:SfChart TranslationY="250" HeightRequest="250">
+    <chartRed:SfChart Grid.Row="3" Grid.ColumnSpan="2">
+      <chartRed:SfChart.PrimaryAxis>
+        <chartRed:NumericalAxis Minimum="0"
+                                Maximum="1000"
+                                ShowMajorGridLines="false">
+          <chartRed:NumericalAxis.LabelStyle>
+            <chartRed:ChartAxisLabelStyle Font="0.01"/>
+          </chartRed:NumericalAxis.LabelStyle>
+          <!--<chartRed:NumericalAxis.Title>
+                <chartRed:ChartAxisTitle Text="Index"></chartRed:ChartAxisTitle>
+              </chartRed:NumericalAxis.Title>-->
+        </chartRed:NumericalAxis>
+      </chartRed:SfChart.PrimaryAxis>
+      <chartRed:SfChart.SecondaryAxis>
+        <chartRed:NumericalAxis Interval="5000"
+                                Minimum="0"
+                                Maximum="45000"
+                                ShowMajorGridLines="false">
+          <chartRed:NumericalAxis.LabelStyle>
+            <chartRed:ChartAxisLabelStyle Font="0.01"/>
+          </chartRed:NumericalAxis.LabelStyle>
+          <chartRed:NumericalAxis.Title>
+            <chartRed:ChartAxisTitle Text="Red"></chartRed:ChartAxisTitle>
+          </chartRed:NumericalAxis.Title>
+        </chartRed:NumericalAxis>
+      </chartRed:SfChart.SecondaryAxis>
+      <chartRed:FastLineSeries ItemsSource="{Binding DataRed}" XBindingPath="IndexValue" YBindingPath="Value"/>
+    </chartRed:SfChart>
+    <chartRed:SfChart Grid.Row="4" Grid.ColumnSpan="2">
+      <chartRed:SfChart.PrimaryAxis>
+        <chartRed:NumericalAxis Minimum="0"
+                                Maximum="1000"
+                                ShowMajorGridLines="false">
+          <chartRed:NumericalAxis.LabelStyle>
+            <chartRed:ChartAxisLabelStyle Font="0.01"/>
+          </chartRed:NumericalAxis.LabelStyle>
+          <!--<chartRed:NumericalAxis.Title>
+                <chartRed:ChartAxisTitle Text="Index"></chartRed:ChartAxisTitle>
+              </chartRed:NumericalAxis.Title>-->
+        </chartRed:NumericalAxis>
+      </chartRed:SfChart.PrimaryAxis>
+      <chartRed:SfChart.SecondaryAxis>
+        <chartRed:NumericalAxis Interval="5000"
+                                Minimum="0"
+                                Maximum="45000"
+                                ShowMajorGridLines="false">
+          <chartRed:NumericalAxis.LabelStyle>
+            <chartRed:ChartAxisLabelStyle Font="0.01"/>
+          </chartRed:NumericalAxis.LabelStyle>
+          <chartRed:NumericalAxis.Title>
+            <chartRed:ChartAxisTitle Text="Red"></chartRed:ChartAxisTitle>
+          </chartRed:NumericalAxis.Title>
+        </chartRed:NumericalAxis>
+      </chartRed:SfChart.SecondaryAxis>
+      <chartRed:FastLineSeries ItemsSource="{Binding DataRed}" XBindingPath="IndexValue" YBindingPath="Value"/>
+    </chartRed:SfChart>
+    <chartIr:SfChart Grid.Row="5" Grid.ColumnSpan="2">
       <chartIr:SfChart.PrimaryAxis>
         <chartIr:NumericalAxis Minimum="0"
                                 Maximum="1000"
@@ -105,7 +209,7 @@
       </chartIr:SfChart.SecondaryAxis>
       <chartIr:FastLineSeries ItemsSource="{Binding DataIr}" XBindingPath="IndexValue" YBindingPath="Value"/>
     </chartIr:SfChart>
-    <StackLayout Grid.Row="5" Orientation="Horizontal">
+    <StackLayout Grid.Row="6" Orientation="Horizontal">
       <Button Text="Connect to devices" Command="{Binding ScanDevices}" HorizontalOptions="FillAndExpand"/>
     </StackLayout>
   </Grid>

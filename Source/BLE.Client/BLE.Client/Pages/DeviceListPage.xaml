@@ -53,20 +53,28 @@
           <RowDefinition Height="Auto"></RowDefinition>
           <RowDefinition Height="*"></RowDefinition>
           <RowDefinition Height="Auto"></RowDefinition>
+          <RowDefinition Height="40*"></RowDefinition>
           <RowDefinition Height="Auto"></RowDefinition>
+          <RowDefinition Height="40*"></RowDefinition>
           <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
         <StackLayout BackgroundColor="#FF6969" Padding="10" IsVisible="{Binding IsStateOn, Converter={StaticResource InverseBoolean}}">
           <Label Text="{Binding StateText}" FontSize="18" HorizontalTextAlignment="Center"></Label>
         </StackLayout>
-        <ListView Grid.Row="1" ItemsSource="{Binding Devices}" SelectedItem="{Binding SelectedDevice, Mode=TwoWay}"
-                 IsPullToRefreshEnabled="True"
-                 RefreshCommand="{Binding RefreshCommand}"
-                 IsRefreshing="{Binding IsRefreshing, Mode=OneWay}"
-                 RowHeight="80"
+        
+        <Label Grid.Row="2" Text="Master"></Label>
+        <ListView Grid.Row="3" ItemsSource="{Binding Devices}" SelectedItem="{Binding SelectedDevice, Mode=TwoWay}"
+                 RowHeight="50"
                  ItemTemplate="{StaticResource DeviceItemTemplate}">
         </ListView>
-        <StackLayout Grid.Row="4" Orientation="Horizontal">
+        
+        <Label Grid.Row="4" Text="Master"></Label>
+        <ListView Grid.Row="5" ItemsSource="{Binding Devices}" SelectedItem="{Binding SelectedDevice, Mode=TwoWay}"
+         RowHeight="50"
+         ItemTemplate="{StaticResource DeviceItemTemplate}">
+        </ListView>
+        
+        <StackLayout Grid.Row="6" Orientation="Horizontal">
           <Button Text="Refresh" Command="{Binding RefreshCommand}" HorizontalOptions="FillAndExpand"/>
           <!--<Button Text="Connect to previous" Command="{Binding ConnectToPreviousCommand}" HorizontalOptions="FillAndExpand"/>-->
           <Button Text="Stop Scan" Command="{Binding StopScanCommand}" HorizontalOptions="End"/>
@@ -147,12 +155,12 @@
       <Grid>
         <Grid.RowDefinitions>
           <RowDefinition Height="auto"></RowDefinition>
-          <RowDefinition Height="*"></RowDefinition>      
+          <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <ListView Grid.Row="1" ItemsSource="{Binding Messages}" CachingStrategy="RecycleElement">
           <ListView.ItemTemplate>
             <DataTemplate>
-              <ViewCell Height="50">  
+              <ViewCell Height="50">
                 <Label Text="{Binding .}" VerticalTextAlignment="Center" FontSize="Small"></Label>
               </ViewCell>
             </DataTemplate>

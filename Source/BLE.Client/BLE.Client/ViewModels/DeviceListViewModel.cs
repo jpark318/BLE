@@ -37,9 +37,6 @@ namespace BLE.Client.ViewModels {
         public string StateText => GetStateText();
         public List<DeviceListItemViewModel> SystemDevices { get; private set; } = new List<DeviceListItemViewModel>();
         public ObservableCollection<string> Messages { get; } = new ObservableCollection<string>();
-        //public ObservableCollection<BleDataModel> DataRed { get; set; }
-        //public ObservableCollection<BleDataModel> DataIr { get; set; }
-        //public ObservableCollection<BleDataModel> DataTemp { get; set; }
         public ObservableCollection<DeviceListItemViewModel> Devices { get; set; } = new ObservableCollection<DeviceListItemViewModel>();
         public MvxCommand RefreshCommand => new MvxCommand(() => TryStartScanning(true));
         public MvxCommand<DeviceListItemViewModel> DisconnectCommand => new MvxCommand<DeviceListItemViewModel>(DisconnectDevice);
