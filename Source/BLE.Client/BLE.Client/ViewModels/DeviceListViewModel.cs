@@ -27,8 +27,6 @@ namespace BLE.Client.ViewModels {
         private Guid _previousGuid;
         private CancellationTokenSource _cancellationTokenSource;
         private Byte[] CharacteristicValue = new Byte[20];
-        private UInt16 red;
-        private UInt16 ir;
         bool _useAutoConnect;
         public double maxRed { get; set; } = 60000;
         public double minRed { get; set; } = 60000;
@@ -298,7 +296,6 @@ namespace BLE.Client.ViewModels {
                         var Characteristic = await Service.GetCharacteristicAsync(Guid.Parse("00002a37-0000-1000-8000-00805f9b34fb"));
                         //Debug.WriteLine("jpark318Canupdate to string                       " + Characteristic.CanUpdate.ToString());
                         await Characteristic.StartUpdatesAsync();
-                        Characteristic.ValueUpdated += CharacteristicOnValueUpdated;
 
                         //Debug.WriteLine("jpark318valueofChar           c            " + Characteristic.Value);
                         //Characteristic.ValueUpdated += CharacteristicOnValueUpdated;
@@ -316,55 +313,6 @@ namespace BLE.Client.ViewModels {
             _userDialogs.ActionSheet(config);
         }
 
-        private void CharacteristicOnValueUpdated(object sender, CharacteristicUpdatedEventArgs characteristicUpdatedEventArgs) {
-            var data = characteristicUpdatedEventArgs.Characteristic.Value;
-            //Debug.WriteLine("jpark318                           " + data[0]);
-            //Debug.WriteLine("jpark318                           " + data[1]);
-            //if ((UInt16)data[0] == 17 && (UInt16)data[1] == 0)
-            if (data.Length == 5) {
-                Debug.WriteLine("jpark318temperature detected                               5 byte data");
-                var num = (UInt16)data[3] + (UInt16)data[4] * 0.0625;
-                var tempnum = (int)(num * 10);
-                var temp = tempnum * .1;
-                Messages[2] = $"temp: {temp}";
-            } else {
-                if (data.Length == 20) {
-                    for (int i = 0; i < 5; i++) {
-                        red = (UInt16)((data[2 * i + 1]) | data[2 * i] << 8);
-                        ir = (UInt16)((data[2 * i + 11]) | data[2 * i + 10] << 8);
-                        //Debug.WriteLine("jpark318data:                            " + data.Length);
-                        //Debug.WriteLine("jpark318red:                             " + red);
-                        //Debug.WriteLine("jpark318ir:                              " + ir);
-                        Messages[0] = $"red: {red}";
-                        Messages[1] = $"ir: {ir}";
-                        if (!(GraphViewModel.DataRed.Count < 1000)) {
-                            Device.BeginInvokeOnMainThread(() => {
-                                GraphViewModel.DataRed.RemoveAt(0);
-                            });
-                        }
-                        BleDataModel redDataReceived = new BleDataModel(GraphViewModel.DataRed.Count.ToString(), red);
-                        Device.BeginInvokeOnMainThread(() => {
-                            GraphViewModel.DataRed.Insert(GraphViewModel.DataRed.Count, redDataReceived);
-                        });
-                        //if (DataRed.Count > 1) {
-                        //    minRed = DataRed.Sum(redData => redData.Value) / DataRed.Count;
-                        //    maxRed = DataRed.Max(redData => redData.Value);
-                        //}
-                        //for data received as IR
-                        if (!(GraphViewModel.DataIr.Count < 1000)) {
-                            Device.BeginInvokeOnMainThread(() => {
-                                GraphViewModel.DataIr.RemoveAt(0);
-                            });
-                        }
-                        BleDataModel irDataReceived = new BleDataModel(GraphViewModel.DataIr.Count.ToString(), ir);
-                        Device.BeginInvokeOnMainThread(() => {
-                            GraphViewModel.DataIr.Insert(GraphViewModel.DataIr.Count, irDataReceived);
-                        });
-                    }
-                }
-                //RaisePropertyChanged(() => CharacteristicValue);
-            }
-        }
 
 
         private async Task<bool> ConnectDeviceAsync(DeviceListItemViewModel device, bool showPrompt = true) {

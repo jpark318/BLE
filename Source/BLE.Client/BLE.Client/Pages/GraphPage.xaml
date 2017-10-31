@@ -75,7 +75,7 @@
           </chartRed:NumericalAxis.Title>
         </chartRed:NumericalAxis>
       </chartRed:SfChart.SecondaryAxis>
-      <chartRed:FastLineSeries ItemsSource="{Binding DataRedChart}" XBindingPath="IndexValue" YBindingPath="Value"/>
+      <chartRed:FastLineSeries ItemsSource="{Binding DataRed}" XBindingPath="IndexValue" YBindingPath="Value"/>
     </chartRed:SfChart>
     <chartIr:SfChart TranslationY="250" HeightRequest="250">
       <chartIr:SfChart.PrimaryAxis>
@@ -103,22 +103,10 @@
           </chartIr:NumericalAxis.Title>
         </chartIr:NumericalAxis>
       </chartIr:SfChart.SecondaryAxis>
-      <chartIr:FastLineSeries ItemsSource="{Binding DataIrChart}" XBindingPath="IndexValue" YBindingPath="Value"/>
+      <chartIr:FastLineSeries ItemsSource="{Binding DataIr}" XBindingPath="IndexValue" YBindingPath="Value"/>
     </chartIr:SfChart>
     <StackLayout Grid.Row="5" Orientation="Horizontal">
       <Button Text="Connect to devices" Command="{Binding ScanDevices}" HorizontalOptions="FillAndExpand"/>
     </StackLayout>
-    <!--<StackLayout BackgroundColor="#FF6969" Padding="10" IsVisible="{Binding IsStateOn, Converter={StaticResource InverseBoolean}}">
-      <Label Text="{Binding StateText}" FontSize="18" HorizontalTextAlignment="Center"></Label>
-    </StackLayout>
-    <ListView Grid.Row="1" ItemsSource="{Binding Devices}" SelectedItem="{Binding SelectedDevice, Mode=TwoWay}"
-             IsPullToRefreshEnabled="True"
-             RefreshCommand="{Binding RefreshCommand}"
-             IsRefreshing="{Binding IsRefreshing, Mode=OneWay}"
-             RowHeight="80"
-             ItemTemplate="{StaticResource DeviceItemTemplate}">
-    </ListView>
-
-    </StackLayout>-->
   </Grid>
 </pages:BasePage>

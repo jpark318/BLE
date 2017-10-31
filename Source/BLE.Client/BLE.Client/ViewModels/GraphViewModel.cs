@@ -27,13 +27,12 @@ namespace BLE.Client.ViewModels {
         public double minRed { get; set; } = 60000;
         public double maxIr { get; set; } = 0;
         public double minIr { get; set; } = 0;
+        private UInt16 red;
+        private UInt16 ir;
         public bool IsRefreshing => Adapter.IsScanning;
         public bool IsStateOn => _bluetoothLe.IsOn;
-        public ObservableCollection<string> Messages { get; } = new ObservableCollection<string>();
-        public static ObservableCollection<BleDataModel> DataRed { get; set; }
-        public static ObservableCollection<BleDataModel> DataIr { get; set; }
-        public ObservableCollection<BleDataModel> DataRedChart { get; set; }
-        public ObservableCollection<BleDataModel> DataIrChart { get; set; }
+        public ObservableCollection<BleDataModel> DataRed { get; set; }
+        public ObservableCollection<BleDataModel> DataIr { get; set; }
         public ObservableCollection<BleDataModel> DataTemp { get; set; }
         public MvxCommand ScanDevices => new MvxCommand(() => ScanDevicesPage());
         public ObservableCollection<DeviceListItemViewModel> Devices { get; set; } = new ObservableCollection<DeviceListItemViewModel>();
@@ -51,31 +50,66 @@ namespace BLE.Client.ViewModels {
 
             DataRed = new ObservableCollection<BleDataModel>();
             DataIr = new ObservableCollection<BleDataModel>();
-            DataRedChart = new ObservableCollection<BleDataModel>();
-            DataIrChart = new ObservableCollection<BleDataModel>();
             DataRed.Insert(0, new BleDataModel("0", 1));
             DataIr.Insert(0, new BleDataModel("0", 1));
-            DataRedChart.Insert(0, new BleDataModel("0", 1));
-            DataIrChart.Insert(0, new BleDataModel("0", 1));
             Adapter.DeviceConnected += (sender, e) => FillInData(e.Device); ;
         }
 
         private async void FillInData(IDevice device) {
                 var Service = await device.GetServiceAsync(Guid.Parse("0000180d-0000-1000-8000-00805f9b34fb"));
                 var Characteristic = await Service.GetCharacteristicAsync(Guid.Parse("00002a37-0000-1000-8000-00805f9b34fb"));
-                Characteristic.ValueUpdated += FillData;
+                Characteristic.ValueUpdated += CharacteristicOnValueUpdated;
         }
 
-        private void FillData(object sender, CharacteristicUpdatedEventArgs characteristicUpdatedEventArgs) {
-            DataRedChart = DataRed;
-            DataIrChart = DataIr;
-            Debug.WriteLine("DataRedChart /t" + DataRedChart.Last().Value);
-            Debug.WriteLine("DataIrChart /t" + DataIrChart.Last().Value);
+        private void CharacteristicOnValueUpdated(object sender, CharacteristicUpdatedEventArgs characteristicUpdatedEventArgs) {
+            var data = characteristicUpdatedEventArgs.Characteristic.Value;
+            //Debug.WriteLine("jpark318                           " + data[0]);
+            //Debug.WriteLine("jpark318                           " + data[1]);
+            //if ((UInt16)data[0] == 17 && (UInt16)data[1] == 0)
+            if (data.Length == 5) {
+                Debug.WriteLine("jpark318temperature detected                               5 byte data");
+                var num = (UInt16)data[3] + (UInt16)data[4] * 0.0625;
+                var tempnum = (int)(num * 10);
+                var temp = tempnum * .1;
+            } else {
+                if (data.Length == 20) {
+                    for (int i = 0; i < 5; i++) {
+                        red = (UInt16)((data[2 * i + 1]) | data[2 * i] << 8);
+                        ir = (UInt16)((data[2 * i + 11]) | data[2 * i + 10] << 8);
+                        //Debug.WriteLine("jpark318data:                            " + data.Length);
+                        //Debug.WriteLine("jpark318red:                             " + red);
+                        //Debug.WriteLine("jpark318ir:                              " + ir);
+                        if (!(DataRed.Count < 1000)) {
+                            Device.BeginInvokeOnMainThread(() => {
+                                DataRed.RemoveAt(0);
+                            });
+                        }
+                        BleDataModel redDataReceived = new BleDataModel(DataRed.Count.ToString(), red);
+                        Device.BeginInvokeOnMainThread(() => {
+                            DataRed.Insert(DataRed.Count, redDataReceived);
+                        });
+                        //if (DataRed.Count > 1) {
+                        //    minRed = DataRed.Sum(redData => redData.Value) / DataRed.Count;
+                        //    maxRed = DataRed.Max(redData => redData.Value);
+                        //}
+                        //for data received as IR
+                        if (!(DataIr.Count < 1000)) {
+                            Device.BeginInvokeOnMainThread(() => {
+                                DataIr.RemoveAt(0);
+                            });
+                        }
+                        BleDataModel irDataReceived = new BleDataModel(DataIr.Count.ToString(), ir);
+                        Device.BeginInvokeOnMainThread(() => {
+                            DataIr.Insert(DataIr.Count, irDataReceived);
+                        });
+                    }
+                }
+                //RaisePropertyChanged(() => CharacteristicValue);
+            }
         }
 
         private void ScanDevicesPage() {
             Debug.WriteLine("thisisdatared" + DataRed.Count);
-            Debug.WriteLine("thisisdatared" + DataRedChart.Count);
             ShowViewModel<DeviceListViewModel>(new MvxBundle(new Dictionary<string, string> { }));
         }
     }
