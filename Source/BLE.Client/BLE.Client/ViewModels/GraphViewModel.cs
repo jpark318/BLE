@@ -31,6 +31,7 @@ namespace BLE.Client.ViewModels {
         private UInt16 ir;
         public bool IsRefreshing => Adapter.IsScanning;
         public bool IsStateOn => _bluetoothLe.IsOn;
+        public static bool updateMaster, updateSlave;
         public ObservableCollection<BleDataModel> DataRed { get; set; } = new ObservableCollection<BleDataModel>();
         public ObservableCollection<BleDataModel> DataIr { get; set; } = new ObservableCollection<BleDataModel>();
         public ObservableCollection<BleDataModel> DataTemp { get; set; }
@@ -59,12 +60,12 @@ namespace BLE.Client.ViewModels {
         }
 
         private async void FillInData(IDevice device) {
-            var Service = await device.GetServiceAsync(Guid.Parse("0000180d-0000-1000-8000-00805f9b34fb"));
-            var Characteristic = await Service.GetCharacteristicAsync(Guid.Parse("00002a37-0000-1000-8000-00805f9b34fb"));
-            Characteristic.ValueUpdated += CharacteristicOnValueUpdated;
+                var Service = await device.GetServiceAsync(Guid.Parse("0000180d-0000-1000-8000-00805f9b34fb"));
+                var Characteristic = await Service.GetCharacteristicAsync(Guid.Parse("00002a37-0000-1000-8000-00805f9b34fb"));
+                Characteristic.ValueUpdated += CharacteristicOnSlaveValueUpdated;
         }
 
-        private void CharacteristicOnValueUpdated(object sender, CharacteristicUpdatedEventArgs characteristicUpdatedEventArgs) {
+        private void CharacteristicOnSlaveValueUpdated(object sender, CharacteristicUpdatedEventArgs characteristicUpdatedEventArgs) {
             var data = characteristicUpdatedEventArgs.Characteristic.Value;
             if (data.Length == 5) {
                 Debug.WriteLine("jpark318temperature detected                               5 byte data");
@@ -101,6 +102,10 @@ namespace BLE.Client.ViewModels {
                 }
                 //RaisePropertyChanged(() => CharacteristicValue);
             }
+        }
+
+        private void CharacteristicOnMasterValueUpdated(object sender, CharacteristicUpdatedEventArgs characteristicUpdatedEventArgs) {
+            var data = characteristicUpdatedEventArgs.Characteristic.Value;
         }
 
         private void ScanDevicesPage() {

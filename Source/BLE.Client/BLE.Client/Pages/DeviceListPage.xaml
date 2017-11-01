@@ -28,9 +28,14 @@
             </Grid.ColumnDefinitions>
             <Grid.Triggers>
               <DataTrigger TargetType="Grid"
-                           Binding="{Binding IsConnected}"
+                           Binding="{Binding IsMaster}"
                            Value="true">
-                <Setter Property="BackgroundColor" Value="#1A00FF00"></Setter>
+                <Setter Property="BackgroundColor" Value="#1AFF0000"></Setter>
+              </DataTrigger>
+              <DataTrigger TargetType="Grid"
+                           Binding="{Binding IsSlave}"
+                           Value="true">
+                <Setter Property="BackgroundColor" Value="#1A0000FF"></Setter>
               </DataTrigger>
             </Grid.Triggers>
             <StackLayout Orientation="Vertical" VerticalOptions="Center">
@@ -63,13 +68,13 @@
         </StackLayout>
         
         <Label Grid.Row="2" Text="Master"></Label>
-        <ListView Grid.Row="3" ItemsSource="{Binding Devices}" SelectedItem="{Binding SelectedDevice, Mode=TwoWay}"
+        <ListView Grid.Row="3" ItemsSource="{Binding Devices}" SelectedItem="{Binding SelectedDeviceAsMaster, Mode=TwoWay}"
                  RowHeight="50"
                  ItemTemplate="{StaticResource DeviceItemTemplate}">
         </ListView>
         
-        <Label Grid.Row="4" Text="Master"></Label>
-        <ListView Grid.Row="5" ItemsSource="{Binding Devices}" SelectedItem="{Binding SelectedDevice, Mode=TwoWay}"
+        <Label Grid.Row="4" Text="Slave"></Label>
+        <ListView Grid.Row="5" ItemsSource="{Binding Devices}" SelectedItem="{Binding SelectedDeviceAsSlave, Mode=TwoWay}"
          RowHeight="50"
          ItemTemplate="{StaticResource DeviceItemTemplate}">
         </ListView>

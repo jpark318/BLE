@@ -53,16 +53,24 @@ namespace BLE.Client.ViewModels {
             }
         }
 
-        public DeviceListItemViewModel SelectedDevice {
+        public DeviceListItemViewModel SelectedDeviceAsMaster {
             get { return null; }
             set {
                 if (value != null) {
-                    HandleSelectedDevice(value);
+                    HandleSelectedDevice(value, 0);
                 }
                 RaisePropertyChanged();
             }
         }
-
+        public DeviceListItemViewModel SelectedDeviceAsSlave {
+            get { return null; }
+            set {
+                if (value != null) {
+                    HandleSelectedDevice(value, 1);
+                }
+                RaisePropertyChanged();
+            }
+        }
         public bool UseAutoConnect {
             get {
                 return _useAutoConnect;
@@ -251,6 +259,10 @@ namespace BLE.Client.ViewModels {
 
         private async void DisconnectDevice(DeviceListItemViewModel device) {
             try {
+                device.IsMaster = false;
+                device.IsSlave = false;
+                GraphViewModel.updateMaster = false;
+                GraphViewModel.updateSlave = false;
                 if (!device.IsConnected)
                     return;
 
@@ -265,7 +277,7 @@ namespace BLE.Client.ViewModels {
             }
         }
 
-        private void HandleSelectedDevice(DeviceListItemViewModel device) {
+        private void HandleSelectedDevice(DeviceListItemViewModel device, int type) {
             var config = new ActionSheetConfig();
 
             if (device.IsConnected) {
@@ -289,6 +301,19 @@ namespace BLE.Client.ViewModels {
             } else {
                 config.Add("Connect", async () => {
                     if (await ConnectDeviceAsync(device)) {
+                        switch (type) {
+                            case 1:
+                                device.IsSlave = true;
+                                GraphViewModel.updateSlave = true;
+                                Debug.WriteLine("jpark318 is Slave" + device.IsSlave);
+                                break;
+                            case 0:
+                                device.IsMaster = true;
+                                GraphViewModel.updateMaster = true;
+                                Debug.WriteLine("jpark318 is Master" + device.IsMaster);
+                                break;
+                        }
+
                         var Service = await device.Device.GetServiceAsync(Guid.Parse("0000180d-0000-1000-8000-00805f9b34fb"));
                         var Characteristic = await Service.GetCharacteristicAsync(Guid.Parse("00002a37-0000-1000-8000-00805f9b34fb"));
                         //Debug.WriteLine("jpark318Canupdate to string                       " + Characteristic.CanUpdate.ToString());
