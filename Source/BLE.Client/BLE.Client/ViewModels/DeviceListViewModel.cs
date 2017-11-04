@@ -28,6 +28,7 @@ namespace BLE.Client.ViewModels {
         private CancellationTokenSource _cancellationTokenSource;
         private Byte[] CharacteristicValue = new Byte[20];
         bool _useAutoConnect;
+        public static int deviceType;
         public double maxRed { get; set; } = 60000;
         public double minRed { get; set; } = 60000;
         public double maxIr { get; set; } = 0;
@@ -57,7 +58,7 @@ namespace BLE.Client.ViewModels {
             get { return null; }
             set {
                 if (value != null) {
-                    HandleSelectedDevice(value, 0);
+                    HandleSelectedDevice(value, 2);
                 }
                 RaisePropertyChanged();
             }
@@ -109,6 +110,7 @@ namespace BLE.Client.ViewModels {
             Messages.Insert(0, "");
             Messages.Insert(0, "");
             Messages.Insert(0, "");
+            TryStartScanning(true);
             //Adapter.DeviceConnected += (sender, e) => Adapter.DisconnectDeviceAsync(e.Device);
         }
 
@@ -261,8 +263,6 @@ namespace BLE.Client.ViewModels {
             try {
                 device.IsMaster = false;
                 device.IsSlave = false;
-                GraphViewModel.updateMaster = false;
-                GraphViewModel.updateSlave = false;
                 if (!device.IsConnected)
                     return;
 
@@ -278,8 +278,8 @@ namespace BLE.Client.ViewModels {
         }
 
         private void HandleSelectedDevice(DeviceListItemViewModel device, int type) {
+            //type = 1 if slave, type = 2 if master.
             var config = new ActionSheetConfig();
-
             if (device.IsConnected) {
                 config.Add("Update RSSI", async () => {
                     try {
@@ -300,29 +300,34 @@ namespace BLE.Client.ViewModels {
                 config.Destructive = new ActionSheetOption("Disconnect", () => DisconnectCommand.Execute(device));
             } else {
                 config.Add("Connect", async () => {
+                    deviceType = type;
                     if (await ConnectDeviceAsync(device)) {
                         switch (type) {
                             case 1:
                                 device.IsSlave = true;
-                                GraphViewModel.updateSlave = true;
+                                GraphViewModel.SlaveDeviceId = device.Device.Id;
+                                Debug.WriteLine("jpark318" + device.Device.Id);
+                                Debug.WriteLine("jpark318" + GraphViewModel.SlaveDeviceId);
+
+                                var ServiceSlave = await device.Device.GetServiceAsync(Guid.Parse("0000180d-0000-1000-8000-00805f9b34fb"));
+                                var CharacteristicSlave = await ServiceSlave.GetCharacteristicAsync(Guid.Parse("00002a37-0000-1000-8000-00805f9b34fb"));
+                                await CharacteristicSlave.StartUpdatesAsync();
                                 Debug.WriteLine("jpark318 is Slave" + device.IsSlave);
+                                deviceType = 0;
                                 break;
-                            case 0:
+                            case 2:
                                 device.IsMaster = true;
-                                GraphViewModel.updateMaster = true;
+                                GraphViewModel.MasterDeviceId = device.Device.Id;
+                                Debug.WriteLine("jpark318" + device.Device.Id);
+                                Debug.WriteLine("jpark318" + GraphViewModel.SlaveDeviceId);
+
+                                var ServiceMaster = await device.Device.GetServiceAsync(Guid.Parse("0000180d-0000-1000-8000-00805f9b34fb"));
+                                var CharacteristicMaster = await ServiceMaster.GetCharacteristicAsync(Guid.Parse("00002a37-0000-1000-8000-00805f9b34fb"));
+                                await CharacteristicMaster.StartUpdatesAsync();
                                 Debug.WriteLine("jpark318 is Master" + device.IsMaster);
+                                deviceType = 0;
                                 break;
                         }
-
-                        var Service = await device.Device.GetServiceAsync(Guid.Parse("0000180d-0000-1000-8000-00805f9b34fb"));
-                        var Characteristic = await Service.GetCharacteristicAsync(Guid.Parse("00002a37-0000-1000-8000-00805f9b34fb"));
-                        //Debug.WriteLine("jpark318Canupdate to string                       " + Characteristic.CanUpdate.ToString());
-                        await Characteristic.StartUpdatesAsync();
-
-                        //Debug.WriteLine("jpark318valueofChar           c            " + Characteristic.Value);
-                        //Characteristic.ValueUpdated += CharacteristicOnValueUpdated;
-                        //Debug.WriteLine("jpark318valueofChar       a                " + Characteristic.Value);
-                        //Debug.WriteLine("jpark318valueofChar         nb              " + Characteristic.Value);
                     }
                 });
 

@@ -18,6 +18,12 @@ namespace BLE.Client.ViewModels
         public DeviceListItemViewModel(IDevice device)
         {
             Device = device;
+            if (GraphViewModel.MasterDeviceId == Id) {
+                IsMaster = true;
+            }
+            if (GraphViewModel.SlaveDeviceId == Id) {
+                IsSlave = true;
+            }
         }
 
         public void Update(IDevice newDevice = null)

@@ -73,7 +73,7 @@
                  ItemTemplate="{StaticResource DeviceItemTemplate}">
         </ListView>
         
-        <Label Grid.Row="4" Text="Slave"></Label>
+        <Label Grid.Row="4" Text="Slave" Font="10"></Label>
         <ListView Grid.Row="5" ItemsSource="{Binding Devices}" SelectedItem="{Binding SelectedDeviceAsSlave, Mode=TwoWay}"
          RowHeight="50"
          ItemTemplate="{StaticResource DeviceItemTemplate}">
@@ -156,7 +156,7 @@
         </chartIr:SfChart>
       </Grid>
     </pages:BasePage>-->
-    <pages:BasePage Title="Data">
+    <!--<pages:BasePage Title="Data">
       <Grid>
         <Grid.RowDefinitions>
           <RowDefinition Height="auto"></RowDefinition>
@@ -172,6 +172,6 @@
           </ListView.ItemTemplate>
         </ListView>
       </Grid>
-    </pages:BasePage>
+    </pages:BasePage>-->
   </pages:BaseTabbedPage.Children>
 </pages:BaseTabbedPage>

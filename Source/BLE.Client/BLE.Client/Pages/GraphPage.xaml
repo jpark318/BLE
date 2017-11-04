@@ -4,45 +4,13 @@
              xmlns:pages="clr-namespace:BLE.Client.Pages;assembly=BLE.Client"
              xmlns:chartRed="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
              xmlns:chartIr="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+             xmlns:chartEcg="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+             xmlns:chartScg="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
              x:Class="BLE.Client.Pages.GraphPage"
              xmlns:local="clr-namespace:BLE.Client.ViewModels"
              Title="Graph"
              x:Name="GraphPage"
              xmlns:sys="clr-namespace:System;assembly=mscorlib">
-  <pages:BasePage.Resources>
-    <ResourceDictionary>
-      <DataTemplate x:Key="DeviceItemTemplate">
-        <ViewCell>
-          <ViewCell.ContextActions>
-            <MenuItem Command="{Binding Path=BindingContext.DisconnectCommand, Source={x:Reference DevicePage}}"
-                      CommandParameter="{Binding .}" IsDestructive="True"
-                      Text="Disconnect"/>
-          </ViewCell.ContextActions>
-          <Grid>
-            <Grid.ColumnDefinitions>
-              <ColumnDefinition></ColumnDefinition>
-              <ColumnDefinition Width="Auto"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Grid.Triggers>
-              <DataTrigger TargetType="Grid"
-                           Binding="{Binding IsConnected}"
-                           Value="true">
-                <Setter Property="BackgroundColor" Value="#1A00FF00"></Setter>
-              </DataTrigger>
-            </Grid.Triggers>
-            <StackLayout Orientation="Vertical" VerticalOptions="Center">
-              <Label Text="{Binding Name}" FontSize="Large" />
-              <Label Text="{Binding Id, StringFormat='{0}'}" TextColor="Gray" FontSize="Small"/>
-            </StackLayout>
-            <Label Grid.Column="1"
-                   Margin="10"
-                   Text="{Binding Rssi}"
-                   VerticalTextAlignment="Center"></Label>
-          </Grid>
-        </ViewCell>
-      </DataTemplate>
-    </ResourceDictionary>
-  </pages:BasePage.Resources>
   <Grid>
     <Grid.RowDefinitions>
       <RowDefinition Height="50"></RowDefinition>
@@ -58,7 +26,7 @@
       <ColumnDefinition Width="50*"></ColumnDefinition>
     </Grid.ColumnDefinitions>
     
-    <ListView Grid.Row="0" Grid.Column="0" ItemsSource="{Binding viewIr}" CachingStrategy="RecycleElement" BackgroundColor="#ffffff">
+    <ListView Grid.Row="0" Grid.Column="0" ItemsSource="{Binding ViewIr}" CachingStrategy="RecycleElement" BackgroundColor="#ffffff">
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>
@@ -68,7 +36,7 @@
       </ListView.ItemTemplate>
     </ListView>
 
-    <ListView Grid.Row="1" Grid.Column="0" ItemsSource="{Binding viewRed}" CachingStrategy="RecycleElement" BackgroundColor="#ffffff">
+    <ListView Grid.Row="1" Grid.Column="0" ItemsSource="{Binding ViewRed}" CachingStrategy="RecycleElement" BackgroundColor="#ffffff">
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>
@@ -78,7 +46,7 @@
       </ListView.ItemTemplate>
     </ListView>
 
-    <ListView Grid.Row="0" Grid.Column="1" ItemsSource="{Binding viewTemp}" CachingStrategy="RecycleElement" BackgroundColor="#ffffff">
+    <ListView Grid.Row="0" Grid.Column="1" ItemsSource="{Binding ViewTemp}" CachingStrategy="RecycleElement" BackgroundColor="#ffffff">
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>
@@ -97,66 +65,66 @@
         </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>
-    <chartRed:SfChart Grid.Row="2" Grid.ColumnSpan="2">
-      <chartRed:SfChart.PrimaryAxis>
-        <chartRed:NumericalAxis Minimum="0"
-                                Maximum="1000"
+    <chartEcg:SfChart Grid.Row="2" Grid.ColumnSpan="2">
+      <chartEcg:SfChart.PrimaryAxis>
+        <chartEcg:NumericalAxis Minimum="0"
+                                Maximum="{Binding PrimalAxisMax}"
                                 ShowMajorGridLines="false">
-          <chartRed:NumericalAxis.LabelStyle>
-            <chartRed:ChartAxisLabelStyle Font="0.01"/>
-          </chartRed:NumericalAxis.LabelStyle>
+          <chartEcg:NumericalAxis.LabelStyle>
+            <chartEcg:ChartAxisLabelStyle Font="0.01"/>
+          </chartEcg:NumericalAxis.LabelStyle>
           <!--<chartRed:NumericalAxis.Title>
                 <chartRed:ChartAxisTitle Text="Index"></chartRed:ChartAxisTitle>
               </chartRed:NumericalAxis.Title>-->
-        </chartRed:NumericalAxis>
-      </chartRed:SfChart.PrimaryAxis>
-      <chartRed:SfChart.SecondaryAxis>
-        <chartRed:NumericalAxis Interval="5000"
+        </chartEcg:NumericalAxis>
+      </chartEcg:SfChart.PrimaryAxis>
+      <chartEcg:SfChart.SecondaryAxis>
+        <chartEcg:NumericalAxis Interval="5000"
                                 Minimum="0"
                                 Maximum="45000"
                                 ShowMajorGridLines="false">
-          <chartRed:NumericalAxis.LabelStyle>
-            <chartRed:ChartAxisLabelStyle Font="0.01"/>
-          </chartRed:NumericalAxis.LabelStyle>
-          <chartRed:NumericalAxis.Title>
-            <chartRed:ChartAxisTitle Text="Red"></chartRed:ChartAxisTitle>
-          </chartRed:NumericalAxis.Title>
-        </chartRed:NumericalAxis>
-      </chartRed:SfChart.SecondaryAxis>
-      <chartRed:FastLineSeries ItemsSource="{Binding DataRed}" XBindingPath="IndexValue" YBindingPath="Value"/>
-    </chartRed:SfChart>
-    <chartRed:SfChart Grid.Row="3" Grid.ColumnSpan="2">
-      <chartRed:SfChart.PrimaryAxis>
-        <chartRed:NumericalAxis Minimum="0"
-                                Maximum="1000"
+          <chartEcg:NumericalAxis.LabelStyle>
+            <chartEcg:ChartAxisLabelStyle Font="0.01"/>
+          </chartEcg:NumericalAxis.LabelStyle>
+          <chartEcg:NumericalAxis.Title>
+            <chartEcg:ChartAxisTitle Text="ECG"></chartEcg:ChartAxisTitle>
+          </chartEcg:NumericalAxis.Title>
+        </chartEcg:NumericalAxis>
+      </chartEcg:SfChart.SecondaryAxis>
+      <chartEcg:FastLineSeries ItemsSource="{Binding DataEcg}" XBindingPath="IndexValue" YBindingPath="Value"/>
+    </chartEcg:SfChart>
+    <chartScg:SfChart Grid.Row="3" Grid.ColumnSpan="2">
+      <chartScg:SfChart.PrimaryAxis>
+        <chartScg:NumericalAxis Minimum="0"
+                                Maximum="{Binding PrimalAxisMax}"
                                 ShowMajorGridLines="false">
-          <chartRed:NumericalAxis.LabelStyle>
-            <chartRed:ChartAxisLabelStyle Font="0.01"/>
-          </chartRed:NumericalAxis.LabelStyle>
-          <!--<chartRed:NumericalAxis.Title>
-                <chartRed:ChartAxisTitle Text="Index"></chartRed:ChartAxisTitle>
-              </chartRed:NumericalAxis.Title>-->
-        </chartRed:NumericalAxis>
-      </chartRed:SfChart.PrimaryAxis>
-      <chartRed:SfChart.SecondaryAxis>
-        <chartRed:NumericalAxis Interval="5000"
+          <chartScg:NumericalAxis.LabelStyle>
+            <chartScg:ChartAxisLabelStyle Font="0.01"/>
+          </chartScg:NumericalAxis.LabelStyle>
+          <!--<chartScg:NumericalAxis.Title>
+                <chartScg:ChartAxisTitle Text="Index"></chartRed:ChartAxisTitle>
+              </chartScg:NumericalAxis.Title>-->
+        </chartScg:NumericalAxis>
+      </chartScg:SfChart.PrimaryAxis>
+      <chartScg:SfChart.SecondaryAxis>
+        <chartScg:NumericalAxis Interval="5000"
                                 Minimum="0"
                                 Maximum="45000"
                                 ShowMajorGridLines="false">
-          <chartRed:NumericalAxis.LabelStyle>
-            <chartRed:ChartAxisLabelStyle Font="0.01"/>
-          </chartRed:NumericalAxis.LabelStyle>
-          <chartRed:NumericalAxis.Title>
-            <chartRed:ChartAxisTitle Text="Red"></chartRed:ChartAxisTitle>
-          </chartRed:NumericalAxis.Title>
-        </chartRed:NumericalAxis>
-      </chartRed:SfChart.SecondaryAxis>
-      <chartRed:FastLineSeries ItemsSource="{Binding DataRed}" XBindingPath="IndexValue" YBindingPath="Value"/>
-    </chartRed:SfChart>
+          <chartScg:NumericalAxis.LabelStyle>
+            <chartScg:ChartAxisLabelStyle Font="0.01"/>
+          </chartScg:NumericalAxis.LabelStyle>
+          <chartScg:NumericalAxis.Title>
+            <chartScg:ChartAxisTitle Text="SCG"></chartScg:ChartAxisTitle>
+          </chartScg:NumericalAxis.Title>
+        </chartScg:NumericalAxis>
+      </chartScg:SfChart.SecondaryAxis>
+      <chartScg:FastLineSeries ItemsSource="{Binding DataScg}" XBindingPath="IndexValue" YBindingPath="Value"/>
+    </chartScg:SfChart>
     <chartRed:SfChart Grid.Row="4" Grid.ColumnSpan="2">
       <chartRed:SfChart.PrimaryAxis>
         <chartRed:NumericalAxis Minimum="0"
-                                Maximum="1000"
+                                Maximum="{Binding PrimalAxisMax}"
                                 ShowMajorGridLines="false">
           <chartRed:NumericalAxis.LabelStyle>
             <chartRed:ChartAxisLabelStyle Font="0.01"/>
@@ -168,8 +136,8 @@
       </chartRed:SfChart.PrimaryAxis>
       <chartRed:SfChart.SecondaryAxis>
         <chartRed:NumericalAxis Interval="5000"
-                                Minimum="0"
-                                Maximum="45000"
+                                Minimum="{Binding MinRed}"
+                                Maximum="{Binding MaxRed}"
                                 ShowMajorGridLines="false">
           <chartRed:NumericalAxis.LabelStyle>
             <chartRed:ChartAxisLabelStyle Font="0.01"/>
@@ -184,20 +152,17 @@
     <chartIr:SfChart Grid.Row="5" Grid.ColumnSpan="2">
       <chartIr:SfChart.PrimaryAxis>
         <chartIr:NumericalAxis Minimum="0"
-                                Maximum="1000"
+                                Maximum="{Binding PrimalAxisMax}"
                                 ShowMajorGridLines="false">
           <chartIr:NumericalAxis.LabelStyle>
             <chartIr:ChartAxisLabelStyle Font="0.01"/>
           </chartIr:NumericalAxis.LabelStyle>
-          <!--<chartIr:NumericalAxis.Title>
-                <chartIr:ChartAxisTitle Text="Index"></chartIr:ChartAxisTitle>
-              </chartIr:NumericalAxis.Title>-->
         </chartIr:NumericalAxis>
       </chartIr:SfChart.PrimaryAxis>
       <chartIr:SfChart.SecondaryAxis>
         <chartIr:NumericalAxis Interval="5000"
-                                Minimum="0"
-                                Maximum="45000"
+                                Minimum="{Binding MinIr}"
+                                Maximum="{Binding MaxIr}"
                                 ShowMajorGridLines="false">
           <chartIr:NumericalAxis.LabelStyle>
             <chartIr:ChartAxisLabelStyle Font="0.01"/>
