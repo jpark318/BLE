@@ -44,10 +44,10 @@ namespace BLE.Client.ViewModels {
         public ObservableCollection<BleDataModel> DataIr { get; set; } = new ObservableCollection<BleDataModel>();
         public ObservableCollection<BleDataModel> DataEcg { get; set; } = new ObservableCollection<BleDataModel>();
         public ObservableCollection<BleDataModel> DataScg { get; set; } = new ObservableCollection<BleDataModel>();
-        public ObservableCollection<string> ViewRed { get; set; } = new ObservableCollection<string>();
-        public ObservableCollection<string> ViewIr { get; set; } = new ObservableCollection<string>();
-        public ObservableCollection<string> ViewTemp { get; set; } = new ObservableCollection<string>();
-        public ObservableCollection<string> ViewSpo2 { get; set; } = new ObservableCollection<string>();
+        public String ViewRed { get; set; }
+        public String ViewIr { get; set; }
+        public String ViewTemp { get; set; }
+        public String ViewSpo2 { get; set; }
         public MvxCommand ScanDevices => new MvxCommand(() => ScanDevicesPage());
         public ObservableCollection<DeviceListItemViewModel> Devices { get; set; } = new ObservableCollection<DeviceListItemViewModel>();
         private Byte[] CharacteristicValue = new Byte[20];
@@ -65,10 +65,10 @@ namespace BLE.Client.ViewModels {
             Adapter.DeviceDisconnected += OnDeviceDisconnectedFromGraph;
             Adapter.DeviceConnectionLost += OnDeviceConnectionLostFromGraph;
 
-            ViewRed.Insert(0, "RED: 0");
-            ViewIr.Insert(0, "IR: 0");
-            ViewTemp.Insert(0, "TEMP: 0");
-            ViewSpo2.Insert(0, "SPO2: 0");
+            ViewRed = "RED: 0";
+            ViewIr = "IR: 0";
+            ViewTemp = "TEMP: 0";
+            ViewSpo2 = "SPO2: 0";
         }
         private void OnDeviceDisconnectedFromGraph(object sender, DeviceEventArgs e) {
             Device.BeginInvokeOnMainThread(() => {
@@ -135,14 +135,14 @@ namespace BLE.Client.ViewModels {
                     var num = (UInt16)data[3] + (UInt16)data[4] * 0.0625;
                     var tempnum = (int)(num * 10);
                     var temp = tempnum * .1;
-                    ViewTemp[0] = "TEMP: " + temp.ToString();
+                    ViewTemp = "TEMP: " + temp.ToString();
                 } else {
                     if (data.Length == 20) {
                         for (int i = 0; i < 5; i++) {
                             red = (UInt16)((data[2 * i + 1]) | data[2 * i] << 8);
                             ir = (UInt16)((data[2 * i + 11]) | data[2 * i + 10] << 8);
-                            ViewRed[0] = "IR: " + red.ToString();
-                            ViewIr[0] = "RED: " + ir.ToString();
+                            ViewRed = "IR: " + red.ToString();
+                            ViewIr = "RED: " + ir.ToString();
                             if (!(DataRed.Count < PrimalAxisMax)) {
                                 Device.BeginInvokeOnMainThread(() => {
                                     DataRed.RemoveAt(0);
