@@ -49,6 +49,11 @@ namespace BLE.Client.ViewModels {
         public String ViewTemp { get; set; }
         public String ViewSpo2 { get; set; }
         public MvxCommand ScanDevices => new MvxCommand(() => ScanDevicesPage());
+        public MvxCommand ExitApplication => new MvxCommand(() => QuitApplication());
+
+        private void QuitApplication() {
+        }
+
         public ObservableCollection<DeviceListItemViewModel> Devices { get; set; } = new ObservableCollection<DeviceListItemViewModel>();
         private Byte[] CharacteristicValue = new Byte[20];
         private int count;

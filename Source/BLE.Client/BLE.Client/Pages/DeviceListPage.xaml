@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<pages:BaseTabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+<pages:BasePage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:pages="clr-namespace:BLE.Client.Pages;assembly=BLE.Client"
              xmlns:chartRed="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
@@ -8,19 +8,21 @@
              xmlns:local="clr-namespace:BLE.Client.ViewModels"
              Title="Discover devices"
              x:Name="DevicePage"
-             xmlns:sys="clr-namespace:System;assembly=mscorlib">
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                BackgroundColor="{StaticResource main}">
   <!--<pages:BaseTabbedPage.BindingContext>
     <local:BleDataModel/>
   </pages:BaseTabbedPage.BindingContext>-->
-  <pages:BaseTabbedPage.Resources>
+  <pages:BasePage.Resources>
     <ResourceDictionary>
+      <Color x:Key="main">#000000</Color>
+      <Color x:Key="font_main">#ffffff</Color>
+      <Color x:Key="font_white">#e5e5e5</Color>
+      <Color x:Key="border_chart">#848484</Color>
+      <Color x:Key="background_device_list">#101010</Color>
+      <Color x:Key="border_device_list">#aaaaaa</Color>
       <DataTemplate x:Key="DeviceItemTemplate">
         <ViewCell>
-          <ViewCell.ContextActions>
-            <MenuItem Command="{Binding Path=BindingContext.DisconnectCommand, Source={x:Reference DevicePage}}"
-                      CommandParameter="{Binding .}" IsDestructive="True"
-                      Text="Disconnect"/>
-          </ViewCell.ContextActions>
           <Grid>
             <Grid.ColumnDefinitions>
               <ColumnDefinition></ColumnDefinition>
@@ -38,140 +40,59 @@
                 <Setter Property="BackgroundColor" Value="#1A0000FF"></Setter>
               </DataTrigger>
             </Grid.Triggers>
-            <StackLayout Orientation="Vertical" VerticalOptions="Center">
-              <Label Text="{Binding Name}" FontSize="Large" />
-              <Label Text="{Binding Id, StringFormat='{0}'}" TextColor="Gray" FontSize="Small"/>
+            <StackLayout Padding="10, 0, 10, 0" Orientation="Vertical" VerticalOptions="Center">
+              <Label Text="{Binding Name}" FontSize="Medium" TextColor="{StaticResource font_white}"/>
+              <!--<Label Text="{Binding Id, StringFormat='{0}'}" TextColor="Gray" FontSize="Small"/>-->
             </StackLayout>
-            <Label Grid.Column="1"
+            <!--<Label Grid.Column="1"
                    Margin="10"
                    Text="{Binding Rssi}"
-                   VerticalTextAlignment="Center"></Label>
+                   VerticalTextAlignment="Center"></Label>-->
           </Grid>
         </ViewCell>
       </DataTemplate>
     </ResourceDictionary>
-  </pages:BaseTabbedPage.Resources>
-  <pages:BaseTabbedPage.Children>
-    <pages:BasePage Title="Device Management">
-      <Grid>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="Auto"></RowDefinition>
-          <RowDefinition Height="*"></RowDefinition>
-          <RowDefinition Height="Auto"></RowDefinition>
-          <RowDefinition Height="40*"></RowDefinition>
-          <RowDefinition Height="Auto"></RowDefinition>
-          <RowDefinition Height="40*"></RowDefinition>
-          <RowDefinition Height="Auto"></RowDefinition>
-        </Grid.RowDefinitions>
-        <StackLayout BackgroundColor="#FF6969" Padding="10" IsVisible="{Binding IsStateOn, Converter={StaticResource InverseBoolean}}">
-          <Label Text="{Binding StateText}" FontSize="18" HorizontalTextAlignment="Center"></Label>
-        </StackLayout>
-        
-        <Label Grid.Row="2" Text="Master"></Label>
-        <ListView Grid.Row="3" ItemsSource="{Binding Devices}" SelectedItem="{Binding SelectedDeviceAsMaster, Mode=TwoWay}"
-                 RowHeight="50"
-                 ItemTemplate="{StaticResource DeviceItemTemplate}">
-        </ListView>
-        
-        <Label Grid.Row="4" Text="Slave" Font="10"></Label>
-        <ListView Grid.Row="5" ItemsSource="{Binding Devices}" SelectedItem="{Binding SelectedDeviceAsSlave, Mode=TwoWay}"
-         RowHeight="50"
-         ItemTemplate="{StaticResource DeviceItemTemplate}">
-        </ListView>
-        
-        <StackLayout Grid.Row="6" Orientation="Horizontal">
-          <Button Text="Refresh" Command="{Binding RefreshCommand}" HorizontalOptions="FillAndExpand"/>
-          <!--<Button Text="Connect to previous" Command="{Binding ConnectToPreviousCommand}" HorizontalOptions="FillAndExpand"/>-->
-          <Button Text="Stop Scan" Command="{Binding StopScanCommand}" HorizontalOptions="End"/>
-          <ActivityIndicator IsRunning="{Binding IsRefreshing}"
-                             HeightRequest="24"
-                             WidthRequest="24"
-                             VerticalOptions="Center"
-                             HorizontalOptions="End"/>
-        </StackLayout>
-      </Grid>
-    </pages:BasePage>
-    <!--<pages:BasePage Title="Graph">
-      <Grid>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="Auto"></RowDefinition>
-          <RowDefinition Height="Auto"></RowDefinition>
-        </Grid.RowDefinitions>
-        <chartRed:SfChart HeightRequest="250">
-          <chartRed:SfChart.PrimaryAxis>
-            <chartRed:NumericalAxis Minimum="0"
-                                    Maximum="1000"
-                                    ShowMajorGridLines="false">
-              <chartRed:NumericalAxis.LabelStyle>
-                <chartRed:ChartAxisLabelStyle Font="0.01"/>
-              </chartRed:NumericalAxis.LabelStyle>
-              <chartRed:NumericalAxis.Title>
-                <chartRed:ChartAxisTitle Text="Index"></chartRed:ChartAxisTitle>
-              </chartRed:NumericalAxis.Title>
-            </chartRed:NumericalAxis>
-          </chartRed:SfChart.PrimaryAxis>
-          <chartRed:SfChart.SecondaryAxis>
-            <chartRed:NumericalAxis Interval="5000"
-                                    Minimum="0"
-                                    Maximum="45000"
-                                    ShowMajorGridLines="false">
-              <chartRed:NumericalAxis.LabelStyle>
-                <chartRed:ChartAxisLabelStyle Font="0.01"/>
-              </chartRed:NumericalAxis.LabelStyle>
-              <chartRed:NumericalAxis.Title>
-                <chartRed:ChartAxisTitle Text="Red"></chartRed:ChartAxisTitle>
-              </chartRed:NumericalAxis.Title>
-            </chartRed:NumericalAxis>
-          </chartRed:SfChart.SecondaryAxis>
-          <chartRed:FastLineSeries ItemsSource="{Binding DataRed}" XBindingPath="IndexValue" YBindingPath="Value"/>
-        </chartRed:SfChart>
+  </pages:BasePage.Resources>
+  <Grid Margin="30, 0, 30, 0">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="*"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="40*"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="40*"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+    </Grid.RowDefinitions>
 
-        <chartIr:SfChart TranslationY="250" HeightRequest="250">
-          <chartIr:SfChart.PrimaryAxis>
-            <chartIr:NumericalAxis Minimum="0"
-                                    Maximum="1000"
-                                    ShowMajorGridLines="false">
-              <chartIr:NumericalAxis.LabelStyle>
-                <chartIr:ChartAxisLabelStyle Font="0.01"/>
-              </chartIr:NumericalAxis.LabelStyle>
-              <chartIr:NumericalAxis.Title>
-                <chartIr:ChartAxisTitle Text="Index"></chartIr:ChartAxisTitle>
-              </chartIr:NumericalAxis.Title>
-            </chartIr:NumericalAxis>
-          </chartIr:SfChart.PrimaryAxis>
-          <chartIr:SfChart.SecondaryAxis>
-            <chartIr:NumericalAxis Interval="5000"
-                                    Minimum="0"
-                                    Maximum="45000"
-                                    ShowMajorGridLines="false">
-              <chartIr:NumericalAxis.LabelStyle>
-                <chartIr:ChartAxisLabelStyle Font="0.01"/>
-              </chartIr:NumericalAxis.LabelStyle>
-              <chartIr:NumericalAxis.Title>
-                <chartIr:ChartAxisTitle Text="Ir"></chartIr:ChartAxisTitle>
-              </chartIr:NumericalAxis.Title>
-            </chartIr:NumericalAxis>
-          </chartIr:SfChart.SecondaryAxis>
-          <chartIr:FastLineSeries ItemsSource="{Binding DataIr}" XBindingPath="IndexValue" YBindingPath="Value"/>
-        </chartIr:SfChart>
-      </Grid>
-    </pages:BasePage>-->
-    <!--<pages:BasePage Title="Data">
-      <Grid>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="auto"></RowDefinition>
-          <RowDefinition Height="*"></RowDefinition>
-        </Grid.RowDefinitions>
-        <ListView Grid.Row="1" ItemsSource="{Binding Messages}" CachingStrategy="RecycleElement">
-          <ListView.ItemTemplate>
-            <DataTemplate>
-              <ViewCell Height="50">
-                <Label Text="{Binding .}" VerticalTextAlignment="Center" FontSize="Small"></Label>
-              </ViewCell>
-            </DataTemplate>
-          </ListView.ItemTemplate>
-        </ListView>
-      </Grid>
-    </pages:BasePage>-->
-  </pages:BaseTabbedPage.Children>
-</pages:BaseTabbedPage>
+    <StackLayout BackgroundColor="#FF6969" Padding="10" IsVisible="{Binding IsStateOn, Converter={StaticResource InverseBoolean}}">
+      <Label Text="{Binding StateText}" FontSize="18" HorizontalTextAlignment="Center"></Label>
+    </StackLayout>
+    
+    <Label Grid.Row="2" Text="Master" TextColor="{StaticResource font_white}" FontSize="Large"></Label>
+    <ListView Grid.Row="3" ItemsSource="{Binding Devices}" SelectedItem="{Binding SelectedDeviceAsMaster, Mode=TwoWay}"
+             RowHeight="50"
+             ItemTemplate="{StaticResource DeviceItemTemplate}"
+              BackgroundColor="{StaticResource background_device_list}"
+              SeparatorColor="{StaticResource border_device_list}">
+    </ListView>
+
+    <Label Grid.Row="4" Text="Slave" TextColor="{StaticResource font_white}" FontSize="Large"></Label>
+    <ListView Grid.Row="5" ItemsSource="{Binding Devices}" SelectedItem="{Binding SelectedDeviceAsSlave, Mode=TwoWay}"
+     RowHeight="50"
+     ItemTemplate="{StaticResource DeviceItemTemplate}"
+              BackgroundColor="{StaticResource background_device_list}"
+              SeparatorColor="{StaticResource border_device_list}">
+    </ListView>
+
+    <StackLayout Grid.Row="6" Orientation="Horizontal">
+      <Button Text="Refresh" Command="{Binding RefreshCommand}" HorizontalOptions="FillAndExpand"/>
+      <!--<Button Text="Connect to previous" Command="{Binding ConnectToPreviousCommand}" HorizontalOptions="FillAndExpand"/>-->
+      <Button Text="Stop Scan" Command="{Binding StopScanCommand}" HorizontalOptions="End"/>
+      <ActivityIndicator IsRunning="{Binding IsRefreshing}"
+                         HeightRequest="24"
+                         WidthRequest="24"
+                         VerticalOptions="Center"
+                         HorizontalOptions="End"/>
+    </StackLayout>
+  </Grid>
+</pages:BasePage>

@@ -281,22 +281,6 @@ namespace BLE.Client.ViewModels {
             //type = 1 if slave, type = 2 if master.
             var config = new ActionSheetConfig();
             if (device.IsConnected) {
-                config.Add("Update RSSI", async () => {
-                    try {
-                        _userDialogs.ShowLoading();
-
-                        await device.Device.UpdateRssiAsync();
-                        device.RaisePropertyChanged(nameof(device.Rssi));
-
-                        _userDialogs.HideLoading();
-
-                        _userDialogs.ShowSuccess($"RSSI updated {device.Rssi}", 1000);
-                    } catch (Exception ex) {
-                        _userDialogs.HideLoading();
-                        _userDialogs.ShowError($"Failed to update rssi. Exception: {ex.Message}");
-                    }
-                });
-
                 config.Destructive = new ActionSheetOption("Disconnect", () => DisconnectCommand.Execute(device));
             } else {
                 config.Add("Connect", async () => {
@@ -330,11 +314,7 @@ namespace BLE.Client.ViewModels {
                         }
                     }
                 });
-
-                config.Add("Connect & Dispose", () => ConnectDisposeCommand.Execute(device));
             }
-
-            config.Add("Copy GUID", () => CopyGuidCommand.Execute(device));
             config.Cancel = new ActionSheetOption("Cancel");
             config.SetTitle("Device Options");
             _userDialogs.ActionSheet(config);
