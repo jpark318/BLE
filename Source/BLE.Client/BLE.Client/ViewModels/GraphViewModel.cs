@@ -17,6 +17,7 @@ using Plugin.Permissions.Abstractions;
 using Plugin.Settings.Abstractions;
 using Syncfusion.SfChart.XForms;
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration;
 
 namespace BLE.Client.ViewModels {
     public class GraphViewModel : BaseViewModel {
@@ -44,19 +45,20 @@ namespace BLE.Client.ViewModels {
         public ObservableCollection<BleDataModel> DataIr { get; set; } = new ObservableCollection<BleDataModel>();
         public ObservableCollection<BleDataModel> DataEcg { get; set; } = new ObservableCollection<BleDataModel>();
         public ObservableCollection<BleDataModel> DataScg { get; set; } = new ObservableCollection<BleDataModel>();
+        public ObservableCollection<BleDataModel> tempDataRed { get; set; } = new ObservableCollection<BleDataModel>();
+        public ObservableCollection<BleDataModel> tempDataIr { get; set; } = new ObservableCollection<BleDataModel>();
+        public ObservableCollection<BleDataModel> tempDataEcg { get; set; } = new ObservableCollection<BleDataModel>();
+        public ObservableCollection<BleDataModel> tempDataScg { get; set; } = new ObservableCollection<BleDataModel>();
         public String ViewRed { get; set; }
         public String ViewIr { get; set; }
         public String ViewTemp { get; set; }
         public String ViewSpo2 { get; set; }
         public MvxCommand ScanDevices => new MvxCommand(() => ScanDevicesPage());
-        public MvxCommand ExitApplication => new MvxCommand(() => QuitApplication());
-
-        private void QuitApplication() {
-        }
-
+        //public MvxCommand ExitApplication => new MvxCommand(() => QuitApplication());
         public ObservableCollection<DeviceListItemViewModel> Devices { get; set; } = new ObservableCollection<DeviceListItemViewModel>();
         private Byte[] CharacteristicValue = new Byte[20];
         private int count;
+        private int countFunctionCall;
         readonly IPermissions _permissions;
 
         public GraphViewModel(IBluetoothLE bluetoothLe, IAdapter adapter, IUserDialogs userDialogs, ISettings settings, IPermissions permissions) : base(adapter) {
@@ -64,8 +66,6 @@ namespace BLE.Client.ViewModels {
             _bluetoothLe = bluetoothLe;
             _userDialogs = userDialogs;
             _settings = settings;
-            //Adapter.DeviceConnected += (sender, e) => OnNotification(e.Device);
-            //Adapter.DeviceDisconnected -= (sender, e) => OnNotification(e.Device);
             Adapter.DeviceConnected += (sender, e) => OnNotification(e.Device);
             Adapter.DeviceDisconnected += OnDeviceDisconnectedFromGraph;
             Adapter.DeviceConnectionLost += OnDeviceConnectionLostFromGraph;
@@ -75,6 +75,7 @@ namespace BLE.Client.ViewModels {
             ViewTemp = "TEMP: 0";
             ViewSpo2 = "SPO2: 0";
         }
+
         private void OnDeviceDisconnectedFromGraph(object sender, DeviceEventArgs e) {
             Device.BeginInvokeOnMainThread(() => {
                 if (e.Device.Id == MasterDeviceId) {
@@ -109,6 +110,16 @@ namespace BLE.Client.ViewModels {
 
         private void CharacteristicOnValueUpdated(object sender, CharacteristicUpdatedEventArgs characteristicUpdatedEventArgs) {
             var data = characteristicUpdatedEventArgs.Characteristic.Value;
+            //if (countFunctionCall != 5) {
+            //    countFunctionCall++;
+            //} else {
+            //    DataRed = tempDataRed;
+            //    DataEcg = tempDataEcg;
+            //    DataIr  = tempDataIr;
+            //    DataScg = tempDataScg;
+                
+            //    countFunctionCall = 0;
+            //}
             if (MasterDeviceId == characteristicUpdatedEventArgs.Characteristic.Service.Device.Id) {
                 //if data is from master device
                 if (count == 5) {

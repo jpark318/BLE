@@ -20,7 +20,8 @@
       <Color x:Key="font_white">#e5e5e5</Color>
       <Color x:Key="border_chart">#848484</Color>
       <Color x:Key="background_device_list">#101010</Color>
-      <Color x:Key="border_device_list">#aaaaaa</Color>
+      <Color x:Key="separator_device_list">#aaaaaa</Color>
+      <Color x:Key="border_device_list">#ffffff</Color>
       <DataTemplate x:Key="DeviceItemTemplate">
         <ViewCell>
           <Grid>
@@ -40,7 +41,7 @@
                 <Setter Property="BackgroundColor" Value="#1A0000FF"></Setter>
               </DataTrigger>
             </Grid.Triggers>
-            <StackLayout Padding="10, 0, 10, 0" Orientation="Vertical" VerticalOptions="Center">
+            <StackLayout Padding="30, 0, 30, 0" Orientation="Vertical" VerticalOptions="Center">
               <Label Text="{Binding Name}" FontSize="Medium" TextColor="{StaticResource font_white}"/>
               <!--<Label Text="{Binding Id, StringFormat='{0}'}" TextColor="Gray" FontSize="Small"/>-->
             </StackLayout>
@@ -57,34 +58,32 @@
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto"></RowDefinition>
       <RowDefinition Height="*"></RowDefinition>
-      <RowDefinition Height="Auto"></RowDefinition>
       <RowDefinition Height="40*"></RowDefinition>
-      <RowDefinition Height="Auto"></RowDefinition>
       <RowDefinition Height="40*"></RowDefinition>
       <RowDefinition Height="Auto"></RowDefinition>
     </Grid.RowDefinitions>
 
-    <StackLayout BackgroundColor="#FF6969" Padding="10" IsVisible="{Binding IsStateOn, Converter={StaticResource InverseBoolean}}">
-      <Label Text="{Binding StateText}" FontSize="18" HorizontalTextAlignment="Center"></Label>
+    <StackLayout Grid.Row="2" Padding=".5" BackgroundColor="{StaticResource main}">
+      <Label  Text="Master" TextColor="{StaticResource font_white}" FontSize="Large"></Label>
+      <ListView ItemsSource="{Binding Devices}" SelectedItem="{Binding SelectedDeviceAsMaster, Mode=TwoWay}"
+                RowHeight="50"
+                ItemTemplate="{StaticResource DeviceItemTemplate}"
+                BackgroundColor="{StaticResource background_device_list}"
+                SeparatorColor="{StaticResource separator_device_list}">
+      </ListView>
     </StackLayout>
-    
-    <Label Grid.Row="2" Text="Master" TextColor="{StaticResource font_white}" FontSize="Large"></Label>
-    <ListView Grid.Row="3" ItemsSource="{Binding Devices}" SelectedItem="{Binding SelectedDeviceAsMaster, Mode=TwoWay}"
-             RowHeight="50"
-             ItemTemplate="{StaticResource DeviceItemTemplate}"
-              BackgroundColor="{StaticResource background_device_list}"
-              SeparatorColor="{StaticResource border_device_list}">
-    </ListView>
 
-    <Label Grid.Row="4" Text="Slave" TextColor="{StaticResource font_white}" FontSize="Large"></Label>
-    <ListView Grid.Row="5" ItemsSource="{Binding Devices}" SelectedItem="{Binding SelectedDeviceAsSlave, Mode=TwoWay}"
-     RowHeight="50"
-     ItemTemplate="{StaticResource DeviceItemTemplate}"
-              BackgroundColor="{StaticResource background_device_list}"
-              SeparatorColor="{StaticResource border_device_list}">
-    </ListView>
+    <StackLayout Grid.Row="3" Padding=".5" BackgroundColor="{StaticResource main}">
+      <Label Text="Slave" TextColor="{StaticResource font_white}" FontSize="Large"></Label>
+      <ListView ItemsSource="{Binding Devices}" SelectedItem="{Binding SelectedDeviceAsSlave, Mode=TwoWay}"
+                RowHeight="50"
+                ItemTemplate="{StaticResource DeviceItemTemplate}"
+                BackgroundColor="{StaticResource background_device_list}"
+                SeparatorColor="{StaticResource separator_device_list}">
+      </ListView>
+    </StackLayout>
 
-    <StackLayout Grid.Row="6" Orientation="Horizontal">
+    <StackLayout Grid.Row="4" Orientation="Horizontal">
       <Button Text="Refresh" Command="{Binding RefreshCommand}" HorizontalOptions="FillAndExpand"/>
       <!--<Button Text="Connect to previous" Command="{Binding ConnectToPreviousCommand}" HorizontalOptions="FillAndExpand"/>-->
       <Button Text="Stop Scan" Command="{Binding StopScanCommand}" HorizontalOptions="End"/>

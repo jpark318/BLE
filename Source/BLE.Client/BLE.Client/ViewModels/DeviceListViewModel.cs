@@ -171,7 +171,9 @@ namespace BLE.Client.ViewModels {
                 if (vm != null) {
                     vm.Update();
                 } else {
-                    Devices.Add(new DeviceListItemViewModel(device));
+                    if (device.Name != "") {
+                        Devices.Add(new DeviceListItemViewModel(device));
+                    }
                 }
             });
         }
@@ -319,8 +321,6 @@ namespace BLE.Client.ViewModels {
             config.SetTitle("Device Options");
             _userDialogs.ActionSheet(config);
         }
-
-
 
         private async Task<bool> ConnectDeviceAsync(DeviceListItemViewModel device, bool showPrompt = true) {
             if (showPrompt && !await _userDialogs.ConfirmAsync($"Connect to device '{device.Name}'?")) {
