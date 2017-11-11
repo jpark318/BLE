@@ -22,7 +22,7 @@ namespace BLE.Client.iOS
             startup.Start();
 
             _window.MakeKeyAndVisible();
-
+            new Syncfusion.SfChart.XForms.iOS.Renderers.SfChartRenderer();
             return true;
         }
     }
