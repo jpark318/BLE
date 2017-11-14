@@ -1,4 +1,4 @@
-﻿using MvvmCross.Platform.Plugins;
+using MvvmCross.Platform.Plugins;
 
 namespace BLE.Client.Droid.Bootstrap
 {

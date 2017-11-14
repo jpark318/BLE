@@ -1,9 +1,9 @@
-﻿using MvvmCross.Platform.Plugins;
+using MvvmCross.Platform.Plugins;
 
 namespace BLE.Client.iOS.Bootstrap
 {
     public class BlePluginBootstrap
-         : MvxLoaderPluginBootstrapAction<MvvmCross.Plugins.BLE.PluginLoader, MvvmCross.Plugins.BLE.iOS.Plugin>
+        : MvxLoaderPluginBootstrapAction<MvvmCross.Plugins.BLE.PluginLoader, MvvmCross.Plugins.BLE.iOS.Plugin>
     {
     }
 }
