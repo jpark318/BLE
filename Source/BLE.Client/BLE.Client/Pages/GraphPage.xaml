@@ -10,7 +10,7 @@
              xmlns:local="clr-namespace:BLE.Client.ViewModels"
              Title="HEALTH MONITORING SYSTEM"
              x:Name="GraphPage"
-                BackgroundColor="{StaticResource main}">
+             BackgroundColor="{StaticResource main}">
   <pages:BasePage.Resources>
     <ResourceDictionary>
       <Color x:Key="main">#000000</Color>

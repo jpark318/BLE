@@ -45,10 +45,10 @@ namespace BLE.Client.ViewModels {
         public ObservableCollection<BleDataModel> DataIr { get; set; } = new ObservableCollection<BleDataModel>();
         public ObservableCollection<BleDataModel> DataEcg { get; set; } = new ObservableCollection<BleDataModel>();
         public ObservableCollection<BleDataModel> DataScg { get; set; } = new ObservableCollection<BleDataModel>();
-        public ObservableCollection<BleDataModel> tempDataRed { get; set; } = new ObservableCollection<BleDataModel>();
-        public ObservableCollection<BleDataModel> tempDataIr { get; set; } = new ObservableCollection<BleDataModel>();
-        public ObservableCollection<BleDataModel> tempDataEcg { get; set; } = new ObservableCollection<BleDataModel>();
-        public ObservableCollection<BleDataModel> tempDataScg { get; set; } = new ObservableCollection<BleDataModel>();
+        public ObservableCollection<BleDataModel> TempDataRed { get; set; } = new ObservableCollection<BleDataModel>();
+        public ObservableCollection<BleDataModel> TempDataIr { get; set; } = new ObservableCollection<BleDataModel>();
+        public ObservableCollection<BleDataModel> TempDataEcg { get; set; } = new ObservableCollection<BleDataModel>();
+        public ObservableCollection<BleDataModel> TempDataScg { get; set; } = new ObservableCollection<BleDataModel>();
         public String ViewRed { get; set; }
         public String ViewIr { get; set; }
         public String ViewTemp { get; set; }
@@ -76,6 +76,7 @@ namespace BLE.Client.ViewModels {
             ViewSpo2 = "SPO2: 0";
         }
 
+        /// <summary><c>OnDeviceDisconnectedFromGraph</c> is called to clear data in chart when device is disconnected.</summary>
         private void OnDeviceDisconnectedFromGraph(object sender, DeviceEventArgs e) {
             Device.BeginInvokeOnMainThread(() => {
                 if (e.Device.Id == MasterDeviceId) {
@@ -89,6 +90,7 @@ namespace BLE.Client.ViewModels {
             });
         }
 
+        /// <summary><c>OnDeviceDisconnectedFromGraph</c> is called to clear data in chart when device connection is lost.</summary>
         private void OnDeviceConnectionLostFromGraph(object sender, DeviceEventArgs e) {
             Device.BeginInvokeOnMainThread(() => {
                 if (e.Device.Id == MasterDeviceId) {
@@ -110,16 +112,6 @@ namespace BLE.Client.ViewModels {
 
         private void CharacteristicOnValueUpdated(object sender, CharacteristicUpdatedEventArgs characteristicUpdatedEventArgs) {
             var data = characteristicUpdatedEventArgs.Characteristic.Value;
-            //if (countFunctionCall != 5) {
-            //    countFunctionCall++;
-            //} else {
-            //    DataRed = tempDataRed;
-            //    DataEcg = tempDataEcg;
-            //    DataIr  = tempDataIr;
-            //    DataScg = tempDataScg;
-                
-            //    countFunctionCall = 0;
-            //}
             if (MasterDeviceId == characteristicUpdatedEventArgs.Characteristic.Service.Device.Id) {
                 //if data is from master device
                 if (count == 5) {
