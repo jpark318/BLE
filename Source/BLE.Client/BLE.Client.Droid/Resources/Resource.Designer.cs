@@ -85,1414 +85,67 @@ namespace BLE.Client.Droid
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::BLE.Client.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::BLE.Client.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
 			global::Splat.Resource.String.library_name = global::BLE.Client.Droid.Resource.String.library_name;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.abc_fade_in = global::BLE.Client.Droid.Resource.Animation.abc_fade_in;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.abc_fade_out = global::BLE.Client.Droid.Resource.Animation.abc_fade_out;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.abc_grow_fade_in_from_bottom = global::BLE.Client.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.abc_popup_enter = global::BLE.Client.Droid.Resource.Animation.abc_popup_enter;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.abc_popup_exit = global::BLE.Client.Droid.Resource.Animation.abc_popup_exit;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom = global::BLE.Client.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.abc_slide_in_bottom = global::BLE.Client.Droid.Resource.Animation.abc_slide_in_bottom;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.abc_slide_in_top = global::BLE.Client.Droid.Resource.Animation.abc_slide_in_top;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.abc_slide_out_bottom = global::BLE.Client.Droid.Resource.Animation.abc_slide_out_bottom;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.abc_slide_out_top = global::BLE.Client.Droid.Resource.Animation.abc_slide_out_top;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.design_bottom_sheet_slide_in = global::BLE.Client.Droid.Resource.Animation.design_bottom_sheet_slide_in;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.design_bottom_sheet_slide_out = global::BLE.Client.Droid.Resource.Animation.design_bottom_sheet_slide_out;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.design_fab_in = global::BLE.Client.Droid.Resource.Animation.design_fab_in;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.design_fab_out = global::BLE.Client.Droid.Resource.Animation.design_fab_out;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.design_snackbar_in = global::BLE.Client.Droid.Resource.Animation.design_snackbar_in;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.design_snackbar_out = global::BLE.Client.Droid.Resource.Animation.design_snackbar_out;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.Fadein = global::BLE.Client.Droid.Resource.Animation.Fadein;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.Fadeout = global::BLE.Client.Droid.Resource.Animation.Fadeout;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.Scale_in = global::BLE.Client.Droid.Resource.Animation.Scale_in;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.Scale_out = global::BLE.Client.Droid.Resource.Animation.Scale_out;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionBarDivider = global::BLE.Client.Droid.Resource.Attribute.actionBarDivider;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionBarItemBackground = global::BLE.Client.Droid.Resource.Attribute.actionBarItemBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionBarPopupTheme = global::BLE.Client.Droid.Resource.Attribute.actionBarPopupTheme;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionBarSize = global::BLE.Client.Droid.Resource.Attribute.actionBarSize;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionBarSplitStyle = global::BLE.Client.Droid.Resource.Attribute.actionBarSplitStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionBarStyle = global::BLE.Client.Droid.Resource.Attribute.actionBarStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionBarTabBarStyle = global::BLE.Client.Droid.Resource.Attribute.actionBarTabBarStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionBarTabStyle = global::BLE.Client.Droid.Resource.Attribute.actionBarTabStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionBarTabTextStyle = global::BLE.Client.Droid.Resource.Attribute.actionBarTabTextStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionBarTheme = global::BLE.Client.Droid.Resource.Attribute.actionBarTheme;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionBarWidgetTheme = global::BLE.Client.Droid.Resource.Attribute.actionBarWidgetTheme;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionButtonStyle = global::BLE.Client.Droid.Resource.Attribute.actionButtonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionDropDownStyle = global::BLE.Client.Droid.Resource.Attribute.actionDropDownStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionLayout = global::BLE.Client.Droid.Resource.Attribute.actionLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionMenuTextAppearance = global::BLE.Client.Droid.Resource.Attribute.actionMenuTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionMenuTextColor = global::BLE.Client.Droid.Resource.Attribute.actionMenuTextColor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionModeBackground = global::BLE.Client.Droid.Resource.Attribute.actionModeBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionModeCloseButtonStyle = global::BLE.Client.Droid.Resource.Attribute.actionModeCloseButtonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionModeCloseDrawable = global::BLE.Client.Droid.Resource.Attribute.actionModeCloseDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionModeCopyDrawable = global::BLE.Client.Droid.Resource.Attribute.actionModeCopyDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionModeCutDrawable = global::BLE.Client.Droid.Resource.Attribute.actionModeCutDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionModeFindDrawable = global::BLE.Client.Droid.Resource.Attribute.actionModeFindDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionModePasteDrawable = global::BLE.Client.Droid.Resource.Attribute.actionModePasteDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionModePopupWindowStyle = global::BLE.Client.Droid.Resource.Attribute.actionModePopupWindowStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionModeSelectAllDrawable = global::BLE.Client.Droid.Resource.Attribute.actionModeSelectAllDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionModeShareDrawable = global::BLE.Client.Droid.Resource.Attribute.actionModeShareDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionModeSplitBackground = global::BLE.Client.Droid.Resource.Attribute.actionModeSplitBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionModeStyle = global::BLE.Client.Droid.Resource.Attribute.actionModeStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionModeWebSearchDrawable = global::BLE.Client.Droid.Resource.Attribute.actionModeWebSearchDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionOverflowButtonStyle = global::BLE.Client.Droid.Resource.Attribute.actionOverflowButtonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionOverflowMenuStyle = global::BLE.Client.Droid.Resource.Attribute.actionOverflowMenuStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionProviderClass = global::BLE.Client.Droid.Resource.Attribute.actionProviderClass;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.actionViewClass = global::BLE.Client.Droid.Resource.Attribute.actionViewClass;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.activityChooserViewStyle = global::BLE.Client.Droid.Resource.Attribute.activityChooserViewStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.alertDialogButtonGroupStyle = global::BLE.Client.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.alertDialogCenterButtons = global::BLE.Client.Droid.Resource.Attribute.alertDialogCenterButtons;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.alertDialogStyle = global::BLE.Client.Droid.Resource.Attribute.alertDialogStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.alertDialogTheme = global::BLE.Client.Droid.Resource.Attribute.alertDialogTheme;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.allowStacking = global::BLE.Client.Droid.Resource.Attribute.allowStacking;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.arrowHeadLength = global::BLE.Client.Droid.Resource.Attribute.arrowHeadLength;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.arrowShaftLength = global::BLE.Client.Droid.Resource.Attribute.arrowShaftLength;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.autoCompleteTextViewStyle = global::BLE.Client.Droid.Resource.Attribute.autoCompleteTextViewStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.background = global::BLE.Client.Droid.Resource.Attribute.background;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.backgroundSplit = global::BLE.Client.Droid.Resource.Attribute.backgroundSplit;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.backgroundStacked = global::BLE.Client.Droid.Resource.Attribute.backgroundStacked;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.backgroundTint = global::BLE.Client.Droid.Resource.Attribute.backgroundTint;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.backgroundTintMode = global::BLE.Client.Droid.Resource.Attribute.backgroundTintMode;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.barLength = global::BLE.Client.Droid.Resource.Attribute.barLength;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.behavior_hideable = global::BLE.Client.Droid.Resource.Attribute.behavior_hideable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.behavior_overlapTop = global::BLE.Client.Droid.Resource.Attribute.behavior_overlapTop;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.behavior_peekHeight = global::BLE.Client.Droid.Resource.Attribute.behavior_peekHeight;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.borderWidth = global::BLE.Client.Droid.Resource.Attribute.borderWidth;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.borderlessButtonStyle = global::BLE.Client.Droid.Resource.Attribute.borderlessButtonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.bottomSheetDialogTheme = global::BLE.Client.Droid.Resource.Attribute.bottomSheetDialogTheme;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.bottomSheetStyle = global::BLE.Client.Droid.Resource.Attribute.bottomSheetStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.buttonBarButtonStyle = global::BLE.Client.Droid.Resource.Attribute.buttonBarButtonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.buttonBarNegativeButtonStyle = global::BLE.Client.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.buttonBarNeutralButtonStyle = global::BLE.Client.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.buttonBarPositiveButtonStyle = global::BLE.Client.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.buttonBarStyle = global::BLE.Client.Droid.Resource.Attribute.buttonBarStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.buttonPanelSideLayout = global::BLE.Client.Droid.Resource.Attribute.buttonPanelSideLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.buttonStyle = global::BLE.Client.Droid.Resource.Attribute.buttonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.buttonStyleSmall = global::BLE.Client.Droid.Resource.Attribute.buttonStyleSmall;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.buttonTint = global::BLE.Client.Droid.Resource.Attribute.buttonTint;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.buttonTintMode = global::BLE.Client.Droid.Resource.Attribute.buttonTintMode;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.cardBackgroundColor = global::BLE.Client.Droid.Resource.Attribute.cardBackgroundColor;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.cardCornerRadius = global::BLE.Client.Droid.Resource.Attribute.cardCornerRadius;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.cardElevation = global::BLE.Client.Droid.Resource.Attribute.cardElevation;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.cardMaxElevation = global::BLE.Client.Droid.Resource.Attribute.cardMaxElevation;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.cardPreventCornerOverlap = global::BLE.Client.Droid.Resource.Attribute.cardPreventCornerOverlap;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.cardUseCompatPadding = global::BLE.Client.Droid.Resource.Attribute.cardUseCompatPadding;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.checkboxStyle = global::BLE.Client.Droid.Resource.Attribute.checkboxStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.checkedTextViewStyle = global::BLE.Client.Droid.Resource.Attribute.checkedTextViewStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.closeIcon = global::BLE.Client.Droid.Resource.Attribute.closeIcon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.closeItemLayout = global::BLE.Client.Droid.Resource.Attribute.closeItemLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.collapseContentDescription = global::BLE.Client.Droid.Resource.Attribute.collapseContentDescription;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.collapseIcon = global::BLE.Client.Droid.Resource.Attribute.collapseIcon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.collapsedTitleGravity = global::BLE.Client.Droid.Resource.Attribute.collapsedTitleGravity;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.collapsedTitleTextAppearance = global::BLE.Client.Droid.Resource.Attribute.collapsedTitleTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.color = global::BLE.Client.Droid.Resource.Attribute.color;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.colorAccent = global::BLE.Client.Droid.Resource.Attribute.colorAccent;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.colorButtonNormal = global::BLE.Client.Droid.Resource.Attribute.colorButtonNormal;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.colorControlActivated = global::BLE.Client.Droid.Resource.Attribute.colorControlActivated;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.colorControlHighlight = global::BLE.Client.Droid.Resource.Attribute.colorControlHighlight;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.colorControlNormal = global::BLE.Client.Droid.Resource.Attribute.colorControlNormal;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.colorPrimary = global::BLE.Client.Droid.Resource.Attribute.colorPrimary;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.colorPrimaryDark = global::BLE.Client.Droid.Resource.Attribute.colorPrimaryDark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.colorSwitchThumbNormal = global::BLE.Client.Droid.Resource.Attribute.colorSwitchThumbNormal;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.commitIcon = global::BLE.Client.Droid.Resource.Attribute.commitIcon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.contentInsetEnd = global::BLE.Client.Droid.Resource.Attribute.contentInsetEnd;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.contentInsetLeft = global::BLE.Client.Droid.Resource.Attribute.contentInsetLeft;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.contentInsetRight = global::BLE.Client.Droid.Resource.Attribute.contentInsetRight;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.contentInsetStart = global::BLE.Client.Droid.Resource.Attribute.contentInsetStart;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.contentPadding = global::BLE.Client.Droid.Resource.Attribute.contentPadding;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.contentPaddingBottom = global::BLE.Client.Droid.Resource.Attribute.contentPaddingBottom;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.contentPaddingLeft = global::BLE.Client.Droid.Resource.Attribute.contentPaddingLeft;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.contentPaddingRight = global::BLE.Client.Droid.Resource.Attribute.contentPaddingRight;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.contentPaddingTop = global::BLE.Client.Droid.Resource.Attribute.contentPaddingTop;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.contentScrim = global::BLE.Client.Droid.Resource.Attribute.contentScrim;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.controlBackground = global::BLE.Client.Droid.Resource.Attribute.controlBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.counterEnabled = global::BLE.Client.Droid.Resource.Attribute.counterEnabled;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.counterMaxLength = global::BLE.Client.Droid.Resource.Attribute.counterMaxLength;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.counterOverflowTextAppearance = global::BLE.Client.Droid.Resource.Attribute.counterOverflowTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.counterTextAppearance = global::BLE.Client.Droid.Resource.Attribute.counterTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.customNavigationLayout = global::BLE.Client.Droid.Resource.Attribute.customNavigationLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.defaultQueryHint = global::BLE.Client.Droid.Resource.Attribute.defaultQueryHint;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.dialogPreferredPadding = global::BLE.Client.Droid.Resource.Attribute.dialogPreferredPadding;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.dialogTheme = global::BLE.Client.Droid.Resource.Attribute.dialogTheme;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.displayOptions = global::BLE.Client.Droid.Resource.Attribute.displayOptions;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.divider = global::BLE.Client.Droid.Resource.Attribute.divider;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.dividerHorizontal = global::BLE.Client.Droid.Resource.Attribute.dividerHorizontal;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.dividerPadding = global::BLE.Client.Droid.Resource.Attribute.dividerPadding;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.dividerVertical = global::BLE.Client.Droid.Resource.Attribute.dividerVertical;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.drawableSize = global::BLE.Client.Droid.Resource.Attribute.drawableSize;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.drawerArrowStyle = global::BLE.Client.Droid.Resource.Attribute.drawerArrowStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.dropDownListViewStyle = global::BLE.Client.Droid.Resource.Attribute.dropDownListViewStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.dropdownListPreferredItemHeight = global::BLE.Client.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.editTextBackground = global::BLE.Client.Droid.Resource.Attribute.editTextBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.editTextColor = global::BLE.Client.Droid.Resource.Attribute.editTextColor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.editTextStyle = global::BLE.Client.Droid.Resource.Attribute.editTextStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.elevation = global::BLE.Client.Droid.Resource.Attribute.elevation;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.errorEnabled = global::BLE.Client.Droid.Resource.Attribute.errorEnabled;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.errorTextAppearance = global::BLE.Client.Droid.Resource.Attribute.errorTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable = global::BLE.Client.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.expanded = global::BLE.Client.Droid.Resource.Attribute.expanded;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.expandedTitleGravity = global::BLE.Client.Droid.Resource.Attribute.expandedTitleGravity;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.expandedTitleMargin = global::BLE.Client.Droid.Resource.Attribute.expandedTitleMargin;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.expandedTitleMarginBottom = global::BLE.Client.Droid.Resource.Attribute.expandedTitleMarginBottom;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.expandedTitleMarginEnd = global::BLE.Client.Droid.Resource.Attribute.expandedTitleMarginEnd;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.expandedTitleMarginStart = global::BLE.Client.Droid.Resource.Attribute.expandedTitleMarginStart;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.expandedTitleMarginTop = global::BLE.Client.Droid.Resource.Attribute.expandedTitleMarginTop;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.expandedTitleTextAppearance = global::BLE.Client.Droid.Resource.Attribute.expandedTitleTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.externalRouteEnabledDrawable = global::BLE.Client.Droid.Resource.Attribute.externalRouteEnabledDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.fabSize = global::BLE.Client.Droid.Resource.Attribute.fabSize;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.foregroundInsidePadding = global::BLE.Client.Droid.Resource.Attribute.foregroundInsidePadding;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.gapBetweenBars = global::BLE.Client.Droid.Resource.Attribute.gapBetweenBars;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.goIcon = global::BLE.Client.Droid.Resource.Attribute.goIcon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.headerLayout = global::BLE.Client.Droid.Resource.Attribute.headerLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.height = global::BLE.Client.Droid.Resource.Attribute.height;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.hideOnContentScroll = global::BLE.Client.Droid.Resource.Attribute.hideOnContentScroll;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.hintAnimationEnabled = global::BLE.Client.Droid.Resource.Attribute.hintAnimationEnabled;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.hintEnabled = global::BLE.Client.Droid.Resource.Attribute.hintEnabled;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.hintTextAppearance = global::BLE.Client.Droid.Resource.Attribute.hintTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.homeAsUpIndicator = global::BLE.Client.Droid.Resource.Attribute.homeAsUpIndicator;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.homeLayout = global::BLE.Client.Droid.Resource.Attribute.homeLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.icon = global::BLE.Client.Droid.Resource.Attribute.icon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.iconifiedByDefault = global::BLE.Client.Droid.Resource.Attribute.iconifiedByDefault;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.imageButtonStyle = global::BLE.Client.Droid.Resource.Attribute.imageButtonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.indeterminateProgressStyle = global::BLE.Client.Droid.Resource.Attribute.indeterminateProgressStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.initialActivityCount = global::BLE.Client.Droid.Resource.Attribute.initialActivityCount;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.insetForeground = global::BLE.Client.Droid.Resource.Attribute.insetForeground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.isLightTheme = global::BLE.Client.Droid.Resource.Attribute.isLightTheme;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.itemBackground = global::BLE.Client.Droid.Resource.Attribute.itemBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.itemIconTint = global::BLE.Client.Droid.Resource.Attribute.itemIconTint;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.itemPadding = global::BLE.Client.Droid.Resource.Attribute.itemPadding;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.itemTextAppearance = global::BLE.Client.Droid.Resource.Attribute.itemTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.itemTextColor = global::BLE.Client.Droid.Resource.Attribute.itemTextColor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.keylines = global::BLE.Client.Droid.Resource.Attribute.keylines;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.layout = global::BLE.Client.Droid.Resource.Attribute.layout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.layoutManager = global::BLE.Client.Droid.Resource.Attribute.layoutManager;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.layout_anchor = global::BLE.Client.Droid.Resource.Attribute.layout_anchor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.layout_anchorGravity = global::BLE.Client.Droid.Resource.Attribute.layout_anchorGravity;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.layout_behavior = global::BLE.Client.Droid.Resource.Attribute.layout_behavior;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.layout_collapseMode = global::BLE.Client.Droid.Resource.Attribute.layout_collapseMode;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.layout_collapseParallaxMultiplier = global::BLE.Client.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.layout_keyline = global::BLE.Client.Droid.Resource.Attribute.layout_keyline;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.layout_scrollFlags = global::BLE.Client.Droid.Resource.Attribute.layout_scrollFlags;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.layout_scrollInterpolator = global::BLE.Client.Droid.Resource.Attribute.layout_scrollInterpolator;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.listChoiceBackgroundIndicator = global::BLE.Client.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.listDividerAlertDialog = global::BLE.Client.Droid.Resource.Attribute.listDividerAlertDialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.listItemLayout = global::BLE.Client.Droid.Resource.Attribute.listItemLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.listLayout = global::BLE.Client.Droid.Resource.Attribute.listLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.listPopupWindowStyle = global::BLE.Client.Droid.Resource.Attribute.listPopupWindowStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.listPreferredItemHeight = global::BLE.Client.Droid.Resource.Attribute.listPreferredItemHeight;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.listPreferredItemHeightLarge = global::BLE.Client.Droid.Resource.Attribute.listPreferredItemHeightLarge;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.listPreferredItemHeightSmall = global::BLE.Client.Droid.Resource.Attribute.listPreferredItemHeightSmall;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.listPreferredItemPaddingLeft = global::BLE.Client.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.listPreferredItemPaddingRight = global::BLE.Client.Droid.Resource.Attribute.listPreferredItemPaddingRight;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.logo = global::BLE.Client.Droid.Resource.Attribute.logo;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.logoDescription = global::BLE.Client.Droid.Resource.Attribute.logoDescription;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.maxActionInlineWidth = global::BLE.Client.Droid.Resource.Attribute.maxActionInlineWidth;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.maxButtonHeight = global::BLE.Client.Droid.Resource.Attribute.maxButtonHeight;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.measureWithLargestChild = global::BLE.Client.Droid.Resource.Attribute.measureWithLargestChild;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable = global::BLE.Client.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.mediaRouteButtonStyle = global::BLE.Client.Droid.Resource.Attribute.mediaRouteButtonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.mediaRouteCloseDrawable = global::BLE.Client.Droid.Resource.Attribute.mediaRouteCloseDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable = global::BLE.Client.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.mediaRoutePauseDrawable = global::BLE.Client.Droid.Resource.Attribute.mediaRoutePauseDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.mediaRoutePlayDrawable = global::BLE.Client.Droid.Resource.Attribute.mediaRoutePlayDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable = global::BLE.Client.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable = global::BLE.Client.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.mediaRouteTvIconDrawable = global::BLE.Client.Droid.Resource.Attribute.mediaRouteTvIconDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.menu = global::BLE.Client.Droid.Resource.Attribute.menu;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.multiChoiceItemLayout = global::BLE.Client.Droid.Resource.Attribute.multiChoiceItemLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.navigationContentDescription = global::BLE.Client.Droid.Resource.Attribute.navigationContentDescription;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.navigationIcon = global::BLE.Client.Droid.Resource.Attribute.navigationIcon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.navigationMode = global::BLE.Client.Droid.Resource.Attribute.navigationMode;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.overlapAnchor = global::BLE.Client.Droid.Resource.Attribute.overlapAnchor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.paddingEnd = global::BLE.Client.Droid.Resource.Attribute.paddingEnd;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.paddingStart = global::BLE.Client.Droid.Resource.Attribute.paddingStart;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.panelBackground = global::BLE.Client.Droid.Resource.Attribute.panelBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.panelMenuListTheme = global::BLE.Client.Droid.Resource.Attribute.panelMenuListTheme;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.panelMenuListWidth = global::BLE.Client.Droid.Resource.Attribute.panelMenuListWidth;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.popupMenuStyle = global::BLE.Client.Droid.Resource.Attribute.popupMenuStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.popupTheme = global::BLE.Client.Droid.Resource.Attribute.popupTheme;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.popupWindowStyle = global::BLE.Client.Droid.Resource.Attribute.popupWindowStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.preserveIconSpacing = global::BLE.Client.Droid.Resource.Attribute.preserveIconSpacing;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.pressedTranslationZ = global::BLE.Client.Droid.Resource.Attribute.pressedTranslationZ;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.progressBarPadding = global::BLE.Client.Droid.Resource.Attribute.progressBarPadding;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.progressBarStyle = global::BLE.Client.Droid.Resource.Attribute.progressBarStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.queryBackground = global::BLE.Client.Droid.Resource.Attribute.queryBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.queryHint = global::BLE.Client.Droid.Resource.Attribute.queryHint;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.radioButtonStyle = global::BLE.Client.Droid.Resource.Attribute.radioButtonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.ratingBarStyle = global::BLE.Client.Droid.Resource.Attribute.ratingBarStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.ratingBarStyleIndicator = global::BLE.Client.Droid.Resource.Attribute.ratingBarStyleIndicator;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.ratingBarStyleSmall = global::BLE.Client.Droid.Resource.Attribute.ratingBarStyleSmall;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.reverseLayout = global::BLE.Client.Droid.Resource.Attribute.reverseLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.rippleColor = global::BLE.Client.Droid.Resource.Attribute.rippleColor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.searchHintIcon = global::BLE.Client.Droid.Resource.Attribute.searchHintIcon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.searchIcon = global::BLE.Client.Droid.Resource.Attribute.searchIcon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.searchViewStyle = global::BLE.Client.Droid.Resource.Attribute.searchViewStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.seekBarStyle = global::BLE.Client.Droid.Resource.Attribute.seekBarStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.selectableItemBackground = global::BLE.Client.Droid.Resource.Attribute.selectableItemBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.selectableItemBackgroundBorderless = global::BLE.Client.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.showAsAction = global::BLE.Client.Droid.Resource.Attribute.showAsAction;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.showDividers = global::BLE.Client.Droid.Resource.Attribute.showDividers;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.showText = global::BLE.Client.Droid.Resource.Attribute.showText;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.singleChoiceItemLayout = global::BLE.Client.Droid.Resource.Attribute.singleChoiceItemLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.spanCount = global::BLE.Client.Droid.Resource.Attribute.spanCount;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.spinBars = global::BLE.Client.Droid.Resource.Attribute.spinBars;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.spinnerDropDownItemStyle = global::BLE.Client.Droid.Resource.Attribute.spinnerDropDownItemStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.spinnerStyle = global::BLE.Client.Droid.Resource.Attribute.spinnerStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.splitTrack = global::BLE.Client.Droid.Resource.Attribute.splitTrack;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.srcCompat = global::BLE.Client.Droid.Resource.Attribute.srcCompat;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.stackFromEnd = global::BLE.Client.Droid.Resource.Attribute.stackFromEnd;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.state_above_anchor = global::BLE.Client.Droid.Resource.Attribute.state_above_anchor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.statusBarBackground = global::BLE.Client.Droid.Resource.Attribute.statusBarBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.statusBarScrim = global::BLE.Client.Droid.Resource.Attribute.statusBarScrim;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.submitBackground = global::BLE.Client.Droid.Resource.Attribute.submitBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.subtitle = global::BLE.Client.Droid.Resource.Attribute.subtitle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.subtitleTextAppearance = global::BLE.Client.Droid.Resource.Attribute.subtitleTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.subtitleTextColor = global::BLE.Client.Droid.Resource.Attribute.subtitleTextColor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.subtitleTextStyle = global::BLE.Client.Droid.Resource.Attribute.subtitleTextStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.suggestionRowLayout = global::BLE.Client.Droid.Resource.Attribute.suggestionRowLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.switchMinWidth = global::BLE.Client.Droid.Resource.Attribute.switchMinWidth;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.switchPadding = global::BLE.Client.Droid.Resource.Attribute.switchPadding;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.switchStyle = global::BLE.Client.Droid.Resource.Attribute.switchStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.switchTextAppearance = global::BLE.Client.Droid.Resource.Attribute.switchTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.tabBackground = global::BLE.Client.Droid.Resource.Attribute.tabBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.tabContentStart = global::BLE.Client.Droid.Resource.Attribute.tabContentStart;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.tabGravity = global::BLE.Client.Droid.Resource.Attribute.tabGravity;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.tabIndicatorColor = global::BLE.Client.Droid.Resource.Attribute.tabIndicatorColor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.tabIndicatorHeight = global::BLE.Client.Droid.Resource.Attribute.tabIndicatorHeight;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.tabMaxWidth = global::BLE.Client.Droid.Resource.Attribute.tabMaxWidth;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.tabMinWidth = global::BLE.Client.Droid.Resource.Attribute.tabMinWidth;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.tabMode = global::BLE.Client.Droid.Resource.Attribute.tabMode;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.tabPadding = global::BLE.Client.Droid.Resource.Attribute.tabPadding;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.tabPaddingBottom = global::BLE.Client.Droid.Resource.Attribute.tabPaddingBottom;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.tabPaddingEnd = global::BLE.Client.Droid.Resource.Attribute.tabPaddingEnd;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.tabPaddingStart = global::BLE.Client.Droid.Resource.Attribute.tabPaddingStart;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.tabPaddingTop = global::BLE.Client.Droid.Resource.Attribute.tabPaddingTop;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.tabSelectedTextColor = global::BLE.Client.Droid.Resource.Attribute.tabSelectedTextColor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.tabTextAppearance = global::BLE.Client.Droid.Resource.Attribute.tabTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.tabTextColor = global::BLE.Client.Droid.Resource.Attribute.tabTextColor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.textAllCaps = global::BLE.Client.Droid.Resource.Attribute.textAllCaps;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.textAppearanceLargePopupMenu = global::BLE.Client.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.textAppearanceListItem = global::BLE.Client.Droid.Resource.Attribute.textAppearanceListItem;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.textAppearanceListItemSmall = global::BLE.Client.Droid.Resource.Attribute.textAppearanceListItemSmall;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle = global::BLE.Client.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.textAppearanceSearchResultTitle = global::BLE.Client.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.textAppearanceSmallPopupMenu = global::BLE.Client.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.textColorAlertDialogListItem = global::BLE.Client.Droid.Resource.Attribute.textColorAlertDialogListItem;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.textColorError = global::BLE.Client.Droid.Resource.Attribute.textColorError;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.textColorSearchUrl = global::BLE.Client.Droid.Resource.Attribute.textColorSearchUrl;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.theme = global::BLE.Client.Droid.Resource.Attribute.theme;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.thickness = global::BLE.Client.Droid.Resource.Attribute.thickness;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.thumbTextPadding = global::BLE.Client.Droid.Resource.Attribute.thumbTextPadding;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.title = global::BLE.Client.Droid.Resource.Attribute.title;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.titleEnabled = global::BLE.Client.Droid.Resource.Attribute.titleEnabled;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.titleMarginBottom = global::BLE.Client.Droid.Resource.Attribute.titleMarginBottom;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.titleMarginEnd = global::BLE.Client.Droid.Resource.Attribute.titleMarginEnd;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.titleMarginStart = global::BLE.Client.Droid.Resource.Attribute.titleMarginStart;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.titleMarginTop = global::BLE.Client.Droid.Resource.Attribute.titleMarginTop;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.titleMargins = global::BLE.Client.Droid.Resource.Attribute.titleMargins;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.titleTextAppearance = global::BLE.Client.Droid.Resource.Attribute.titleTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.titleTextColor = global::BLE.Client.Droid.Resource.Attribute.titleTextColor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.titleTextStyle = global::BLE.Client.Droid.Resource.Attribute.titleTextStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.toolbarId = global::BLE.Client.Droid.Resource.Attribute.toolbarId;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.toolbarNavigationButtonStyle = global::BLE.Client.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.toolbarStyle = global::BLE.Client.Droid.Resource.Attribute.toolbarStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.track = global::BLE.Client.Droid.Resource.Attribute.track;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.useCompatPadding = global::BLE.Client.Droid.Resource.Attribute.useCompatPadding;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.voiceIcon = global::BLE.Client.Droid.Resource.Attribute.voiceIcon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.windowActionBar = global::BLE.Client.Droid.Resource.Attribute.windowActionBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.windowActionBarOverlay = global::BLE.Client.Droid.Resource.Attribute.windowActionBarOverlay;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.windowActionModeOverlay = global::BLE.Client.Droid.Resource.Attribute.windowActionModeOverlay;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.windowFixedHeightMajor = global::BLE.Client.Droid.Resource.Attribute.windowFixedHeightMajor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.windowFixedHeightMinor = global::BLE.Client.Droid.Resource.Attribute.windowFixedHeightMinor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.windowFixedWidthMajor = global::BLE.Client.Droid.Resource.Attribute.windowFixedWidthMajor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.windowFixedWidthMinor = global::BLE.Client.Droid.Resource.Attribute.windowFixedWidthMinor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.windowMinWidthMajor = global::BLE.Client.Droid.Resource.Attribute.windowMinWidthMajor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.windowMinWidthMinor = global::BLE.Client.Droid.Resource.Attribute.windowMinWidthMinor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.windowNoTitle = global::BLE.Client.Droid.Resource.Attribute.windowNoTitle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Boolean.abc_action_bar_embed_tabs = global::BLE.Client.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Boolean.abc_allow_stacked_button_bar = global::BLE.Client.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::BLE.Client.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::BLE.Client.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::BLE.Client.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark = global::BLE.Client.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.abc_background_cache_hint_selector_material_light = global::BLE.Client.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.abc_color_highlight_material = global::BLE.Client.Droid.Resource.Color.abc_color_highlight_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.abc_input_method_navigation_guard = global::BLE.Client.Droid.Resource.Color.abc_input_method_navigation_guard;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.abc_primary_text_disable_only_material_dark = global::BLE.Client.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.abc_primary_text_disable_only_material_light = global::BLE.Client.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.abc_primary_text_material_dark = global::BLE.Client.Droid.Resource.Color.abc_primary_text_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.abc_primary_text_material_light = global::BLE.Client.Droid.Resource.Color.abc_primary_text_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.abc_search_url_text = global::BLE.Client.Droid.Resource.Color.abc_search_url_text;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.abc_search_url_text_normal = global::BLE.Client.Droid.Resource.Color.abc_search_url_text_normal;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.abc_search_url_text_pressed = global::BLE.Client.Droid.Resource.Color.abc_search_url_text_pressed;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.abc_search_url_text_selected = global::BLE.Client.Droid.Resource.Color.abc_search_url_text_selected;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.abc_secondary_text_material_dark = global::BLE.Client.Droid.Resource.Color.abc_secondary_text_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.abc_secondary_text_material_light = global::BLE.Client.Droid.Resource.Color.abc_secondary_text_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.accent_material_dark = global::BLE.Client.Droid.Resource.Color.accent_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.accent_material_light = global::BLE.Client.Droid.Resource.Color.accent_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.background_floating_material_dark = global::BLE.Client.Droid.Resource.Color.background_floating_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.background_floating_material_light = global::BLE.Client.Droid.Resource.Color.background_floating_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.background_material_dark = global::BLE.Client.Droid.Resource.Color.background_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.background_material_light = global::BLE.Client.Droid.Resource.Color.background_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.bright_foreground_disabled_material_dark = global::BLE.Client.Droid.Resource.Color.bright_foreground_disabled_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.bright_foreground_disabled_material_light = global::BLE.Client.Droid.Resource.Color.bright_foreground_disabled_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.bright_foreground_inverse_material_dark = global::BLE.Client.Droid.Resource.Color.bright_foreground_inverse_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.bright_foreground_inverse_material_light = global::BLE.Client.Droid.Resource.Color.bright_foreground_inverse_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.bright_foreground_material_dark = global::BLE.Client.Droid.Resource.Color.bright_foreground_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.bright_foreground_material_light = global::BLE.Client.Droid.Resource.Color.bright_foreground_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.button_material_dark = global::BLE.Client.Droid.Resource.Color.button_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.button_material_light = global::BLE.Client.Droid.Resource.Color.button_material_light;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.cardview_dark_background = global::BLE.Client.Droid.Resource.Color.cardview_dark_background;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.cardview_light_background = global::BLE.Client.Droid.Resource.Color.cardview_light_background;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.cardview_shadow_end_color = global::BLE.Client.Droid.Resource.Color.cardview_shadow_end_color;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.cardview_shadow_start_color = global::BLE.Client.Droid.Resource.Color.cardview_shadow_start_color;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.design_fab_shadow_end_color = global::BLE.Client.Droid.Resource.Color.design_fab_shadow_end_color;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.design_fab_shadow_mid_color = global::BLE.Client.Droid.Resource.Color.design_fab_shadow_mid_color;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.design_fab_shadow_start_color = global::BLE.Client.Droid.Resource.Color.design_fab_shadow_start_color;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.design_fab_stroke_end_inner_color = global::BLE.Client.Droid.Resource.Color.design_fab_stroke_end_inner_color;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.design_fab_stroke_end_outer_color = global::BLE.Client.Droid.Resource.Color.design_fab_stroke_end_outer_color;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.design_fab_stroke_top_inner_color = global::BLE.Client.Droid.Resource.Color.design_fab_stroke_top_inner_color;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.design_fab_stroke_top_outer_color = global::BLE.Client.Droid.Resource.Color.design_fab_stroke_top_outer_color;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.design_snackbar_background_color = global::BLE.Client.Droid.Resource.Color.design_snackbar_background_color;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.design_textinput_error_color_dark = global::BLE.Client.Droid.Resource.Color.design_textinput_error_color_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.design_textinput_error_color_light = global::BLE.Client.Droid.Resource.Color.design_textinput_error_color_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.dim_foreground_disabled_material_dark = global::BLE.Client.Droid.Resource.Color.dim_foreground_disabled_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.dim_foreground_disabled_material_light = global::BLE.Client.Droid.Resource.Color.dim_foreground_disabled_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.dim_foreground_material_dark = global::BLE.Client.Droid.Resource.Color.dim_foreground_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.dim_foreground_material_light = global::BLE.Client.Droid.Resource.Color.dim_foreground_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.foreground_material_dark = global::BLE.Client.Droid.Resource.Color.foreground_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.foreground_material_light = global::BLE.Client.Droid.Resource.Color.foreground_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.highlighted_text_material_dark = global::BLE.Client.Droid.Resource.Color.highlighted_text_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.highlighted_text_material_light = global::BLE.Client.Droid.Resource.Color.highlighted_text_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.material_blue_grey_800 = global::BLE.Client.Droid.Resource.Color.material_blue_grey_800;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.material_blue_grey_900 = global::BLE.Client.Droid.Resource.Color.material_blue_grey_900;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.material_blue_grey_950 = global::BLE.Client.Droid.Resource.Color.material_blue_grey_950;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.material_deep_teal_200 = global::BLE.Client.Droid.Resource.Color.material_deep_teal_200;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.material_deep_teal_500 = global::BLE.Client.Droid.Resource.Color.material_deep_teal_500;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.material_grey_100 = global::BLE.Client.Droid.Resource.Color.material_grey_100;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.material_grey_300 = global::BLE.Client.Droid.Resource.Color.material_grey_300;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.material_grey_50 = global::BLE.Client.Droid.Resource.Color.material_grey_50;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.material_grey_600 = global::BLE.Client.Droid.Resource.Color.material_grey_600;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.material_grey_800 = global::BLE.Client.Droid.Resource.Color.material_grey_800;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.material_grey_850 = global::BLE.Client.Droid.Resource.Color.material_grey_850;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.material_grey_900 = global::BLE.Client.Droid.Resource.Color.material_grey_900;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.primary_dark_material_dark = global::BLE.Client.Droid.Resource.Color.primary_dark_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.primary_dark_material_light = global::BLE.Client.Droid.Resource.Color.primary_dark_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.primary_material_dark = global::BLE.Client.Droid.Resource.Color.primary_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.primary_material_light = global::BLE.Client.Droid.Resource.Color.primary_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.primary_text_default_material_dark = global::BLE.Client.Droid.Resource.Color.primary_text_default_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.primary_text_default_material_light = global::BLE.Client.Droid.Resource.Color.primary_text_default_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.primary_text_disabled_material_dark = global::BLE.Client.Droid.Resource.Color.primary_text_disabled_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.primary_text_disabled_material_light = global::BLE.Client.Droid.Resource.Color.primary_text_disabled_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.ripple_material_dark = global::BLE.Client.Droid.Resource.Color.ripple_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.ripple_material_light = global::BLE.Client.Droid.Resource.Color.ripple_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.secondary_text_default_material_dark = global::BLE.Client.Droid.Resource.Color.secondary_text_default_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.secondary_text_default_material_light = global::BLE.Client.Droid.Resource.Color.secondary_text_default_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.secondary_text_disabled_material_dark = global::BLE.Client.Droid.Resource.Color.secondary_text_disabled_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.secondary_text_disabled_material_light = global::BLE.Client.Droid.Resource.Color.secondary_text_disabled_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.switch_thumb_disabled_material_dark = global::BLE.Client.Droid.Resource.Color.switch_thumb_disabled_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.switch_thumb_disabled_material_light = global::BLE.Client.Droid.Resource.Color.switch_thumb_disabled_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.switch_thumb_material_dark = global::BLE.Client.Droid.Resource.Color.switch_thumb_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.switch_thumb_material_light = global::BLE.Client.Droid.Resource.Color.switch_thumb_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.switch_thumb_normal_material_dark = global::BLE.Client.Droid.Resource.Color.switch_thumb_normal_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.switch_thumb_normal_material_light = global::BLE.Client.Droid.Resource.Color.switch_thumb_normal_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_action_bar_content_inset_material = global::BLE.Client.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_action_bar_default_height_material = global::BLE.Client.Droid.Resource.Dimension.abc_action_bar_default_height_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material = global::BLE.Client.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material = global::BLE.Client.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::BLE.Client.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::BLE.Client.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::BLE.Client.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_action_bar_progress_bar_size = global::BLE.Client.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_action_bar_stacked_max_height = global::BLE.Client.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::BLE.Client.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::BLE.Client.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::BLE.Client.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_action_button_min_height_material = global::BLE.Client.Droid.Resource.Dimension.abc_action_button_min_height_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_action_button_min_width_material = global::BLE.Client.Droid.Resource.Dimension.abc_action_button_min_width_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material = global::BLE.Client.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height = global::BLE.Client.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_button_inset_horizontal_material = global::BLE.Client.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_button_inset_vertical_material = global::BLE.Client.Droid.Resource.Dimension.abc_button_inset_vertical_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_button_padding_horizontal_material = global::BLE.Client.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_button_padding_vertical_material = global::BLE.Client.Droid.Resource.Dimension.abc_button_padding_vertical_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_config_prefDialogWidth = global::BLE.Client.Droid.Resource.Dimension.abc_config_prefDialogWidth;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_control_corner_material = global::BLE.Client.Droid.Resource.Dimension.abc_control_corner_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_control_inset_material = global::BLE.Client.Droid.Resource.Dimension.abc_control_inset_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_control_padding_material = global::BLE.Client.Droid.Resource.Dimension.abc_control_padding_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_dialog_fixed_height_major = global::BLE.Client.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_dialog_fixed_height_minor = global::BLE.Client.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_dialog_fixed_width_major = global::BLE.Client.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_dialog_fixed_width_minor = global::BLE.Client.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_dialog_min_width_major = global::BLE.Client.Droid.Resource.Dimension.abc_dialog_min_width_major;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_dialog_min_width_minor = global::BLE.Client.Droid.Resource.Dimension.abc_dialog_min_width_minor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_dialog_padding_material = global::BLE.Client.Droid.Resource.Dimension.abc_dialog_padding_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_dialog_padding_top_material = global::BLE.Client.Droid.Resource.Dimension.abc_dialog_padding_top_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_disabled_alpha_material_dark = global::BLE.Client.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_disabled_alpha_material_light = global::BLE.Client.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_dropdownitem_icon_width = global::BLE.Client.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left = global::BLE.Client.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right = global::BLE.Client.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material = global::BLE.Client.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::BLE.Client.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_edit_text_inset_top_material = global::BLE.Client.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_floating_window_z = global::BLE.Client.Droid.Resource.Dimension.abc_floating_window_z;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material = global::BLE.Client.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_panel_menu_list_width = global::BLE.Client.Droid.Resource.Dimension.abc_panel_menu_list_width;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_search_view_preferred_width = global::BLE.Client.Droid.Resource.Dimension.abc_search_view_preferred_width;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_seekbar_track_background_height_material = global::BLE.Client.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material = global::BLE.Client.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_select_dialog_padding_start_material = global::BLE.Client.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_switch_padding = global::BLE.Client.Droid.Resource.Dimension.abc_switch_padding;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_text_size_body_1_material = global::BLE.Client.Droid.Resource.Dimension.abc_text_size_body_1_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_text_size_body_2_material = global::BLE.Client.Droid.Resource.Dimension.abc_text_size_body_2_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_text_size_button_material = global::BLE.Client.Droid.Resource.Dimension.abc_text_size_button_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_text_size_caption_material = global::BLE.Client.Droid.Resource.Dimension.abc_text_size_caption_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_text_size_display_1_material = global::BLE.Client.Droid.Resource.Dimension.abc_text_size_display_1_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_text_size_display_2_material = global::BLE.Client.Droid.Resource.Dimension.abc_text_size_display_2_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_text_size_display_3_material = global::BLE.Client.Droid.Resource.Dimension.abc_text_size_display_3_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_text_size_display_4_material = global::BLE.Client.Droid.Resource.Dimension.abc_text_size_display_4_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_text_size_headline_material = global::BLE.Client.Droid.Resource.Dimension.abc_text_size_headline_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_text_size_large_material = global::BLE.Client.Droid.Resource.Dimension.abc_text_size_large_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_text_size_medium_material = global::BLE.Client.Droid.Resource.Dimension.abc_text_size_medium_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_text_size_menu_material = global::BLE.Client.Droid.Resource.Dimension.abc_text_size_menu_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_text_size_small_material = global::BLE.Client.Droid.Resource.Dimension.abc_text_size_small_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_text_size_subhead_material = global::BLE.Client.Droid.Resource.Dimension.abc_text_size_subhead_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::BLE.Client.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_text_size_title_material = global::BLE.Client.Droid.Resource.Dimension.abc_text_size_title_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.abc_text_size_title_material_toolbar = global::BLE.Client.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.cardview_compat_inset_shadow = global::BLE.Client.Droid.Resource.Dimension.cardview_compat_inset_shadow;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.cardview_default_elevation = global::BLE.Client.Droid.Resource.Dimension.cardview_default_elevation;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.cardview_default_radius = global::BLE.Client.Droid.Resource.Dimension.cardview_default_radius;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_appbar_elevation = global::BLE.Client.Droid.Resource.Dimension.design_appbar_elevation;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation = global::BLE.Client.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_fab_border_width = global::BLE.Client.Droid.Resource.Dimension.design_fab_border_width;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_fab_elevation = global::BLE.Client.Droid.Resource.Dimension.design_fab_elevation;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_fab_image_size = global::BLE.Client.Droid.Resource.Dimension.design_fab_image_size;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_fab_size_mini = global::BLE.Client.Droid.Resource.Dimension.design_fab_size_mini;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_fab_size_normal = global::BLE.Client.Droid.Resource.Dimension.design_fab_size_normal;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_fab_translation_z_pressed = global::BLE.Client.Droid.Resource.Dimension.design_fab_translation_z_pressed;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_navigation_elevation = global::BLE.Client.Droid.Resource.Dimension.design_navigation_elevation;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_navigation_icon_padding = global::BLE.Client.Droid.Resource.Dimension.design_navigation_icon_padding;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_navigation_icon_size = global::BLE.Client.Droid.Resource.Dimension.design_navigation_icon_size;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_navigation_max_width = global::BLE.Client.Droid.Resource.Dimension.design_navigation_max_width;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_navigation_padding_bottom = global::BLE.Client.Droid.Resource.Dimension.design_navigation_padding_bottom;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_navigation_separator_vertical_padding = global::BLE.Client.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_snackbar_action_inline_max_width = global::BLE.Client.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_snackbar_background_corner_radius = global::BLE.Client.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_snackbar_elevation = global::BLE.Client.Droid.Resource.Dimension.design_snackbar_elevation;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::BLE.Client.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_snackbar_max_width = global::BLE.Client.Droid.Resource.Dimension.design_snackbar_max_width;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_snackbar_min_width = global::BLE.Client.Droid.Resource.Dimension.design_snackbar_min_width;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_snackbar_padding_horizontal = global::BLE.Client.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_snackbar_padding_vertical = global::BLE.Client.Droid.Resource.Dimension.design_snackbar_padding_vertical;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::BLE.Client.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_snackbar_text_size = global::BLE.Client.Droid.Resource.Dimension.design_snackbar_text_size;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_tab_max_width = global::BLE.Client.Droid.Resource.Dimension.design_tab_max_width;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_tab_scrollable_min_width = global::BLE.Client.Droid.Resource.Dimension.design_tab_scrollable_min_width;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_tab_text_size = global::BLE.Client.Droid.Resource.Dimension.design_tab_text_size;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.design_tab_text_size_2line = global::BLE.Client.Droid.Resource.Dimension.design_tab_text_size_2line;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.disabled_alpha_material_dark = global::BLE.Client.Droid.Resource.Dimension.disabled_alpha_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.disabled_alpha_material_light = global::BLE.Client.Droid.Resource.Dimension.disabled_alpha_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.highlight_alpha_material_colored = global::BLE.Client.Droid.Resource.Dimension.highlight_alpha_material_colored;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.highlight_alpha_material_dark = global::BLE.Client.Droid.Resource.Dimension.highlight_alpha_material_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.highlight_alpha_material_light = global::BLE.Client.Droid.Resource.Dimension.highlight_alpha_material_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::BLE.Client.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::BLE.Client.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::BLE.Client.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height = global::BLE.Client.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size = global::BLE.Client.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height = global::BLE.Client.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top = global::BLE.Client.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.mr_dialog_fixed_width_major = global::BLE.Client.Droid.Resource.Dimension.mr_dialog_fixed_width_major;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.mr_dialog_fixed_width_minor = global::BLE.Client.Droid.Resource.Dimension.mr_dialog_fixed_width_minor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.notification_large_icon_height = global::BLE.Client.Droid.Resource.Dimension.notification_large_icon_height;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.notification_large_icon_width = global::BLE.Client.Droid.Resource.Dimension.notification_large_icon_width;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.notification_subtext_size = global::BLE.Client.Droid.Resource.Dimension.notification_subtext_size;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::BLE.Client.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_action_bar_item_background_material = global::BLE.Client.Droid.Resource.Drawable.abc_action_bar_item_background_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_btn_borderless_material = global::BLE.Client.Droid.Resource.Drawable.abc_btn_borderless_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_btn_check_material = global::BLE.Client.Droid.Resource.Drawable.abc_btn_check_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::BLE.Client.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::BLE.Client.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_btn_colored_material = global::BLE.Client.Droid.Resource.Drawable.abc_btn_colored_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_btn_default_mtrl_shape = global::BLE.Client.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_btn_radio_material = global::BLE.Client.Droid.Resource.Drawable.abc_btn_radio_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::BLE.Client.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::BLE.Client.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::BLE.Client.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::BLE.Client.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_cab_background_internal_bg = global::BLE.Client.Droid.Resource.Drawable.abc_cab_background_internal_bg;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_cab_background_top_material = global::BLE.Client.Droid.Resource.Drawable.abc_cab_background_top_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::BLE.Client.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_control_background_material = global::BLE.Client.Droid.Resource.Drawable.abc_control_background_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_edit_text_material = global::BLE.Client.Droid.Resource.Drawable.abc_edit_text_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::BLE.Client.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::BLE.Client.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::BLE.Client.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::BLE.Client.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::BLE.Client.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::BLE.Client.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_ic_star_black_16dp = global::BLE.Client.Droid.Resource.Drawable.abc_ic_star_black_16dp;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_ic_star_black_36dp = global::BLE.Client.Droid.Resource.Drawable.abc_ic_star_black_36dp;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_ic_star_half_black_16dp = global::BLE.Client.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_ic_star_half_black_36dp = global::BLE.Client.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_item_background_holo_dark = global::BLE.Client.Droid.Resource.Drawable.abc_item_background_holo_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_item_background_holo_light = global::BLE.Client.Droid.Resource.Drawable.abc_item_background_holo_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha = global::BLE.Client.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_list_focused_holo = global::BLE.Client.Droid.Resource.Drawable.abc_list_focused_holo;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_list_longpressed_holo = global::BLE.Client.Droid.Resource.Drawable.abc_list_longpressed_holo;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_list_pressed_holo_dark = global::BLE.Client.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_list_pressed_holo_light = global::BLE.Client.Droid.Resource.Drawable.abc_list_pressed_holo_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::BLE.Client.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::BLE.Client.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::BLE.Client.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light = global::BLE.Client.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_list_selector_holo_dark = global::BLE.Client.Droid.Resource.Drawable.abc_list_selector_holo_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_list_selector_holo_light = global::BLE.Client.Droid.Resource.Drawable.abc_list_selector_holo_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::BLE.Client.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_popup_background_mtrl_mult = global::BLE.Client.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_ratingbar_indicator_material = global::BLE.Client.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_ratingbar_small_material = global::BLE.Client.Droid.Resource.Drawable.abc_ratingbar_small_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::BLE.Client.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::BLE.Client.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::BLE.Client.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::BLE.Client.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::BLE.Client.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_seekbar_thumb_material = global::BLE.Client.Droid.Resource.Drawable.abc_seekbar_thumb_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_seekbar_track_material = global::BLE.Client.Droid.Resource.Drawable.abc_seekbar_track_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::BLE.Client.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_spinner_textfield_background_material = global::BLE.Client.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_switch_thumb_material = global::BLE.Client.Droid.Resource.Drawable.abc_switch_thumb_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha = global::BLE.Client.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_tab_indicator_material = global::BLE.Client.Droid.Resource.Drawable.abc_tab_indicator_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::BLE.Client.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_text_cursor_material = global::BLE.Client.Droid.Resource.Drawable.abc_text_cursor_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::BLE.Client.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::BLE.Client.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::BLE.Client.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::BLE.Client.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.abc_textfield_search_material = global::BLE.Client.Droid.Resource.Drawable.abc_textfield_search_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.design_fab_background = global::BLE.Client.Droid.Resource.Drawable.design_fab_background;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.design_snackbar_background = global::BLE.Client.Droid.Resource.Drawable.design_snackbar_background;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.ic_audiotrack_light = global::BLE.Client.Droid.Resource.Drawable.ic_audiotrack_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.mr_dialog_material_background_dark = global::BLE.Client.Droid.Resource.Drawable.mr_dialog_material_background_dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.mr_dialog_material_background_light = global::BLE.Client.Droid.Resource.Drawable.mr_dialog_material_background_light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Drawable.notification_template_icon_bg = global::BLE.Client.Droid.Resource.Drawable.notification_template_icon_bg;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.action0 = global::BLE.Client.Droid.Resource.Id.action0;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.action_bar = global::BLE.Client.Droid.Resource.Id.action_bar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.action_bar_activity_content = global::BLE.Client.Droid.Resource.Id.action_bar_activity_content;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.action_bar_container = global::BLE.Client.Droid.Resource.Id.action_bar_container;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.action_bar_root = global::BLE.Client.Droid.Resource.Id.action_bar_root;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.action_bar_spinner = global::BLE.Client.Droid.Resource.Id.action_bar_spinner;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.action_bar_subtitle = global::BLE.Client.Droid.Resource.Id.action_bar_subtitle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.action_bar_title = global::BLE.Client.Droid.Resource.Id.action_bar_title;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.action_context_bar = global::BLE.Client.Droid.Resource.Id.action_context_bar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.action_divider = global::BLE.Client.Droid.Resource.Id.action_divider;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.action_menu_divider = global::BLE.Client.Droid.Resource.Id.action_menu_divider;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.action_menu_presenter = global::BLE.Client.Droid.Resource.Id.action_menu_presenter;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.action_mode_bar = global::BLE.Client.Droid.Resource.Id.action_mode_bar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.action_mode_bar_stub = global::BLE.Client.Droid.Resource.Id.action_mode_bar_stub;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.action_mode_close_button = global::BLE.Client.Droid.Resource.Id.action_mode_close_button;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.activity_chooser_view_content = global::BLE.Client.Droid.Resource.Id.activity_chooser_view_content;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.alertTitle = global::BLE.Client.Droid.Resource.Id.alertTitle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.always = global::BLE.Client.Droid.Resource.Id.always;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.annotationLayout = global::BLE.Client.Droid.Resource.Id.annotationLayout;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.axisLayout = global::BLE.Client.Droid.Resource.Id.axisLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.beginning = global::BLE.Client.Droid.Resource.Id.beginning;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.bottom = global::BLE.Client.Droid.Resource.Id.bottom;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.bottom_labels = global::BLE.Client.Droid.Resource.Id.bottom_labels;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.buttonPanel = global::BLE.Client.Droid.Resource.Id.buttonPanel;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.cancel_action = global::BLE.Client.Droid.Resource.Id.cancel_action;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.center = global::BLE.Client.Droid.Resource.Id.center;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.center_horizontal = global::BLE.Client.Droid.Resource.Id.center_horizontal;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.center_vertical = global::BLE.Client.Droid.Resource.Id.center_vertical;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.chartBehaviorLayout = global::BLE.Client.Droid.Resource.Id.chartBehaviorLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.checkbox = global::BLE.Client.Droid.Resource.Id.checkbox;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.chronometer = global::BLE.Client.Droid.Resource.Id.chronometer;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.clip_horizontal = global::BLE.Client.Droid.Resource.Id.clip_horizontal;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.clip_vertical = global::BLE.Client.Droid.Resource.Id.clip_vertical;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.collapseActionView = global::BLE.Client.Droid.Resource.Id.collapseActionView;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.chartLegendScrollView = global::BLE.Client.Droid.Resource.Id.chartLegendScrollView;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.content = global::BLE.Client.Droid.Resource.Id.content;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.contentPanel = global::BLE.Client.Droid.Resource.Id.contentPanel;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.custom = global::BLE.Client.Droid.Resource.Id.custom;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.customPanel = global::BLE.Client.Droid.Resource.Id.customPanel;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.dataMarkerLayout = global::BLE.Client.Droid.Resource.Id.dataMarkerLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.decor_content_parent = global::BLE.Client.Droid.Resource.Id.decor_content_parent;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.default_activity_button = global::BLE.Client.Droid.Resource.Id.default_activity_button;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.design_bottom_sheet = global::BLE.Client.Droid.Resource.Id.design_bottom_sheet;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.design_menu_item_action_area = global::BLE.Client.Droid.Resource.Id.design_menu_item_action_area;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.design_menu_item_action_area_stub = global::BLE.Client.Droid.Resource.Id.design_menu_item_action_area_stub;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.design_menu_item_text = global::BLE.Client.Droid.Resource.Id.design_menu_item_text;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.design_navigation_view = global::BLE.Client.Droid.Resource.Id.design_navigation_view;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.disableHome = global::BLE.Client.Droid.Resource.Id.disableHome;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.edit_query = global::BLE.Client.Droid.Resource.Id.edit_query;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.end = global::BLE.Client.Droid.Resource.Id.end;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.end_padder = global::BLE.Client.Droid.Resource.Id.end_padder;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.enterAlways = global::BLE.Client.Droid.Resource.Id.enterAlways;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.enterAlwaysCollapsed = global::BLE.Client.Droid.Resource.Id.enterAlwaysCollapsed;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.exitUntilCollapsed = global::BLE.Client.Droid.Resource.Id.exitUntilCollapsed;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.expand_activities_button = global::BLE.Client.Droid.Resource.Id.expand_activities_button;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.expanded_menu = global::BLE.Client.Droid.Resource.Id.expanded_menu;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.fill = global::BLE.Client.Droid.Resource.Id.fill;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.fill_horizontal = global::BLE.Client.Droid.Resource.Id.fill_horizontal;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.fill_vertical = global::BLE.Client.Droid.Resource.Id.fill_vertical;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.@fixed = global::BLE.Client.Droid.Resource.Id.@fixed;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.gridLineLayout = global::BLE.Client.Droid.Resource.Id.gridLineLayout;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.gridLinesLayout = global::BLE.Client.Droid.Resource.Id.gridLinesLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.home = global::BLE.Client.Droid.Resource.Id.home;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.homeAsUp = global::BLE.Client.Droid.Resource.Id.homeAsUp;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.icon = global::BLE.Client.Droid.Resource.Id.icon;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.iconView = global::BLE.Client.Droid.Resource.Id.iconView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.ifRoom = global::BLE.Client.Droid.Resource.Id.ifRoom;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.image = global::BLE.Client.Droid.Resource.Id.image;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.info = global::BLE.Client.Droid.Resource.Id.info;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.item_touch_helper_previous_elevation = global::BLE.Client.Droid.Resource.Id.item_touch_helper_previous_elevation;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.label = global::BLE.Client.Droid.Resource.Id.label;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.left = global::BLE.Client.Droid.Resource.Id.left;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendHeader = global::BLE.Client.Droid.Resource.Id.legendHeader;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendItemsLayout = global::BLE.Client.Droid.Resource.Id.legendItemsLayout;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendLayout = global::BLE.Client.Droid.Resource.Id.legendLayout;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendScrollView = global::BLE.Client.Droid.Resource.Id.legendScrollView;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendViewGroup = global::BLE.Client.Droid.Resource.Id.legendViewGroup;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.line1 = global::BLE.Client.Droid.Resource.Id.line1;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.line3 = global::BLE.Client.Droid.Resource.Id.line3;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.listMode = global::BLE.Client.Droid.Resource.Id.listMode;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.list_item = global::BLE.Client.Droid.Resource.Id.list_item;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.media_actions = global::BLE.Client.Droid.Resource.Id.media_actions;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.middle = global::BLE.Client.Droid.Resource.Id.middle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.mini = global::BLE.Client.Droid.Resource.Id.mini;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.mr_art = global::BLE.Client.Droid.Resource.Id.mr_art;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.mr_chooser_list = global::BLE.Client.Droid.Resource.Id.mr_chooser_list;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.mr_chooser_route_desc = global::BLE.Client.Droid.Resource.Id.mr_chooser_route_desc;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.mr_chooser_route_icon = global::BLE.Client.Droid.Resource.Id.mr_chooser_route_icon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.mr_chooser_route_name = global::BLE.Client.Droid.Resource.Id.mr_chooser_route_name;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.mr_close = global::BLE.Client.Droid.Resource.Id.mr_close;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.mr_control_divider = global::BLE.Client.Droid.Resource.Id.mr_control_divider;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.mr_control_subtitle = global::BLE.Client.Droid.Resource.Id.mr_control_subtitle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.mr_control_title = global::BLE.Client.Droid.Resource.Id.mr_control_title;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.mr_control_title_container = global::BLE.Client.Droid.Resource.Id.mr_control_title_container;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.mr_custom_control = global::BLE.Client.Droid.Resource.Id.mr_custom_control;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.mr_default_control = global::BLE.Client.Droid.Resource.Id.mr_default_control;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.mr_dialog_area = global::BLE.Client.Droid.Resource.Id.mr_dialog_area;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.mr_expandable_area = global::BLE.Client.Droid.Resource.Id.mr_expandable_area;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.mr_group_expand_collapse = global::BLE.Client.Droid.Resource.Id.mr_group_expand_collapse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.mr_media_main_control = global::BLE.Client.Droid.Resource.Id.mr_media_main_control;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.mr_name = global::BLE.Client.Droid.Resource.Id.mr_name;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.mr_playback_control = global::BLE.Client.Droid.Resource.Id.mr_playback_control;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.mr_title_bar = global::BLE.Client.Droid.Resource.Id.mr_title_bar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.mr_volume_control = global::BLE.Client.Droid.Resource.Id.mr_volume_control;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.mr_volume_group_list = global::BLE.Client.Droid.Resource.Id.mr_volume_group_list;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.mr_volume_item_icon = global::BLE.Client.Droid.Resource.Id.mr_volume_item_icon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.mr_volume_slider = global::BLE.Client.Droid.Resource.Id.mr_volume_slider;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.multiply = global::BLE.Client.Droid.Resource.Id.multiply;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.navigation_header_container = global::BLE.Client.Droid.Resource.Id.navigation_header_container;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.never = global::BLE.Client.Droid.Resource.Id.never;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.none = global::BLE.Client.Droid.Resource.Id.none;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.normal = global::BLE.Client.Droid.Resource.Id.normal;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.parallax = global::BLE.Client.Droid.Resource.Id.parallax;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.parentPanel = global::BLE.Client.Droid.Resource.Id.parentPanel;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.pin = global::BLE.Client.Droid.Resource.Id.pin;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.progress_circular = global::BLE.Client.Droid.Resource.Id.progress_circular;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.progress_horizontal = global::BLE.Client.Droid.Resource.Id.progress_horizontal;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.radio = global::BLE.Client.Droid.Resource.Id.radio;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.right = global::BLE.Client.Droid.Resource.Id.right;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.rootLayout = global::BLE.Client.Droid.Resource.Id.rootLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.screen = global::BLE.Client.Droid.Resource.Id.screen;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.scroll = global::BLE.Client.Droid.Resource.Id.scroll;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.scrollIndicatorDown = global::BLE.Client.Droid.Resource.Id.scrollIndicatorDown;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.scrollIndicatorUp = global::BLE.Client.Droid.Resource.Id.scrollIndicatorUp;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.scrollView = global::BLE.Client.Droid.Resource.Id.scrollView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.scrollable = global::BLE.Client.Droid.Resource.Id.scrollable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.search_badge = global::BLE.Client.Droid.Resource.Id.search_badge;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.search_bar = global::BLE.Client.Droid.Resource.Id.search_bar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.search_button = global::BLE.Client.Droid.Resource.Id.search_button;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.search_close_btn = global::BLE.Client.Droid.Resource.Id.search_close_btn;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.search_edit_frame = global::BLE.Client.Droid.Resource.Id.search_edit_frame;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.search_go_btn = global::BLE.Client.Droid.Resource.Id.search_go_btn;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.search_mag_icon = global::BLE.Client.Droid.Resource.Id.search_mag_icon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.search_plate = global::BLE.Client.Droid.Resource.Id.search_plate;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.search_src_text = global::BLE.Client.Droid.Resource.Id.search_src_text;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.search_voice_btn = global::BLE.Client.Droid.Resource.Id.search_voice_btn;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.select_dialog_listview = global::BLE.Client.Droid.Resource.Id.select_dialog_listview;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.seriesLayout = global::BLE.Client.Droid.Resource.Id.seriesLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.shortcut = global::BLE.Client.Droid.Resource.Id.shortcut;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.showCustom = global::BLE.Client.Droid.Resource.Id.showCustom;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.showHome = global::BLE.Client.Droid.Resource.Id.showHome;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.showTitle = global::BLE.Client.Droid.Resource.Id.showTitle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.snackbar_action = global::BLE.Client.Droid.Resource.Id.snackbar_action;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.snackbar_text = global::BLE.Client.Droid.Resource.Id.snackbar_text;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.snap = global::BLE.Client.Droid.Resource.Id.snap;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.spacer = global::BLE.Client.Droid.Resource.Id.spacer;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.split_action_bar = global::BLE.Client.Droid.Resource.Id.split_action_bar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.src_atop = global::BLE.Client.Droid.Resource.Id.src_atop;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.src_in = global::BLE.Client.Droid.Resource.Id.src_in;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.src_over = global::BLE.Client.Droid.Resource.Id.src_over;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.start = global::BLE.Client.Droid.Resource.Id.start;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.status_bar_latest_event_content = global::BLE.Client.Droid.Resource.Id.status_bar_latest_event_content;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.stripLinesLayout = global::BLE.Client.Droid.Resource.Id.stripLinesLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.submit_area = global::BLE.Client.Droid.Resource.Id.submit_area;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.tabMode = global::BLE.Client.Droid.Resource.Id.tabMode;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.technicalIndicatorLayout = global::BLE.Client.Droid.Resource.Id.technicalIndicatorLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.text = global::BLE.Client.Droid.Resource.Id.text;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.text2 = global::BLE.Client.Droid.Resource.Id.text2;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.textSpacerNoButtons = global::BLE.Client.Droid.Resource.Id.textSpacerNoButtons;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.thumbLayout = global::BLE.Client.Droid.Resource.Id.thumbLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.time = global::BLE.Client.Droid.Resource.Id.time;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.title = global::BLE.Client.Droid.Resource.Id.title;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.titleLayout = global::BLE.Client.Droid.Resource.Id.titleLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.title_template = global::BLE.Client.Droid.Resource.Id.title_template;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.top = global::BLE.Client.Droid.Resource.Id.top;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.topPanel = global::BLE.Client.Droid.Resource.Id.topPanel;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.top_labels = global::BLE.Client.Droid.Resource.Id.top_labels;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.touch_outside = global::BLE.Client.Droid.Resource.Id.touch_outside;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.up = global::BLE.Client.Droid.Resource.Id.up;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.useLogo = global::BLE.Client.Droid.Resource.Id.useLogo;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.view_offset_helper = global::BLE.Client.Droid.Resource.Id.view_offset_helper;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.volume_item_container = global::BLE.Client.Droid.Resource.Id.volume_item_container;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.withText = global::BLE.Client.Droid.Resource.Id.withText;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.wrap_content = global::BLE.Client.Droid.Resource.Id.wrap_content;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Integer.abc_config_activityDefaultDur = global::BLE.Client.Droid.Resource.Integer.abc_config_activityDefaultDur;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Integer.abc_config_activityShortDur = global::BLE.Client.Droid.Resource.Integer.abc_config_activityShortDur;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Integer.bottom_sheet_slide_duration = global::BLE.Client.Droid.Resource.Integer.bottom_sheet_slide_duration;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Integer.cancel_button_image_alpha = global::BLE.Client.Droid.Resource.Integer.cancel_button_image_alpha;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Integer.design_snackbar_text_max_lines = global::BLE.Client.Droid.Resource.Integer.design_snackbar_text_max_lines;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms = global::BLE.Client.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms = global::BLE.Client.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms = global::BLE.Client.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Integer.status_bar_notification_info_maxnum = global::BLE.Client.Droid.Resource.Integer.status_bar_notification_info_maxnum;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Interpolator.mr_fast_out_slow_in = global::BLE.Client.Droid.Resource.Interpolator.mr_fast_out_slow_in;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Interpolator.mr_linear_out_slow_in = global::BLE.Client.Droid.Resource.Interpolator.mr_linear_out_slow_in;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_action_bar_title_item = global::BLE.Client.Droid.Resource.Layout.abc_action_bar_title_item;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_action_bar_up_container = global::BLE.Client.Droid.Resource.Layout.abc_action_bar_up_container;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_action_bar_view_list_nav_layout = global::BLE.Client.Droid.Resource.Layout.abc_action_bar_view_list_nav_layout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_action_menu_item_layout = global::BLE.Client.Droid.Resource.Layout.abc_action_menu_item_layout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_action_menu_layout = global::BLE.Client.Droid.Resource.Layout.abc_action_menu_layout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_action_mode_bar = global::BLE.Client.Droid.Resource.Layout.abc_action_mode_bar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_action_mode_close_item_material = global::BLE.Client.Droid.Resource.Layout.abc_action_mode_close_item_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_activity_chooser_view = global::BLE.Client.Droid.Resource.Layout.abc_activity_chooser_view;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_activity_chooser_view_list_item = global::BLE.Client.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_alert_dialog_button_bar_material = global::BLE.Client.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_alert_dialog_material = global::BLE.Client.Droid.Resource.Layout.abc_alert_dialog_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_dialog_title_material = global::BLE.Client.Droid.Resource.Layout.abc_dialog_title_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_expanded_menu_layout = global::BLE.Client.Droid.Resource.Layout.abc_expanded_menu_layout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_list_menu_item_checkbox = global::BLE.Client.Droid.Resource.Layout.abc_list_menu_item_checkbox;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_list_menu_item_icon = global::BLE.Client.Droid.Resource.Layout.abc_list_menu_item_icon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_list_menu_item_layout = global::BLE.Client.Droid.Resource.Layout.abc_list_menu_item_layout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_list_menu_item_radio = global::BLE.Client.Droid.Resource.Layout.abc_list_menu_item_radio;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_popup_menu_item_layout = global::BLE.Client.Droid.Resource.Layout.abc_popup_menu_item_layout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_screen_content_include = global::BLE.Client.Droid.Resource.Layout.abc_screen_content_include;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_screen_simple = global::BLE.Client.Droid.Resource.Layout.abc_screen_simple;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode = global::BLE.Client.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_screen_toolbar = global::BLE.Client.Droid.Resource.Layout.abc_screen_toolbar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line = global::BLE.Client.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_search_view = global::BLE.Client.Droid.Resource.Layout.abc_search_view;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.abc_select_dialog_material = global::BLE.Client.Droid.Resource.Layout.abc_select_dialog_material;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.chart_layout = global::BLE.Client.Droid.Resource.Layout.chart_layout;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.chart_legend = global::BLE.Client.Droid.Resource.Layout.chart_legend;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.chart_legend_item = global::BLE.Client.Droid.Resource.Layout.chart_legend_item;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.design_bottom_sheet_dialog = global::BLE.Client.Droid.Resource.Layout.design_bottom_sheet_dialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.design_layout_snackbar = global::BLE.Client.Droid.Resource.Layout.design_layout_snackbar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.design_layout_snackbar_include = global::BLE.Client.Droid.Resource.Layout.design_layout_snackbar_include;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.design_layout_tab_icon = global::BLE.Client.Droid.Resource.Layout.design_layout_tab_icon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.design_layout_tab_text = global::BLE.Client.Droid.Resource.Layout.design_layout_tab_text;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.design_menu_item_action_area = global::BLE.Client.Droid.Resource.Layout.design_menu_item_action_area;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.design_navigation_item = global::BLE.Client.Droid.Resource.Layout.design_navigation_item;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.design_navigation_item_header = global::BLE.Client.Droid.Resource.Layout.design_navigation_item_header;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.design_navigation_item_separator = global::BLE.Client.Droid.Resource.Layout.design_navigation_item_separator;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.design_navigation_item_subheader = global::BLE.Client.Droid.Resource.Layout.design_navigation_item_subheader;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.design_navigation_menu = global::BLE.Client.Droid.Resource.Layout.design_navigation_menu;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.design_navigation_menu_item = global::BLE.Client.Droid.Resource.Layout.design_navigation_menu_item;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.mr_chooser_dialog = global::BLE.Client.Droid.Resource.Layout.mr_chooser_dialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.mr_chooser_list_item = global::BLE.Client.Droid.Resource.Layout.mr_chooser_list_item;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.mr_controller_material_dialog_b = global::BLE.Client.Droid.Resource.Layout.mr_controller_material_dialog_b;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.mr_controller_volume_item = global::BLE.Client.Droid.Resource.Layout.mr_controller_volume_item;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.mr_playback_control = global::BLE.Client.Droid.Resource.Layout.mr_playback_control;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.mr_volume_control = global::BLE.Client.Droid.Resource.Layout.mr_volume_control;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.notification_media_action = global::BLE.Client.Droid.Resource.Layout.notification_media_action;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.notification_media_cancel_action = global::BLE.Client.Droid.Resource.Layout.notification_media_cancel_action;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.notification_template_big_media = global::BLE.Client.Droid.Resource.Layout.notification_template_big_media;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.notification_template_big_media_narrow = global::BLE.Client.Droid.Resource.Layout.notification_template_big_media_narrow;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.notification_template_media = global::BLE.Client.Droid.Resource.Layout.notification_template_media;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.notification_template_part_chronometer = global::BLE.Client.Droid.Resource.Layout.notification_template_part_chronometer;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.notification_template_part_time = global::BLE.Client.Droid.Resource.Layout.notification_template_part_time;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.range_navigator_layout = global::BLE.Client.Droid.Resource.Layout.range_navigator_layout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.select_dialog_item_material = global::BLE.Client.Droid.Resource.Layout.select_dialog_item_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.select_dialog_multichoice_material = global::BLE.Client.Droid.Resource.Layout.select_dialog_multichoice_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.select_dialog_singlechoice_material = global::BLE.Client.Droid.Resource.Layout.select_dialog_singlechoice_material;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.support_simple_spinner_dropdown_item = global::BLE.Client.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.abc_action_bar_home_description = global::BLE.Client.Droid.Resource.String.abc_action_bar_home_description;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.abc_action_bar_home_description_format = global::BLE.Client.Droid.Resource.String.abc_action_bar_home_description_format;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.abc_action_bar_home_subtitle_description_format = global::BLE.Client.Droid.Resource.String.abc_action_bar_home_subtitle_description_format;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.abc_action_bar_up_description = global::BLE.Client.Droid.Resource.String.abc_action_bar_up_description;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.abc_action_menu_overflow_description = global::BLE.Client.Droid.Resource.String.abc_action_menu_overflow_description;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.abc_action_mode_done = global::BLE.Client.Droid.Resource.String.abc_action_mode_done;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.abc_activity_chooser_view_see_all = global::BLE.Client.Droid.Resource.String.abc_activity_chooser_view_see_all;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.abc_activitychooserview_choose_application = global::BLE.Client.Droid.Resource.String.abc_activitychooserview_choose_application;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.abc_capital_off = global::BLE.Client.Droid.Resource.String.abc_capital_off;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.abc_capital_on = global::BLE.Client.Droid.Resource.String.abc_capital_on;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.abc_search_hint = global::BLE.Client.Droid.Resource.String.abc_search_hint;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.abc_searchview_description_clear = global::BLE.Client.Droid.Resource.String.abc_searchview_description_clear;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.abc_searchview_description_query = global::BLE.Client.Droid.Resource.String.abc_searchview_description_query;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.abc_searchview_description_search = global::BLE.Client.Droid.Resource.String.abc_searchview_description_search;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.abc_searchview_description_submit = global::BLE.Client.Droid.Resource.String.abc_searchview_description_submit;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.abc_searchview_description_voice = global::BLE.Client.Droid.Resource.String.abc_searchview_description_voice;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.abc_shareactionprovider_share_with = global::BLE.Client.Droid.Resource.String.abc_shareactionprovider_share_with;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.abc_shareactionprovider_share_with_application = global::BLE.Client.Droid.Resource.String.abc_shareactionprovider_share_with_application;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.abc_toolbar_collapse_description = global::BLE.Client.Droid.Resource.String.abc_toolbar_collapse_description;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.appbar_scrolling_view_behavior = global::BLE.Client.Droid.Resource.String.appbar_scrolling_view_behavior;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.bottom_sheet_behavior = global::BLE.Client.Droid.Resource.String.bottom_sheet_behavior;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.character_counter_pattern = global::BLE.Client.Droid.Resource.String.character_counter_pattern;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.mr_button_content_description = global::BLE.Client.Droid.Resource.String.mr_button_content_description;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.mr_chooser_searching = global::BLE.Client.Droid.Resource.String.mr_chooser_searching;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.mr_chooser_title = global::BLE.Client.Droid.Resource.String.mr_chooser_title;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.mr_controller_casting_screen = global::BLE.Client.Droid.Resource.String.mr_controller_casting_screen;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.mr_controller_close_description = global::BLE.Client.Droid.Resource.String.mr_controller_close_description;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.mr_controller_collapse_group = global::BLE.Client.Droid.Resource.String.mr_controller_collapse_group;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.mr_controller_disconnect = global::BLE.Client.Droid.Resource.String.mr_controller_disconnect;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.mr_controller_expand_group = global::BLE.Client.Droid.Resource.String.mr_controller_expand_group;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.mr_controller_no_info_available = global::BLE.Client.Droid.Resource.String.mr_controller_no_info_available;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.mr_controller_no_media_selected = global::BLE.Client.Droid.Resource.String.mr_controller_no_media_selected;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.mr_controller_pause = global::BLE.Client.Droid.Resource.String.mr_controller_pause;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.mr_controller_play = global::BLE.Client.Droid.Resource.String.mr_controller_play;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.mr_controller_stop = global::BLE.Client.Droid.Resource.String.mr_controller_stop;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.mr_system_route_name = global::BLE.Client.Droid.Resource.String.mr_system_route_name;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.mr_user_route_category_name = global::BLE.Client.Droid.Resource.String.mr_user_route_category_name;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.String.q = global::BLE.Client.Droid.Resource.String.q;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.String.quarter = global::BLE.Client.Droid.Resource.String.quarter;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_close_label = global::BLE.Client.Droid.Resource.String.sfchart_close_label;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_high_label = global::BLE.Client.Droid.Resource.String.sfchart_high_label;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_low_label = global::BLE.Client.Droid.Resource.String.sfchart_low_label;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_open_label = global::BLE.Client.Droid.Resource.String.sfchart_open_label;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.String.status_bar_notification_info_overflow = global::BLE.Client.Droid.Resource.String.status_bar_notification_info_overflow;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.String.w = global::BLE.Client.Droid.Resource.String.w;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.String.week = global::BLE.Client.Droid.Resource.String.week;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.AlertDialog_AppCompat = global::BLE.Client.Droid.Resource.Style.AlertDialog_AppCompat;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.AlertDialog_AppCompat_Light = global::BLE.Client.Droid.Resource.Style.AlertDialog_AppCompat_Light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Animation_AppCompat_Dialog = global::BLE.Client.Droid.Resource.Style.Animation_AppCompat_Dialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Animation_AppCompat_DropDownUp = global::BLE.Client.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Animation_Design_BottomSheetDialog = global::BLE.Client.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_AlertDialog_AppCompat = global::BLE.Client.Droid.Resource.Style.Base_AlertDialog_AppCompat;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light = global::BLE.Client.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Animation_AppCompat_Dialog = global::BLE.Client.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::BLE.Client.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_CardView = global::BLE.Client.Droid.Resource.Style.Base_CardView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat = global::BLE.Client.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::BLE.Client.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::BLE.Client.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Theme_AppCompat = global::BLE.Client.Droid.Resource.Style.Base_Theme_AppCompat;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::BLE.Client.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Theme_AppCompat_Dialog = global::BLE.Client.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::BLE.Client.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::BLE.Client.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::BLE.Client.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::BLE.Client.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Theme_AppCompat_Light = global::BLE.Client.Droid.Resource.Style.Base_Theme_AppCompat_Light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::BLE.Client.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::BLE.Client.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::BLE.Client.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::BLE.Client.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::BLE.Client.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::BLE.Client.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat = global::BLE.Client.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::BLE.Client.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::BLE.Client.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::BLE.Client.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::BLE.Client.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::BLE.Client.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::BLE.Client.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::BLE.Client.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::BLE.Client.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_V21_Theme_AppCompat = global::BLE.Client.Droid.Resource.Style.Base_V21_Theme_AppCompat;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::BLE.Client.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light = global::BLE.Client.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::BLE.Client.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_V22_Theme_AppCompat = global::BLE.Client.Droid.Resource.Style.Base_V22_Theme_AppCompat;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light = global::BLE.Client.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_V23_Theme_AppCompat = global::BLE.Client.Droid.Resource.Style.Base_V23_Theme_AppCompat;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light = global::BLE.Client.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_V7_Theme_AppCompat = global::BLE.Client.Droid.Resource.Style.Base_V7_Theme_AppCompat;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::BLE.Client.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light = global::BLE.Client.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::BLE.Client.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::BLE.Client.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::BLE.Client.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_Button = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_Button;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_EditText = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_ListView = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_SearchView = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_Spinner = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::BLE.Client.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_Widget_Design_TabLayout = global::BLE.Client.Droid.Resource.Style.Base_Widget_Design_TabLayout;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.CardView = global::BLE.Client.Droid.Resource.Style.CardView;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.CardView_Dark = global::BLE.Client.Droid.Resource.Style.CardView_Dark;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.CardView_Light = global::BLE.Client.Droid.Resource.Style.CardView_Light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Platform_AppCompat = global::BLE.Client.Droid.Resource.Style.Platform_AppCompat;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Platform_AppCompat_Light = global::BLE.Client.Droid.Resource.Style.Platform_AppCompat_Light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat = global::BLE.Client.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::BLE.Client.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::BLE.Client.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Platform_V11_AppCompat = global::BLE.Client.Droid.Resource.Style.Platform_V11_AppCompat;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Platform_V11_AppCompat_Light = global::BLE.Client.Droid.Resource.Style.Platform_V11_AppCompat_Light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Platform_V14_AppCompat = global::BLE.Client.Droid.Resource.Style.Platform_V14_AppCompat;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Platform_V14_AppCompat_Light = global::BLE.Client.Droid.Resource.Style.Platform_V14_AppCompat_Light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner = global::BLE.Client.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::BLE.Client.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::BLE.Client.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::BLE.Client.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::BLE.Client.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::BLE.Client.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::BLE.Client.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::BLE.Client.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::BLE.Client.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::BLE.Client.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::BLE.Client.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::BLE.Client.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::BLE.Client.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::BLE.Client.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::BLE.Client.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Body1 = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Body2 = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Button = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Button;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Caption = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Display1 = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Display2 = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Display3 = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Display4 = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Headline = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Inverse = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Large = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Large;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Medium = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Menu = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Small = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Small;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Subhead = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Title = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Title;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::BLE.Client.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::BLE.Client.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_Design_Counter = global::BLE.Client.Droid.Resource.Style.TextAppearance_Design_Counter;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow = global::BLE.Client.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_Design_Error = global::BLE.Client.Droid.Resource.Style.TextAppearance_Design_Error;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_Design_Hint = global::BLE.Client.Droid.Resource.Style.TextAppearance_Design_Hint;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message = global::BLE.Client.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_Design_Tab = global::BLE.Client.Droid.Resource.Style.TextAppearance_Design_Tab;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_StatusBar_EventContent = global::BLE.Client.Droid.Resource.Style.TextAppearance_StatusBar_EventContent;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Info = global::BLE.Client.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Info;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Line2 = global::BLE.Client.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Line2;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Time = global::BLE.Client.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Time;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Title = global::BLE.Client.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Title;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::BLE.Client.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::BLE.Client.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::BLE.Client.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_AppCompat = global::BLE.Client.Droid.Resource.Style.Theme_AppCompat;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_AppCompat_CompactMenu = global::BLE.Client.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_AppCompat_DayNight = global::BLE.Client.Droid.Resource.Style.Theme_AppCompat_DayNight;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::BLE.Client.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::BLE.Client.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::BLE.Client.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::BLE.Client.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::BLE.Client.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::BLE.Client.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_AppCompat_Dialog = global::BLE.Client.Droid.Resource.Style.Theme_AppCompat_Dialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert = global::BLE.Client.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::BLE.Client.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::BLE.Client.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_AppCompat_Light = global::BLE.Client.Droid.Resource.Style.Theme_AppCompat_Light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::BLE.Client.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_AppCompat_Light_Dialog = global::BLE.Client.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::BLE.Client.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::BLE.Client.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::BLE.Client.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::BLE.Client.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_AppCompat_NoActionBar = global::BLE.Client.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_Design = global::BLE.Client.Droid.Resource.Style.Theme_Design;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_Design_BottomSheetDialog = global::BLE.Client.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_Design_Light = global::BLE.Client.Droid.Resource.Style.Theme_Design_Light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::BLE.Client.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_Design_Light_NoActionBar = global::BLE.Client.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_Design_NoActionBar = global::BLE.Client.Droid.Resource.Style.Theme_Design_NoActionBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_MediaRouter = global::BLE.Client.Droid.Resource.Style.Theme_MediaRouter;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_MediaRouter_Light = global::BLE.Client.Droid.Resource.Style.Theme_MediaRouter_Light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::BLE.Client.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel = global::BLE.Client.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.ThemeOverlay_AppCompat = global::BLE.Client.Droid.Resource.Style.ThemeOverlay_AppCompat;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::BLE.Client.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark = global::BLE.Client.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::BLE.Client.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.ThemeOverlay_AppCompat_Light = global::BLE.Client.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_ActionBar = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_ActionBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_ActionButton = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_ActionButton;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_ActionMode = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_ActionMode;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Button = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Button;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Button_Borderless = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Button_Colored = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Button_Small = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Button_Small;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_ButtonBar = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_EditText = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_EditText;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_ImageButton = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_ImageButton;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Light_SearchView = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_ListView = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_ListView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_ListView_Menu = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_PopupMenu = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_PopupWindow = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_ProgressBar = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_RatingBar = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_RatingBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_SearchView = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_SearchView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_SeekBar = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_SeekBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Spinner = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Spinner;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Toolbar = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Toolbar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::BLE.Client.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_Design_AppBarLayout = global::BLE.Client.Droid.Resource.Style.Widget_Design_AppBarLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_Design_BottomSheet_Modal = global::BLE.Client.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_Design_CollapsingToolbar = global::BLE.Client.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_Design_CoordinatorLayout = global::BLE.Client.Droid.Resource.Style.Widget_Design_CoordinatorLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_Design_FloatingActionButton = global::BLE.Client.Droid.Resource.Style.Widget_Design_FloatingActionButton;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_Design_NavigationView = global::BLE.Client.Droid.Resource.Style.Widget_Design_NavigationView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::BLE.Client.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_Design_Snackbar = global::BLE.Client.Droid.Resource.Style.Widget_Design_Snackbar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_Design_TabLayout = global::BLE.Client.Droid.Resource.Style.Widget_Design_TabLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_Design_TextInputLayout = global::BLE.Client.Droid.Resource.Style.Widget_Design_TextInputLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::BLE.Client.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::BLE.Client.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar = global::BLE.Client.Droid.Resource.Styleable.ActionBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_background = global::BLE.Client.Droid.Resource.Styleable.ActionBar_background;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_backgroundSplit = global::BLE.Client.Droid.Resource.Styleable.ActionBar_backgroundSplit;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_backgroundStacked = global::BLE.Client.Droid.Resource.Styleable.ActionBar_backgroundStacked;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_contentInsetEnd = global::BLE.Client.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_contentInsetLeft = global::BLE.Client.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_contentInsetRight = global::BLE.Client.Droid.Resource.Styleable.ActionBar_contentInsetRight;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_contentInsetStart = global::BLE.Client.Droid.Resource.Styleable.ActionBar_contentInsetStart;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_customNavigationLayout = global::BLE.Client.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_displayOptions = global::BLE.Client.Droid.Resource.Styleable.ActionBar_displayOptions;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_divider = global::BLE.Client.Droid.Resource.Styleable.ActionBar_divider;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_elevation = global::BLE.Client.Droid.Resource.Styleable.ActionBar_elevation;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_height = global::BLE.Client.Droid.Resource.Styleable.ActionBar_height;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_hideOnContentScroll = global::BLE.Client.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator = global::BLE.Client.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_homeLayout = global::BLE.Client.Droid.Resource.Styleable.ActionBar_homeLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_icon = global::BLE.Client.Droid.Resource.Styleable.ActionBar_icon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::BLE.Client.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_itemPadding = global::BLE.Client.Droid.Resource.Styleable.ActionBar_itemPadding;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_logo = global::BLE.Client.Droid.Resource.Styleable.ActionBar_logo;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_navigationMode = global::BLE.Client.Droid.Resource.Styleable.ActionBar_navigationMode;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_popupTheme = global::BLE.Client.Droid.Resource.Styleable.ActionBar_popupTheme;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_progressBarPadding = global::BLE.Client.Droid.Resource.Styleable.ActionBar_progressBarPadding;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_progressBarStyle = global::BLE.Client.Droid.Resource.Styleable.ActionBar_progressBarStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_subtitle = global::BLE.Client.Droid.Resource.Styleable.ActionBar_subtitle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_subtitleTextStyle = global::BLE.Client.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_title = global::BLE.Client.Droid.Resource.Styleable.ActionBar_title;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBar_titleTextStyle = global::BLE.Client.Droid.Resource.Styleable.ActionBar_titleTextStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBarLayout = global::BLE.Client.Droid.Resource.Styleable.ActionBarLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::BLE.Client.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionMenuItemView = global::BLE.Client.Droid.Resource.Styleable.ActionMenuItemView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth = global::BLE.Client.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionMenuView = global::BLE.Client.Droid.Resource.Styleable.ActionMenuView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionMode = global::BLE.Client.Droid.Resource.Styleable.ActionMode;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionMode_background = global::BLE.Client.Droid.Resource.Styleable.ActionMode_background;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionMode_backgroundSplit = global::BLE.Client.Droid.Resource.Styleable.ActionMode_backgroundSplit;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionMode_closeItemLayout = global::BLE.Client.Droid.Resource.Styleable.ActionMode_closeItemLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionMode_height = global::BLE.Client.Droid.Resource.Styleable.ActionMode_height;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionMode_subtitleTextStyle = global::BLE.Client.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActionMode_titleTextStyle = global::BLE.Client.Droid.Resource.Styleable.ActionMode_titleTextStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActivityChooserView = global::BLE.Client.Droid.Resource.Styleable.ActivityChooserView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::BLE.Client.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount = global::BLE.Client.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AlertDialog = global::BLE.Client.Droid.Resource.Styleable.AlertDialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AlertDialog_android_layout = global::BLE.Client.Droid.Resource.Styleable.AlertDialog_android_layout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::BLE.Client.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AlertDialog_listItemLayout = global::BLE.Client.Droid.Resource.Styleable.AlertDialog_listItemLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AlertDialog_listLayout = global::BLE.Client.Droid.Resource.Styleable.AlertDialog_listLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::BLE.Client.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::BLE.Client.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppBarLayout = global::BLE.Client.Droid.Resource.Styleable.AppBarLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppBarLayout_android_background = global::BLE.Client.Droid.Resource.Styleable.AppBarLayout_android_background;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppBarLayout_elevation = global::BLE.Client.Droid.Resource.Styleable.AppBarLayout_elevation;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppBarLayout_expanded = global::BLE.Client.Droid.Resource.Styleable.AppBarLayout_expanded;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatImageView = global::BLE.Client.Droid.Resource.Styleable.AppCompatImageView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatImageView_android_src = global::BLE.Client.Droid.Resource.Styleable.AppCompatImageView_android_src;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatImageView_srcCompat = global::BLE.Client.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTextView = global::BLE.Client.Droid.Resource.Styleable.AppCompatTextView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance = global::BLE.Client.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTextView_textAllCaps = global::BLE.Client.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionBarSize = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_buttonStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_colorAccent = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_colorPrimary = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_controlBackground = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_dialogTheme = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_dividerVertical = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_editTextBackground = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_editTextColor = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_editTextStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_panelBackground = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_switchStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_windowActionBar = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle = global::BLE.Client.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ButtonBarLayout = global::BLE.Client.Droid.Resource.Styleable.ButtonBarLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ButtonBarLayout_allowStacking = global::BLE.Client.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CardView = global::BLE.Client.Droid.Resource.Styleable.CardView;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CardView_android_minHeight = global::BLE.Client.Droid.Resource.Styleable.CardView_android_minHeight;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CardView_android_minWidth = global::BLE.Client.Droid.Resource.Styleable.CardView_android_minWidth;
@@ -1507,256 +160,6 @@ namespace BLE.Client.Droid
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CardView_contentPaddingLeft = global::BLE.Client.Droid.Resource.Styleable.CardView_contentPaddingLeft;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CardView_contentPaddingRight = global::BLE.Client.Droid.Resource.Styleable.CardView_contentPaddingRight;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CardView_contentPaddingTop = global::BLE.Client.Droid.Resource.Styleable.CardView_contentPaddingTop;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CollapsingToolbarLayout = global::BLE.Client.Droid.Resource.Styleable.CollapsingToolbarLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::BLE.Client.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::BLE.Client.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::BLE.Client.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::BLE.Client.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::BLE.Client.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::BLE.Client.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::BLE.Client.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::BLE.Client.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::BLE.Client.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::BLE.Client.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::BLE.Client.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CollapsingToolbarLayout_title = global::BLE.Client.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::BLE.Client.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::BLE.Client.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CompoundButton = global::BLE.Client.Droid.Resource.Styleable.CompoundButton;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CompoundButton_android_button = global::BLE.Client.Droid.Resource.Styleable.CompoundButton_android_button;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CompoundButton_buttonTint = global::BLE.Client.Droid.Resource.Styleable.CompoundButton_buttonTint;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CompoundButton_buttonTintMode = global::BLE.Client.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CoordinatorLayout = global::BLE.Client.Droid.Resource.Styleable.CoordinatorLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CoordinatorLayout_keylines = global::BLE.Client.Droid.Resource.Styleable.CoordinatorLayout_keylines;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::BLE.Client.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.DesignTheme = global::BLE.Client.Droid.Resource.Styleable.DesignTheme;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::BLE.Client.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle = global::BLE.Client.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.DesignTheme_textColorError = global::BLE.Client.Droid.Resource.Styleable.DesignTheme_textColorError;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.DrawerArrowToggle = global::BLE.Client.Droid.Resource.Styleable.DrawerArrowToggle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::BLE.Client.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::BLE.Client.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.DrawerArrowToggle_barLength = global::BLE.Client.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.DrawerArrowToggle_color = global::BLE.Client.Droid.Resource.Styleable.DrawerArrowToggle_color;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize = global::BLE.Client.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::BLE.Client.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.DrawerArrowToggle_spinBars = global::BLE.Client.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.DrawerArrowToggle_thickness = global::BLE.Client.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.FloatingActionButton = global::BLE.Client.Droid.Resource.Styleable.FloatingActionButton;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.FloatingActionButton_backgroundTint = global::BLE.Client.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::BLE.Client.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.FloatingActionButton_borderWidth = global::BLE.Client.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.FloatingActionButton_elevation = global::BLE.Client.Droid.Resource.Styleable.FloatingActionButton_elevation;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.FloatingActionButton_fabSize = global::BLE.Client.Droid.Resource.Styleable.FloatingActionButton_fabSize;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::BLE.Client.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.FloatingActionButton_rippleColor = global::BLE.Client.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding = global::BLE.Client.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ForegroundLinearLayout = global::BLE.Client.Droid.Resource.Styleable.ForegroundLinearLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::BLE.Client.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::BLE.Client.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::BLE.Client.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.LinearLayoutCompat = global::BLE.Client.Droid.Resource.Styleable.LinearLayoutCompat;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::BLE.Client.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::BLE.Client.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity = global::BLE.Client.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation = global::BLE.Client.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::BLE.Client.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.LinearLayoutCompat_divider = global::BLE.Client.Droid.Resource.Styleable.LinearLayoutCompat_divider;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::BLE.Client.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::BLE.Client.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.LinearLayoutCompat_showDividers = global::BLE.Client.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.LinearLayoutCompat_Layout = global::BLE.Client.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::BLE.Client.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::BLE.Client.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::BLE.Client.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::BLE.Client.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ListPopupWindow = global::BLE.Client.Droid.Resource.Styleable.ListPopupWindow;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::BLE.Client.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::BLE.Client.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MediaRouteButton = global::BLE.Client.Droid.Resource.Styleable.MediaRouteButton;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MediaRouteButton_android_minHeight = global::BLE.Client.Droid.Resource.Styleable.MediaRouteButton_android_minHeight;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MediaRouteButton_android_minWidth = global::BLE.Client.Droid.Resource.Styleable.MediaRouteButton_android_minWidth;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::BLE.Client.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuGroup = global::BLE.Client.Droid.Resource.Styleable.MenuGroup;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior = global::BLE.Client.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuGroup_android_enabled = global::BLE.Client.Droid.Resource.Styleable.MenuGroup_android_enabled;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuGroup_android_id = global::BLE.Client.Droid.Resource.Styleable.MenuGroup_android_id;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuGroup_android_menuCategory = global::BLE.Client.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuGroup_android_orderInCategory = global::BLE.Client.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuGroup_android_visible = global::BLE.Client.Droid.Resource.Styleable.MenuGroup_android_visible;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuItem = global::BLE.Client.Droid.Resource.Styleable.MenuItem;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuItem_actionLayout = global::BLE.Client.Droid.Resource.Styleable.MenuItem_actionLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuItem_actionProviderClass = global::BLE.Client.Droid.Resource.Styleable.MenuItem_actionProviderClass;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuItem_actionViewClass = global::BLE.Client.Droid.Resource.Styleable.MenuItem_actionViewClass;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::BLE.Client.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuItem_android_checkable = global::BLE.Client.Droid.Resource.Styleable.MenuItem_android_checkable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuItem_android_checked = global::BLE.Client.Droid.Resource.Styleable.MenuItem_android_checked;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuItem_android_enabled = global::BLE.Client.Droid.Resource.Styleable.MenuItem_android_enabled;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuItem_android_icon = global::BLE.Client.Droid.Resource.Styleable.MenuItem_android_icon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuItem_android_id = global::BLE.Client.Droid.Resource.Styleable.MenuItem_android_id;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuItem_android_menuCategory = global::BLE.Client.Droid.Resource.Styleable.MenuItem_android_menuCategory;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuItem_android_numericShortcut = global::BLE.Client.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuItem_android_onClick = global::BLE.Client.Droid.Resource.Styleable.MenuItem_android_onClick;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuItem_android_orderInCategory = global::BLE.Client.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuItem_android_title = global::BLE.Client.Droid.Resource.Styleable.MenuItem_android_title;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuItem_android_titleCondensed = global::BLE.Client.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuItem_android_visible = global::BLE.Client.Droid.Resource.Styleable.MenuItem_android_visible;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuItem_showAsAction = global::BLE.Client.Droid.Resource.Styleable.MenuItem_showAsAction;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuView = global::BLE.Client.Droid.Resource.Styleable.MenuView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuView_android_headerBackground = global::BLE.Client.Droid.Resource.Styleable.MenuView_android_headerBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuView_android_horizontalDivider = global::BLE.Client.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuView_android_itemBackground = global::BLE.Client.Droid.Resource.Styleable.MenuView_android_itemBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::BLE.Client.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuView_android_itemTextAppearance = global::BLE.Client.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuView_android_verticalDivider = global::BLE.Client.Droid.Resource.Styleable.MenuView_android_verticalDivider;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle = global::BLE.Client.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.MenuView_preserveIconSpacing = global::BLE.Client.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.NavigationView = global::BLE.Client.Droid.Resource.Styleable.NavigationView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.NavigationView_android_background = global::BLE.Client.Droid.Resource.Styleable.NavigationView_android_background;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::BLE.Client.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.NavigationView_android_maxWidth = global::BLE.Client.Droid.Resource.Styleable.NavigationView_android_maxWidth;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.NavigationView_elevation = global::BLE.Client.Droid.Resource.Styleable.NavigationView_elevation;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.NavigationView_headerLayout = global::BLE.Client.Droid.Resource.Styleable.NavigationView_headerLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.NavigationView_itemBackground = global::BLE.Client.Droid.Resource.Styleable.NavigationView_itemBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.NavigationView_itemIconTint = global::BLE.Client.Droid.Resource.Styleable.NavigationView_itemIconTint;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.NavigationView_itemTextAppearance = global::BLE.Client.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.NavigationView_itemTextColor = global::BLE.Client.Droid.Resource.Styleable.NavigationView_itemTextColor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.NavigationView_menu = global::BLE.Client.Droid.Resource.Styleable.NavigationView_menu;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.PopupWindow = global::BLE.Client.Droid.Resource.Styleable.PopupWindow;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.PopupWindow_android_popupBackground = global::BLE.Client.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.PopupWindow_overlapAnchor = global::BLE.Client.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.PopupWindowBackgroundState = global::BLE.Client.Droid.Resource.Styleable.PopupWindowBackgroundState;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::BLE.Client.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.RecyclerView = global::BLE.Client.Droid.Resource.Styleable.RecyclerView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.RecyclerView_android_orientation = global::BLE.Client.Droid.Resource.Styleable.RecyclerView_android_orientation;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.RecyclerView_layoutManager = global::BLE.Client.Droid.Resource.Styleable.RecyclerView_layoutManager;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.RecyclerView_reverseLayout = global::BLE.Client.Droid.Resource.Styleable.RecyclerView_reverseLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.RecyclerView_spanCount = global::BLE.Client.Droid.Resource.Styleable.RecyclerView_spanCount;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.RecyclerView_stackFromEnd = global::BLE.Client.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ScrimInsetsFrameLayout = global::BLE.Client.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::BLE.Client.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SearchView = global::BLE.Client.Droid.Resource.Styleable.SearchView;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SearchView_android_focusable = global::BLE.Client.Droid.Resource.Styleable.SearchView_android_focusable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SearchView_android_imeOptions = global::BLE.Client.Droid.Resource.Styleable.SearchView_android_imeOptions;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SearchView_android_inputType = global::BLE.Client.Droid.Resource.Styleable.SearchView_android_inputType;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SearchView_android_maxWidth = global::BLE.Client.Droid.Resource.Styleable.SearchView_android_maxWidth;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SearchView_closeIcon = global::BLE.Client.Droid.Resource.Styleable.SearchView_closeIcon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SearchView_commitIcon = global::BLE.Client.Droid.Resource.Styleable.SearchView_commitIcon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SearchView_defaultQueryHint = global::BLE.Client.Droid.Resource.Styleable.SearchView_defaultQueryHint;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SearchView_goIcon = global::BLE.Client.Droid.Resource.Styleable.SearchView_goIcon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SearchView_iconifiedByDefault = global::BLE.Client.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SearchView_layout = global::BLE.Client.Droid.Resource.Styleable.SearchView_layout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SearchView_queryBackground = global::BLE.Client.Droid.Resource.Styleable.SearchView_queryBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SearchView_queryHint = global::BLE.Client.Droid.Resource.Styleable.SearchView_queryHint;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SearchView_searchHintIcon = global::BLE.Client.Droid.Resource.Styleable.SearchView_searchHintIcon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SearchView_searchIcon = global::BLE.Client.Droid.Resource.Styleable.SearchView_searchIcon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SearchView_submitBackground = global::BLE.Client.Droid.Resource.Styleable.SearchView_submitBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SearchView_suggestionRowLayout = global::BLE.Client.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SearchView_voiceIcon = global::BLE.Client.Droid.Resource.Styleable.SearchView_voiceIcon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SnackbarLayout = global::BLE.Client.Droid.Resource.Styleable.SnackbarLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth = global::BLE.Client.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SnackbarLayout_elevation = global::BLE.Client.Droid.Resource.Styleable.SnackbarLayout_elevation;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::BLE.Client.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Spinner = global::BLE.Client.Droid.Resource.Styleable.Spinner;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Spinner_android_dropDownWidth = global::BLE.Client.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Spinner_android_entries = global::BLE.Client.Droid.Resource.Styleable.Spinner_android_entries;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Spinner_android_popupBackground = global::BLE.Client.Droid.Resource.Styleable.Spinner_android_popupBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Spinner_android_prompt = global::BLE.Client.Droid.Resource.Styleable.Spinner_android_prompt;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Spinner_popupTheme = global::BLE.Client.Droid.Resource.Styleable.Spinner_popupTheme;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SwitchCompat = global::BLE.Client.Droid.Resource.Styleable.SwitchCompat;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SwitchCompat_android_textOff = global::BLE.Client.Droid.Resource.Styleable.SwitchCompat_android_textOff;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SwitchCompat_android_textOn = global::BLE.Client.Droid.Resource.Styleable.SwitchCompat_android_textOn;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SwitchCompat_android_thumb = global::BLE.Client.Droid.Resource.Styleable.SwitchCompat_android_thumb;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SwitchCompat_showText = global::BLE.Client.Droid.Resource.Styleable.SwitchCompat_showText;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SwitchCompat_splitTrack = global::BLE.Client.Droid.Resource.Styleable.SwitchCompat_splitTrack;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SwitchCompat_switchMinWidth = global::BLE.Client.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SwitchCompat_switchPadding = global::BLE.Client.Droid.Resource.Styleable.SwitchCompat_switchPadding;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance = global::BLE.Client.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding = global::BLE.Client.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.SwitchCompat_track = global::BLE.Client.Droid.Resource.Styleable.SwitchCompat_track;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TabItem = global::BLE.Client.Droid.Resource.Styleable.TabItem;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TabItem_android_icon = global::BLE.Client.Droid.Resource.Styleable.TabItem_android_icon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TabItem_android_layout = global::BLE.Client.Droid.Resource.Styleable.TabItem_android_layout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TabItem_android_text = global::BLE.Client.Droid.Resource.Styleable.TabItem_android_text;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TabLayout = global::BLE.Client.Droid.Resource.Styleable.TabLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TabLayout_tabBackground = global::BLE.Client.Droid.Resource.Styleable.TabLayout_tabBackground;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TabLayout_tabContentStart = global::BLE.Client.Droid.Resource.Styleable.TabLayout_tabContentStart;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TabLayout_tabGravity = global::BLE.Client.Droid.Resource.Styleable.TabLayout_tabGravity;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TabLayout_tabIndicatorColor = global::BLE.Client.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight = global::BLE.Client.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TabLayout_tabMaxWidth = global::BLE.Client.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TabLayout_tabMinWidth = global::BLE.Client.Droid.Resource.Styleable.TabLayout_tabMinWidth;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TabLayout_tabMode = global::BLE.Client.Droid.Resource.Styleable.TabLayout_tabMode;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TabLayout_tabPadding = global::BLE.Client.Droid.Resource.Styleable.TabLayout_tabPadding;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TabLayout_tabPaddingBottom = global::BLE.Client.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TabLayout_tabPaddingEnd = global::BLE.Client.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TabLayout_tabPaddingStart = global::BLE.Client.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TabLayout_tabPaddingTop = global::BLE.Client.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor = global::BLE.Client.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TabLayout_tabTextAppearance = global::BLE.Client.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TabLayout_tabTextColor = global::BLE.Client.Droid.Resource.Styleable.TabLayout_tabTextColor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TextAppearance = global::BLE.Client.Droid.Resource.Styleable.TextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TextAppearance_android_shadowColor = global::BLE.Client.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TextAppearance_android_shadowDx = global::BLE.Client.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TextAppearance_android_shadowDy = global::BLE.Client.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TextAppearance_android_shadowRadius = global::BLE.Client.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TextAppearance_android_textColor = global::BLE.Client.Droid.Resource.Styleable.TextAppearance_android_textColor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TextAppearance_android_textSize = global::BLE.Client.Droid.Resource.Styleable.TextAppearance_android_textSize;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TextAppearance_android_textStyle = global::BLE.Client.Droid.Resource.Styleable.TextAppearance_android_textStyle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TextAppearance_android_typeface = global::BLE.Client.Droid.Resource.Styleable.TextAppearance_android_typeface;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TextAppearance_textAllCaps = global::BLE.Client.Droid.Resource.Styleable.TextAppearance_textAllCaps;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TextInputLayout = global::BLE.Client.Droid.Resource.Styleable.TextInputLayout;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TextInputLayout_android_hint = global::BLE.Client.Droid.Resource.Styleable.TextInputLayout_android_hint;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TextInputLayout_android_textColorHint = global::BLE.Client.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TextInputLayout_counterEnabled = global::BLE.Client.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TextInputLayout_counterMaxLength = global::BLE.Client.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::BLE.Client.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance = global::BLE.Client.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TextInputLayout_errorEnabled = global::BLE.Client.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance = global::BLE.Client.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::BLE.Client.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TextInputLayout_hintEnabled = global::BLE.Client.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance = global::BLE.Client.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar = global::BLE.Client.Droid.Resource.Styleable.Toolbar;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_android_gravity = global::BLE.Client.Droid.Resource.Styleable.Toolbar_android_gravity;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_android_minHeight = global::BLE.Client.Droid.Resource.Styleable.Toolbar_android_minHeight;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_collapseContentDescription = global::BLE.Client.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_collapseIcon = global::BLE.Client.Droid.Resource.Styleable.Toolbar_collapseIcon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_contentInsetEnd = global::BLE.Client.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_contentInsetLeft = global::BLE.Client.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_contentInsetRight = global::BLE.Client.Droid.Resource.Styleable.Toolbar_contentInsetRight;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_contentInsetStart = global::BLE.Client.Droid.Resource.Styleable.Toolbar_contentInsetStart;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_logo = global::BLE.Client.Droid.Resource.Styleable.Toolbar_logo;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_logoDescription = global::BLE.Client.Droid.Resource.Styleable.Toolbar_logoDescription;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_maxButtonHeight = global::BLE.Client.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_navigationContentDescription = global::BLE.Client.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_navigationIcon = global::BLE.Client.Droid.Resource.Styleable.Toolbar_navigationIcon;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_popupTheme = global::BLE.Client.Droid.Resource.Styleable.Toolbar_popupTheme;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_subtitle = global::BLE.Client.Droid.Resource.Styleable.Toolbar_subtitle;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance = global::BLE.Client.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_subtitleTextColor = global::BLE.Client.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_title = global::BLE.Client.Droid.Resource.Styleable.Toolbar_title;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_titleMarginBottom = global::BLE.Client.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_titleMarginEnd = global::BLE.Client.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_titleMarginStart = global::BLE.Client.Droid.Resource.Styleable.Toolbar_titleMarginStart;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_titleMarginTop = global::BLE.Client.Droid.Resource.Styleable.Toolbar_titleMarginTop;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_titleMargins = global::BLE.Client.Droid.Resource.Styleable.Toolbar_titleMargins;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_titleTextAppearance = global::BLE.Client.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.Toolbar_titleTextColor = global::BLE.Client.Droid.Resource.Styleable.Toolbar_titleTextColor;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.View = global::BLE.Client.Droid.Resource.Styleable.View;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.View_android_focusable = global::BLE.Client.Droid.Resource.Styleable.View_android_focusable;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.View_android_theme = global::BLE.Client.Droid.Resource.Styleable.View_android_theme;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.View_paddingEnd = global::BLE.Client.Droid.Resource.Styleable.View_paddingEnd;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.View_paddingStart = global::BLE.Client.Droid.Resource.Styleable.View_paddingStart;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.View_theme = global::BLE.Client.Droid.Resource.Styleable.View_theme;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ViewBackgroundHelper = global::BLE.Client.Droid.Resource.Styleable.ViewBackgroundHelper;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ViewBackgroundHelper_android_background = global::BLE.Client.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::BLE.Client.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::BLE.Client.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ViewStubCompat = global::BLE.Client.Droid.Resource.Styleable.ViewStubCompat;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ViewStubCompat_android_id = global::BLE.Client.Droid.Resource.Styleable.ViewStubCompat_android_id;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId = global::BLE.Client.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
-			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.ViewStubCompat_android_layout = global::BLE.Client.Droid.Resource.Styleable.ViewStubCompat_android_layout;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::BLE.Client.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -1852,191 +255,191 @@ namespace BLE.Client.Droid
 		public partial class Attribute
 		{
 			
-			// aapt resource value: 0x7f010152
-			public const int MvxBind = 2130772306;
-			
-			// aapt resource value: 0x7f010156
-			public const int MvxDropDownItemTemplate = 2130772310;
-			
-			// aapt resource value: 0x7f010157
-			public const int MvxGroupItemTemplate = 2130772311;
-			
 			// aapt resource value: 0x7f010155
-			public const int MvxItemTemplate = 2130772309;
-			
-			// aapt resource value: 0x7f010153
-			public const int MvxLang = 2130772307;
-			
-			// aapt resource value: 0x7f010158
-			public const int MvxSource = 2130772312;
-			
-			// aapt resource value: 0x7f010154
-			public const int MvxTemplate = 2130772308;
-			
-			// aapt resource value: 0x7f01005d
-			public const int actionBarDivider = 2130772061;
-			
-			// aapt resource value: 0x7f01005e
-			public const int actionBarItemBackground = 2130772062;
-			
-			// aapt resource value: 0x7f010057
-			public const int actionBarPopupTheme = 2130772055;
-			
-			// aapt resource value: 0x7f01005c
-			public const int actionBarSize = 2130772060;
-			
-			// aapt resource value: 0x7f010059
-			public const int actionBarSplitStyle = 2130772057;
-			
-			// aapt resource value: 0x7f010058
-			public const int actionBarStyle = 2130772056;
-			
-			// aapt resource value: 0x7f010053
-			public const int actionBarTabBarStyle = 2130772051;
-			
-			// aapt resource value: 0x7f010052
-			public const int actionBarTabStyle = 2130772050;
-			
-			// aapt resource value: 0x7f010054
-			public const int actionBarTabTextStyle = 2130772052;
-			
-			// aapt resource value: 0x7f01005a
-			public const int actionBarTheme = 2130772058;
-			
-			// aapt resource value: 0x7f01005b
-			public const int actionBarWidgetTheme = 2130772059;
-			
-			// aapt resource value: 0x7f010078
-			public const int actionButtonStyle = 2130772088;
-			
-			// aapt resource value: 0x7f010074
-			public const int actionDropDownStyle = 2130772084;
-			
-			// aapt resource value: 0x7f0100c9
-			public const int actionLayout = 2130772169;
-			
-			// aapt resource value: 0x7f01005f
-			public const int actionMenuTextAppearance = 2130772063;
-			
-			// aapt resource value: 0x7f010060
-			public const int actionMenuTextColor = 2130772064;
-			
-			// aapt resource value: 0x7f010063
-			public const int actionModeBackground = 2130772067;
-			
-			// aapt resource value: 0x7f010062
-			public const int actionModeCloseButtonStyle = 2130772066;
-			
-			// aapt resource value: 0x7f010065
-			public const int actionModeCloseDrawable = 2130772069;
-			
-			// aapt resource value: 0x7f010067
-			public const int actionModeCopyDrawable = 2130772071;
-			
-			// aapt resource value: 0x7f010066
-			public const int actionModeCutDrawable = 2130772070;
-			
-			// aapt resource value: 0x7f01006b
-			public const int actionModeFindDrawable = 2130772075;
-			
-			// aapt resource value: 0x7f010068
-			public const int actionModePasteDrawable = 2130772072;
-			
-			// aapt resource value: 0x7f01006d
-			public const int actionModePopupWindowStyle = 2130772077;
-			
-			// aapt resource value: 0x7f010069
-			public const int actionModeSelectAllDrawable = 2130772073;
-			
-			// aapt resource value: 0x7f01006a
-			public const int actionModeShareDrawable = 2130772074;
-			
-			// aapt resource value: 0x7f010064
-			public const int actionModeSplitBackground = 2130772068;
-			
-			// aapt resource value: 0x7f010061
-			public const int actionModeStyle = 2130772065;
-			
-			// aapt resource value: 0x7f01006c
-			public const int actionModeWebSearchDrawable = 2130772076;
-			
-			// aapt resource value: 0x7f010055
-			public const int actionOverflowButtonStyle = 2130772053;
-			
-			// aapt resource value: 0x7f010056
-			public const int actionOverflowMenuStyle = 2130772054;
-			
-			// aapt resource value: 0x7f0100cb
-			public const int actionProviderClass = 2130772171;
-			
-			// aapt resource value: 0x7f0100ca
-			public const int actionViewClass = 2130772170;
-			
-			// aapt resource value: 0x7f010080
-			public const int activityChooserViewStyle = 2130772096;
-			
-			// aapt resource value: 0x7f01015c
-			public const int ahBarColor = 2130772316;
-			
-			// aapt resource value: 0x7f010164
-			public const int ahBarLength = 2130772324;
-			
-			// aapt resource value: 0x7f010163
-			public const int ahBarWidth = 2130772323;
-			
-			// aapt resource value: 0x7f010161
-			public const int ahCircleColor = 2130772321;
-			
-			// aapt resource value: 0x7f010160
-			public const int ahDelayMillis = 2130772320;
-			
-			// aapt resource value: 0x7f010162
-			public const int ahRadius = 2130772322;
-			
-			// aapt resource value: 0x7f01015d
-			public const int ahRimColor = 2130772317;
-			
-			// aapt resource value: 0x7f01015e
-			public const int ahRimWidth = 2130772318;
-			
-			// aapt resource value: 0x7f01015f
-			public const int ahSpinSpeed = 2130772319;
+			public const int MvxBind = 2130772309;
 			
 			// aapt resource value: 0x7f010159
-			public const int ahText = 2130772313;
+			public const int MvxDropDownItemTemplate = 2130772313;
 			
 			// aapt resource value: 0x7f01015a
-			public const int ahTextColor = 2130772314;
+			public const int MvxGroupItemTemplate = 2130772314;
+			
+			// aapt resource value: 0x7f010158
+			public const int MvxItemTemplate = 2130772312;
+			
+			// aapt resource value: 0x7f010156
+			public const int MvxLang = 2130772310;
 			
 			// aapt resource value: 0x7f01015b
-			public const int ahTextSize = 2130772315;
+			public const int MvxSource = 2130772315;
 			
-			// aapt resource value: 0x7f0100a4
-			public const int alertDialogButtonGroupStyle = 2130772132;
+			// aapt resource value: 0x7f010157
+			public const int MvxTemplate = 2130772311;
 			
-			// aapt resource value: 0x7f0100a5
-			public const int alertDialogCenterButtons = 2130772133;
+			// aapt resource value: 0x7f01005f
+			public const int actionBarDivider = 2130772063;
 			
-			// aapt resource value: 0x7f0100a3
-			public const int alertDialogStyle = 2130772131;
+			// aapt resource value: 0x7f010060
+			public const int actionBarItemBackground = 2130772064;
+			
+			// aapt resource value: 0x7f010059
+			public const int actionBarPopupTheme = 2130772057;
+			
+			// aapt resource value: 0x7f01005e
+			public const int actionBarSize = 2130772062;
+			
+			// aapt resource value: 0x7f01005b
+			public const int actionBarSplitStyle = 2130772059;
+			
+			// aapt resource value: 0x7f01005a
+			public const int actionBarStyle = 2130772058;
+			
+			// aapt resource value: 0x7f010055
+			public const int actionBarTabBarStyle = 2130772053;
+			
+			// aapt resource value: 0x7f010054
+			public const int actionBarTabStyle = 2130772052;
+			
+			// aapt resource value: 0x7f010056
+			public const int actionBarTabTextStyle = 2130772054;
+			
+			// aapt resource value: 0x7f01005c
+			public const int actionBarTheme = 2130772060;
+			
+			// aapt resource value: 0x7f01005d
+			public const int actionBarWidgetTheme = 2130772061;
+			
+			// aapt resource value: 0x7f01007a
+			public const int actionButtonStyle = 2130772090;
+			
+			// aapt resource value: 0x7f010076
+			public const int actionDropDownStyle = 2130772086;
+			
+			// aapt resource value: 0x7f0100cc
+			public const int actionLayout = 2130772172;
+			
+			// aapt resource value: 0x7f010061
+			public const int actionMenuTextAppearance = 2130772065;
+			
+			// aapt resource value: 0x7f010062
+			public const int actionMenuTextColor = 2130772066;
+			
+			// aapt resource value: 0x7f010065
+			public const int actionModeBackground = 2130772069;
+			
+			// aapt resource value: 0x7f010064
+			public const int actionModeCloseButtonStyle = 2130772068;
+			
+			// aapt resource value: 0x7f010067
+			public const int actionModeCloseDrawable = 2130772071;
+			
+			// aapt resource value: 0x7f010069
+			public const int actionModeCopyDrawable = 2130772073;
+			
+			// aapt resource value: 0x7f010068
+			public const int actionModeCutDrawable = 2130772072;
+			
+			// aapt resource value: 0x7f01006d
+			public const int actionModeFindDrawable = 2130772077;
+			
+			// aapt resource value: 0x7f01006a
+			public const int actionModePasteDrawable = 2130772074;
+			
+			// aapt resource value: 0x7f01006f
+			public const int actionModePopupWindowStyle = 2130772079;
+			
+			// aapt resource value: 0x7f01006b
+			public const int actionModeSelectAllDrawable = 2130772075;
+			
+			// aapt resource value: 0x7f01006c
+			public const int actionModeShareDrawable = 2130772076;
+			
+			// aapt resource value: 0x7f010066
+			public const int actionModeSplitBackground = 2130772070;
+			
+			// aapt resource value: 0x7f010063
+			public const int actionModeStyle = 2130772067;
+			
+			// aapt resource value: 0x7f01006e
+			public const int actionModeWebSearchDrawable = 2130772078;
+			
+			// aapt resource value: 0x7f010057
+			public const int actionOverflowButtonStyle = 2130772055;
+			
+			// aapt resource value: 0x7f010058
+			public const int actionOverflowMenuStyle = 2130772056;
+			
+			// aapt resource value: 0x7f0100ce
+			public const int actionProviderClass = 2130772174;
+			
+			// aapt resource value: 0x7f0100cd
+			public const int actionViewClass = 2130772173;
+			
+			// aapt resource value: 0x7f010082
+			public const int activityChooserViewStyle = 2130772098;
+			
+			// aapt resource value: 0x7f01015f
+			public const int ahBarColor = 2130772319;
+			
+			// aapt resource value: 0x7f010167
+			public const int ahBarLength = 2130772327;
+			
+			// aapt resource value: 0x7f010166
+			public const int ahBarWidth = 2130772326;
+			
+			// aapt resource value: 0x7f010164
+			public const int ahCircleColor = 2130772324;
+			
+			// aapt resource value: 0x7f010163
+			public const int ahDelayMillis = 2130772323;
+			
+			// aapt resource value: 0x7f010165
+			public const int ahRadius = 2130772325;
+			
+			// aapt resource value: 0x7f010160
+			public const int ahRimColor = 2130772320;
+			
+			// aapt resource value: 0x7f010161
+			public const int ahRimWidth = 2130772321;
+			
+			// aapt resource value: 0x7f010162
+			public const int ahSpinSpeed = 2130772322;
+			
+			// aapt resource value: 0x7f01015c
+			public const int ahText = 2130772316;
+			
+			// aapt resource value: 0x7f01015d
+			public const int ahTextColor = 2130772317;
+			
+			// aapt resource value: 0x7f01015e
+			public const int ahTextSize = 2130772318;
+			
+			// aapt resource value: 0x7f0100a7
+			public const int alertDialogButtonGroupStyle = 2130772135;
+			
+			// aapt resource value: 0x7f0100a8
+			public const int alertDialogCenterButtons = 2130772136;
 			
 			// aapt resource value: 0x7f0100a6
-			public const int alertDialogTheme = 2130772134;
+			public const int alertDialogStyle = 2130772134;
 			
-			// aapt resource value: 0x7f0100b9
-			public const int allowStacking = 2130772153;
+			// aapt resource value: 0x7f0100a9
+			public const int alertDialogTheme = 2130772137;
 			
-			// aapt resource value: 0x7f0100ba
-			public const int alpha = 2130772154;
+			// aapt resource value: 0x7f0100bc
+			public const int allowStacking = 2130772156;
 			
-			// aapt resource value: 0x7f0100c1
-			public const int arrowHeadLength = 2130772161;
+			// aapt resource value: 0x7f0100bd
+			public const int alpha = 2130772157;
 			
-			// aapt resource value: 0x7f0100c2
-			public const int arrowShaftLength = 2130772162;
+			// aapt resource value: 0x7f0100c4
+			public const int arrowHeadLength = 2130772164;
 			
-			// aapt resource value: 0x7f0100ab
-			public const int autoCompleteTextViewStyle = 2130772139;
+			// aapt resource value: 0x7f0100c5
+			public const int arrowShaftLength = 2130772165;
+			
+			// aapt resource value: 0x7f0100ae
+			public const int autoCompleteTextViewStyle = 2130772142;
 			
 			// aapt resource value: 0x7f010028
 			public const int background = 2130772008;
@@ -2047,74 +450,74 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f010029
 			public const int backgroundStacked = 2130772009;
 			
-			// aapt resource value: 0x7f0100fe
-			public const int backgroundTint = 2130772222;
+			// aapt resource value: 0x7f010101
+			public const int backgroundTint = 2130772225;
 			
-			// aapt resource value: 0x7f0100ff
-			public const int backgroundTintMode = 2130772223;
+			// aapt resource value: 0x7f010102
+			public const int backgroundTintMode = 2130772226;
 			
-			// aapt resource value: 0x7f0100c3
-			public const int barLength = 2130772163;
+			// aapt resource value: 0x7f0100c6
+			public const int barLength = 2130772166;
 			
-			// aapt resource value: 0x7f010129
-			public const int behavior_autoHide = 2130772265;
+			// aapt resource value: 0x7f01012c
+			public const int behavior_autoHide = 2130772268;
 			
-			// aapt resource value: 0x7f010106
-			public const int behavior_hideable = 2130772230;
+			// aapt resource value: 0x7f010109
+			public const int behavior_hideable = 2130772233;
 			
-			// aapt resource value: 0x7f010132
-			public const int behavior_overlapTop = 2130772274;
+			// aapt resource value: 0x7f010135
+			public const int behavior_overlapTop = 2130772277;
 			
-			// aapt resource value: 0x7f010105
-			public const int behavior_peekHeight = 2130772229;
+			// aapt resource value: 0x7f010108
+			public const int behavior_peekHeight = 2130772232;
 			
-			// aapt resource value: 0x7f010107
-			public const int behavior_skipCollapsed = 2130772231;
+			// aapt resource value: 0x7f01010a
+			public const int behavior_skipCollapsed = 2130772234;
 			
-			// aapt resource value: 0x7f010127
-			public const int borderWidth = 2130772263;
+			// aapt resource value: 0x7f01012a
+			public const int borderWidth = 2130772266;
 			
-			// aapt resource value: 0x7f01007d
-			public const int borderlessButtonStyle = 2130772093;
+			// aapt resource value: 0x7f01007f
+			public const int borderlessButtonStyle = 2130772095;
 			
-			// aapt resource value: 0x7f010121
-			public const int bottomSheetDialogTheme = 2130772257;
+			// aapt resource value: 0x7f010124
+			public const int bottomSheetDialogTheme = 2130772260;
 			
-			// aapt resource value: 0x7f010122
-			public const int bottomSheetStyle = 2130772258;
+			// aapt resource value: 0x7f010125
+			public const int bottomSheetStyle = 2130772261;
 			
-			// aapt resource value: 0x7f01007a
-			public const int buttonBarButtonStyle = 2130772090;
+			// aapt resource value: 0x7f01007c
+			public const int buttonBarButtonStyle = 2130772092;
 			
-			// aapt resource value: 0x7f0100a9
-			public const int buttonBarNegativeButtonStyle = 2130772137;
+			// aapt resource value: 0x7f0100ac
+			public const int buttonBarNegativeButtonStyle = 2130772140;
 			
-			// aapt resource value: 0x7f0100aa
-			public const int buttonBarNeutralButtonStyle = 2130772138;
+			// aapt resource value: 0x7f0100ad
+			public const int buttonBarNeutralButtonStyle = 2130772141;
 			
-			// aapt resource value: 0x7f0100a8
-			public const int buttonBarPositiveButtonStyle = 2130772136;
+			// aapt resource value: 0x7f0100ab
+			public const int buttonBarPositiveButtonStyle = 2130772139;
 			
-			// aapt resource value: 0x7f010079
-			public const int buttonBarStyle = 2130772089;
+			// aapt resource value: 0x7f01007b
+			public const int buttonBarStyle = 2130772091;
 			
-			// aapt resource value: 0x7f0100f3
-			public const int buttonGravity = 2130772211;
+			// aapt resource value: 0x7f0100f6
+			public const int buttonGravity = 2130772214;
 			
 			// aapt resource value: 0x7f01003d
 			public const int buttonPanelSideLayout = 2130772029;
 			
-			// aapt resource value: 0x7f0100ac
-			public const int buttonStyle = 2130772140;
+			// aapt resource value: 0x7f0100af
+			public const int buttonStyle = 2130772143;
 			
-			// aapt resource value: 0x7f0100ad
-			public const int buttonStyleSmall = 2130772141;
+			// aapt resource value: 0x7f0100b0
+			public const int buttonStyleSmall = 2130772144;
 			
-			// aapt resource value: 0x7f0100bb
-			public const int buttonTint = 2130772155;
+			// aapt resource value: 0x7f0100be
+			public const int buttonTint = 2130772158;
 			
-			// aapt resource value: 0x7f0100bc
-			public const int buttonTintMode = 2130772156;
+			// aapt resource value: 0x7f0100bf
+			public const int buttonTintMode = 2130772159;
 			
 			// aapt resource value: 0x7f010011
 			public const int cardBackgroundColor = 2130771985;
@@ -2134,62 +537,62 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f010015
 			public const int cardUseCompatPadding = 2130771989;
 			
-			// aapt resource value: 0x7f0100ae
-			public const int checkboxStyle = 2130772142;
+			// aapt resource value: 0x7f0100b1
+			public const int checkboxStyle = 2130772145;
 			
-			// aapt resource value: 0x7f0100af
-			public const int checkedTextViewStyle = 2130772143;
+			// aapt resource value: 0x7f0100b2
+			public const int checkedTextViewStyle = 2130772146;
 			
-			// aapt resource value: 0x7f0100d6
-			public const int closeIcon = 2130772182;
+			// aapt resource value: 0x7f0100d9
+			public const int closeIcon = 2130772185;
 			
 			// aapt resource value: 0x7f01003a
 			public const int closeItemLayout = 2130772026;
 			
-			// aapt resource value: 0x7f0100f5
-			public const int collapseContentDescription = 2130772213;
+			// aapt resource value: 0x7f0100f8
+			public const int collapseContentDescription = 2130772216;
 			
-			// aapt resource value: 0x7f0100f4
-			public const int collapseIcon = 2130772212;
+			// aapt resource value: 0x7f0100f7
+			public const int collapseIcon = 2130772215;
 			
-			// aapt resource value: 0x7f010114
-			public const int collapsedTitleGravity = 2130772244;
+			// aapt resource value: 0x7f010117
+			public const int collapsedTitleGravity = 2130772247;
 			
-			// aapt resource value: 0x7f01010e
-			public const int collapsedTitleTextAppearance = 2130772238;
+			// aapt resource value: 0x7f010111
+			public const int collapsedTitleTextAppearance = 2130772241;
 			
-			// aapt resource value: 0x7f0100bd
-			public const int color = 2130772157;
-			
-			// aapt resource value: 0x7f01009b
-			public const int colorAccent = 2130772123;
-			
-			// aapt resource value: 0x7f0100a2
-			public const int colorBackgroundFloating = 2130772130;
-			
-			// aapt resource value: 0x7f01009f
-			public const int colorButtonNormal = 2130772127;
-			
-			// aapt resource value: 0x7f01009d
-			public const int colorControlActivated = 2130772125;
+			// aapt resource value: 0x7f0100c0
+			public const int color = 2130772160;
 			
 			// aapt resource value: 0x7f01009e
-			public const int colorControlHighlight = 2130772126;
+			public const int colorAccent = 2130772126;
 			
-			// aapt resource value: 0x7f01009c
-			public const int colorControlNormal = 2130772124;
+			// aapt resource value: 0x7f0100a5
+			public const int colorBackgroundFloating = 2130772133;
 			
-			// aapt resource value: 0x7f010099
-			public const int colorPrimary = 2130772121;
-			
-			// aapt resource value: 0x7f01009a
-			public const int colorPrimaryDark = 2130772122;
+			// aapt resource value: 0x7f0100a2
+			public const int colorButtonNormal = 2130772130;
 			
 			// aapt resource value: 0x7f0100a0
-			public const int colorSwitchThumbNormal = 2130772128;
+			public const int colorControlActivated = 2130772128;
 			
-			// aapt resource value: 0x7f0100db
-			public const int commitIcon = 2130772187;
+			// aapt resource value: 0x7f0100a1
+			public const int colorControlHighlight = 2130772129;
+			
+			// aapt resource value: 0x7f01009f
+			public const int colorControlNormal = 2130772127;
+			
+			// aapt resource value: 0x7f01009c
+			public const int colorPrimary = 2130772124;
+			
+			// aapt resource value: 0x7f01009d
+			public const int colorPrimaryDark = 2130772125;
+			
+			// aapt resource value: 0x7f0100a3
+			public const int colorSwitchThumbNormal = 2130772131;
+			
+			// aapt resource value: 0x7f0100de
+			public const int commitIcon = 2130772190;
 			
 			// aapt resource value: 0x7f010033
 			public const int contentInsetEnd = 2130772019;
@@ -2224,35 +627,35 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f01001a
 			public const int contentPaddingTop = 2130771994;
 			
-			// aapt resource value: 0x7f01010f
-			public const int contentScrim = 2130772239;
+			// aapt resource value: 0x7f010112
+			public const int contentScrim = 2130772242;
 			
-			// aapt resource value: 0x7f0100a1
-			public const int controlBackground = 2130772129;
-			
-			// aapt resource value: 0x7f010148
-			public const int counterEnabled = 2130772296;
-			
-			// aapt resource value: 0x7f010149
-			public const int counterMaxLength = 2130772297;
+			// aapt resource value: 0x7f0100a4
+			public const int controlBackground = 2130772132;
 			
 			// aapt resource value: 0x7f01014b
-			public const int counterOverflowTextAppearance = 2130772299;
+			public const int counterEnabled = 2130772299;
 			
-			// aapt resource value: 0x7f01014a
-			public const int counterTextAppearance = 2130772298;
+			// aapt resource value: 0x7f01014c
+			public const int counterMaxLength = 2130772300;
+			
+			// aapt resource value: 0x7f01014e
+			public const int counterOverflowTextAppearance = 2130772302;
+			
+			// aapt resource value: 0x7f01014d
+			public const int counterTextAppearance = 2130772301;
 			
 			// aapt resource value: 0x7f01002b
 			public const int customNavigationLayout = 2130772011;
 			
-			// aapt resource value: 0x7f0100d5
-			public const int defaultQueryHint = 2130772181;
+			// aapt resource value: 0x7f0100d8
+			public const int defaultQueryHint = 2130772184;
 			
-			// aapt resource value: 0x7f010072
-			public const int dialogPreferredPadding = 2130772082;
+			// aapt resource value: 0x7f010074
+			public const int dialogPreferredPadding = 2130772084;
 			
-			// aapt resource value: 0x7f010071
-			public const int dialogTheme = 2130772081;
+			// aapt resource value: 0x7f010073
+			public const int dialogTheme = 2130772083;
 			
 			// aapt resource value: 0x7f010021
 			public const int displayOptions = 2130772001;
@@ -2260,89 +663,89 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f010027
 			public const int divider = 2130772007;
 			
-			// aapt resource value: 0x7f01007f
-			public const int dividerHorizontal = 2130772095;
+			// aapt resource value: 0x7f010081
+			public const int dividerHorizontal = 2130772097;
 			
-			// aapt resource value: 0x7f0100c7
-			public const int dividerPadding = 2130772167;
+			// aapt resource value: 0x7f0100ca
+			public const int dividerPadding = 2130772170;
 			
-			// aapt resource value: 0x7f01007e
-			public const int dividerVertical = 2130772094;
+			// aapt resource value: 0x7f010080
+			public const int dividerVertical = 2130772096;
 			
-			// aapt resource value: 0x7f0100bf
-			public const int drawableSize = 2130772159;
+			// aapt resource value: 0x7f0100c2
+			public const int drawableSize = 2130772162;
 			
 			// aapt resource value: 0x7f01001c
 			public const int drawerArrowStyle = 2130771996;
 			
-			// aapt resource value: 0x7f010091
-			public const int dropDownListViewStyle = 2130772113;
+			// aapt resource value: 0x7f010093
+			public const int dropDownListViewStyle = 2130772115;
 			
-			// aapt resource value: 0x7f010075
-			public const int dropdownListPreferredItemHeight = 2130772085;
+			// aapt resource value: 0x7f010077
+			public const int dropdownListPreferredItemHeight = 2130772087;
 			
-			// aapt resource value: 0x7f010086
-			public const int editTextBackground = 2130772102;
+			// aapt resource value: 0x7f010088
+			public const int editTextBackground = 2130772104;
 			
-			// aapt resource value: 0x7f010085
-			public const int editTextColor = 2130772101;
+			// aapt resource value: 0x7f010087
+			public const int editTextColor = 2130772103;
 			
-			// aapt resource value: 0x7f0100b0
-			public const int editTextStyle = 2130772144;
+			// aapt resource value: 0x7f0100b3
+			public const int editTextStyle = 2130772147;
 			
 			// aapt resource value: 0x7f010038
 			public const int elevation = 2130772024;
 			
-			// aapt resource value: 0x7f010146
-			public const int errorEnabled = 2130772294;
+			// aapt resource value: 0x7f010149
+			public const int errorEnabled = 2130772297;
 			
-			// aapt resource value: 0x7f010147
-			public const int errorTextAppearance = 2130772295;
+			// aapt resource value: 0x7f01014a
+			public const int errorTextAppearance = 2130772298;
 			
 			// aapt resource value: 0x7f01003c
 			public const int expandActivityOverflowButtonDrawable = 2130772028;
 			
-			// aapt resource value: 0x7f010100
-			public const int expanded = 2130772224;
+			// aapt resource value: 0x7f010103
+			public const int expanded = 2130772227;
 			
-			// aapt resource value: 0x7f010115
-			public const int expandedTitleGravity = 2130772245;
-			
-			// aapt resource value: 0x7f010108
-			public const int expandedTitleMargin = 2130772232;
-			
-			// aapt resource value: 0x7f01010c
-			public const int expandedTitleMarginBottom = 2130772236;
+			// aapt resource value: 0x7f010118
+			public const int expandedTitleGravity = 2130772248;
 			
 			// aapt resource value: 0x7f01010b
-			public const int expandedTitleMarginEnd = 2130772235;
+			public const int expandedTitleMargin = 2130772235;
 			
-			// aapt resource value: 0x7f010109
-			public const int expandedTitleMarginStart = 2130772233;
+			// aapt resource value: 0x7f01010f
+			public const int expandedTitleMarginBottom = 2130772239;
 			
-			// aapt resource value: 0x7f01010a
-			public const int expandedTitleMarginTop = 2130772234;
+			// aapt resource value: 0x7f01010e
+			public const int expandedTitleMarginEnd = 2130772238;
+			
+			// aapt resource value: 0x7f01010c
+			public const int expandedTitleMarginStart = 2130772236;
 			
 			// aapt resource value: 0x7f01010d
-			public const int expandedTitleTextAppearance = 2130772237;
+			public const int expandedTitleMarginTop = 2130772237;
+			
+			// aapt resource value: 0x7f010110
+			public const int expandedTitleTextAppearance = 2130772240;
 			
 			// aapt resource value: 0x7f010010
 			public const int externalRouteEnabledDrawable = 2130771984;
 			
-			// aapt resource value: 0x7f010125
-			public const int fabSize = 2130772261;
+			// aapt resource value: 0x7f010128
+			public const int fabSize = 2130772264;
 			
-			// aapt resource value: 0x7f01012a
-			public const int foregroundInsidePadding = 2130772266;
+			// aapt resource value: 0x7f01012d
+			public const int foregroundInsidePadding = 2130772269;
 			
-			// aapt resource value: 0x7f0100c0
-			public const int gapBetweenBars = 2130772160;
+			// aapt resource value: 0x7f0100c3
+			public const int gapBetweenBars = 2130772163;
 			
-			// aapt resource value: 0x7f0100d7
-			public const int goIcon = 2130772183;
+			// aapt resource value: 0x7f0100da
+			public const int goIcon = 2130772186;
 			
-			// aapt resource value: 0x7f010130
-			public const int headerLayout = 2130772272;
+			// aapt resource value: 0x7f010133
+			public const int headerLayout = 2130772275;
 			
 			// aapt resource value: 0x7f01001d
 			public const int height = 2130771997;
@@ -2350,17 +753,17 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f010031
 			public const int hideOnContentScroll = 2130772017;
 			
-			// aapt resource value: 0x7f01014c
-			public const int hintAnimationEnabled = 2130772300;
+			// aapt resource value: 0x7f01014f
+			public const int hintAnimationEnabled = 2130772303;
 			
-			// aapt resource value: 0x7f010145
-			public const int hintEnabled = 2130772293;
+			// aapt resource value: 0x7f010148
+			public const int hintEnabled = 2130772296;
 			
-			// aapt resource value: 0x7f010144
-			public const int hintTextAppearance = 2130772292;
+			// aapt resource value: 0x7f010147
+			public const int hintTextAppearance = 2130772295;
 			
-			// aapt resource value: 0x7f010077
-			public const int homeAsUpIndicator = 2130772087;
+			// aapt resource value: 0x7f010079
+			public const int homeAsUpIndicator = 2130772089;
 			
 			// aapt resource value: 0x7f01002c
 			public const int homeLayout = 2130772012;
@@ -2368,11 +771,11 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f010025
 			public const int icon = 2130772005;
 			
-			// aapt resource value: 0x7f0100d3
-			public const int iconifiedByDefault = 2130772179;
+			// aapt resource value: 0x7f0100d6
+			public const int iconifiedByDefault = 2130772182;
 			
-			// aapt resource value: 0x7f010087
-			public const int imageButtonStyle = 2130772103;
+			// aapt resource value: 0x7f010089
+			public const int imageButtonStyle = 2130772105;
 			
 			// aapt resource value: 0x7f01002e
 			public const int indeterminateProgressStyle = 2130772014;
@@ -2380,71 +783,71 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f01003b
 			public const int initialActivityCount = 2130772027;
 			
-			// aapt resource value: 0x7f010131
-			public const int insetForeground = 2130772273;
+			// aapt resource value: 0x7f010134
+			public const int insetForeground = 2130772276;
 			
 			// aapt resource value: 0x7f01001e
 			public const int isLightTheme = 2130771998;
 			
-			// aapt resource value: 0x7f01012e
-			public const int itemBackground = 2130772270;
+			// aapt resource value: 0x7f010131
+			public const int itemBackground = 2130772273;
 			
-			// aapt resource value: 0x7f01012c
-			public const int itemIconTint = 2130772268;
+			// aapt resource value: 0x7f01012f
+			public const int itemIconTint = 2130772271;
 			
 			// aapt resource value: 0x7f010030
 			public const int itemPadding = 2130772016;
 			
-			// aapt resource value: 0x7f01012f
-			public const int itemTextAppearance = 2130772271;
+			// aapt resource value: 0x7f010132
+			public const int itemTextAppearance = 2130772274;
 			
-			// aapt resource value: 0x7f01012d
-			public const int itemTextColor = 2130772269;
+			// aapt resource value: 0x7f010130
+			public const int itemTextColor = 2130772272;
 			
-			// aapt resource value: 0x7f010119
-			public const int keylines = 2130772249;
+			// aapt resource value: 0x7f01011c
+			public const int keylines = 2130772252;
 			
-			// aapt resource value: 0x7f0100d2
-			public const int layout = 2130772178;
+			// aapt resource value: 0x7f0100d5
+			public const int layout = 2130772181;
 			
 			// aapt resource value: 0x7f010000
 			public const int layoutManager = 2130771968;
 			
-			// aapt resource value: 0x7f01011c
-			public const int layout_anchor = 2130772252;
+			// aapt resource value: 0x7f01011f
+			public const int layout_anchor = 2130772255;
+			
+			// aapt resource value: 0x7f010121
+			public const int layout_anchorGravity = 2130772257;
 			
 			// aapt resource value: 0x7f01011e
-			public const int layout_anchorGravity = 2130772254;
+			public const int layout_behavior = 2130772254;
+			
+			// aapt resource value: 0x7f01011a
+			public const int layout_collapseMode = 2130772250;
 			
 			// aapt resource value: 0x7f01011b
-			public const int layout_behavior = 2130772251;
+			public const int layout_collapseParallaxMultiplier = 2130772251;
 			
-			// aapt resource value: 0x7f010117
-			public const int layout_collapseMode = 2130772247;
+			// aapt resource value: 0x7f010123
+			public const int layout_dodgeInsetEdges = 2130772259;
 			
-			// aapt resource value: 0x7f010118
-			public const int layout_collapseParallaxMultiplier = 2130772248;
+			// aapt resource value: 0x7f010122
+			public const int layout_insetEdge = 2130772258;
 			
 			// aapt resource value: 0x7f010120
-			public const int layout_dodgeInsetEdges = 2130772256;
+			public const int layout_keyline = 2130772256;
 			
-			// aapt resource value: 0x7f01011f
-			public const int layout_insetEdge = 2130772255;
+			// aapt resource value: 0x7f010106
+			public const int layout_scrollFlags = 2130772230;
 			
-			// aapt resource value: 0x7f01011d
-			public const int layout_keyline = 2130772253;
+			// aapt resource value: 0x7f010107
+			public const int layout_scrollInterpolator = 2130772231;
 			
-			// aapt resource value: 0x7f010103
-			public const int layout_scrollFlags = 2130772227;
+			// aapt resource value: 0x7f01009b
+			public const int listChoiceBackgroundIndicator = 2130772123;
 			
-			// aapt resource value: 0x7f010104
-			public const int layout_scrollInterpolator = 2130772228;
-			
-			// aapt resource value: 0x7f010098
-			public const int listChoiceBackgroundIndicator = 2130772120;
-			
-			// aapt resource value: 0x7f010073
-			public const int listDividerAlertDialog = 2130772083;
+			// aapt resource value: 0x7f010075
+			public const int listDividerAlertDialog = 2130772085;
 			
 			// aapt resource value: 0x7f010041
 			public const int listItemLayout = 2130772033;
@@ -2452,41 +855,41 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f01003e
 			public const int listLayout = 2130772030;
 			
-			// aapt resource value: 0x7f0100b8
-			public const int listMenuViewStyle = 2130772152;
+			// aapt resource value: 0x7f0100bb
+			public const int listMenuViewStyle = 2130772155;
 			
-			// aapt resource value: 0x7f010092
-			public const int listPopupWindowStyle = 2130772114;
-			
-			// aapt resource value: 0x7f01008c
-			public const int listPreferredItemHeight = 2130772108;
+			// aapt resource value: 0x7f010094
+			public const int listPopupWindowStyle = 2130772116;
 			
 			// aapt resource value: 0x7f01008e
-			public const int listPreferredItemHeightLarge = 2130772110;
-			
-			// aapt resource value: 0x7f01008d
-			public const int listPreferredItemHeightSmall = 2130772109;
-			
-			// aapt resource value: 0x7f01008f
-			public const int listPreferredItemPaddingLeft = 2130772111;
+			public const int listPreferredItemHeight = 2130772110;
 			
 			// aapt resource value: 0x7f010090
-			public const int listPreferredItemPaddingRight = 2130772112;
+			public const int listPreferredItemHeightLarge = 2130772112;
+			
+			// aapt resource value: 0x7f01008f
+			public const int listPreferredItemHeightSmall = 2130772111;
+			
+			// aapt resource value: 0x7f010091
+			public const int listPreferredItemPaddingLeft = 2130772113;
+			
+			// aapt resource value: 0x7f010092
+			public const int listPreferredItemPaddingRight = 2130772114;
 			
 			// aapt resource value: 0x7f010026
 			public const int logo = 2130772006;
 			
-			// aapt resource value: 0x7f0100f8
-			public const int logoDescription = 2130772216;
+			// aapt resource value: 0x7f0100fb
+			public const int logoDescription = 2130772219;
 			
-			// aapt resource value: 0x7f010133
-			public const int maxActionInlineWidth = 2130772275;
+			// aapt resource value: 0x7f010136
+			public const int maxActionInlineWidth = 2130772278;
 			
-			// aapt resource value: 0x7f0100f2
-			public const int maxButtonHeight = 2130772210;
+			// aapt resource value: 0x7f0100f5
+			public const int maxButtonHeight = 2130772213;
 			
-			// aapt resource value: 0x7f0100c5
-			public const int measureWithLargestChild = 2130772165;
+			// aapt resource value: 0x7f0100c8
+			public const int measureWithLargestChild = 2130772168;
 			
 			// aapt resource value: 0x7f010004
 			public const int mediaRouteAudioTrackDrawable = 2130771972;
@@ -2524,74 +927,74 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f01000f
 			public const int mediaRouteTvIconDrawable = 2130771983;
 			
-			// aapt resource value: 0x7f01012b
-			public const int menu = 2130772267;
+			// aapt resource value: 0x7f01012e
+			public const int menu = 2130772270;
 			
 			// aapt resource value: 0x7f01003f
 			public const int multiChoiceItemLayout = 2130772031;
 			
-			// aapt resource value: 0x7f0100f7
-			public const int navigationContentDescription = 2130772215;
+			// aapt resource value: 0x7f0100fa
+			public const int navigationContentDescription = 2130772218;
 			
-			// aapt resource value: 0x7f0100f6
-			public const int navigationIcon = 2130772214;
+			// aapt resource value: 0x7f0100f9
+			public const int navigationIcon = 2130772217;
 			
 			// aapt resource value: 0x7f010020
 			public const int navigationMode = 2130772000;
 			
-			// aapt resource value: 0x7f0100ce
-			public const int overlapAnchor = 2130772174;
-			
-			// aapt resource value: 0x7f0100d0
-			public const int paddingBottomNoButtons = 2130772176;
-			
-			// aapt resource value: 0x7f0100fc
-			public const int paddingEnd = 2130772220;
-			
-			// aapt resource value: 0x7f0100fb
-			public const int paddingStart = 2130772219;
-			
 			// aapt resource value: 0x7f0100d1
-			public const int paddingTopNoTitle = 2130772177;
+			public const int overlapAnchor = 2130772177;
 			
-			// aapt resource value: 0x7f010095
-			public const int panelBackground = 2130772117;
+			// aapt resource value: 0x7f0100d3
+			public const int paddingBottomNoButtons = 2130772179;
 			
-			// aapt resource value: 0x7f010097
-			public const int panelMenuListTheme = 2130772119;
+			// aapt resource value: 0x7f0100ff
+			public const int paddingEnd = 2130772223;
 			
-			// aapt resource value: 0x7f010096
-			public const int panelMenuListWidth = 2130772118;
+			// aapt resource value: 0x7f0100fe
+			public const int paddingStart = 2130772222;
 			
-			// aapt resource value: 0x7f01014f
-			public const int passwordToggleContentDescription = 2130772303;
+			// aapt resource value: 0x7f0100d4
+			public const int paddingTopNoTitle = 2130772180;
 			
-			// aapt resource value: 0x7f01014e
-			public const int passwordToggleDrawable = 2130772302;
+			// aapt resource value: 0x7f010098
+			public const int panelBackground = 2130772120;
 			
-			// aapt resource value: 0x7f01014d
-			public const int passwordToggleEnabled = 2130772301;
+			// aapt resource value: 0x7f01009a
+			public const int panelMenuListTheme = 2130772122;
 			
-			// aapt resource value: 0x7f010150
-			public const int passwordToggleTint = 2130772304;
+			// aapt resource value: 0x7f010099
+			public const int panelMenuListWidth = 2130772121;
+			
+			// aapt resource value: 0x7f010152
+			public const int passwordToggleContentDescription = 2130772306;
 			
 			// aapt resource value: 0x7f010151
-			public const int passwordToggleTintMode = 2130772305;
+			public const int passwordToggleDrawable = 2130772305;
 			
-			// aapt resource value: 0x7f010083
-			public const int popupMenuStyle = 2130772099;
+			// aapt resource value: 0x7f010150
+			public const int passwordToggleEnabled = 2130772304;
+			
+			// aapt resource value: 0x7f010153
+			public const int passwordToggleTint = 2130772307;
+			
+			// aapt resource value: 0x7f010154
+			public const int passwordToggleTintMode = 2130772308;
+			
+			// aapt resource value: 0x7f010085
+			public const int popupMenuStyle = 2130772101;
 			
 			// aapt resource value: 0x7f010039
 			public const int popupTheme = 2130772025;
 			
-			// aapt resource value: 0x7f010084
-			public const int popupWindowStyle = 2130772100;
+			// aapt resource value: 0x7f010086
+			public const int popupWindowStyle = 2130772102;
 			
-			// aapt resource value: 0x7f0100cc
-			public const int preserveIconSpacing = 2130772172;
+			// aapt resource value: 0x7f0100cf
+			public const int preserveIconSpacing = 2130772175;
 			
-			// aapt resource value: 0x7f010126
-			public const int pressedTranslationZ = 2130772262;
+			// aapt resource value: 0x7f010129
+			public const int pressedTranslationZ = 2130772265;
 			
 			// aapt resource value: 0x7f01002f
 			public const int progressBarPadding = 2130772015;
@@ -2599,62 +1002,62 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f01002d
 			public const int progressBarStyle = 2130772013;
 			
-			// aapt resource value: 0x7f0100dd
-			public const int queryBackground = 2130772189;
+			// aapt resource value: 0x7f0100e0
+			public const int queryBackground = 2130772192;
 			
-			// aapt resource value: 0x7f0100d4
-			public const int queryHint = 2130772180;
-			
-			// aapt resource value: 0x7f0100b1
-			public const int radioButtonStyle = 2130772145;
-			
-			// aapt resource value: 0x7f0100b2
-			public const int ratingBarStyle = 2130772146;
-			
-			// aapt resource value: 0x7f0100b3
-			public const int ratingBarStyleIndicator = 2130772147;
+			// aapt resource value: 0x7f0100d7
+			public const int queryHint = 2130772183;
 			
 			// aapt resource value: 0x7f0100b4
-			public const int ratingBarStyleSmall = 2130772148;
+			public const int radioButtonStyle = 2130772148;
+			
+			// aapt resource value: 0x7f0100b5
+			public const int ratingBarStyle = 2130772149;
+			
+			// aapt resource value: 0x7f0100b6
+			public const int ratingBarStyleIndicator = 2130772150;
+			
+			// aapt resource value: 0x7f0100b7
+			public const int ratingBarStyleSmall = 2130772151;
 			
 			// aapt resource value: 0x7f010002
 			public const int reverseLayout = 2130771970;
 			
-			// aapt resource value: 0x7f010124
-			public const int rippleColor = 2130772260;
+			// aapt resource value: 0x7f010127
+			public const int rippleColor = 2130772263;
 			
-			// aapt resource value: 0x7f010113
-			public const int scrimAnimationDuration = 2130772243;
+			// aapt resource value: 0x7f010116
+			public const int scrimAnimationDuration = 2130772246;
 			
-			// aapt resource value: 0x7f010112
-			public const int scrimVisibleHeightTrigger = 2130772242;
+			// aapt resource value: 0x7f010115
+			public const int scrimVisibleHeightTrigger = 2130772245;
 			
-			// aapt resource value: 0x7f0100d9
-			public const int searchHintIcon = 2130772185;
+			// aapt resource value: 0x7f0100dc
+			public const int searchHintIcon = 2130772188;
 			
-			// aapt resource value: 0x7f0100d8
-			public const int searchIcon = 2130772184;
+			// aapt resource value: 0x7f0100db
+			public const int searchIcon = 2130772187;
 			
-			// aapt resource value: 0x7f01008b
-			public const int searchViewStyle = 2130772107;
+			// aapt resource value: 0x7f01008d
+			public const int searchViewStyle = 2130772109;
 			
-			// aapt resource value: 0x7f0100b5
-			public const int seekBarStyle = 2130772149;
+			// aapt resource value: 0x7f0100b8
+			public const int seekBarStyle = 2130772152;
 			
-			// aapt resource value: 0x7f01007b
-			public const int selectableItemBackground = 2130772091;
+			// aapt resource value: 0x7f01007d
+			public const int selectableItemBackground = 2130772093;
 			
-			// aapt resource value: 0x7f01007c
-			public const int selectableItemBackgroundBorderless = 2130772092;
+			// aapt resource value: 0x7f01007e
+			public const int selectableItemBackgroundBorderless = 2130772094;
 			
-			// aapt resource value: 0x7f0100c8
-			public const int showAsAction = 2130772168;
+			// aapt resource value: 0x7f0100cb
+			public const int showAsAction = 2130772171;
 			
-			// aapt resource value: 0x7f0100c6
-			public const int showDividers = 2130772166;
+			// aapt resource value: 0x7f0100c9
+			public const int showDividers = 2130772169;
 			
-			// aapt resource value: 0x7f0100e9
-			public const int showText = 2130772201;
+			// aapt resource value: 0x7f0100ec
+			public const int showText = 2130772204;
 			
 			// aapt resource value: 0x7f010042
 			public const int showTitle = 2130772034;
@@ -2665,17 +1068,17 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f010001
 			public const int spanCount = 2130771969;
 			
-			// aapt resource value: 0x7f0100be
-			public const int spinBars = 2130772158;
+			// aapt resource value: 0x7f0100c1
+			public const int spinBars = 2130772161;
 			
-			// aapt resource value: 0x7f010076
-			public const int spinnerDropDownItemStyle = 2130772086;
+			// aapt resource value: 0x7f010078
+			public const int spinnerDropDownItemStyle = 2130772088;
 			
-			// aapt resource value: 0x7f0100b6
-			public const int spinnerStyle = 2130772150;
+			// aapt resource value: 0x7f0100b9
+			public const int spinnerStyle = 2130772153;
 			
-			// aapt resource value: 0x7f0100e8
-			public const int splitTrack = 2130772200;
+			// aapt resource value: 0x7f0100eb
+			public const int splitTrack = 2130772203;
 			
 			// aapt resource value: 0x7f010043
 			public const int srcCompat = 2130772035;
@@ -2683,245 +1086,254 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f010003
 			public const int stackFromEnd = 2130771971;
 			
-			// aapt resource value: 0x7f0100cf
-			public const int state_above_anchor = 2130772175;
+			// aapt resource value: 0x7f0100d2
+			public const int state_above_anchor = 2130772178;
 			
-			// aapt resource value: 0x7f010101
-			public const int state_collapsed = 2130772225;
+			// aapt resource value: 0x7f010104
+			public const int state_collapsed = 2130772228;
 			
-			// aapt resource value: 0x7f010102
-			public const int state_collapsible = 2130772226;
+			// aapt resource value: 0x7f010105
+			public const int state_collapsible = 2130772229;
 			
-			// aapt resource value: 0x7f01011a
-			public const int statusBarBackground = 2130772250;
+			// aapt resource value: 0x7f01011d
+			public const int statusBarBackground = 2130772253;
 			
-			// aapt resource value: 0x7f010110
-			public const int statusBarScrim = 2130772240;
+			// aapt resource value: 0x7f010113
+			public const int statusBarScrim = 2130772243;
 			
-			// aapt resource value: 0x7f0100cd
-			public const int subMenuArrow = 2130772173;
+			// aapt resource value: 0x7f0100d0
+			public const int subMenuArrow = 2130772176;
 			
-			// aapt resource value: 0x7f0100de
-			public const int submitBackground = 2130772190;
+			// aapt resource value: 0x7f0100e1
+			public const int submitBackground = 2130772193;
 			
 			// aapt resource value: 0x7f010022
 			public const int subtitle = 2130772002;
 			
-			// aapt resource value: 0x7f0100eb
-			public const int subtitleTextAppearance = 2130772203;
+			// aapt resource value: 0x7f0100ee
+			public const int subtitleTextAppearance = 2130772206;
 			
-			// aapt resource value: 0x7f0100fa
-			public const int subtitleTextColor = 2130772218;
+			// aapt resource value: 0x7f0100fd
+			public const int subtitleTextColor = 2130772221;
 			
 			// aapt resource value: 0x7f010024
 			public const int subtitleTextStyle = 2130772004;
 			
-			// aapt resource value: 0x7f0100dc
-			public const int suggestionRowLayout = 2130772188;
+			// aapt resource value: 0x7f0100df
+			public const int suggestionRowLayout = 2130772191;
 			
-			// aapt resource value: 0x7f0100e6
-			public const int switchMinWidth = 2130772198;
+			// aapt resource value: 0x7f0100e9
+			public const int switchMinWidth = 2130772201;
 			
-			// aapt resource value: 0x7f0100e7
-			public const int switchPadding = 2130772199;
+			// aapt resource value: 0x7f0100ea
+			public const int switchPadding = 2130772202;
 			
-			// aapt resource value: 0x7f0100b7
-			public const int switchStyle = 2130772151;
+			// aapt resource value: 0x7f0100ba
+			public const int switchStyle = 2130772154;
 			
-			// aapt resource value: 0x7f0100e5
-			public const int switchTextAppearance = 2130772197;
-			
-			// aapt resource value: 0x7f010137
-			public const int tabBackground = 2130772279;
-			
-			// aapt resource value: 0x7f010136
-			public const int tabContentStart = 2130772278;
-			
-			// aapt resource value: 0x7f010139
-			public const int tabGravity = 2130772281;
-			
-			// aapt resource value: 0x7f010134
-			public const int tabIndicatorColor = 2130772276;
-			
-			// aapt resource value: 0x7f010135
-			public const int tabIndicatorHeight = 2130772277;
-			
-			// aapt resource value: 0x7f01013b
-			public const int tabMaxWidth = 2130772283;
+			// aapt resource value: 0x7f0100e8
+			public const int switchTextAppearance = 2130772200;
 			
 			// aapt resource value: 0x7f01013a
-			public const int tabMinWidth = 2130772282;
+			public const int tabBackground = 2130772282;
 			
-			// aapt resource value: 0x7f010138
-			public const int tabMode = 2130772280;
-			
-			// aapt resource value: 0x7f010143
-			public const int tabPadding = 2130772291;
-			
-			// aapt resource value: 0x7f010142
-			public const int tabPaddingBottom = 2130772290;
-			
-			// aapt resource value: 0x7f010141
-			public const int tabPaddingEnd = 2130772289;
-			
-			// aapt resource value: 0x7f01013f
-			public const int tabPaddingStart = 2130772287;
-			
-			// aapt resource value: 0x7f010140
-			public const int tabPaddingTop = 2130772288;
-			
-			// aapt resource value: 0x7f01013e
-			public const int tabSelectedTextColor = 2130772286;
+			// aapt resource value: 0x7f010139
+			public const int tabContentStart = 2130772281;
 			
 			// aapt resource value: 0x7f01013c
-			public const int tabTextAppearance = 2130772284;
+			public const int tabGravity = 2130772284;
+			
+			// aapt resource value: 0x7f010137
+			public const int tabIndicatorColor = 2130772279;
+			
+			// aapt resource value: 0x7f010138
+			public const int tabIndicatorHeight = 2130772280;
+			
+			// aapt resource value: 0x7f01013e
+			public const int tabMaxWidth = 2130772286;
 			
 			// aapt resource value: 0x7f01013d
-			public const int tabTextColor = 2130772285;
+			public const int tabMinWidth = 2130772285;
 			
-			// aapt resource value: 0x7f010047
-			public const int textAllCaps = 2130772039;
+			// aapt resource value: 0x7f01013b
+			public const int tabMode = 2130772283;
 			
-			// aapt resource value: 0x7f01006e
-			public const int textAppearanceLargePopupMenu = 2130772078;
+			// aapt resource value: 0x7f010146
+			public const int tabPadding = 2130772294;
 			
-			// aapt resource value: 0x7f010093
-			public const int textAppearanceListItem = 2130772115;
+			// aapt resource value: 0x7f010145
+			public const int tabPaddingBottom = 2130772293;
 			
-			// aapt resource value: 0x7f010094
-			public const int textAppearanceListItemSmall = 2130772116;
+			// aapt resource value: 0x7f010144
+			public const int tabPaddingEnd = 2130772292;
+			
+			// aapt resource value: 0x7f010142
+			public const int tabPaddingStart = 2130772290;
+			
+			// aapt resource value: 0x7f010143
+			public const int tabPaddingTop = 2130772291;
+			
+			// aapt resource value: 0x7f010141
+			public const int tabSelectedTextColor = 2130772289;
+			
+			// aapt resource value: 0x7f01013f
+			public const int tabTextAppearance = 2130772287;
+			
+			// aapt resource value: 0x7f010140
+			public const int tabTextColor = 2130772288;
+			
+			// aapt resource value: 0x7f010049
+			public const int textAllCaps = 2130772041;
 			
 			// aapt resource value: 0x7f010070
-			public const int textAppearancePopupMenuHeader = 2130772080;
+			public const int textAppearanceLargePopupMenu = 2130772080;
 			
-			// aapt resource value: 0x7f010089
-			public const int textAppearanceSearchResultSubtitle = 2130772105;
+			// aapt resource value: 0x7f010095
+			public const int textAppearanceListItem = 2130772117;
 			
-			// aapt resource value: 0x7f010088
-			public const int textAppearanceSearchResultTitle = 2130772104;
+			// aapt resource value: 0x7f010096
+			public const int textAppearanceListItemSecondary = 2130772118;
 			
-			// aapt resource value: 0x7f01006f
-			public const int textAppearanceSmallPopupMenu = 2130772079;
+			// aapt resource value: 0x7f010097
+			public const int textAppearanceListItemSmall = 2130772119;
 			
-			// aapt resource value: 0x7f0100a7
-			public const int textColorAlertDialogListItem = 2130772135;
+			// aapt resource value: 0x7f010072
+			public const int textAppearancePopupMenuHeader = 2130772082;
 			
-			// aapt resource value: 0x7f010123
-			public const int textColorError = 2130772259;
+			// aapt resource value: 0x7f01008b
+			public const int textAppearanceSearchResultSubtitle = 2130772107;
 			
 			// aapt resource value: 0x7f01008a
-			public const int textColorSearchUrl = 2130772106;
+			public const int textAppearanceSearchResultTitle = 2130772106;
 			
-			// aapt resource value: 0x7f0100fd
-			public const int theme = 2130772221;
+			// aapt resource value: 0x7f010071
+			public const int textAppearanceSmallPopupMenu = 2130772081;
 			
-			// aapt resource value: 0x7f0100c4
-			public const int thickness = 2130772164;
+			// aapt resource value: 0x7f0100aa
+			public const int textColorAlertDialogListItem = 2130772138;
 			
-			// aapt resource value: 0x7f0100e4
-			public const int thumbTextPadding = 2130772196;
+			// aapt resource value: 0x7f010126
+			public const int textColorError = 2130772262;
 			
-			// aapt resource value: 0x7f0100df
-			public const int thumbTint = 2130772191;
+			// aapt resource value: 0x7f01008c
+			public const int textColorSearchUrl = 2130772108;
 			
-			// aapt resource value: 0x7f0100e0
-			public const int thumbTintMode = 2130772192;
+			// aapt resource value: 0x7f010100
+			public const int theme = 2130772224;
 			
-			// aapt resource value: 0x7f010044
-			public const int tickMark = 2130772036;
+			// aapt resource value: 0x7f0100c7
+			public const int thickness = 2130772167;
 			
-			// aapt resource value: 0x7f010045
-			public const int tickMarkTint = 2130772037;
+			// aapt resource value: 0x7f0100e7
+			public const int thumbTextPadding = 2130772199;
+			
+			// aapt resource value: 0x7f0100e2
+			public const int thumbTint = 2130772194;
+			
+			// aapt resource value: 0x7f0100e3
+			public const int thumbTintMode = 2130772195;
 			
 			// aapt resource value: 0x7f010046
-			public const int tickMarkTintMode = 2130772038;
+			public const int tickMark = 2130772038;
+			
+			// aapt resource value: 0x7f010047
+			public const int tickMarkTint = 2130772039;
+			
+			// aapt resource value: 0x7f010048
+			public const int tickMarkTintMode = 2130772040;
+			
+			// aapt resource value: 0x7f010044
+			public const int tint = 2130772036;
+			
+			// aapt resource value: 0x7f010045
+			public const int tintMode = 2130772037;
 			
 			// aapt resource value: 0x7f01001f
 			public const int title = 2130771999;
 			
-			// aapt resource value: 0x7f010116
-			public const int titleEnabled = 2130772246;
-			
-			// aapt resource value: 0x7f0100ec
-			public const int titleMargin = 2130772204;
-			
-			// aapt resource value: 0x7f0100f0
-			public const int titleMarginBottom = 2130772208;
-			
-			// aapt resource value: 0x7f0100ee
-			public const int titleMarginEnd = 2130772206;
-			
-			// aapt resource value: 0x7f0100ed
-			public const int titleMarginStart = 2130772205;
+			// aapt resource value: 0x7f010119
+			public const int titleEnabled = 2130772249;
 			
 			// aapt resource value: 0x7f0100ef
-			public const int titleMarginTop = 2130772207;
+			public const int titleMargin = 2130772207;
+			
+			// aapt resource value: 0x7f0100f3
+			public const int titleMarginBottom = 2130772211;
 			
 			// aapt resource value: 0x7f0100f1
-			public const int titleMargins = 2130772209;
+			public const int titleMarginEnd = 2130772209;
 			
-			// aapt resource value: 0x7f0100ea
-			public const int titleTextAppearance = 2130772202;
+			// aapt resource value: 0x7f0100f0
+			public const int titleMarginStart = 2130772208;
 			
-			// aapt resource value: 0x7f0100f9
-			public const int titleTextColor = 2130772217;
+			// aapt resource value: 0x7f0100f2
+			public const int titleMarginTop = 2130772210;
+			
+			// aapt resource value: 0x7f0100f4
+			public const int titleMargins = 2130772212;
+			
+			// aapt resource value: 0x7f0100ed
+			public const int titleTextAppearance = 2130772205;
+			
+			// aapt resource value: 0x7f0100fc
+			public const int titleTextColor = 2130772220;
 			
 			// aapt resource value: 0x7f010023
 			public const int titleTextStyle = 2130772003;
 			
-			// aapt resource value: 0x7f010111
-			public const int toolbarId = 2130772241;
+			// aapt resource value: 0x7f010114
+			public const int toolbarId = 2130772244;
 			
-			// aapt resource value: 0x7f010082
-			public const int toolbarNavigationButtonStyle = 2130772098;
+			// aapt resource value: 0x7f010084
+			public const int toolbarNavigationButtonStyle = 2130772100;
 			
-			// aapt resource value: 0x7f010081
-			public const int toolbarStyle = 2130772097;
+			// aapt resource value: 0x7f010083
+			public const int toolbarStyle = 2130772099;
 			
-			// aapt resource value: 0x7f0100e1
-			public const int track = 2130772193;
+			// aapt resource value: 0x7f0100e4
+			public const int track = 2130772196;
 			
-			// aapt resource value: 0x7f0100e2
-			public const int trackTint = 2130772194;
+			// aapt resource value: 0x7f0100e5
+			public const int trackTint = 2130772197;
 			
-			// aapt resource value: 0x7f0100e3
-			public const int trackTintMode = 2130772195;
+			// aapt resource value: 0x7f0100e6
+			public const int trackTintMode = 2130772198;
 			
-			// aapt resource value: 0x7f010128
-			public const int useCompatPadding = 2130772264;
+			// aapt resource value: 0x7f01012b
+			public const int useCompatPadding = 2130772267;
 			
-			// aapt resource value: 0x7f0100da
-			public const int voiceIcon = 2130772186;
-			
-			// aapt resource value: 0x7f010048
-			public const int windowActionBar = 2130772040;
+			// aapt resource value: 0x7f0100dd
+			public const int voiceIcon = 2130772189;
 			
 			// aapt resource value: 0x7f01004a
-			public const int windowActionBarOverlay = 2130772042;
-			
-			// aapt resource value: 0x7f01004b
-			public const int windowActionModeOverlay = 2130772043;
-			
-			// aapt resource value: 0x7f01004f
-			public const int windowFixedHeightMajor = 2130772047;
-			
-			// aapt resource value: 0x7f01004d
-			public const int windowFixedHeightMinor = 2130772045;
+			public const int windowActionBar = 2130772042;
 			
 			// aapt resource value: 0x7f01004c
-			public const int windowFixedWidthMajor = 2130772044;
+			public const int windowActionBarOverlay = 2130772044;
 			
-			// aapt resource value: 0x7f01004e
-			public const int windowFixedWidthMinor = 2130772046;
-			
-			// aapt resource value: 0x7f010050
-			public const int windowMinWidthMajor = 2130772048;
+			// aapt resource value: 0x7f01004d
+			public const int windowActionModeOverlay = 2130772045;
 			
 			// aapt resource value: 0x7f010051
-			public const int windowMinWidthMinor = 2130772049;
+			public const int windowFixedHeightMajor = 2130772049;
 			
-			// aapt resource value: 0x7f010049
-			public const int windowNoTitle = 2130772041;
+			// aapt resource value: 0x7f01004f
+			public const int windowFixedHeightMinor = 2130772047;
+			
+			// aapt resource value: 0x7f01004e
+			public const int windowFixedWidthMajor = 2130772046;
+			
+			// aapt resource value: 0x7f010050
+			public const int windowFixedWidthMinor = 2130772048;
+			
+			// aapt resource value: 0x7f010052
+			public const int windowMinWidthMajor = 2130772050;
+			
+			// aapt resource value: 0x7f010053
+			public const int windowMinWidthMinor = 2130772051;
+			
+			// aapt resource value: 0x7f01004b
+			public const int windowNoTitle = 2130772043;
 			
 			static Attribute()
 			{
@@ -4602,8 +3014,8 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f080010
 			public const int MvxBindingTagUnique = 2131230736;
 			
-			// aapt resource value: 0x7f0800b2
-			public const int action0 = 2131230898;
+			// aapt resource value: 0x7f0800b6
+			public const int action0 = 2131230902;
 			
 			// aapt resource value: 0x7f080066
 			public const int action_bar = 2131230822;
@@ -4626,17 +3038,17 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f080043
 			public const int action_bar_title = 2131230787;
 			
-			// aapt resource value: 0x7f0800af
-			public const int action_container = 2131230895;
+			// aapt resource value: 0x7f0800b3
+			public const int action_container = 2131230899;
 			
 			// aapt resource value: 0x7f080067
 			public const int action_context_bar = 2131230823;
 			
-			// aapt resource value: 0x7f0800b6
-			public const int action_divider = 2131230902;
+			// aapt resource value: 0x7f0800ba
+			public const int action_divider = 2131230906;
 			
-			// aapt resource value: 0x7f0800b0
-			public const int action_image = 2131230896;
+			// aapt resource value: 0x7f0800b4
+			public const int action_image = 2131230900;
 			
 			// aapt resource value: 0x7f080003
 			public const int action_menu_divider = 2131230723;
@@ -4653,17 +3065,17 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f080045
 			public const int action_mode_close_button = 2131230789;
 			
-			// aapt resource value: 0x7f0800b1
-			public const int action_text = 2131230897;
+			// aapt resource value: 0x7f0800b5
+			public const int action_text = 2131230901;
 			
-			// aapt resource value: 0x7f0800bf
-			public const int actions = 2131230911;
+			// aapt resource value: 0x7f0800c3
+			public const int actions = 2131230915;
 			
 			// aapt resource value: 0x7f080046
 			public const int activity_chooser_view_content = 2131230790;
 			
-			// aapt resource value: 0x7f08001b
-			public const int add = 2131230747;
+			// aapt resource value: 0x7f080020
+			public const int add = 2131230752;
 			
 			// aapt resource value: 0x7f08005a
 			public const int alertTitle = 2131230810;
@@ -4673,6 +3085,9 @@ namespace BLE.Client.Droid
 			
 			// aapt resource value: 0x7f080025
 			public const int always = 2131230757;
+			
+			// aapt resource value: 0x7f08007f
+			public const int annotationLayout = 2131230847;
 			
 			// aapt resource value: 0x7f080031
 			public const int auto = 2131230769;
@@ -4686,14 +3101,14 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f08002a
 			public const int bottom = 2131230762;
 			
-			// aapt resource value: 0x7f0800c7
-			public const int bottom_labels = 2131230919;
+			// aapt resource value: 0x7f0800cb
+			public const int bottom_labels = 2131230923;
 			
 			// aapt resource value: 0x7f08004d
 			public const int buttonPanel = 2131230797;
 			
-			// aapt resource value: 0x7f0800b3
-			public const int cancel_action = 2131230899;
+			// aapt resource value: 0x7f0800b7
+			public const int cancel_action = 2131230903;
 			
 			// aapt resource value: 0x7f080032
 			public const int center = 2131230770;
@@ -4707,11 +3122,14 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f08007e
 			public const int chartBehaviorLayout = 2131230846;
 			
+			// aapt resource value: 0x7f080082
+			public const int chartLegendScrollView = 2131230850;
+			
 			// aapt resource value: 0x7f08005d
 			public const int checkbox = 2131230813;
 			
-			// aapt resource value: 0x7f0800bb
-			public const int chronometer = 2131230907;
+			// aapt resource value: 0x7f0800bf
+			public const int chronometer = 2131230911;
 			
 			// aapt resource value: 0x7f08003b
 			public const int clip_horizontal = 2131230779;
@@ -4722,11 +3140,17 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f080026
 			public const int collapseActionView = 2131230758;
 			
-			// aapt resource value: 0x7f0800c8
-			public const int content = 2131230920;
+			// aapt resource value: 0x7f080089
+			public const int container = 2131230857;
+			
+			// aapt resource value: 0x7f0800cc
+			public const int content = 2131230924;
 			
 			// aapt resource value: 0x7f080050
 			public const int contentPanel = 2131230800;
+			
+			// aapt resource value: 0x7f08008a
+			public const int coordinator = 2131230858;
 			
 			// aapt resource value: 0x7f080057
 			public const int custom = 2131230807;
@@ -4743,20 +3167,20 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f080049
 			public const int default_activity_button = 2131230793;
 			
-			// aapt resource value: 0x7f080088
-			public const int design_bottom_sheet = 2131230856;
-			
-			// aapt resource value: 0x7f08008f
-			public const int design_menu_item_action_area = 2131230863;
-			
-			// aapt resource value: 0x7f08008e
-			public const int design_menu_item_action_area_stub = 2131230862;
-			
-			// aapt resource value: 0x7f08008d
-			public const int design_menu_item_text = 2131230861;
-			
 			// aapt resource value: 0x7f08008c
-			public const int design_navigation_view = 2131230860;
+			public const int design_bottom_sheet = 2131230860;
+			
+			// aapt resource value: 0x7f080093
+			public const int design_menu_item_action_area = 2131230867;
+			
+			// aapt resource value: 0x7f080092
+			public const int design_menu_item_action_area_stub = 2131230866;
+			
+			// aapt resource value: 0x7f080091
+			public const int design_menu_item_text = 2131230865;
+			
+			// aapt resource value: 0x7f080090
+			public const int design_navigation_view = 2131230864;
 			
 			// aapt resource value: 0x7f080014
 			public const int disableHome = 2131230740;
@@ -4767,8 +3191,8 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f080023
 			public const int end = 2131230755;
 			
-			// aapt resource value: 0x7f0800c5
-			public const int end_padder = 2131230917;
+			// aapt resource value: 0x7f0800c9
+			public const int end_padder = 2131230921;
 			
 			// aapt resource value: 0x7f08002c
 			public const int enterAlways = 2131230764;
@@ -4800,8 +3224,8 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f080077
 			public const int gridLineLayout = 2131230839;
 			
-			// aapt resource value: 0x7f0800c9
-			public const int gridLinesLayout = 2131230921;
+			// aapt resource value: 0x7f0800cd
+			public const int gridLinesLayout = 2131230925;
 			
 			// aapt resource value: 0x7f080005
 			public const int home = 2131230725;
@@ -4812,11 +3236,11 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f08004b
 			public const int icon = 2131230795;
 			
-			// aapt resource value: 0x7f080083
-			public const int iconView = 2131230851;
+			// aapt resource value: 0x7f080085
+			public const int iconView = 2131230853;
 			
-			// aapt resource value: 0x7f0800c0
-			public const int icon_group = 2131230912;
+			// aapt resource value: 0x7f0800c4
+			public const int icon_group = 2131230916;
 			
 			// aapt resource value: 0x7f080027
 			public const int ifRoom = 2131230759;
@@ -4824,41 +3248,41 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f080048
 			public const int image = 2131230792;
 			
-			// aapt resource value: 0x7f0800bc
-			public const int info = 2131230908;
+			// aapt resource value: 0x7f0800c0
+			public const int info = 2131230912;
 			
 			// aapt resource value: 0x7f080000
 			public const int item_touch_helper_previous_elevation = 2131230720;
 			
-			// aapt resource value: 0x7f080084
-			public const int label = 2131230852;
-			
 			// aapt resource value: 0x7f080086
-			public const int largeLabel = 2131230854;
+			public const int label = 2131230854;
+			
+			// aapt resource value: 0x7f080088
+			public const int largeLabel = 2131230856;
 			
 			// aapt resource value: 0x7f080036
 			public const int left = 2131230774;
 			
-			// aapt resource value: 0x7f080080
-			public const int legendHeader = 2131230848;
+			// aapt resource value: 0x7f080081
+			public const int legendHeader = 2131230849;
 			
-			// aapt resource value: 0x7f080082
-			public const int legendItemsLayout = 2131230850;
+			// aapt resource value: 0x7f080084
+			public const int legendItemsLayout = 2131230852;
 			
 			// aapt resource value: 0x7f08007d
 			public const int legendLayout = 2131230845;
 			
-			// aapt resource value: 0x7f080081
-			public const int legendScrollView = 2131230849;
+			// aapt resource value: 0x7f080083
+			public const int legendScrollView = 2131230851;
 			
-			// aapt resource value: 0x7f08007f
-			public const int legendViewGroup = 2131230847;
+			// aapt resource value: 0x7f080080
+			public const int legendViewGroup = 2131230848;
 			
-			// aapt resource value: 0x7f0800c1
-			public const int line1 = 2131230913;
+			// aapt resource value: 0x7f0800c5
+			public const int line1 = 2131230917;
 			
-			// aapt resource value: 0x7f0800c3
-			public const int line3 = 2131230915;
+			// aapt resource value: 0x7f0800c7
+			public const int line3 = 2131230919;
 			
 			// aapt resource value: 0x7f080011
 			public const int listMode = 2131230737;
@@ -4866,20 +3290,20 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f08004a
 			public const int list_item = 2131230794;
 			
-			// aapt resource value: 0x7f080093
-			public const int loadingImage = 2131230867;
+			// aapt resource value: 0x7f080097
+			public const int loadingImage = 2131230871;
 			
-			// aapt resource value: 0x7f080091
-			public const int loadingProgressBar = 2131230865;
+			// aapt resource value: 0x7f080095
+			public const int loadingProgressBar = 2131230869;
 			
-			// aapt resource value: 0x7f080094
-			public const int loadingProgressWheel = 2131230868;
+			// aapt resource value: 0x7f080098
+			public const int loadingProgressWheel = 2131230872;
 			
-			// aapt resource value: 0x7f0800ce
-			public const int masked = 2131230926;
+			// aapt resource value: 0x7f0800d2
+			public const int masked = 2131230930;
 			
-			// aapt resource value: 0x7f0800b5
-			public const int media_actions = 2131230901;
+			// aapt resource value: 0x7f0800b9
+			public const int media_actions = 2131230905;
 			
 			// aapt resource value: 0x7f080024
 			public const int middle = 2131230756;
@@ -4887,86 +3311,86 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f080040
 			public const int mini = 2131230784;
 			
-			// aapt resource value: 0x7f0800a1
-			public const int mr_art = 2131230881;
-			
-			// aapt resource value: 0x7f080096
-			public const int mr_chooser_list = 2131230870;
-			
-			// aapt resource value: 0x7f080099
-			public const int mr_chooser_route_desc = 2131230873;
-			
-			// aapt resource value: 0x7f080097
-			public const int mr_chooser_route_icon = 2131230871;
-			
-			// aapt resource value: 0x7f080098
-			public const int mr_chooser_route_name = 2131230872;
-			
-			// aapt resource value: 0x7f080095
-			public const int mr_chooser_title = 2131230869;
-			
-			// aapt resource value: 0x7f08009e
-			public const int mr_close = 2131230878;
-			
-			// aapt resource value: 0x7f0800a4
-			public const int mr_control_divider = 2131230884;
-			
-			// aapt resource value: 0x7f0800aa
-			public const int mr_control_playback_ctrl = 2131230890;
-			
-			// aapt resource value: 0x7f0800ad
-			public const int mr_control_subtitle = 2131230893;
-			
-			// aapt resource value: 0x7f0800ac
-			public const int mr_control_title = 2131230892;
-			
-			// aapt resource value: 0x7f0800ab
-			public const int mr_control_title_container = 2131230891;
-			
-			// aapt resource value: 0x7f08009f
-			public const int mr_custom_control = 2131230879;
-			
-			// aapt resource value: 0x7f0800a0
-			public const int mr_default_control = 2131230880;
-			
-			// aapt resource value: 0x7f08009b
-			public const int mr_dialog_area = 2131230875;
+			// aapt resource value: 0x7f0800a5
+			public const int mr_art = 2131230885;
 			
 			// aapt resource value: 0x7f08009a
-			public const int mr_expandable_area = 2131230874;
-			
-			// aapt resource value: 0x7f0800ae
-			public const int mr_group_expand_collapse = 2131230894;
-			
-			// aapt resource value: 0x7f0800a2
-			public const int mr_media_main_control = 2131230882;
+			public const int mr_chooser_list = 2131230874;
 			
 			// aapt resource value: 0x7f08009d
-			public const int mr_name = 2131230877;
+			public const int mr_chooser_route_desc = 2131230877;
 			
-			// aapt resource value: 0x7f0800a3
-			public const int mr_playback_control = 2131230883;
+			// aapt resource value: 0x7f08009b
+			public const int mr_chooser_route_icon = 2131230875;
 			
 			// aapt resource value: 0x7f08009c
-			public const int mr_title_bar = 2131230876;
+			public const int mr_chooser_route_name = 2131230876;
 			
-			// aapt resource value: 0x7f0800a5
-			public const int mr_volume_control = 2131230885;
+			// aapt resource value: 0x7f080099
+			public const int mr_chooser_title = 2131230873;
 			
-			// aapt resource value: 0x7f0800a6
-			public const int mr_volume_group_list = 2131230886;
+			// aapt resource value: 0x7f0800a2
+			public const int mr_close = 2131230882;
 			
 			// aapt resource value: 0x7f0800a8
-			public const int mr_volume_item_icon = 2131230888;
+			public const int mr_control_divider = 2131230888;
+			
+			// aapt resource value: 0x7f0800ae
+			public const int mr_control_playback_ctrl = 2131230894;
+			
+			// aapt resource value: 0x7f0800b1
+			public const int mr_control_subtitle = 2131230897;
+			
+			// aapt resource value: 0x7f0800b0
+			public const int mr_control_title = 2131230896;
+			
+			// aapt resource value: 0x7f0800af
+			public const int mr_control_title_container = 2131230895;
+			
+			// aapt resource value: 0x7f0800a3
+			public const int mr_custom_control = 2131230883;
+			
+			// aapt resource value: 0x7f0800a4
+			public const int mr_default_control = 2131230884;
+			
+			// aapt resource value: 0x7f08009f
+			public const int mr_dialog_area = 2131230879;
+			
+			// aapt resource value: 0x7f08009e
+			public const int mr_expandable_area = 2131230878;
+			
+			// aapt resource value: 0x7f0800b2
+			public const int mr_group_expand_collapse = 2131230898;
+			
+			// aapt resource value: 0x7f0800a6
+			public const int mr_media_main_control = 2131230886;
+			
+			// aapt resource value: 0x7f0800a1
+			public const int mr_name = 2131230881;
+			
+			// aapt resource value: 0x7f0800a7
+			public const int mr_playback_control = 2131230887;
+			
+			// aapt resource value: 0x7f0800a0
+			public const int mr_title_bar = 2131230880;
 			
 			// aapt resource value: 0x7f0800a9
-			public const int mr_volume_slider = 2131230889;
+			public const int mr_volume_control = 2131230889;
 			
-			// aapt resource value: 0x7f08001c
-			public const int multiply = 2131230748;
+			// aapt resource value: 0x7f0800aa
+			public const int mr_volume_group_list = 2131230890;
 			
-			// aapt resource value: 0x7f08008b
-			public const int navigation_header_container = 2131230859;
+			// aapt resource value: 0x7f0800ac
+			public const int mr_volume_item_icon = 2131230892;
+			
+			// aapt resource value: 0x7f0800ad
+			public const int mr_volume_slider = 2131230893;
+			
+			// aapt resource value: 0x7f08001b
+			public const int multiply = 2131230747;
+			
+			// aapt resource value: 0x7f08008f
+			public const int navigation_header_container = 2131230863;
 			
 			// aapt resource value: 0x7f080028
 			public const int never = 2131230760;
@@ -4977,14 +3401,14 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f080012
 			public const int normal = 2131230738;
 			
-			// aapt resource value: 0x7f0800be
-			public const int notification_background = 2131230910;
+			// aapt resource value: 0x7f0800c2
+			public const int notification_background = 2131230914;
 			
-			// aapt resource value: 0x7f0800b8
-			public const int notification_main_column = 2131230904;
+			// aapt resource value: 0x7f0800bc
+			public const int notification_main_column = 2131230908;
 			
-			// aapt resource value: 0x7f0800b7
-			public const int notification_main_column_container = 2131230903;
+			// aapt resource value: 0x7f0800bb
+			public const int notification_main_column_container = 2131230907;
 			
 			// aapt resource value: 0x7f080039
 			public const int parallax = 2131230777;
@@ -5007,17 +3431,17 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f080037
 			public const int right = 2131230775;
 			
-			// aapt resource value: 0x7f0800bd
-			public const int right_icon = 2131230909;
+			// aapt resource value: 0x7f0800c1
+			public const int right_icon = 2131230913;
 			
-			// aapt resource value: 0x7f0800b9
-			public const int right_side = 2131230905;
+			// aapt resource value: 0x7f0800bd
+			public const int right_side = 2131230909;
 			
 			// aapt resource value: 0x7f080075
 			public const int rootLayout = 2131230837;
 			
-			// aapt resource value: 0x7f08001d
-			public const int screen = 2131230749;
+			// aapt resource value: 0x7f08001c
+			public const int screen = 2131230748;
 			
 			// aapt resource value: 0x7f08002f
 			public const int scroll = 2131230767;
@@ -5082,17 +3506,17 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f080019
 			public const int showTitle = 2131230745;
 			
-			// aapt resource value: 0x7f0800cb
-			public const int sliding_tabs = 2131230923;
+			// aapt resource value: 0x7f0800cf
+			public const int sliding_tabs = 2131230927;
 			
-			// aapt resource value: 0x7f080085
-			public const int smallLabel = 2131230853;
+			// aapt resource value: 0x7f080087
+			public const int smallLabel = 2131230855;
 			
-			// aapt resource value: 0x7f08008a
-			public const int snackbar_action = 2131230858;
+			// aapt resource value: 0x7f08008e
+			public const int snackbar_action = 2131230862;
 			
-			// aapt resource value: 0x7f080089
-			public const int snackbar_text = 2131230857;
+			// aapt resource value: 0x7f08008d
+			public const int snackbar_text = 2131230861;
 			
 			// aapt resource value: 0x7f080030
 			public const int snap = 2131230768;
@@ -5103,20 +3527,20 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f080008
 			public const int split_action_bar = 2131230728;
 			
+			// aapt resource value: 0x7f08001d
+			public const int src_atop = 2131230749;
+			
 			// aapt resource value: 0x7f08001e
-			public const int src_atop = 2131230750;
+			public const int src_in = 2131230750;
 			
 			// aapt resource value: 0x7f08001f
-			public const int src_in = 2131230751;
-			
-			// aapt resource value: 0x7f080020
-			public const int src_over = 2131230752;
+			public const int src_over = 2131230751;
 			
 			// aapt resource value: 0x7f080038
 			public const int start = 2131230776;
 			
-			// aapt resource value: 0x7f0800b4
-			public const int status_bar_latest_event_content = 2131230900;
+			// aapt resource value: 0x7f0800b8
+			public const int status_bar_latest_event_content = 2131230904;
 			
 			// aapt resource value: 0x7f080078
 			public const int stripLinesLayout = 2131230840;
@@ -5133,11 +3557,11 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f08007b
 			public const int technicalIndicatorLayout = 2131230843;
 			
-			// aapt resource value: 0x7f0800c4
-			public const int text = 2131230916;
+			// aapt resource value: 0x7f0800c8
+			public const int text = 2131230920;
 			
-			// aapt resource value: 0x7f0800c2
-			public const int text2 = 2131230914;
+			// aapt resource value: 0x7f0800c6
+			public const int text2 = 2131230918;
 			
 			// aapt resource value: 0x7f080054
 			public const int textSpacerNoButtons = 2131230804;
@@ -5145,11 +3569,11 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f080053
 			public const int textSpacerNoTitle = 2131230803;
 			
-			// aapt resource value: 0x7f080092
-			public const int textViewStatus = 2131230866;
+			// aapt resource value: 0x7f080096
+			public const int textViewStatus = 2131230870;
 			
-			// aapt resource value: 0x7f080090
-			public const int text_input_password_toggle = 2131230864;
+			// aapt resource value: 0x7f080094
+			public const int text_input_password_toggle = 2131230868;
 			
 			// aapt resource value: 0x7f08000c
 			public const int textinput_counter = 2131230732;
@@ -5157,11 +3581,11 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f08000d
 			public const int textinput_error = 2131230733;
 			
-			// aapt resource value: 0x7f0800ca
-			public const int thumbLayout = 2131230922;
+			// aapt resource value: 0x7f0800ce
+			public const int thumbLayout = 2131230926;
 			
-			// aapt resource value: 0x7f0800ba
-			public const int time = 2131230906;
+			// aapt resource value: 0x7f0800be
+			public const int time = 2131230910;
 			
 			// aapt resource value: 0x7f08004c
 			public const int title = 2131230796;
@@ -5175,8 +3599,8 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f080059
 			public const int title_template = 2131230809;
 			
-			// aapt resource value: 0x7f0800cc
-			public const int toolbar = 2131230924;
+			// aapt resource value: 0x7f0800d0
+			public const int toolbar = 2131230928;
 			
 			// aapt resource value: 0x7f08002b
 			public const int top = 2131230763;
@@ -5184,11 +3608,11 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f080058
 			public const int topPanel = 2131230808;
 			
-			// aapt resource value: 0x7f0800c6
-			public const int top_labels = 2131230918;
+			// aapt resource value: 0x7f0800ca
+			public const int top_labels = 2131230922;
 			
-			// aapt resource value: 0x7f080087
-			public const int touch_outside = 2131230855;
+			// aapt resource value: 0x7f08008b
+			public const int touch_outside = 2131230859;
 			
 			// aapt resource value: 0x7f08000a
 			public const int transition_current_scene = 2131230730;
@@ -5205,11 +3629,11 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0x7f08000e
 			public const int view_offset_helper = 2131230734;
 			
-			// aapt resource value: 0x7f0800cd
-			public const int visible = 2131230925;
+			// aapt resource value: 0x7f0800d1
+			public const int visible = 2131230929;
 			
-			// aapt resource value: 0x7f0800a7
-			public const int volume_item_container = 2131230887;
+			// aapt resource value: 0x7f0800ab
+			public const int volume_item_container = 2131230891;
 			
 			// aapt resource value: 0x7f080029
 			public const int withText = 2131230761;
@@ -6995,7 +5419,7 @@ namespace BLE.Client.Droid
 					2130772023,
 					2130772024,
 					2130772025,
-					2130772087};
+					2130772089};
 			
 			// aapt resource value: 10
 			public const int ActionBar_background = 10;
@@ -7167,7 +5591,7 @@ namespace BLE.Client.Droid
 			public static int[] AppBarLayout = new int[] {
 					16842964,
 					2130772024,
-					2130772224};
+					2130772227};
 			
 			// aapt resource value: 0
 			public const int AppBarLayout_android_background = 0;
@@ -7179,8 +5603,8 @@ namespace BLE.Client.Droid
 			public const int AppBarLayout_expanded = 2;
 			
 			public static int[] AppBarLayoutStates = new int[] {
-					2130772225,
-					2130772226};
+					2130772228,
+					2130772229};
 			
 			// aapt resource value: 0
 			public const int AppBarLayoutStates_state_collapsed = 0;
@@ -7189,8 +5613,8 @@ namespace BLE.Client.Droid
 			public const int AppBarLayoutStates_state_collapsible = 1;
 			
 			public static int[] AppBarLayout_Layout = new int[] {
-					2130772227,
-					2130772228};
+					2130772230,
+					2130772231};
 			
 			// aapt resource value: 0
 			public const int AppBarLayout_Layout_layout_scrollFlags = 0;
@@ -7200,7 +5624,9 @@ namespace BLE.Client.Droid
 			
 			public static int[] AppCompatImageView = new int[] {
 					16843033,
-					2130772035};
+					2130772035,
+					2130772036,
+					2130772037};
 			
 			// aapt resource value: 0
 			public const int AppCompatImageView_android_src = 0;
@@ -7208,11 +5634,17 @@ namespace BLE.Client.Droid
 			// aapt resource value: 1
 			public const int AppCompatImageView_srcCompat = 1;
 			
+			// aapt resource value: 2
+			public const int AppCompatImageView_tint = 2;
+			
+			// aapt resource value: 3
+			public const int AppCompatImageView_tintMode = 3;
+			
 			public static int[] AppCompatSeekBar = new int[] {
 					16843074,
-					2130772036,
-					2130772037,
-					2130772038};
+					2130772038,
+					2130772039,
+					2130772040};
 			
 			// aapt resource value: 0
 			public const int AppCompatSeekBar_android_thumb = 0;
@@ -7258,7 +5690,7 @@ namespace BLE.Client.Droid
 			
 			public static int[] AppCompatTextView = new int[] {
 					16842804,
-					2130772039};
+					2130772041};
 			
 			// aapt resource value: 0
 			public const int AppCompatTextView_android_textAppearance = 0;
@@ -7269,8 +5701,6 @@ namespace BLE.Client.Droid
 			public static int[] AppCompatTheme = new int[] {
 					16842839,
 					16842926,
-					2130772040,
-					2130772041,
 					2130772042,
 					2130772043,
 					2130772044,
@@ -7381,7 +5811,10 @@ namespace BLE.Client.Droid
 					2130772149,
 					2130772150,
 					2130772151,
-					2130772152};
+					2130772152,
+					2130772153,
+					2130772154,
+					2130772155};
 			
 			// aapt resource value: 23
 			public const int AppCompatTheme_actionBarDivider = 23;
@@ -7476,17 +5909,17 @@ namespace BLE.Client.Droid
 			// aapt resource value: 58
 			public const int AppCompatTheme_activityChooserViewStyle = 58;
 			
-			// aapt resource value: 94
-			public const int AppCompatTheme_alertDialogButtonGroupStyle = 94;
-			
 			// aapt resource value: 95
-			public const int AppCompatTheme_alertDialogCenterButtons = 95;
-			
-			// aapt resource value: 93
-			public const int AppCompatTheme_alertDialogStyle = 93;
+			public const int AppCompatTheme_alertDialogButtonGroupStyle = 95;
 			
 			// aapt resource value: 96
-			public const int AppCompatTheme_alertDialogTheme = 96;
+			public const int AppCompatTheme_alertDialogCenterButtons = 96;
+			
+			// aapt resource value: 94
+			public const int AppCompatTheme_alertDialogStyle = 94;
+			
+			// aapt resource value: 97
+			public const int AppCompatTheme_alertDialogTheme = 97;
 			
 			// aapt resource value: 1
 			public const int AppCompatTheme_android_windowAnimationStyle = 1;
@@ -7494,8 +5927,8 @@ namespace BLE.Client.Droid
 			// aapt resource value: 0
 			public const int AppCompatTheme_android_windowIsFloating = 0;
 			
-			// aapt resource value: 101
-			public const int AppCompatTheme_autoCompleteTextViewStyle = 101;
+			// aapt resource value: 102
+			public const int AppCompatTheme_autoCompleteTextViewStyle = 102;
 			
 			// aapt resource value: 55
 			public const int AppCompatTheme_borderlessButtonStyle = 55;
@@ -7503,59 +5936,59 @@ namespace BLE.Client.Droid
 			// aapt resource value: 52
 			public const int AppCompatTheme_buttonBarButtonStyle = 52;
 			
-			// aapt resource value: 99
-			public const int AppCompatTheme_buttonBarNegativeButtonStyle = 99;
-			
 			// aapt resource value: 100
-			public const int AppCompatTheme_buttonBarNeutralButtonStyle = 100;
+			public const int AppCompatTheme_buttonBarNegativeButtonStyle = 100;
 			
-			// aapt resource value: 98
-			public const int AppCompatTheme_buttonBarPositiveButtonStyle = 98;
+			// aapt resource value: 101
+			public const int AppCompatTheme_buttonBarNeutralButtonStyle = 101;
+			
+			// aapt resource value: 99
+			public const int AppCompatTheme_buttonBarPositiveButtonStyle = 99;
 			
 			// aapt resource value: 51
 			public const int AppCompatTheme_buttonBarStyle = 51;
 			
-			// aapt resource value: 102
-			public const int AppCompatTheme_buttonStyle = 102;
-			
 			// aapt resource value: 103
-			public const int AppCompatTheme_buttonStyleSmall = 103;
+			public const int AppCompatTheme_buttonStyle = 103;
 			
 			// aapt resource value: 104
-			public const int AppCompatTheme_checkboxStyle = 104;
+			public const int AppCompatTheme_buttonStyleSmall = 104;
 			
 			// aapt resource value: 105
-			public const int AppCompatTheme_checkedTextViewStyle = 105;
+			public const int AppCompatTheme_checkboxStyle = 105;
 			
-			// aapt resource value: 85
-			public const int AppCompatTheme_colorAccent = 85;
-			
-			// aapt resource value: 92
-			public const int AppCompatTheme_colorBackgroundFloating = 92;
-			
-			// aapt resource value: 89
-			public const int AppCompatTheme_colorButtonNormal = 89;
-			
-			// aapt resource value: 87
-			public const int AppCompatTheme_colorControlActivated = 87;
-			
-			// aapt resource value: 88
-			public const int AppCompatTheme_colorControlHighlight = 88;
+			// aapt resource value: 106
+			public const int AppCompatTheme_checkedTextViewStyle = 106;
 			
 			// aapt resource value: 86
-			public const int AppCompatTheme_colorControlNormal = 86;
+			public const int AppCompatTheme_colorAccent = 86;
 			
-			// aapt resource value: 83
-			public const int AppCompatTheme_colorPrimary = 83;
-			
-			// aapt resource value: 84
-			public const int AppCompatTheme_colorPrimaryDark = 84;
+			// aapt resource value: 93
+			public const int AppCompatTheme_colorBackgroundFloating = 93;
 			
 			// aapt resource value: 90
-			public const int AppCompatTheme_colorSwitchThumbNormal = 90;
+			public const int AppCompatTheme_colorButtonNormal = 90;
+			
+			// aapt resource value: 88
+			public const int AppCompatTheme_colorControlActivated = 88;
+			
+			// aapt resource value: 89
+			public const int AppCompatTheme_colorControlHighlight = 89;
+			
+			// aapt resource value: 87
+			public const int AppCompatTheme_colorControlNormal = 87;
+			
+			// aapt resource value: 84
+			public const int AppCompatTheme_colorPrimary = 84;
+			
+			// aapt resource value: 85
+			public const int AppCompatTheme_colorPrimaryDark = 85;
 			
 			// aapt resource value: 91
-			public const int AppCompatTheme_controlBackground = 91;
+			public const int AppCompatTheme_colorSwitchThumbNormal = 91;
+			
+			// aapt resource value: 92
+			public const int AppCompatTheme_controlBackground = 92;
 			
 			// aapt resource value: 44
 			public const int AppCompatTheme_dialogPreferredPadding = 44;
@@ -7581,8 +6014,8 @@ namespace BLE.Client.Droid
 			// aapt resource value: 63
 			public const int AppCompatTheme_editTextColor = 63;
 			
-			// aapt resource value: 106
-			public const int AppCompatTheme_editTextStyle = 106;
+			// aapt resource value: 107
+			public const int AppCompatTheme_editTextStyle = 107;
 			
 			// aapt resource value: 49
 			public const int AppCompatTheme_homeAsUpIndicator = 49;
@@ -7590,14 +6023,14 @@ namespace BLE.Client.Droid
 			// aapt resource value: 65
 			public const int AppCompatTheme_imageButtonStyle = 65;
 			
-			// aapt resource value: 82
-			public const int AppCompatTheme_listChoiceBackgroundIndicator = 82;
+			// aapt resource value: 83
+			public const int AppCompatTheme_listChoiceBackgroundIndicator = 83;
 			
 			// aapt resource value: 45
 			public const int AppCompatTheme_listDividerAlertDialog = 45;
 			
-			// aapt resource value: 114
-			public const int AppCompatTheme_listMenuViewStyle = 114;
+			// aapt resource value: 115
+			public const int AppCompatTheme_listMenuViewStyle = 115;
 			
 			// aapt resource value: 76
 			public const int AppCompatTheme_listPopupWindowStyle = 76;
@@ -7617,14 +6050,14 @@ namespace BLE.Client.Droid
 			// aapt resource value: 74
 			public const int AppCompatTheme_listPreferredItemPaddingRight = 74;
 			
-			// aapt resource value: 79
-			public const int AppCompatTheme_panelBackground = 79;
+			// aapt resource value: 80
+			public const int AppCompatTheme_panelBackground = 80;
+			
+			// aapt resource value: 82
+			public const int AppCompatTheme_panelMenuListTheme = 82;
 			
 			// aapt resource value: 81
-			public const int AppCompatTheme_panelMenuListTheme = 81;
-			
-			// aapt resource value: 80
-			public const int AppCompatTheme_panelMenuListWidth = 80;
+			public const int AppCompatTheme_panelMenuListWidth = 81;
 			
 			// aapt resource value: 61
 			public const int AppCompatTheme_popupMenuStyle = 61;
@@ -7632,23 +6065,23 @@ namespace BLE.Client.Droid
 			// aapt resource value: 62
 			public const int AppCompatTheme_popupWindowStyle = 62;
 			
-			// aapt resource value: 107
-			public const int AppCompatTheme_radioButtonStyle = 107;
-			
 			// aapt resource value: 108
-			public const int AppCompatTheme_ratingBarStyle = 108;
+			public const int AppCompatTheme_radioButtonStyle = 108;
 			
 			// aapt resource value: 109
-			public const int AppCompatTheme_ratingBarStyleIndicator = 109;
+			public const int AppCompatTheme_ratingBarStyle = 109;
 			
 			// aapt resource value: 110
-			public const int AppCompatTheme_ratingBarStyleSmall = 110;
+			public const int AppCompatTheme_ratingBarStyleIndicator = 110;
+			
+			// aapt resource value: 111
+			public const int AppCompatTheme_ratingBarStyleSmall = 111;
 			
 			// aapt resource value: 69
 			public const int AppCompatTheme_searchViewStyle = 69;
 			
-			// aapt resource value: 111
-			public const int AppCompatTheme_seekBarStyle = 111;
+			// aapt resource value: 112
+			public const int AppCompatTheme_seekBarStyle = 112;
 			
 			// aapt resource value: 53
 			public const int AppCompatTheme_selectableItemBackground = 53;
@@ -7659,11 +6092,11 @@ namespace BLE.Client.Droid
 			// aapt resource value: 48
 			public const int AppCompatTheme_spinnerDropDownItemStyle = 48;
 			
-			// aapt resource value: 112
-			public const int AppCompatTheme_spinnerStyle = 112;
-			
 			// aapt resource value: 113
-			public const int AppCompatTheme_switchStyle = 113;
+			public const int AppCompatTheme_spinnerStyle = 113;
+			
+			// aapt resource value: 114
+			public const int AppCompatTheme_switchStyle = 114;
 			
 			// aapt resource value: 40
 			public const int AppCompatTheme_textAppearanceLargePopupMenu = 40;
@@ -7672,7 +6105,10 @@ namespace BLE.Client.Droid
 			public const int AppCompatTheme_textAppearanceListItem = 77;
 			
 			// aapt resource value: 78
-			public const int AppCompatTheme_textAppearanceListItemSmall = 78;
+			public const int AppCompatTheme_textAppearanceListItemSecondary = 78;
+			
+			// aapt resource value: 79
+			public const int AppCompatTheme_textAppearanceListItemSmall = 79;
 			
 			// aapt resource value: 42
 			public const int AppCompatTheme_textAppearancePopupMenuHeader = 42;
@@ -7686,8 +6122,8 @@ namespace BLE.Client.Droid
 			// aapt resource value: 41
 			public const int AppCompatTheme_textAppearanceSmallPopupMenu = 41;
 			
-			// aapt resource value: 97
-			public const int AppCompatTheme_textColorAlertDialogListItem = 97;
+			// aapt resource value: 98
+			public const int AppCompatTheme_textColorAlertDialogListItem = 98;
 			
 			// aapt resource value: 68
 			public const int AppCompatTheme_textColorSearchUrl = 68;
@@ -7730,10 +6166,10 @@ namespace BLE.Client.Droid
 			
 			public static int[] BottomNavigationView = new int[] {
 					2130772024,
-					2130772267,
-					2130772268,
-					2130772269,
-					2130772270};
+					2130772270,
+					2130772271,
+					2130772272,
+					2130772273};
 			
 			// aapt resource value: 0
 			public const int BottomNavigationView_elevation = 0;
@@ -7751,9 +6187,9 @@ namespace BLE.Client.Droid
 			public const int BottomNavigationView_menu = 1;
 			
 			public static int[] BottomSheetBehavior_Layout = new int[] {
-					2130772229,
-					2130772230,
-					2130772231};
+					2130772232,
+					2130772233,
+					2130772234};
 			
 			// aapt resource value: 1
 			public const int BottomSheetBehavior_Layout_behavior_hideable = 1;
@@ -7765,7 +6201,7 @@ namespace BLE.Client.Droid
 			public const int BottomSheetBehavior_Layout_behavior_skipCollapsed = 2;
 			
 			public static int[] ButtonBarLayout = new int[] {
-					2130772153};
+					2130772156};
 			
 			// aapt resource value: 0
 			public const int ButtonBarLayout_allowStacking = 0;
@@ -7826,9 +6262,6 @@ namespace BLE.Client.Droid
 			
 			public static int[] CollapsingToolbarLayout = new int[] {
 					2130771999,
-					2130772232,
-					2130772233,
-					2130772234,
 					2130772235,
 					2130772236,
 					2130772237,
@@ -7840,7 +6273,10 @@ namespace BLE.Client.Droid
 					2130772243,
 					2130772244,
 					2130772245,
-					2130772246};
+					2130772246,
+					2130772247,
+					2130772248,
+					2130772249};
 			
 			// aapt resource value: 13
 			public const int CollapsingToolbarLayout_collapsedTitleGravity = 13;
@@ -7891,8 +6327,8 @@ namespace BLE.Client.Droid
 			public const int CollapsingToolbarLayout_toolbarId = 10;
 			
 			public static int[] CollapsingToolbarLayout_Layout = new int[] {
-					2130772247,
-					2130772248};
+					2130772250,
+					2130772251};
 			
 			// aapt resource value: 0
 			public const int CollapsingToolbarLayout_Layout_layout_collapseMode = 0;
@@ -7903,7 +6339,7 @@ namespace BLE.Client.Droid
 			public static int[] ColorStateListItem = new int[] {
 					16843173,
 					16843551,
-					2130772154};
+					2130772157};
 			
 			// aapt resource value: 2
 			public const int ColorStateListItem_alpha = 2;
@@ -7916,8 +6352,8 @@ namespace BLE.Client.Droid
 			
 			public static int[] CompoundButton = new int[] {
 					16843015,
-					2130772155,
-					2130772156};
+					2130772158,
+					2130772159};
 			
 			// aapt resource value: 0
 			public const int CompoundButton_android_button = 0;
@@ -7929,8 +6365,8 @@ namespace BLE.Client.Droid
 			public const int CompoundButton_buttonTintMode = 2;
 			
 			public static int[] CoordinatorLayout = new int[] {
-					2130772249,
-					2130772250};
+					2130772252,
+					2130772253};
 			
 			// aapt resource value: 0
 			public const int CoordinatorLayout_keylines = 0;
@@ -7940,12 +6376,12 @@ namespace BLE.Client.Droid
 			
 			public static int[] CoordinatorLayout_Layout = new int[] {
 					16842931,
-					2130772251,
-					2130772252,
-					2130772253,
 					2130772254,
 					2130772255,
-					2130772256};
+					2130772256,
+					2130772257,
+					2130772258,
+					2130772259};
 			
 			// aapt resource value: 0
 			public const int CoordinatorLayout_Layout_android_layout_gravity = 0;
@@ -7969,9 +6405,9 @@ namespace BLE.Client.Droid
 			public const int CoordinatorLayout_Layout_layout_keyline = 3;
 			
 			public static int[] DesignTheme = new int[] {
-					2130772257,
-					2130772258,
-					2130772259};
+					2130772260,
+					2130772261,
+					2130772262};
 			
 			// aapt resource value: 0
 			public const int DesignTheme_bottomSheetDialogTheme = 0;
@@ -7983,14 +6419,14 @@ namespace BLE.Client.Droid
 			public const int DesignTheme_textColorError = 2;
 			
 			public static int[] DrawerArrowToggle = new int[] {
-					2130772157,
-					2130772158,
-					2130772159,
 					2130772160,
 					2130772161,
 					2130772162,
 					2130772163,
-					2130772164};
+					2130772164,
+					2130772165,
+					2130772166,
+					2130772167};
 			
 			// aapt resource value: 4
 			public const int DrawerArrowToggle_arrowHeadLength = 4;
@@ -8018,13 +6454,13 @@ namespace BLE.Client.Droid
 			
 			public static int[] FloatingActionButton = new int[] {
 					2130772024,
-					2130772222,
-					2130772223,
-					2130772260,
-					2130772261,
-					2130772262,
+					2130772225,
+					2130772226,
 					2130772263,
-					2130772264};
+					2130772264,
+					2130772265,
+					2130772266,
+					2130772267};
 			
 			// aapt resource value: 1
 			public const int FloatingActionButton_backgroundTint = 1;
@@ -8051,7 +6487,7 @@ namespace BLE.Client.Droid
 			public const int FloatingActionButton_useCompatPadding = 7;
 			
 			public static int[] FloatingActionButton_Behavior_Layout = new int[] {
-					2130772265};
+					2130772268};
 			
 			// aapt resource value: 0
 			public const int FloatingActionButton_Behavior_Layout_behavior_autoHide = 0;
@@ -8059,7 +6495,7 @@ namespace BLE.Client.Droid
 			public static int[] ForegroundLinearLayout = new int[] {
 					16843017,
 					16843264,
-					2130772266};
+					2130772269};
 			
 			// aapt resource value: 0
 			public const int ForegroundLinearLayout_android_foreground = 0;
@@ -8077,9 +6513,9 @@ namespace BLE.Client.Droid
 					16843047,
 					16843048,
 					2130772007,
-					2130772165,
-					2130772166,
-					2130772167};
+					2130772168,
+					2130772169,
+					2130772170};
 			
 			// aapt resource value: 2
 			public const int LinearLayoutCompat_android_baselineAligned = 2;
@@ -8140,7 +6576,7 @@ namespace BLE.Client.Droid
 					16843071,
 					16843072,
 					2130771984,
-					2130772155};
+					2130772158};
 			
 			// aapt resource value: 1
 			public const int MediaRouteButton_android_minHeight = 1;
@@ -8194,10 +6630,10 @@ namespace BLE.Client.Droid
 					16843236,
 					16843237,
 					16843375,
-					2130772168,
-					2130772169,
-					2130772170,
-					2130772171};
+					2130772171,
+					2130772172,
+					2130772173,
+					2130772174};
 			
 			// aapt resource value: 14
 			public const int MenuItem_actionLayout = 14;
@@ -8258,8 +6694,8 @@ namespace BLE.Client.Droid
 					16843055,
 					16843056,
 					16843057,
-					2130772172,
-					2130772173};
+					2130772175,
+					2130772176};
 			
 			// aapt resource value: 4
 			public const int MenuView_android_headerBackground = 4;
@@ -8289,8 +6725,8 @@ namespace BLE.Client.Droid
 			public const int MenuView_subMenuArrow = 8;
 			
 			public static int[] MvxBinding = new int[] {
-					2130772306,
-					2130772307};
+					2130772309,
+					2130772310};
 			
 			// aapt resource value: 0
 			public const int MvxBinding_MvxBind = 0;
@@ -8299,26 +6735,26 @@ namespace BLE.Client.Droid
 			public const int MvxBinding_MvxLang = 1;
 			
 			public static int[] MvxControl = new int[] {
-					2130772308};
+					2130772311};
 			
 			// aapt resource value: 0
 			public const int MvxControl_MvxTemplate = 0;
 			
 			public static int[] MvxExpandableListView = new int[] {
-					2130772311};
+					2130772314};
 			
 			// aapt resource value: 0
 			public const int MvxExpandableListView_MvxGroupItemTemplate = 0;
 			
 			public static int[] MvxImageView = new int[] {
-					2130772312};
+					2130772315};
 			
 			// aapt resource value: 0
 			public const int MvxImageView_MvxSource = 0;
 			
 			public static int[] MvxListView = new int[] {
-					2130772309,
-					2130772310};
+					2130772312,
+					2130772313};
 			
 			// aapt resource value: 1
 			public const int MvxListView_MvxDropDownItemTemplate = 1;
@@ -8331,12 +6767,12 @@ namespace BLE.Client.Droid
 					16842973,
 					16843039,
 					2130772024,
-					2130772267,
-					2130772268,
-					2130772269,
 					2130772270,
 					2130772271,
-					2130772272};
+					2130772272,
+					2130772273,
+					2130772274,
+					2130772275};
 			
 			// aapt resource value: 0
 			public const int NavigationView_android_background = 0;
@@ -8371,7 +6807,7 @@ namespace BLE.Client.Droid
 			public static int[] PopupWindow = new int[] {
 					16843126,
 					16843465,
-					2130772174};
+					2130772177};
 			
 			// aapt resource value: 1
 			public const int PopupWindow_android_popupAnimationStyle = 1;
@@ -8383,15 +6819,12 @@ namespace BLE.Client.Droid
 			public const int PopupWindow_overlapAnchor = 2;
 			
 			public static int[] PopupWindowBackgroundState = new int[] {
-					2130772175};
+					2130772178};
 			
 			// aapt resource value: 0
 			public const int PopupWindowBackgroundState_state_above_anchor = 0;
 			
 			public static int[] ProgressWheel = new int[] {
-					2130772313,
-					2130772314,
-					2130772315,
 					2130772316,
 					2130772317,
 					2130772318,
@@ -8400,7 +6833,10 @@ namespace BLE.Client.Droid
 					2130772321,
 					2130772322,
 					2130772323,
-					2130772324};
+					2130772324,
+					2130772325,
+					2130772326,
+					2130772327};
 			
 			// aapt resource value: 3
 			public const int ProgressWheel_ahBarColor = 3;
@@ -8439,8 +6875,8 @@ namespace BLE.Client.Droid
 			public const int ProgressWheel_ahTextSize = 2;
 			
 			public static int[] RecycleListView = new int[] {
-					2130772176,
-					2130772177};
+					2130772179,
+					2130772180};
 			
 			// aapt resource value: 0
 			public const int RecycleListView_paddingBottomNoButtons = 0;
@@ -8475,13 +6911,13 @@ namespace BLE.Client.Droid
 			public const int RecyclerView_stackFromEnd = 5;
 			
 			public static int[] ScrimInsetsFrameLayout = new int[] {
-					2130772273};
+					2130772276};
 			
 			// aapt resource value: 0
 			public const int ScrimInsetsFrameLayout_insetForeground = 0;
 			
 			public static int[] ScrollingViewBehavior_Layout = new int[] {
-					2130772274};
+					2130772277};
 			
 			// aapt resource value: 0
 			public const int ScrollingViewBehavior_Layout_behavior_overlapTop = 0;
@@ -8491,9 +6927,6 @@ namespace BLE.Client.Droid
 					16843039,
 					16843296,
 					16843364,
-					2130772178,
-					2130772179,
-					2130772180,
 					2130772181,
 					2130772182,
 					2130772183,
@@ -8503,7 +6936,10 @@ namespace BLE.Client.Droid
 					2130772187,
 					2130772188,
 					2130772189,
-					2130772190};
+					2130772190,
+					2130772191,
+					2130772192,
+					2130772193};
 			
 			// aapt resource value: 0
 			public const int SearchView_android_focusable = 0;
@@ -8559,7 +6995,7 @@ namespace BLE.Client.Droid
 			public static int[] SnackbarLayout = new int[] {
 					16843039,
 					2130772024,
-					2130772275};
+					2130772278};
 			
 			// aapt resource value: 0
 			public const int SnackbarLayout_android_maxWidth = 0;
@@ -8596,9 +7032,6 @@ namespace BLE.Client.Droid
 					16843044,
 					16843045,
 					16843074,
-					2130772191,
-					2130772192,
-					2130772193,
 					2130772194,
 					2130772195,
 					2130772196,
@@ -8606,7 +7039,10 @@ namespace BLE.Client.Droid
 					2130772198,
 					2130772199,
 					2130772200,
-					2130772201};
+					2130772201,
+					2130772202,
+					2130772203,
+					2130772204};
 			
 			// aapt resource value: 1
 			public const int SwitchCompat_android_textOff = 1;
@@ -8665,9 +7101,6 @@ namespace BLE.Client.Droid
 			public const int TabItem_android_text = 2;
 			
 			public static int[] TabLayout = new int[] {
-					2130772276,
-					2130772277,
-					2130772278,
 					2130772279,
 					2130772280,
 					2130772281,
@@ -8680,7 +7113,10 @@ namespace BLE.Client.Droid
 					2130772288,
 					2130772289,
 					2130772290,
-					2130772291};
+					2130772291,
+					2130772292,
+					2130772293,
+					2130772294};
 			
 			// aapt resource value: 3
 			public const int TabLayout_tabBackground = 3;
@@ -8740,7 +7176,7 @@ namespace BLE.Client.Droid
 					16843106,
 					16843107,
 					16843108,
-					2130772039};
+					2130772041};
 			
 			// aapt resource value: 5
 			public const int TextAppearance_android_shadowColor = 5;
@@ -8775,9 +7211,6 @@ namespace BLE.Client.Droid
 			public static int[] TextInputLayout = new int[] {
 					16842906,
 					16843088,
-					2130772292,
-					2130772293,
-					2130772294,
 					2130772295,
 					2130772296,
 					2130772297,
@@ -8788,7 +7221,10 @@ namespace BLE.Client.Droid
 					2130772302,
 					2130772303,
 					2130772304,
-					2130772305};
+					2130772305,
+					2130772306,
+					2130772307,
+					2130772308};
 			
 			// aapt resource value: 1
 			public const int TextInputLayout_android_hint = 1;
@@ -8851,9 +7287,6 @@ namespace BLE.Client.Droid
 					2130772022,
 					2130772023,
 					2130772025,
-					2130772202,
-					2130772203,
-					2130772204,
 					2130772205,
 					2130772206,
 					2130772207,
@@ -8867,7 +7300,10 @@ namespace BLE.Client.Droid
 					2130772215,
 					2130772216,
 					2130772217,
-					2130772218};
+					2130772218,
+					2130772219,
+					2130772220,
+					2130772221};
 			
 			// aapt resource value: 0
 			public const int Toolbar_android_gravity = 0;
@@ -8959,9 +7395,9 @@ namespace BLE.Client.Droid
 			public static int[] View = new int[] {
 					16842752,
 					16842970,
-					2130772219,
-					2130772220,
-					2130772221};
+					2130772222,
+					2130772223,
+					2130772224};
 			
 			// aapt resource value: 1
 			public const int View_android_focusable = 1;
@@ -8980,8 +7416,8 @@ namespace BLE.Client.Droid
 			
 			public static int[] ViewBackgroundHelper = new int[] {
 					16842964,
-					2130772222,
-					2130772223};
+					2130772225,
+					2130772226};
 			
 			// aapt resource value: 0
 			public const int ViewBackgroundHelper_android_background = 0;
