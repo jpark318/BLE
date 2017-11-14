@@ -2,14 +2,12 @@
 <pages:BasePage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:pages="clr-namespace:BLE.Client.Pages;assembly=BLE.Client"
-             xmlns:chartRed="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
-             xmlns:chartIr="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
              x:Class="BLE.Client.Pages.DeviceListPage"
              xmlns:local="clr-namespace:BLE.Client.ViewModels"
-             Title="Discover devices"
+             Title="DisConnectToPreviousCommandcover devices"
              x:Name="DevicePage"
              xmlns:sys="clr-namespace:System;assembly=mscorlib"
-                BackgroundColor="{StaticResource main}">
+             BackgroundColor="{StaticResource main}">
   <!--<pages:BaseTabbedPage.BindingContext>
     <local:BleDataModel/>
   </pages:BaseTabbedPage.BindingContext>-->

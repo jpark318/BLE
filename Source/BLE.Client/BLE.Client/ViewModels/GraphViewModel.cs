@@ -110,16 +110,6 @@ namespace BLE.Client.ViewModels {
 
         private void CharacteristicOnValueUpdated(object sender, CharacteristicUpdatedEventArgs characteristicUpdatedEventArgs) {
             var data = characteristicUpdatedEventArgs.Characteristic.Value;
-            //if (countFunctionCall != 5) {
-            //    countFunctionCall++;
-            //} else {
-            //    DataRed = tempDataRed;
-            //    DataEcg = tempDataEcg;
-            //    DataIr  = tempDataIr;
-            //    DataScg = tempDataScg;
-                
-            //    countFunctionCall = 0;
-            //}
             if (MasterDeviceId == characteristicUpdatedEventArgs.Characteristic.Service.Device.Id) {
                 //if data is from master device
                 if (count == 5) {

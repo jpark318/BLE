@@ -15,8 +15,6 @@ using Plugin.BLE.Abstractions.EventArgs;
 using Plugin.BLE.Abstractions.Extensions;
 using Plugin.Permissions.Abstractions;
 using Plugin.Settings.Abstractions;
-using Syncfusion.SfChart.XForms;
-using Xamarin.Forms;
 
 namespace BLE.Client.ViewModels {
     public class DeviceListViewModel : BaseViewModel {
@@ -28,20 +26,13 @@ namespace BLE.Client.ViewModels {
         private CancellationTokenSource _cancellationTokenSource;
         private Byte[] CharacteristicValue = new Byte[20];
         bool _useAutoConnect;
-        public static int deviceType;
-        public double maxRed { get; set; } = 60000;
-        public double minRed { get; set; } = 60000;
-        public double maxIr { get; set; } = 0;
-        public double minIr { get; set; } = 0;
         public bool IsRefreshing => Adapter.IsScanning;
         public bool IsStateOn => _bluetoothLe.IsOn;
         public string StateText => GetStateText();
         public List<DeviceListItemViewModel> SystemDevices { get; private set; } = new List<DeviceListItemViewModel>();
-        public ObservableCollection<string> Messages { get; } = new ObservableCollection<string>();
         public ObservableCollection<DeviceListItemViewModel> Devices { get; set; } = new ObservableCollection<DeviceListItemViewModel>();
         public MvxCommand RefreshCommand => new MvxCommand(() => TryStartScanning(true));
         public MvxCommand<DeviceListItemViewModel> DisconnectCommand => new MvxCommand<DeviceListItemViewModel>(DisconnectDevice);
-        public MvxCommand<DeviceListItemViewModel> ConnectDisposeCommand => new MvxCommand<DeviceListItemViewModel>(ConnectAndDisposeDevice);
         public MvxCommand ConnectToPreviousCommand => new MvxCommand(ConnectToPreviousDeviceAsync, CanConnectToPrevious);
 
         public Guid PreviousGuid {
@@ -54,6 +45,10 @@ namespace BLE.Client.ViewModels {
             }
         }
 
+        /// <summary>
+        /// Gets or sets the selected device as master.
+        /// </summary>
+        /// <value>The selected device as master.</value>
         public DeviceListItemViewModel SelectedDeviceAsMaster {
             get { return null; }
             set {
@@ -107,9 +102,6 @@ namespace BLE.Client.ViewModels {
             Adapter.ScanTimeoutElapsed += Adapter_ScanTimeoutElapsed;
             Adapter.DeviceDisconnected += OnDeviceDisconnected;
             Adapter.DeviceConnectionLost += OnDeviceConnectionLost;
-            Messages.Insert(0, "");
-            Messages.Insert(0, "");
-            Messages.Insert(0, "");
             TryStartScanning(true);
             //Adapter.DeviceConnected += (sender, e) => Adapter.DisconnectDeviceAsync(e.Device);
         }
@@ -286,32 +278,21 @@ namespace BLE.Client.ViewModels {
                 config.Destructive = new ActionSheetOption("Disconnect", () => DisconnectCommand.Execute(device));
             } else {
                 config.Add("Connect", async () => {
-                    deviceType = type;
                     if (await ConnectDeviceAsync(device)) {
                         switch (type) {
                             case 1:
                                 device.IsSlave = true;
                                 GraphViewModel.SlaveDeviceId = device.Device.Id;
-                                Debug.WriteLine("jpark318" + device.Device.Id);
-                                Debug.WriteLine("jpark318" + GraphViewModel.SlaveDeviceId);
-
                                 var ServiceSlave = await device.Device.GetServiceAsync(Guid.Parse("0000180d-0000-1000-8000-00805f9b34fb"));
                                 var CharacteristicSlave = await ServiceSlave.GetCharacteristicAsync(Guid.Parse("00002a37-0000-1000-8000-00805f9b34fb"));
                                 await CharacteristicSlave.StartUpdatesAsync();
-                                Debug.WriteLine("jpark318 is Slave" + device.IsSlave);
-                                deviceType = 0;
                                 break;
                             case 2:
                                 device.IsMaster = true;
                                 GraphViewModel.MasterDeviceId = device.Device.Id;
-                                Debug.WriteLine("jpark318" + device.Device.Id);
-                                Debug.WriteLine("jpark318" + GraphViewModel.SlaveDeviceId);
-
                                 var ServiceMaster = await device.Device.GetServiceAsync(Guid.Parse("0000180d-0000-1000-8000-00805f9b34fb"));
                                 var CharacteristicMaster = await ServiceMaster.GetCharacteristicAsync(Guid.Parse("00002a37-0000-1000-8000-00805f9b34fb"));
                                 await CharacteristicMaster.StartUpdatesAsync();
-                                Debug.WriteLine("jpark318 is Master" + device.IsMaster);
-                                deviceType = 0;
                                 break;
                         }
                     }
@@ -391,41 +372,9 @@ namespace BLE.Client.ViewModels {
             }
         }
 
-        private bool CanConnectToPrevious() {
+        private bool CanConnectToPrevious()
+        {
             return PreviousGuid != default(Guid);
-        }
-
-        private async void ConnectAndDisposeDevice(DeviceListItemViewModel item) {
-            try {
-                using (item.Device) {
-                    _userDialogs.ShowLoading($"Connecting to {item.Name} ...");
-                    await Adapter.ConnectToDeviceAsync(item.Device);
-
-                    // TODO make this configurable
-                    var resultMTU = await item.Device.RequestMtuAsync(60);
-                    System.Diagnostics.Debug.WriteLine($"Requested MTU. Result is {resultMTU}");
-
-                    // TODO make this configurable
-                    var resultInterval = item.Device.UpdateConnectionInterval(ConnectionInterval.High);
-                    System.Diagnostics.Debug.WriteLine($"Set Connection Interval. Result is {resultInterval}");
-
-                    item.Update();
-                    _userDialogs.ShowSuccess($"Connected {item.Device.Name}");
-
-                    _userDialogs.HideLoading();
-                    for (var i = 5; i >= 1; i--) {
-                        _userDialogs.ShowLoading($"Disconnect in {i}s...");
-
-                        await Task.Delay(1000);
-
-                        _userDialogs.HideLoading();
-                    }
-                }
-            } catch (Exception ex) {
-                _userDialogs.Alert(ex.Message, "Failed to connect and dispose.");
-            } finally {
-                _userDialogs.HideLoading();
-            }
         }
 
         private void OnDeviceDisconnected(object sender, DeviceEventArgs e) {
