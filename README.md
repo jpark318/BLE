@@ -1,12 +1,30 @@
 # BLE NICU App Development (Xamarin)
 
 ## What is Xamarin
-
-Xamarin and MvvMCross plugin for accessing the bluetooth functionality. The plugin is loosely based on the BLE implementation of [Monkey Robotics](https://github.com/xamarin/Monkey.Robotics). 
 Xamarin Forms supports multiplatform development using shared C# user interface code and app logics.
 (refer to this [slide](https://uillinoisedu-my.sharepoint.com/:p:/r/personal/jpark318_illinois_edu/_layouts/15/Doc.aspx?sourcedoc=%7B5762d503-7e17-4edc-9e1f-39bc1257d62b%7D&action=edit))
- 
-**Important Note:** With the term *"vanilla"* we mean the non MvvmCross/pure Xamarin version. You **can** use it without MvvmCross, if you download the vanilla package.
+
+### Set Up
+- A Mac with macOS Sierra 10.12 or above
+- XCode(Above v8.3)
+- Apple ID (Refer to Section 5)
+
+For MacOS 
+- Set up your mac through following [link](https://docs.microsoft.com/en-us/visualstudio/mac/installation).
+
+Connect to Mac for iOS Development
+- Connect to Mac on your Windows Visual Studio [link](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/#Connecting_to_the_Mac)
+
+
+## C#
+### C# Commenting Guideline
+[Commenting Guideline](https://msdn.microsoft.com/en-us/library/5ast78ax(v=vs.100).aspx)
+
+
+
+
+
+
 
 ## Support & Limitations
 
@@ -21,12 +39,7 @@ Xamarin Forms supports multiplatform development using shared C# user interface 
 
 **Vanilla**
 
-```
-// stable
-Install-Package Plugin.BLE
-// or pre-release
-Install-Package Plugin.BLE -Pre
-```
+
 [![NuGet](https://img.shields.io/nuget/v/Plugin.BLE.svg?label=NuGet&style=flat-square)](https://www.nuget.org/packages/Plugin.BLE) [![NuGet Beta](https://img.shields.io/nuget/vpre/Plugin.BLE.svg?label=NuGet%20Beta&style=flat-square)](https://www.nuget.org/packages/Plugin.BLE)
 
 **MvvmCross**
