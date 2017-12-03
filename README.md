@@ -1,18 +1,22 @@
-# BLE NICU App Development (Xamarin)
+# NICU App Dev (Xamarin)
 
-## What is Xamarin
+## Xamarin
 Xamarin Forms supports multiplatform development using shared C# user interface code and app logics.
 (refer to this [slide](https://uillinoisedu-my.sharepoint.com/:p:/r/personal/jpark318_illinois_edu/_layouts/15/Doc.aspx?sourcedoc=%7B5762d503-7e17-4edc-9e1f-39bc1257d62b%7D&action=edit))
 
 ### Set Up
+#### Requirements
 - A Mac with macOS Sierra 10.12 or above
 - XCode(Above v8.3)
-- Apple ID (Refer to Section 5)
+- Apple ID ([Refer to Section ID](/#Apple-ID))
 
-For MacOS 
-- Set up your mac through following [link](https://docs.microsoft.com/en-us/visualstudio/mac/installation).
+#### MacOS 
+- Set up your Mac through following [link](https://docs.microsoft.com/en-us/visualstudio/mac/installation).
 
-Connect to Mac for iOS Development
+#### Windows
+- Set up your Windows device through following [link](https://developer.xamarin.com/guides/cross-platform/getting_started/installation/windows/).
+
+#### Connect to Mac for iOS Development
 - Connect to Mac on your Windows Visual Studio [link](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/#Connecting_to_the_Mac)
 
 
@@ -20,12 +24,42 @@ Connect to Mac for iOS Development
 ### C# Commenting Guideline
 [Commenting Guideline](https://msdn.microsoft.com/en-us/library/5ast78ax(v=vs.100).aspx)
 
+## Plugins
+### BLE(Xamarin Plugin)
+### MVVM Cross (Xamarin Plugin)
+### Syncfusion SfChart (Xamarin Plugin)
+1. Documentation from following [link](https://help.syncfusion.com/xamarin/sfchart/overview)
 
+## Platform Based Description
+### Android
+### iOS
+### UWP (Unavailable)
 
+## Issues and Reports
+### Issues 
+- When page navigation activated, the device blanks white temporarily.
+- If other non-related devices are connected, it  creates error when trying to list devices again. Also, indexoutofrange error found.
+### Errors
 
+- **Illegal Configuration: Compiling IB documents for earlier than iOS *#version#* is no longer supported**
 
+    1. Access iOS solution, click on **Info.plist**.
+    2. Edit **Deployment Target** under **Deployment Info**. To version greater than number specified from error.
 
+- **Error CS0246: The type or namespace name 'BleMvxFormsApp' could not be found (are you missing a using directive or an assembly reference?) (CS0246) (JRG.NICU.Client.Droid)**
 
+- **No valid iOS code signing keys found in keychain. You need to request a codesigning certificate from https://developer.apple.com.**
+    1.  This occurs at iOS Development
+    2.  Double click solution(iOS), and access properties.
+    3.  Build – iOS Bundle Signing – Provisioning Profile should be selected as valid one. (With same bundle identifier)
+
+- **The "XamlCTask" task failed unexpectedly.**
+    1. [reference](https://forums.xamarin.com/discussion/95724/xamarin-forms-2-3-4-247-update-project-wont-build)
+    1. reload Visual Studio
+    1. Update packages
+    1. remove bin folder
+
+<!--
 ## Support & Limitations
 
 | Platform  | Version | Limitations |
@@ -295,7 +329,4 @@ We usually do our development work on a branch with the name of the milestone. S
 ## Licence
 
 [Apache 2.0](https://github.com/xabre/MvvmCross-BluetoothLE/blob/master/LICENSE)
-
-
-
-
+-->
