@@ -1,15 +1,19 @@
-# <img src="icon_small.png" width="71" height="71"/> Bluetooth LE plugin for Xamarin [![Build Status](https://www.bitrise.io/app/3fe54d0a5f43c2bf.svg?token=i9LUY4rIecZWd_3j7hwXgw)](https://www.bitrise.io/app/3fe54d0a5f43c2bf) 
+# BLE NICU App Development (Xamarin)
+
+## What is Xamarin
 
 Xamarin and MvvMCross plugin for accessing the bluetooth functionality. The plugin is loosely based on the BLE implementation of [Monkey Robotics](https://github.com/xamarin/Monkey.Robotics). 
-
+Xamarin Forms supports multiplatform development using shared C# user interface code and app logics.
+(refer to this [slide](https://uillinoisedu-my.sharepoint.com/:p:/r/personal/jpark318_illinois_edu/_layouts/15/Doc.aspx?sourcedoc=%7B5762d503-7e17-4edc-9e1f-39bc1257d62b%7D&action=edit))
+ 
 **Important Note:** With the term *"vanilla"* we mean the non MvvmCross/pure Xamarin version. You **can** use it without MvvmCross, if you download the vanilla package.
 
 ## Support & Limitations
 
 | Platform  | Version | Limitations |
 | ------------- | ----------- | ----------- |
-| Xamarin.Android | 4.3 |  |
-| Xamarin.iOS     | 7.0 |  |
+| Xamarin.Android | 0.0 |  |
+| Xamarin.iOS     | 0.0 |  |
 
 [Changelog](doc/changelog.md)
 
