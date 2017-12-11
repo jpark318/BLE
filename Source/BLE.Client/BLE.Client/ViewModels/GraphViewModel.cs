@@ -28,8 +28,8 @@ namespace BLE.Client.ViewModels {
         public double MinRed { get; set; } = 0;
         public double MaxIr { get; set; } = 60000;
         public double MinIr { get; set; } = 0;
-        public double MaxEcg { get; set; } = 60000;
-        public double MixEcg { get; set; } = 0;
+        public double MaxEcg { get; set; } = 20000;
+        public double MinEcg { get; set; } = 0;
         public double MaxScg { get; set; } = 60000;
         public double MinScg { get; set; } = 0;
         public double PrimalAxisMax { get; set; } = 200;
@@ -37,6 +37,7 @@ namespace BLE.Client.ViewModels {
         private UInt16 ir;
         private UInt16 ecg;
         private UInt16 scg;
+        private int MasterDeviceSamplingRate = 5;
         public bool IsRefreshing => Adapter.IsScanning;
         public bool IsStateOn => _bluetoothLe.IsOn;
         public static Guid SlaveDeviceId { get; set; }
@@ -58,8 +59,17 @@ namespace BLE.Client.ViewModels {
         public ObservableCollection<DeviceListItemViewModel> Devices { get; set; } = new ObservableCollection<DeviceListItemViewModel>();
         private Byte[] CharacteristicValue = new Byte[20];
         private int count;
-        private int countFunctionCall;
         readonly IPermissions _permissions;
+
+        void NumericalAxis_ActualRangeChanged(object sender, ActualRangeChangedEventArgs e) {
+            if (DataEcg.Count > 0) {
+                e.VisibleMaximum = Convert.ToDouble(DataEcg.Max(dataList => dataList.Value) * 1.1);
+                e.VisibleMinimum = Convert.ToDouble(DataEcg.Min(dataList => dataList.Value) * 0.9);
+                
+                Debug.WriteLine(MaxEcg);
+            }
+        }
+        
 
         public GraphViewModel(IBluetoothLE bluetoothLe, IAdapter adapter, IUserDialogs userDialogs, ISettings settings, IPermissions permissions) : base(adapter) {
             _permissions = permissions;
@@ -69,7 +79,6 @@ namespace BLE.Client.ViewModels {
             Adapter.DeviceConnected += (sender, e) => OnNotification(e.Device);
             Adapter.DeviceDisconnected += OnDeviceDisconnectedFromGraph;
             Adapter.DeviceConnectionLost += OnDeviceConnectionLostFromGraph;
-
             ViewRed = "RED: 0";
             ViewIr = "IR: 0";
             ViewTemp = "TEMP: 0";
@@ -105,6 +114,7 @@ namespace BLE.Client.ViewModels {
         private async void OnNotification(IDevice device) {
             var Service = await device.GetServiceAsync(Guid.Parse("0000180d-0000-1000-8000-00805f9b34fb"));
             var Characteristic = await Service.GetCharacteristicAsync(Guid.Parse("00002a37-0000-1000-8000-00805f9b34fb"));
+
             Characteristic.ValueUpdated += CharacteristicOnValueUpdated;
         }
 
@@ -112,26 +122,21 @@ namespace BLE.Client.ViewModels {
             var data = characteristicUpdatedEventArgs.Characteristic.Value;
             if (MasterDeviceId == characteristicUpdatedEventArgs.Characteristic.Service.Device.Id) {
                 //if data is from master device
-                if (count == 5) {
+                if (count == MasterDeviceSamplingRate) {
                     for (int i = 0; i < 5; i++) {
                         ecg = (UInt16)((data[2 * i + 1]) | data[2 * i] << 8);
                         scg = (UInt16)((data[2 * i + 11]) | data[2 * i + 10] << 8);
-                        if (!(DataEcg.Count < PrimalAxisMax)) {
-                            Device.BeginInvokeOnMainThread(() => {
-                                DataEcg.RemoveAt(0);
-                            });
-                        }
-
-                        if (!(DataScg.Count < PrimalAxisMax)) {
-                            Device.BeginInvokeOnMainThread(() => {
-                                DataScg.RemoveAt(0);
-                            });
-                        }
                         Device.BeginInvokeOnMainThread(() => {
+                            if (!(DataEcg.Count < PrimalAxisMax)) {
+                                DataEcg.RemoveAt(0);
+                            }
+                            if (!(DataScg.Count < PrimalAxisMax)) {
+                                DataScg.RemoveAt(0);
+                            }
                             DataEcg.Insert(DataEcg.Count, new BleDataModel(DataEcg.Count.ToString(), ecg));
                             DataScg.Insert(DataScg.Count, new BleDataModel(DataScg.Count.ToString(), scg));
+                            count = 0;
                         });
-                        count = 0;
                     }
                 }
                 count++;
@@ -149,19 +154,15 @@ namespace BLE.Client.ViewModels {
                             ir = (UInt16)((data[2 * i + 11]) | data[2 * i + 10] << 8);
                             ViewRed = "IR: " + red.ToString();
                             ViewIr = "RED: " + ir.ToString();
-                            if (!(DataRed.Count < PrimalAxisMax)) {
-                                Device.BeginInvokeOnMainThread(() => {
+                            Device.BeginInvokeOnMainThread(() => {
+                                if (!(DataRed.Count < PrimalAxisMax)) {
                                     DataRed.RemoveAt(0);
-                                });
-                            }
-                            if (!(DataIr.Count < PrimalAxisMax)) {
-                                Device.BeginInvokeOnMainThread(() => {
+                                }
+                                if (!(DataIr.Count < PrimalAxisMax)) {
                                     DataIr.RemoveAt(0);
                                     MaxIr = DataIr.Max(dataList => dataList.Value) * 1.1;
                                     MinIr = DataRed.Min(dataList => dataList.Value) * 0.9;
-                                });
-                            }
-                            Device.BeginInvokeOnMainThread(() => {
+                                }
                                 DataIr.Insert(DataIr.Count, new BleDataModel(DataIr.Count.ToString(), ir));
                                 DataRed.Insert(DataRed.Count, new BleDataModel(DataRed.Count.ToString(), red));
                                 MaxRed = DataRed.Max(dataList => dataList.Value) * 1.1;

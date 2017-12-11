@@ -33,7 +33,6 @@ namespace BLE.Client.ViewModels {
         public ObservableCollection<DeviceListItemViewModel> Devices { get; set; } = new ObservableCollection<DeviceListItemViewModel>();
         public MvxCommand RefreshCommand => new MvxCommand(() => TryStartScanning(true));
         public MvxCommand<DeviceListItemViewModel> DisconnectCommand => new MvxCommand<DeviceListItemViewModel>(DisconnectDevice);
-        public MvxCommand ConnectToPreviousCommand => new MvxCommand(ConnectToPreviousDeviceAsync, CanConnectToPrevious);
 
         public Guid PreviousGuid {
             get { return _previousGuid; }
@@ -41,7 +40,6 @@ namespace BLE.Client.ViewModels {
                 _previousGuid = value;
                 _settings.AddOrUpdateValue("lastguid", _previousGuid.ToString());
                 RaisePropertyChanged();
-                RaisePropertyChanged(() => ConnectToPreviousCommand);
             }
         }
 
@@ -336,45 +334,6 @@ namespace BLE.Client.ViewModels {
                 _userDialogs.HideLoading();
                 device.Update();
             }
-        }
-
-        private async void ConnectToPreviousDeviceAsync() {
-            IDevice device;
-            try {
-                CancellationTokenSource tokenSource = new CancellationTokenSource();
-
-                var config = new ProgressDialogConfig() {
-                    Title = $"Searching for '{PreviousGuid}'",
-                    CancelText = "Cancel",
-                    IsDeterministic = false,
-                    OnCancel = tokenSource.Cancel
-                };
-
-                using (var progress = _userDialogs.Progress(config)) {
-                    progress.Show();
-
-                    device = await Adapter.ConnectToKnownDeviceAsync(PreviousGuid, new ConnectParameters(autoConnect: UseAutoConnect, forceBleTransport: false), tokenSource.Token);
-
-                }
-
-                _userDialogs.ShowSuccess($"Connected to {device.Name}.");
-
-                var deviceItem = Devices.FirstOrDefault(d => d.Device.Id == device.Id);
-                if (deviceItem == null) {
-                    deviceItem = new DeviceListItemViewModel(device);
-                    Devices.Add(deviceItem);
-                } else {
-                    deviceItem.Update(device);
-                }
-            } catch (Exception ex) {
-                _userDialogs.ShowError(ex.Message, 5000);
-                return;
-            }
-        }
-
-        private bool CanConnectToPrevious()
-        {
-            return PreviousGuid != default(Guid);
         }
 
         private void OnDeviceDisconnected(object sender, DeviceEventArgs e) {
