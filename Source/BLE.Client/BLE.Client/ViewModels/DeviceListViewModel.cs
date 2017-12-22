@@ -34,15 +34,74 @@ namespace BLE.Client.ViewModels {
         public MvxCommand RefreshCommand => new MvxCommand(() => TryStartScanning(true));
         public MvxCommand<DeviceListItemViewModel> DisconnectCommand => new MvxCommand<DeviceListItemViewModel>(DisconnectDevice);
 
-        public Guid PreviousGuid {
-            get { return _previousGuid; }
-            set {
-                _previousGuid = value;
-                _settings.AddOrUpdateValue("lastguid", _previousGuid.ToString());
-                RaisePropertyChanged();
+        /// <summary>
+        /// Attempt to scan BlueTooth devices.
+        /// On android devices, check permission for bluetooth scanning.
+        /// </summary>
+        /// <param name="refresh"></param>
+        private async void TryStartScanning(bool refresh = false) {
+            if (Xamarin.Forms.Device.OS == Xamarin.Forms.TargetPlatform.Android) {
+                var status = await _permissions.CheckPermissionStatusAsync(Permission.Location);
+                if (status != PermissionStatus.Granted) {
+                    var permissionResult = await _permissions.RequestPermissionsAsync(Permission.Location);
+
+                    if (permissionResult.First().Value != PermissionStatus.Granted) {
+                        _userDialogs.ShowError("Permission denied. Not scanning.");
+                        return;
+                    }
+                }
+            }
+
+            if (IsStateOn && (refresh || !Devices.Any()) && !IsRefreshing) {
+                ScanForDevices();
             }
         }
 
+        /// <summary>
+        /// Scan for devices. Clears list.
+        /// 
+        /// </summary>
+        private async void ScanForDevices() {
+            Devices.Clear();
+            foreach (var connectedDevice in Adapter.ConnectedDevices) {
+                //update rssi for already connected evices (so tha 0 is not shown in the list)
+                try {
+                    await connectedDevice.UpdateRssiAsync();
+                } catch (Exception ex) {
+                    Mvx.Trace(ex.Message);
+                    _userDialogs.ShowError($"Failed to update RSSI for {connectedDevice.Name}");
+                }
+
+                AddOrUpdateDevice(connectedDevice);
+            }
+
+            _cancellationTokenSource = new CancellationTokenSource();
+            RaisePropertyChanged(() => StopScanCommand);
+
+            RaisePropertyChanged(() => IsRefreshing);
+            Adapter.ScanMode = ScanMode.LowLatency;
+            await Adapter.StartScanningForDevicesAsync(_cancellationTokenSource.Token);
+        }
+
+        private void AddOrUpdateDevice(IDevice device) {
+            InvokeOnMainThread(() => {
+                var vm = Devices.FirstOrDefault(d => d.Device.Id == device.Id);
+                if (vm != null) {
+                    vm.Update();
+                } else {
+                    if (device.Name != "") {
+                        Devices.Add(new DeviceListItemViewModel(device));
+                    }
+                }
+            });
+        }
+
+        public MvxCommand StopScanCommand => new MvxCommand(() => {
+            _cancellationTokenSource.Cancel();
+            CleanupCancellationToken();
+            RaisePropertyChanged(() => IsRefreshing);
+        }, () => _cancellationTokenSource != null);
+        
         /// <summary>
         /// Gets or sets the selected device as master.
         /// </summary>
@@ -56,6 +115,7 @@ namespace BLE.Client.ViewModels {
                 RaisePropertyChanged();
             }
         }
+
         public DeviceListItemViewModel SelectedDeviceAsSlave {
             get { return null; }
             set {
@@ -65,7 +125,52 @@ namespace BLE.Client.ViewModels {
                 RaisePropertyChanged();
             }
         }
-        public bool UseAutoConnect {
+
+        private void HandleSelectedDevice(DeviceListItemViewModel device, int type) {
+            //type = 1 if slave, type = 2 if master.
+            var config = new ActionSheetConfig();
+            if (device.IsConnected) {
+                config.Destructive = new ActionSheetOption("Disconnect", () => DisconnectCommand.Execute(device));
+            } else {
+                config.Add("Connect", async () => {
+                    if (await ConnectDeviceAsync(device)) {
+                        switch (type) {
+                            case 1:
+                                device.IsSlave = true;
+                                GraphViewModel.SlaveDeviceId = device.Device.Id;
+                                var ServiceSlave = await device.Device.GetServiceAsync(Guid.Parse("0000180d-0000-1000-8000-00805f9b34fb"));
+                                var CharacteristicSlave = await ServiceSlave.GetCharacteristicAsync(Guid.Parse("00002a37-0000-1000-8000-00805f9b34fb"));
+                                await CharacteristicSlave.StartUpdatesAsync();
+                                break;
+                            case 2:
+                                device.IsMaster = true;
+                                GraphViewModel.MasterDeviceId = device.Device.Id;
+                                var ServiceMaster = await device.Device.GetServiceAsync(Guid.Parse("0000180d-0000-1000-8000-00805f9b34fb"));
+                                var CharacteristicMaster = await ServiceMaster.GetCharacteristicAsync(Guid.Parse("00002a37-0000-1000-8000-00805f9b34fb"));
+                                await CharacteristicMaster.StartUpdatesAsync();
+                                break;
+                        }
+                    }
+                });
+            }
+            config.Cancel = new ActionSheetOption("Cancel");
+            config.SetTitle("Device Options");
+            _userDialogs.ActionSheet(config);
+        }
+
+
+
+
+        public Guid PreviousGuid {
+            get { return _previousGuid; }
+            set {
+                _previousGuid = value;
+                _settings.AddOrUpdateValue("lastguid", _previousGuid.ToString());
+                RaisePropertyChanged();
+            }
+        }
+
+         public bool UseAutoConnect {
             get {
                 return _useAutoConnect;
             }
@@ -78,12 +183,6 @@ namespace BLE.Client.ViewModels {
                 RaisePropertyChanged();
             }
         }
-
-        public MvxCommand StopScanCommand => new MvxCommand(() => {
-            _cancellationTokenSource.Cancel();
-            CleanupCancellationToken();
-            RaisePropertyChanged(() => IsRefreshing);
-        }, () => _cancellationTokenSource != null);
 
         public MvxCommand<DeviceListItemViewModel> CopyGuidCommand => new MvxCommand<DeviceListItemViewModel>(device => {
             PreviousGuid = device.Id;
@@ -155,19 +254,6 @@ namespace BLE.Client.ViewModels {
             AddOrUpdateDevice(args.Device);
         }
 
-        private void AddOrUpdateDevice(IDevice device) {
-            InvokeOnMainThread(() => {
-                var vm = Devices.FirstOrDefault(d => d.Device.Id == device.Id);
-                if (vm != null) {
-                    vm.Update();
-                } else {
-                    if (device.Name != "") {
-                        Devices.Add(new DeviceListItemViewModel(device));
-                    }
-                }
-            });
-        }
-
         public override async void Resume() {
             base.Resume();
 
@@ -196,53 +282,11 @@ namespace BLE.Client.ViewModels {
             }
         }
 
-
         public override void Suspend() {
             base.Suspend();
 
             Adapter.StopScanningForDevicesAsync();
             RaisePropertyChanged(() => IsRefreshing);
-        }
-
-        private async void TryStartScanning(bool refresh = false) {
-            if (Xamarin.Forms.Device.OS == Xamarin.Forms.TargetPlatform.Android) {
-                var status = await _permissions.CheckPermissionStatusAsync(Permission.Location);
-                if (status != PermissionStatus.Granted) {
-                    var permissionResult = await _permissions.RequestPermissionsAsync(Permission.Location);
-
-                    if (permissionResult.First().Value != PermissionStatus.Granted) {
-                        _userDialogs.ShowError("Permission denied. Not scanning.");
-                        return;
-                    }
-                }
-            }
-
-            if (IsStateOn && (refresh || !Devices.Any()) && !IsRefreshing) {
-                ScanForDevices();
-            }
-        }
-
-        private async void ScanForDevices() {
-            Devices.Clear();
-
-            foreach (var connectedDevice in Adapter.ConnectedDevices) {
-                //update rssi for already connected evices (so tha 0 is not shown in the list)
-                try {
-                    await connectedDevice.UpdateRssiAsync();
-                } catch (Exception ex) {
-                    Mvx.Trace(ex.Message);
-                    _userDialogs.ShowError($"Failed to update RSSI for {connectedDevice.Name}");
-                }
-
-                AddOrUpdateDevice(connectedDevice);
-            }
-
-            _cancellationTokenSource = new CancellationTokenSource();
-            RaisePropertyChanged(() => StopScanCommand);
-
-            RaisePropertyChanged(() => IsRefreshing);
-            Adapter.ScanMode = ScanMode.LowLatency;
-            await Adapter.StartScanningForDevicesAsync(_cancellationTokenSource.Token);
         }
 
         private void CleanupCancellationToken() {
@@ -269,37 +313,6 @@ namespace BLE.Client.ViewModels {
             }
         }
 
-        private void HandleSelectedDevice(DeviceListItemViewModel device, int type) {
-            //type = 1 if slave, type = 2 if master.
-            var config = new ActionSheetConfig();
-            if (device.IsConnected) {
-                config.Destructive = new ActionSheetOption("Disconnect", () => DisconnectCommand.Execute(device));
-            } else {
-                config.Add("Connect", async () => {
-                    if (await ConnectDeviceAsync(device)) {
-                        switch (type) {
-                            case 1:
-                                device.IsSlave = true;
-                                GraphViewModel.SlaveDeviceId = device.Device.Id;
-                                var ServiceSlave = await device.Device.GetServiceAsync(Guid.Parse("0000180d-0000-1000-8000-00805f9b34fb"));
-                                var CharacteristicSlave = await ServiceSlave.GetCharacteristicAsync(Guid.Parse("00002a37-0000-1000-8000-00805f9b34fb"));
-                                await CharacteristicSlave.StartUpdatesAsync();
-                                break;
-                            case 2:
-                                device.IsMaster = true;
-                                GraphViewModel.MasterDeviceId = device.Device.Id;
-                                var ServiceMaster = await device.Device.GetServiceAsync(Guid.Parse("0000180d-0000-1000-8000-00805f9b34fb"));
-                                var CharacteristicMaster = await ServiceMaster.GetCharacteristicAsync(Guid.Parse("00002a37-0000-1000-8000-00805f9b34fb"));
-                                await CharacteristicMaster.StartUpdatesAsync();
-                                break;
-                        }
-                    }
-                });
-            }
-            config.Cancel = new ActionSheetOption("Cancel");
-            config.SetTitle("Device Options");
-            _userDialogs.ActionSheet(config);
-        }
 
         private async Task<bool> ConnectDeviceAsync(DeviceListItemViewModel device, bool showPrompt = true) {
             if (showPrompt && !await _userDialogs.ConfirmAsync($"Connect to device '{device.Name}'?")) {
@@ -341,7 +354,5 @@ namespace BLE.Client.ViewModels {
             _userDialogs.HideLoading();
             _userDialogs.Toast($"Disconnected {e.Device.Name}");
         }
-
-
     }
 }

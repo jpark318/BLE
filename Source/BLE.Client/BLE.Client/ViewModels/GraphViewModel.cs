@@ -24,14 +24,6 @@ namespace BLE.Client.ViewModels {
         private readonly IBluetoothLE _bluetoothLe;
         private readonly IUserDialogs _userDialogs;
         private readonly ISettings _settings;
-        public double MaxRed { get; set; } = 60000;
-        public double MinRed { get; set; } = 0;
-        public double MaxIr { get; set; } = 60000;
-        public double MinIr { get; set; } = 0;
-        public double MaxEcg { get; set; } = 20000;
-        public double MinEcg { get; set; } = 0;
-        public double MaxScg { get; set; } = 60000;
-        public double MinScg { get; set; } = 0;
         public double PrimalAxisMax { get; set; } = 200;
         private UInt16 red;
         private UInt16 ir;
@@ -42,14 +34,16 @@ namespace BLE.Client.ViewModels {
         public bool IsStateOn => _bluetoothLe.IsOn;
         public static Guid SlaveDeviceId { get; set; }
         public static Guid MasterDeviceId { get; set; }
-        public ObservableCollection<BleDataModel> DataRed { get; set; } = new ObservableCollection<BleDataModel>();
-        public ObservableCollection<BleDataModel> DataIr { get; set; } = new ObservableCollection<BleDataModel>();
-        public ObservableCollection<BleDataModel> DataEcg { get; set; } = new ObservableCollection<BleDataModel>();
-        public ObservableCollection<BleDataModel> DataScg { get; set; } = new ObservableCollection<BleDataModel>();
-        public ObservableCollection<BleDataModel> tempDataRed { get; set; } = new ObservableCollection<BleDataModel>();
-        public ObservableCollection<BleDataModel> tempDataIr { get; set; } = new ObservableCollection<BleDataModel>();
-        public ObservableCollection<BleDataModel> tempDataEcg { get; set; } = new ObservableCollection<BleDataModel>();
-        public ObservableCollection<BleDataModel> tempDataScg { get; set; } = new ObservableCollection<BleDataModel>();
+
+        /// <summary>
+        /// Red(0), Ir(1), Ecg(2), Scg(3)
+        /// </summary>
+        public ObservableCollection<BleDataModel>[] DataCollections { get; set; }
+        = { new ObservableCollection<BleDataModel>(), new ObservableCollection<BleDataModel>(), new ObservableCollection<BleDataModel>(), new ObservableCollection<BleDataModel>() };
+        //public ObservableCollection<BleDataModel> DataRed { get; set; } = new ObservableCollection<BleDataModel>();
+        //public ObservableCollection<BleDataModel> DataIr { get; set; } = new ObservableCollection<BleDataModel>();
+        //public ObservableCollection<BleDataModel> DataEcg { get; set; } = new ObservableCollection<BleDataModel>();
+        //public ObservableCollection<BleDataModel> DataScg { get; set; } = new ObservableCollection<BleDataModel>();
         public String ViewRed { get; set; }
         public String ViewIr { get; set; }
         public String ViewTemp { get; set; }
@@ -62,14 +56,12 @@ namespace BLE.Client.ViewModels {
         readonly IPermissions _permissions;
 
         void NumericalAxis_ActualRangeChanged(object sender, ActualRangeChangedEventArgs e) {
-            if (DataEcg.Count > 0) {
-                e.VisibleMaximum = Convert.ToDouble(DataEcg.Max(dataList => dataList.Value) * 1.1);
-                e.VisibleMinimum = Convert.ToDouble(DataEcg.Min(dataList => dataList.Value) * 0.9);
-                
-                Debug.WriteLine(MaxEcg);
+            if (DataCollections[3].Count > 0) {
+                e.VisibleMaximum = Convert.ToDouble(DataCollections[3].Max(dataList => dataList.Value) * 1.1);
+                e.VisibleMinimum = Convert.ToDouble(DataCollections[3].Min(dataList => dataList.Value) * 0.9);
             }
         }
-        
+
 
         public GraphViewModel(IBluetoothLE bluetoothLe, IAdapter adapter, IUserDialogs userDialogs, ISettings settings, IPermissions permissions) : base(adapter) {
             _permissions = permissions;
@@ -88,12 +80,12 @@ namespace BLE.Client.ViewModels {
         private void OnDeviceDisconnectedFromGraph(object sender, DeviceEventArgs e) {
             Device.BeginInvokeOnMainThread(() => {
                 if (e.Device.Id == MasterDeviceId) {
-                    DataEcg.Clear();
-                    DataScg.Clear();
+                    DataCollections[2].Clear();
+                    DataCollections[3].Clear();
                 }
                 if (e.Device.Id == SlaveDeviceId) {
-                    DataRed.Clear();
-                    DataIr.Clear();
+                    DataCollections[0].Clear();
+                    DataCollections[1].Clear();
                 }
             });
         }
@@ -101,12 +93,12 @@ namespace BLE.Client.ViewModels {
         private void OnDeviceConnectionLostFromGraph(object sender, DeviceEventArgs e) {
             Device.BeginInvokeOnMainThread(() => {
                 if (e.Device.Id == MasterDeviceId) {
-                    DataEcg.Clear();
-                    DataScg.Clear();
+                    DataCollections[2].Clear();
+                    DataCollections[3].Clear();
                 }
                 if (e.Device.Id == SlaveDeviceId) {
-                    DataRed.Clear();
-                    DataIr.Clear();
+                    DataCollections[0].Clear();
+                    DataCollections[1].Clear();
                 }
             });
         }
@@ -127,14 +119,14 @@ namespace BLE.Client.ViewModels {
                         ecg = (UInt16)((data[2 * i + 1]) | data[2 * i] << 8);
                         scg = (UInt16)((data[2 * i + 11]) | data[2 * i + 10] << 8);
                         Device.BeginInvokeOnMainThread(() => {
-                            if (!(DataEcg.Count < PrimalAxisMax)) {
-                                DataEcg.RemoveAt(0);
+                            if (!(DataCollections[2].Count < PrimalAxisMax)) {
+                                DataCollections[2].RemoveAt(0);
                             }
-                            if (!(DataScg.Count < PrimalAxisMax)) {
-                                DataScg.RemoveAt(0);
+                            if (!(DataCollections[3].Count < PrimalAxisMax)) {
+                                DataCollections[3].RemoveAt(0);
                             }
-                            DataEcg.Insert(DataEcg.Count, new BleDataModel(DataEcg.Count.ToString(), ecg));
-                            DataScg.Insert(DataScg.Count, new BleDataModel(DataScg.Count.ToString(), scg));
+                            DataCollections[2].Insert(DataCollections[2].Count, new BleDataModel(DataCollections[2].Count.ToString(), ecg));
+                            DataCollections[3].Insert(DataCollections[3].Count, new BleDataModel(DataCollections[3].Count.ToString(), scg));
                             count = 0;
                         });
                     }
@@ -155,18 +147,14 @@ namespace BLE.Client.ViewModels {
                             ViewRed = "IR: " + red.ToString();
                             ViewIr = "RED: " + ir.ToString();
                             Device.BeginInvokeOnMainThread(() => {
-                                if (!(DataRed.Count < PrimalAxisMax)) {
-                                    DataRed.RemoveAt(0);
+                                if (!(DataCollections[0].Count < PrimalAxisMax)) {
+                                    DataCollections[0].RemoveAt(0);
                                 }
-                                if (!(DataIr.Count < PrimalAxisMax)) {
-                                    DataIr.RemoveAt(0);
-                                    MaxIr = DataIr.Max(dataList => dataList.Value) * 1.1;
-                                    MinIr = DataRed.Min(dataList => dataList.Value) * 0.9;
+                                if (!(DataCollections[1].Count < PrimalAxisMax)) {
+                                    DataCollections[1].RemoveAt(0);
                                 }
-                                DataIr.Insert(DataIr.Count, new BleDataModel(DataIr.Count.ToString(), ir));
-                                DataRed.Insert(DataRed.Count, new BleDataModel(DataRed.Count.ToString(), red));
-                                MaxRed = DataRed.Max(dataList => dataList.Value) * 1.1;
-                                MinRed = DataRed.Min(dataList => dataList.Value) * 0.9;
+                                DataCollections[1].Insert(DataCollections[1].Count, new BleDataModel(DataCollections[1].Count.ToString(), ir));
+                                DataCollections[0].Insert(DataCollections[0].Count, new BleDataModel(DataCollections[0].Count.ToString(), red));
                             });
                         }
                     }
