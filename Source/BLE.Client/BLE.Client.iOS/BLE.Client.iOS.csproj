@@ -51,7 +51,6 @@
     <CodesignKey>iPhone Developer: yoonlee95@gmail.com (37QP7WXRLN)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <MtouchSdkVersion></MtouchSdkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -76,6 +75,8 @@
     <CodesignProvision>iOS Team Provisioning Profile: com.ble.johnrogers.nicu</CodesignProvision>
     <CodesignKey>iPhone Developer: yoonlee95@gmail.com (37QP7WXRLN)</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>true</MtouchDebug>
+    <IOSDebugOverWiFi>true</IOSDebugOverWiFi>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
     <DebugType>none</DebugType>

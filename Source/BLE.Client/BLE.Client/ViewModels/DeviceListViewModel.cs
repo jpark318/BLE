@@ -140,6 +140,7 @@ namespace BLE.Client.ViewModels {
                                 GraphViewModel.SlaveDeviceId = device.Device.Id;
                                 var ServiceSlave = await device.Device.GetServiceAsync(Guid.Parse("0000180d-0000-1000-8000-00805f9b34fb"));
                                 var CharacteristicSlave = await ServiceSlave.GetCharacteristicAsync(Guid.Parse("00002a37-0000-1000-8000-00805f9b34fb"));
+
                                 await CharacteristicSlave.StartUpdatesAsync();
                                 break;
                             case 2:

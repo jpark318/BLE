@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <pages:BasePage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:pages="clr-namespace:BLE.Client.Pages;assembly=BLE.Client"
@@ -69,11 +69,12 @@
           </chartEcg:NumericalAxis.Title>
         </chartEcg:NumericalAxis>
       </chartEcg:SfChart.SecondaryAxis>
-      <chartEcg:FastLineSeries ItemsSource="{Binding DataEcg}" XBindingPath="IndexValue" YBindingPath="Value"/>
-      <chartEcg:SfChart.ChartBehaviors>
+      <chartEcg:FastLineSeries ItemsSource="{Binding DataCollections[2]}" XBindingPath="IndexValue" YBindingPath="Value"/>
+      <!--<chartEcg:SfChart.ChartBehaviors>
         <chartEcg:ChartZoomPanBehavior ZoomMode="Y"/>
-      </chartEcg:SfChart.ChartBehaviors>
+      </chartEcg:SfChart.ChartBehaviors>-->
     </chartEcg:SfChart>
+        
     <chartScg:SfChart Grid.Row="3" Grid.ColumnSpan="6" BackgroundColor="{StaticResource main}">
       <chartScg:SfChart.PrimaryAxis>
         <chartScg:NumericalAxis Minimum="0"
@@ -94,10 +95,10 @@
           </chartScg:NumericalAxis.Title>
         </chartScg:NumericalAxis>
       </chartScg:SfChart.SecondaryAxis>
-      <chartScg:FastLineSeries ItemsSource="{Binding DataScg}" XBindingPath="IndexValue" YBindingPath="Value"/>
-      <chartEcg:SfChart.ChartBehaviors>
-        <chartEcg:ChartZoomPanBehavior ZoomMode="Y"/>
-      </chartEcg:SfChart.ChartBehaviors>
+      <chartScg:FastLineSeries ItemsSource="{Binding DataCollections[3]}" XBindingPath="IndexValue" YBindingPath="Value"/>
+      <!--<chartScg:SfChart.ChartBehaviors>
+        <chartScg:ChartZoomPanBehavior ZoomMode="Y"/>
+      </chartScg:SfChart.ChartBehaviors>-->
     </chartScg:SfChart>
     <chartRed:SfChart Grid.Row="4" Grid.ColumnSpan="6" BackgroundColor="{StaticResource main}">
       <chartRed:SfChart.PrimaryAxis>
@@ -119,7 +120,7 @@
           </chartRed:NumericalAxis.Title>
         </chartRed:NumericalAxis>
       </chartRed:SfChart.SecondaryAxis>
-      <chartRed:FastLineSeries ItemsSource="{Binding DataRed}" XBindingPath="IndexValue" YBindingPath="Value"/>
+      <chartRed:FastLineSeries ItemsSource="{Binding DataCollections[0]}" XBindingPath="IndexValue" YBindingPath="Value"/>
       <chartRed:SfChart.ChartBehaviors>
         <chartRed:ChartZoomPanBehavior ZoomMode="Y"/>
       </chartRed:SfChart.ChartBehaviors>
@@ -144,7 +145,7 @@
           </chartIr:NumericalAxis.Title>
         </chartIr:NumericalAxis>
       </chartIr:SfChart.SecondaryAxis>
-      <chartIr:FastLineSeries ItemsSource="{Binding DataIr}" XBindingPath="IndexValue" YBindingPath="Value"/>
+      <chartIr:FastLineSeries ItemsSource="{Binding DataCollections[1]}" XBindingPath="IndexValue" YBindingPath="Value"/>
       <chartIr:SfChart.ChartBehaviors>
         <chartIr:ChartZoomPanBehavior ZoomMode="Y"/>
       </chartIr:SfChart.ChartBehaviors>

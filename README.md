@@ -18,7 +18,8 @@ Xamarin Forms supports multiplatform development using shared C# user interface 
 
 #### Connect to Mac for iOS Development
 - Connect to Mac on your Windows Visual Studio [link](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/#Connecting_to_the_Mac)
-
+- Connect Android devices via network
+  https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/
 
 ## C#
 ### C# Commenting Guideline
@@ -59,6 +60,8 @@ Xamarin Forms supports multiplatform development using shared C# user interface 
     1. Update packages
     1. remove bin folder
 
+- **Exception: Only the original thread that created a view hierarchy can touch its views
+    1. Use "Device.BeginInvokeOnMainThread(() => {});
 <!--
 ## Support & Limitations
 
