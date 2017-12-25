@@ -34,6 +34,21 @@ namespace BLE.Client.ViewModels {
         public MvxCommand RefreshCommand => new MvxCommand(() => TryStartScanning(true));
         public MvxCommand<DeviceListItemViewModel> DisconnectCommand => new MvxCommand<DeviceListItemViewModel>(DisconnectDevice);
 
+        public DeviceListViewModel(IBluetoothLE bluetoothLe, IAdapter adapter, IUserDialogs userDialogs, ISettings settings, IPermissions permissions) : base(adapter) {
+            _permissions = permissions;
+            _bluetoothLe = bluetoothLe;
+            _userDialogs = userDialogs;
+            _settings = settings;
+            // quick and dirty :>
+            _bluetoothLe.StateChanged += OnStateChanged;
+            Adapter.DeviceDiscovered += OnDeviceDiscovered;
+            Adapter.ScanTimeoutElapsed += Adapter_ScanTimeoutElapsed;
+            Adapter.DeviceDisconnected += OnDeviceDisconnected;
+            Adapter.DeviceConnectionLost += OnDeviceConnectionLost;
+            TryStartScanning(true);
+            //Adapter.DeviceConnected += (sender, e) => Adapter.DisconnectDeviceAsync(e.Device);
+        }
+
         /// <summary>
         /// Attempt to scan BlueTooth devices.
         /// On android devices, check permission for bluetooth scanning.
@@ -44,7 +59,6 @@ namespace BLE.Client.ViewModels {
                 var status = await _permissions.CheckPermissionStatusAsync(Permission.Location);
                 if (status != PermissionStatus.Granted) {
                     var permissionResult = await _permissions.RequestPermissionsAsync(Permission.Location);
-
                     if (permissionResult.First().Value != PermissionStatus.Granted) {
                         _userDialogs.ShowError("Permission denied. Not scanning.");
                         return;
@@ -162,14 +176,19 @@ namespace BLE.Client.ViewModels {
 
 
 
-        public Guid PreviousGuid {
-            get { return _previousGuid; }
-            set {
-                _previousGuid = value;
-                _settings.AddOrUpdateValue("lastguid", _previousGuid.ToString());
-                RaisePropertyChanged();
-            }
-        }
+
+
+
+
+
+        //public Guid PreviousGuid {
+        //    get { return _previousGuid; }
+        //    set {
+        //        _previousGuid = value;
+        //        _settings.AddOrUpdateValue("lastguid", _previousGuid.ToString());
+        //        RaisePropertyChanged();
+        //    }
+        //}
 
          public bool UseAutoConnect {
             get {
@@ -185,31 +204,18 @@ namespace BLE.Client.ViewModels {
             }
         }
 
-        public MvxCommand<DeviceListItemViewModel> CopyGuidCommand => new MvxCommand<DeviceListItemViewModel>(device => {
-            PreviousGuid = device.Id;
-        });
+        //public MvxCommand<DeviceListItemViewModel> CopyGuidCommand => new MvxCommand<DeviceListItemViewModel>(device => {
+        //    PreviousGuid = device.Id;
+        //});
 
-        public DeviceListViewModel(IBluetoothLE bluetoothLe, IAdapter adapter, IUserDialogs userDialogs, ISettings settings, IPermissions permissions) : base(adapter) {
-            _permissions = permissions;
-            _bluetoothLe = bluetoothLe;
-            _userDialogs = userDialogs;
-            _settings = settings;
-            // quick and dirty :>
-            _bluetoothLe.StateChanged += OnStateChanged;
-            Adapter.DeviceDiscovered += OnDeviceDiscovered;
-            Adapter.ScanTimeoutElapsed += Adapter_ScanTimeoutElapsed;
-            Adapter.DeviceDisconnected += OnDeviceDisconnected;
-            Adapter.DeviceConnectionLost += OnDeviceConnectionLost;
-            TryStartScanning(true);
-            //Adapter.DeviceConnected += (sender, e) => Adapter.DisconnectDeviceAsync(e.Device);
-        }
 
-        private Task GetPreviousGuidAsync() {
-            return Task.Run(() => {
-                var guidString = _settings.GetValueOrDefault("lastguid", string.Empty);
-                PreviousGuid = !string.IsNullOrEmpty(guidString) ? Guid.Parse(guidString) : Guid.Empty;
-            });
-        }
+
+        //private Task GetPreviousGuidAsync() {
+        //    return Task.Run(() => {
+        //        var guidString = _settings.GetValueOrDefault("lastguid", string.Empty);
+        //        PreviousGuid = !string.IsNullOrEmpty(guidString) ? Guid.Parse(guidString) : Guid.Empty;
+        //    });
+        //}
 
         private void OnDeviceConnectionLost(object sender, DeviceErrorEventArgs e) {
             Devices.FirstOrDefault(d => d.Id == e.Device.Id)?.Update();
@@ -258,7 +264,7 @@ namespace BLE.Client.ViewModels {
         public override async void Resume() {
             base.Resume();
 
-            await GetPreviousGuidAsync();
+            //await GetPreviousGuidAsync();
             //TryStartScanning();
 
             GetSystemConnectedOrPairedDevices();
@@ -337,7 +343,7 @@ namespace BLE.Client.ViewModels {
 
                 _userDialogs.ShowSuccess($"Connected to {device.Device.Name}.");
 
-                PreviousGuid = device.Device.Id;
+                //PreviousGuid = device.Device.Id;
                 return true;
 
             } catch (Exception ex) {

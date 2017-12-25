@@ -25,7 +25,7 @@ namespace BLE.Client.ViewModels {
         private readonly IUserDialogs _userDialogs;
         private readonly ISettings _settings;
         public double PrimalAxisMax { get; set; } = 500;
-        private int MasterDeviceSamplingRate = 5;
+        private int MasterDeviceSamplingRate = 1;
         public bool IsRefreshing => Adapter.IsScanning;
         public bool IsStateOn => _bluetoothLe.IsOn;
         public static Guid SlaveDeviceId { get; set; }
@@ -34,7 +34,7 @@ namespace BLE.Client.ViewModels {
         UInt16 scg;
         UInt16 red;
         UInt16 ir;
-
+        int count;
         /// <summary>
         /// Red(0), Ir(1), Ecg(2), Scg(3)
         /// </summary>
@@ -52,7 +52,6 @@ namespace BLE.Client.ViewModels {
         //public MvxCommand ExitApplication => new MvxCommand(() => QuitApplication());
         public ObservableCollection<DeviceListItemViewModel> Devices { get; set; } = new ObservableCollection<DeviceListItemViewModel>();
         private Byte[] CharacteristicValue = new Byte[20];
-        private int count;
         readonly IPermissions _permissions;
 
         void NumericalAxis_ActualRangeChanged(object sender, ActualRangeChangedEventArgs e) {
@@ -104,13 +103,12 @@ namespace BLE.Client.ViewModels {
         }
 
         private async void OnNotification(IDevice device) {
-
             try {
                 var Service = await device.GetServiceAsync(Guid.Parse("0000180d-0000-1000-8000-00805f9b34fb"));
                 var Characteristic = await Service.GetCharacteristicAsync(Guid.Parse("00002a37-0000-1000-8000-00805f9b34fb"));
                 Characteristic.ValueUpdated += CharacteristicOnValueUpdated;
-            } catch {
-
+            } catch (Exception e){
+                Trace.Message("Failed to retreive system connected devices. {0}", e.Message);
             }
 
         }
@@ -119,34 +117,37 @@ namespace BLE.Client.ViewModels {
             var data = characteristicUpdatedEventArgs.Characteristic.Value;
             Device.BeginInvokeOnMainThread(() => {
                 if (MasterDeviceId == characteristicUpdatedEventArgs.Characteristic.Service.Device.Id) {
+                    //TODO: logging
                     //if data is from master device
-                    //if (count == MasterDeviceSamplingRate) {
-                    for (int i = 0; i < 5; i++) {
-                        ecg = (UInt16)((data[2 * i + 1]) | data[2 * i] << 8);
-                        //ViewRed = "ecg: " + ecg.ToString();
-                        scg = (UInt16)((data[2 * i + 11]) | data[2 * i + 10] << 8);
-                        //Debug.WriteLine("asdfasdf" + ecg.ToString());
-                        bool checkRedundancy = false;
+                    if (count == MasterDeviceSamplingRate) {
+                        for (int i = 0; i < 5; i++) {
+                            ecg = (UInt16)((data[2 * i + 1]) | data[2 * i] << 8);
+                            //ViewRed = "ecg: " + ecg.ToString();
+                            scg = (UInt16)((data[2 * i + 11]) | data[2 * i + 10] << 8);
+                            //Debug.WriteLine("asdfasdf" + ecg.ToString());
+                            bool checkRedundancy = false;
 
-                        if (!checkRedundancy) {
-                            if (!(DataCollections[2].Count < PrimalAxisMax)) {
-                                DataCollections[2].RemoveAt(0);
+                            if (!checkRedundancy) {
+                                if (!(DataCollections[2].Count < PrimalAxisMax)) {
+                                    DataCollections[2].RemoveAt(0);
+                                }
+                                if (!(DataCollections[3].Count < PrimalAxisMax)) {
+                                    DataCollections[3].RemoveAt(0);
+                                }
+                                //Debug.WriteLine("::::::::" + ecg.ToString());
+                                DataCollections[2].Insert(DataCollections[2].Count, new BleDataModel(DataCollections[2].Count.ToString(), ecg));
+                                DataCollections[3].Insert(DataCollections[3].Count, new BleDataModel(DataCollections[3].Count.ToString(), scg));
+                                //count = 0;
+                                checkRedundancy = true;
                             }
-                            if (!(DataCollections[3].Count < PrimalAxisMax)) {
-                                DataCollections[3].RemoveAt(0);
-                            }
-                            //Debug.WriteLine("::::::::" + ecg.ToString());
-                            DataCollections[2].Insert(DataCollections[2].Count, new BleDataModel(DataCollections[2].Count.ToString(), ecg));
-                            DataCollections[3].Insert(DataCollections[3].Count, new BleDataModel(DataCollections[3].Count.ToString(), scg));
-                            //count = 0;
-                            checkRedundancy = true;
+                            //});
                         }
-                        //});
                     }
-                    //}
-                    //count++;
+                    //TODO: Signal Processing
+                    count++;
                 }
                 if (SlaveDeviceId == characteristicUpdatedEventArgs.Characteristic.Service.Device.Id) {
+                    //TODO: logging
                     if (data.Length == 5) {
                         var num = (UInt16)data[3] + (UInt16)data[4] * 0.0625;
                         var tempnum = (int)(num * 10);
@@ -170,6 +171,8 @@ namespace BLE.Client.ViewModels {
                             }
                         }
                     }
+                    //TODO: Signal Processing
+
                 }
             });
         }
