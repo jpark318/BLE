@@ -152,7 +152,7 @@
     </chartIr:SfChart>
     <Button Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Text="Connect..." TextColor="{StaticResource font_white}" BackgroundColor="{StaticResource blue}" Command="{Binding ScanDevices}" HorizontalOptions="FillAndExpand"/>
     <Button Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" Text="Logger" TextColor="{StaticResource font_white}" BackgroundColor="{StaticResource blue}" Command="{Binding ScanDevices}" HorizontalOptions="FillAndExpand"/>
-    <Button Grid.Row="6" Grid.Column="4" Grid.ColumnSpan="2" Text="Exit" TextColor="{StaticResource font_white}" BackgroundColor="{StaticResource exit}" Command="{Binding ScanDevices}" HorizontalOptions="FillAndExpand"/>
-
+    <Button Grid.Row="6" Grid.Column="4" Grid.ColumnSpan="2" Text="Test Audio Recording" TextColor="{StaticResource font_white}" BackgroundColor="{StaticResource exit}" Command="{Binding BeginRecognition}" HorizontalOptions="FillAndExpand"/>
+        
   </Grid>
 </pages:BasePage>
