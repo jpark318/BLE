@@ -28,6 +28,7 @@ Xamarin Forms supports multiplatform development using shared C# user interface 
 ## Plugins
 ### BLE(Xamarin Plugin)
 ### MVVM Cross (Xamarin Plugin)
+[link](https://medium.com/@martijn00/using-mvvmcross-with-xamarin-forms-part-1-eaee5815bb8c)
 ### Syncfusion SfChart (Xamarin Plugin)
 1. Documentation from following [link](https://help.syncfusion.com/xamarin/sfchart/overview)
 

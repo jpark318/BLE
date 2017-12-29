@@ -9,14 +9,10 @@ using MvvmCross.Platform;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
-namespace BLE.Client.Droid
-{
+namespace BLE.Client.Droid {
     [Activity(ScreenOrientation = ScreenOrientation.Portrait)]
-    public class MainActivity
-        : FormsAppCompatActivity
-    {
-        protected override void OnCreate(Bundle bundle)
-        {
+    public class MainActivity : FormsAppCompatActivity {
+        protected override void OnCreate(Bundle bundle) {
             ToolbarResource = Resource.Layout.toolbar;
             TabLayoutResource = Resource.Layout.tabs;
 
@@ -27,7 +23,7 @@ namespace BLE.Client.Droid
             var formsApp = new BleMvxFormsApp();
             LoadApplication(formsApp);
 
-            var presenter = (MvxFormsDroidPagePresenter) Mvx.Resolve<IMvxViewPresenter>();
+            var presenter = (MvxFormsDroidPagePresenter)Mvx.Resolve<IMvxViewPresenter>();
             presenter.FormsApplication = formsApp;
 
             Mvx.Resolve<IMvxAppStart>().Start();

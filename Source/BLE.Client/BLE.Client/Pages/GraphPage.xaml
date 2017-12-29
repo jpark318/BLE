@@ -10,7 +10,7 @@
              xmlns:local="clr-namespace:BLE.Client.ViewModels"
              Title="HEALTH MONITORING SYSTEM"
              x:Name="GraphPage"
-                BackgroundColor="{StaticResource main}">
+             BackgroundColor="{StaticResource main}">
   <pages:BasePage.Resources>
     <ResourceDictionary>
       <Color x:Key="main">#000000</Color>
@@ -74,7 +74,6 @@
         <chartEcg:ChartZoomPanBehavior ZoomMode="Y"/>
       </chartEcg:SfChart.ChartBehaviors>-->
     </chartEcg:SfChart>
-        
     <chartScg:SfChart Grid.Row="3" Grid.ColumnSpan="6" BackgroundColor="{StaticResource main}">
       <chartScg:SfChart.PrimaryAxis>
         <chartScg:NumericalAxis Minimum="0"
@@ -121,9 +120,9 @@
         </chartRed:NumericalAxis>
       </chartRed:SfChart.SecondaryAxis>
       <chartRed:FastLineSeries ItemsSource="{Binding DataCollections[0]}" XBindingPath="IndexValue" YBindingPath="Value"/>
-      <chartRed:SfChart.ChartBehaviors>
+<!--      <chartRed:SfChart.ChartBehaviors>
         <chartRed:ChartZoomPanBehavior ZoomMode="Y"/>
-      </chartRed:SfChart.ChartBehaviors>
+      </chartRed:SfChart.ChartBehaviors>-->
     </chartRed:SfChart>
     <chartIr:SfChart Grid.Row="5" Grid.ColumnSpan="6" BackgroundColor="{StaticResource main}">
       <chartIr:SfChart.PrimaryAxis>
@@ -146,9 +145,9 @@
         </chartIr:NumericalAxis>
       </chartIr:SfChart.SecondaryAxis>
       <chartIr:FastLineSeries ItemsSource="{Binding DataCollections[1]}" XBindingPath="IndexValue" YBindingPath="Value"/>
-      <chartIr:SfChart.ChartBehaviors>
+<!--      <chartIr:SfChart.ChartBehaviors>
         <chartIr:ChartZoomPanBehavior ZoomMode="Y"/>
-      </chartIr:SfChart.ChartBehaviors>
+      </chartIr:SfChart.ChartBehaviors>-->
     </chartIr:SfChart>
     <Button Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Text="Connect..." TextColor="{StaticResource font_white}" BackgroundColor="{StaticResource blue}" Command="{Binding ScanDevices}" HorizontalOptions="FillAndExpand"/>
     <Button Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" Text="Logger" TextColor="{StaticResource font_white}" BackgroundColor="{StaticResource blue}" Command="{Binding ScanDevices}" HorizontalOptions="FillAndExpand"/>

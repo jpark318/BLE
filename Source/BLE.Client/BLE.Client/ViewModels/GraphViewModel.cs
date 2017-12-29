@@ -63,6 +63,7 @@ namespace BLE.Client.ViewModels {
 
 
         public GraphViewModel(IBluetoothLE bluetoothLe, IAdapter adapter, IUserDialogs userDialogs, ISettings settings, IPermissions permissions) : base(adapter) {
+
             _permissions = permissions;
             _bluetoothLe = bluetoothLe;
             _userDialogs = userDialogs;
@@ -91,6 +92,7 @@ namespace BLE.Client.ViewModels {
 
         private void OnDeviceConnectionLostFromGraph(object sender, DeviceEventArgs e) {
             Device.BeginInvokeOnMainThread(() => {
+
                 if (e.Device.Id == MasterDeviceId) {
                     DataCollections[2].Clear();
                     DataCollections[3].Clear();
@@ -134,7 +136,7 @@ namespace BLE.Client.ViewModels {
                                 if (!(DataCollections[3].Count < PrimalAxisMax)) {
                                     DataCollections[3].RemoveAt(0);
                                 }
-                                //Debug.WriteLine("::::::::" + ecg.ToString());
+                                Debug.WriteLine("::::::::" + ecg.ToString());
                                 DataCollections[2].Insert(DataCollections[2].Count, new BleDataModel(DataCollections[2].Count.ToString(), ecg));
                                 DataCollections[3].Insert(DataCollections[3].Count, new BleDataModel(DataCollections[3].Count.ToString(), scg));
                                 //count = 0;
