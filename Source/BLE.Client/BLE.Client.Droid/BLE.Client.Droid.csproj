@@ -236,9 +236,6 @@
     <Reference Include="Google.Api.CommonProtos">
       <HintPath>..\..\packages\Google.Api.CommonProtos.1.1.0\lib\netstandard1.3\Google.Api.CommonProtos.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Api.Gax">
-      <HintPath>..\..\packages\Google.Api.Gax.2.1.0\lib\netstandard1.3\Google.Api.Gax.dll</HintPath>
-    </Reference>
     <Reference Include="Google.Api.Gax.Grpc">
       <HintPath>..\..\packages\Google.Api.Gax.Grpc.2.1.0\lib\netstandard1.5\Google.Api.Gax.Grpc.dll</HintPath>
     </Reference>
@@ -260,6 +257,46 @@
     <Reference Include="Google.Apis.Auth.PlatformServices">
       <HintPath>..\..\packages\Google.Apis.Auth.1.32.0\lib\netstandard1.3\Google.Apis.Auth.PlatformServices.dll</HintPath>
     </Reference>
+    <Reference Include="Google.Api.Gax">
+      <HintPath>..\..\packages\Google.Api.Gax.2.2.1\lib\netstandard1.3\Google.Api.Gax.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Api.Gax.Rest">
+      <HintPath>..\..\packages\Google.Api.Gax.Rest.2.2.1\lib\netstandard1.3\Google.Api.Gax.Rest.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Storage.v1">
+      <HintPath>..\..\packages\Google.Apis.Storage.v1.1.31.1.1035\lib\netstandard1.3\Google.Apis.Storage.v1.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Cloud.Storage.V1">
+      <HintPath>..\..\packages\Google.Cloud.Storage.V1.2.1.0-beta03\lib\netstandard1.3\Google.Cloud.Storage.V1.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions">
+      <HintPath>..\..\packages\PCLStorage.1.0.2\lib\monoandroid\PCLStorage.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage">
+      <HintPath>..\..\packages\PCLStorage.1.0.2\lib\monoandroid\PCLStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="Validation">
+      <HintPath>..\..\packages\Validation.2.0.6.15003\lib\portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10\Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLCrypto">
+      <HintPath>..\..\packages\PCLCrypto.1.0.2.15130\lib\monoandroid\PCLCrypto.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web">
+      <HintPath>..\..\packages\System.Text.Encodings.Web.4.4.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Carbon.Json">
+      <HintPath>..\..\packages\Carbon.Json.1.5.0\lib\netstandard2.0\Carbon.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>..\..\packages\System.Threading.Tasks.Extensions.4.4.0\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Carbon.Storage">
+      <HintPath>..\..\packages\Carbon.Storage.1.13.0\lib\netstandard2.0\Carbon.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Java.Interop" />
+    <Reference Include="cloudrail-si-xamarin-android-sdk">
+      <HintPath>..\..\packages\Xamarin.Unified.Bucket.CloudStorage.Api.Android.1.2.4\lib\MonoAndroid42\cloudrail-si-xamarin-android-sdk.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bootstrap\BlePluginBootstrap.cs" />
@@ -273,8 +310,6 @@
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="MainApplication.cs" />
     <Compile Include="VoiceRecognition\ImageUploader.cs" />
-    <Compile Include="VoiceRecognition\SpeechService.cs" />
-    <Compile Include="VoiceRecognition\VoiceRecorder.cs" />
     <Compile Include="VoiceRecognition\Voice_Android.cs" />
   </ItemGroup>
   <ItemGroup>

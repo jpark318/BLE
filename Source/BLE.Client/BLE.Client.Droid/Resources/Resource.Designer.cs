@@ -84,6 +84,10 @@ namespace BLE.Client.Droid
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView = global::BLE.Client.Droid.Resource.Styleable.MvxListView;
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::BLE.Client.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::BLE.Client.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
+			global::PCLCrypto.Resource.String.ApplicationName = global::BLE.Client.Droid.Resource.String.ApplicationName;
+			global::PCLCrypto.Resource.String.Hello = global::BLE.Client.Droid.Resource.String.Hello;
+			global::PCLStorage.Resource.String.ApplicationName = global::BLE.Client.Droid.Resource.String.ApplicationName;
+			global::PCLStorage.Resource.String.Hello = global::BLE.Client.Droid.Resource.String.Hello;
 			global::Splat.Resource.String.library_name = global::BLE.Client.Droid.Resource.String.library_name;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.Fadein = global::BLE.Client.Droid.Resource.Animation.Fadein;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.Fadeout = global::BLE.Client.Droid.Resource.Animation.Fadeout;
@@ -3927,6 +3931,12 @@ namespace BLE.Client.Droid
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f090048
+			public const int ApplicationName = 2131296328;
+			
+			// aapt resource value: 0x7f090047
+			public const int Hello = 2131296327;
+			
 			// aapt resource value: 0x7f090015
 			public const int abc_action_bar_home_description = 2131296277;
 			
@@ -4019,6 +4029,9 @@ namespace BLE.Client.Droid
 			
 			// aapt resource value: 0x7f090027
 			public const int abc_toolbar_collapse_description = 2131296295;
+			
+			// aapt resource value: 0x7f090049
+			public const int app_name = 2131296329;
 			
 			// aapt resource value: 0x7f090036
 			public const int appbar_scrolling_view_behavior = 2131296310;

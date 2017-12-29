@@ -34,6 +34,8 @@ namespace BLE.Client.ViewModels
         public bool IsStateOn => _bluetoothLe.IsOn;
         public static Guid SlaveDeviceId { get; set; }
         public static Guid MasterDeviceId { get; set; }
+
+        static bool enable = false;
         UInt16 ecg;
         UInt16 scg;
         UInt16 red;
@@ -221,7 +223,13 @@ namespace BLE.Client.ViewModels
 
         private void BeginSpeechRecognition()
         {
-            DependencyService.Get<Voice>().StartRecord();
+            if (!enable){
+                DependencyService.Get<Voice>().StartRecord();
+                enable = true;
+            } else {
+                DependencyService.Get<Voice>().StopRecord();
+                enable = false;
+            }
         }
     }
 
